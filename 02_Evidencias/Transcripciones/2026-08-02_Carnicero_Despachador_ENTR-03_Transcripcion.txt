@@ -1,0 +1,236 @@
+Evidencia: EV-02
+Participante: P02
+Tipo de participante: Carnicero principal
+Fecha de transcripción: [02/08/2026]
+
+====================================================
+TRANSCRIPCIÓN ANONIMIZADA
+====================================================
+
+Entrevistador:
+Buenas tardes, somos estudiantes de la carrera de Software, Facultad de Ciencias de la Computación. Vamos a realizar una entrevista. Antes de comenzar, nos da su consentimiento para grabar esta entrevista con fines exclusivamente educativos y académicos.
+
+Participante P02:
+Claro, si, está bien.
+
+Entrevistador:
+¿Cuál es su nombre y apellido?
+
+Participante P02:
+[Dato omitido por confidencialidad – Participante P03]
+
+Entrevistador:
+¿Cuál es su cargo dentro de la distribuidora?
+
+Participante P02:
+Soy carnicero principal y también a veces me encargo del despacho cuando hay pedidos para las otras cursales.
+
+Entrevistador:
+¿Cuáles son sus principales responsabilidades en su puesto de trabajo?
+
+Participante P02:
+Mi trabajo principal es despachar el cerdo y la res, digamos los brazos, piernas, costillas, el lomo, la cabeza, todo eso. También me encargo de pesar y separar los cortes según lo que pida cada sucursal o cliente y coordinar en el área de recepción para saber qué producto entra ese día.
+
+----------------------------------------------------
+BLOQUE: HERRAMIENTAS Y MEDIOS DE TRABAJO
+----------------------------------------------------
+
+Entrevistador:
+¿Qué herramientas o medios usa actualmente para realizar su trabajo?
+
+Participante P02:
+Por ahora solo el cuchillo, el gancho y la báscula. Para el registro no usamos nada digital. Si hay algún pedido anotado, es en un papel o por whatsapp que nos manda la administradora.
+
+----------------------------------------------------
+BLOQUE: RECEPCIÓN Y PROCESAMIENTO (DESPIECE)
+----------------------------------------------------
+
+Entrevistador:
+Descríbeme paso a paso cómo realiza el despiece de un animal desde que le llega hasta que los cortes quedan listos.
+
+Participante P02:
+Primero espero que el animal ya esté faenado y pesado. Luego llega a mi área y empieza a despostar según lo que necesitamos ese día. Por ejemplo, si hay pedidos de 100 brazos, me concentro en sacar esos brazos de los cerdos que ya llegaron.
+
+Y el resto del animal va pasando a la cámara. No hay orden fija. Uno ya sabe de memoria qué cortes necesitan más para el día.
+
+Entrevistador:
+¿Cómo sabe usted qué cortes debe preparar cada día?
+
+Participante P02:
+Depende del día. Generalmente la propietaria o la administradora nos dice de palabra en la mañana o nos llega un mensaje de whatsapp con la lista de pedidos. No hay una hoja de trabajo formal ni nada de eso.
+
+Es todo verbal o por chat.
+
+Entrevistador:
+¿Qué problemas le genera no tener esa información de manera organizada?
+
+Participante P02:
+A veces hay confusión porque nos llegan pedidos de varias subursales al mismo tiempo y uno tiene que acordarse de qué cantidad iba para quién. Si algo se mezcla puede haber un error en el despacho y eso genera reclamos. Con un sistema donde estén todos los pedidos ordenados, eso no pasaría.
+
+----------------------------------------------------
+BLOQUE: REGISTRO, TRAZABILIDAD Y AUDITORÍA DE LOS ANIMALES
+----------------------------------------------------
+
+Entrevistador:
+¿Y actualmente registra alguna información durante el despiece como cuántas piezas salen de cada animal?
+
+Participante P02:
+No, ahí no se anota nada. Solo se va esperando por corte y por cliente. Al final uno no sabe exactamente cuántas piezas salieron de cada cerdo.
+
+Eso se pierde. Si alguien pregunta el rendimiento de un animal, nadie tiene el dato exacto.
+
+Entrevistador:
+¿Le gustaría que el sistema registrara esa información? ¿Y para qué le serviría?
+
+Participante P02:
+La verdad sería muy útil porque así se podría saber si un cerdo de cierto proveedor rinde más o menos que otro. Eso también ayudaría a la propietaria a decidir a quién comprarle. Yo podría ingresar al sistema cuántas piezas salieron de cada animal y eso quedaría guardado y registrado.
+
+Entrevistador:
+¿Sabe usted de qué proveedor vino el animal que está despostando?
+
+Participante P02:
+A veces sí. Si me acuerdo de lo que llegó ese día o me lo dicen. Pero no siempre.
+
+No hay ninguna etiqueta ni código en el animal que me lo indique. Si el área de resección no me avisa, yo no tengo cómo saberlo con certeza, la verdad.
+
+Entrevistador:
+En ese caso, ¿le parecería útil que cada lote o animal tuviera un código que usted pudiera ver durante el despiece?
+
+Participante P02:
+Sí, porque si hay un reclamo de calidad, yo podría decir exactamente de qué lote salió ese producto. Ahora mismo, si alguien reclama, nadie sabe de qué animal fue porque no hay forma de arrastrarlo una vez que ya esté despostado.
+
+----------------------------------------------------
+BLOQUE: PESAJE
+----------------------------------------------------
+
+Entrevistador:
+¿Cómo se hace actualmente lo que es el pesaje de los cortes antes de despacharlos?
+
+Participante P02:
+Se hace uno a uno en la báscula. Yo peso el corte, lo digo en voz alta y otro compañero lo anota en un papel con el nombre del cliente. Es un proceso lento, sobre todo cuando hay muchos pedidos al mismo tiempo.
+
+Si estamos con prisa, a veces se cometen errores de escritura y después hay que repetir el conteo.
+
+Entrevistador:
+¿Cuánto tiempo calcula usted que se pierde en ese proceso de pesaje y registro manual?
+
+Participante P02:
+En días con mucha demanda, fácil una hora o más. Solo en eso. Si la báscula pudiera conectarse directo a un sistema y registrar el peso automáticamente, eso ahorraría bastante tiempo y reduciría errores.
+
+----------------------------------------------------
+BLOQUE: DESPACHO A SUCURSALES
+----------------------------------------------------
+
+Entrevistador:
+¿Cómo funciona el proceso de despacho a sucursales?
+
+Participante P02:
+Una vez que tengo los cortes ya listos y pesados, se colocan en las bolsas o bandejas según el pedido. Hay una persona que se encarga del transporte, que llega en el camión y se lleva todo lo que está preparado. De entrega de palabras, cuánto va y hacia dónde.
+
+Y eso es lo único que queda como registro.
+
+Entrevistador:
+¿Existe algún comprobante o documento de lo que sale en cada despacho?
+
+Participante P02:
+A veces es una nota de papel, de cuánto salió y para qué local. Pero no siempre. Hay días en que el despacho sale rápido y no queda nada escrito.
+
+Eso ha causado problemas. Cuando en la sucursal dicen que les faltó algo y nosotros no podemos comprobarlo.
+
+Entrevistador:
+¿Qué le gustaría que el sistema hiciera al momento del despacho?
+
+Participante P02:
+Que el momento de despachar yo pudiera registrar en el sistema qué salió, cuántos kilos, para qué sucursal y a qué hora. Así habría un comprobante digital y si hay un reclamo se puede verificar. También me gustaría que el sistema descontara automáticamente ese producto del inventario.
+
+Entrevistador:
+¿Ha tenido usted errores en el despacho por falta de información o confusión en los pedidos?
+
+Participante P02:
+Sí, nos ha pasado que preparamos los cortes para una sucursal y nos llegan cambios de último momento por WhatsApp. Y si uno no ve el mensaje a tiempo, el despacho sale mal. Una vez salieron brazos que eran para el local del centro y terminaron en el local de la avenida.
+
+Y toca hacer otro viaje. Eso genera costos y pérdida de tiempo.
+
+----------------------------------------------------
+BLOQUE: CONSERVACIÓN, FRIGORÍFICO Y DETECCIÓN DE FRESCURA
+----------------------------------------------------
+
+Entrevistador:
+¿Usted tiene contacto con las cámaras de frío? ¿Qué hace cuando coloca productos en ellas?
+
+Participante P02:
+Sí, después del despiés, el producto que no se va a despachar en ese momento entra en la cámara. Nosotros los colgamos en los ganchos de acero inoxidable como se debe. Separado por tipo, cerdo en una sección, res en otra.
+
+Los embutidos son los únicos que van en gavetas porque ya tienen conservantes.
+
+Entrevistador:
+¿Cómo sabe usted cuánto tiempo lleva un producto en la cámara?
+
+Participante P02:
+Por ahí de memoria, más o menos. Uno sabe que si hoy es lunes, entra el producto. El jueves ya hay que venderlo, revisarlo.
+
+Pero eso depende de que uno se acuerde. No hay ningún sistema que te avise. El pollo es lo más delicado.
+
+Si pasan tres días sin venderse ya está por dañarse.
+
+Entrevistador:
+¿Le serviría que el sistema le mostrara cuántos días lleva cada producto en la cámara y le mandara un alerta?
+
+Participante P02:
+Sí, sería excelente. Porque a veces hay tanto movimiento que uno se olvida de revisar lo que lleva más tiempo. Si el sistema avisa que está el producto ya dos días y medio, uno lo saca primero y se evita la pérdida.
+
+Eso nos ahorraría plata a nosotros y a la distribuidora.
+
+Entrevistador:
+¿Y qué hace usted cuando detecta que un producto ya no está en buen estado?
+
+Participante P02:
+Se separa inmediatamente el resto. Se le avisa al administrador o a la propietaria. Ellos son los que autorizan a darlo de baja.
+
+Se tiene que revisar el producto dañado, tomar una foto y presentarlo como sustento para el inventario. Eso lo supervisa siempre el administrador general.
+
+----------------------------------------------------
+BLOQUE: COMUNICACIÓN Y REPORTES
+----------------------------------------------------
+
+Entrevistador:
+¿Cómo se comunica usted con el área de recepción y con la administración durante su turno?
+
+Participante P02:
+Casi todo es de palabra por whatsapp. Si necesito saber cuánto producto llegó, le pregunto al compañero de recepción. Si hay un cambio en los pedidos, me llega un mensaje.
+
+No hay ningún sistema que centralice esa información para que todos lo veamos al mismo tiempo.
+
+Entrevistador:
+¿Qué información le gustaría tener disponible en su área de trabajo para hacer mejor su trabajo?
+
+Participante P02:
+Quisiera ver en tiempo real cuánto producto hay disponible en la cámara. Los pedidos al día, organizados por sucursal y la cantidad que despacharon. Así no tendría que estar preguntando a cada rato, ni arriesgarme a equivocarme.
+
+Entrevistador:
+Si el sistema generara un resumen de lo que usted despachó en su turno, ¿qué información le gustaría que incluyera?
+
+Participante P02:
+Que muestre qué cortes salieron, cuántos kilos por corte, para qué sucursal y si quedó algún pedido pendiente. Eso sería lo suficiente para que el administrador tenga todo claro, sin que yo tenga que explicárselo y así.
+
+Entrevistador:
+Pensando en todo su trabajo diario, ¿cuál sería la función más importante que debería tener el nuevo sistema desde su perspectiva?
+
+Participante P02:
+Para mí lo más importante sería tener los pedidos del día visibles y organizados desde el principio, para saber exactamente qué cortar, cuánto y para qué. Con eso se reduce la confusión, se hacen menos viajes, se despachan más rápido. Eso es lo que más nos consume tiempo ahora mismo.
+
+Entrevistador:
+¿Y estaría dispuesto a usar un sistema digital en su área? ¿Qué necesitaría para sentirse cómodo con él?
+
+Participante P02:
+La verdad sí, estaría dispuesto. Lo importante es que sea sencillo, que yo pueda ver los pedidos, confirmar lo que despaché y registrar el peso sin tener que hacer las cosas complicadas. No todos los que trabajamos aquí manejamos bien la tecnología, así que las pantallas tienen que ser claras y con poca letra.
+
+Entrevistador:
+Listo. Con eso terminamos. Muchas gracias por la entrevista.
+
+Participante P02:
+Ya listo.
+
+====================================================
+FIN DE LA TRANSCRIPCIÓN
+====================================================
