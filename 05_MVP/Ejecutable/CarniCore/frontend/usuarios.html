@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Usuarios · CarniCore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="app-shell">
+    <div id="sidebar-mount"></div>
+    <div class="main-col">
+      <div id="topbar-mount" data-title="Usuarios" data-eyebrow="Gestión"></div>
+      <main class="page">
+
+        <div class="page-head">
+          <div>
+            <div class="breadcrumb">CarniCore / <span>Usuarios</span></div>
+            <h1>Usuarios</h1>
+            <p class="lead">Gestión de usuarios y asignación de roles del sistema (RF-15).</p>
+          </div>
+          <button class="btn btn-primary"><i class="fa-solid fa-user-plus"></i> Nuevo usuario</button>
+        </div>
+
+        <div class="card">
+          <div class="toolbar">
+            <div class="toolbar-left"><div class="search-field"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Buscar por nombre o cédula..." oninput="filterTable(this,'tblUsuarios')"></div></div>
+          </div>
+          <div class="table-wrap">
+            <table class="data-table" id="tblUsuarios">
+              <thead><tr><th>Usuario</th><th>Cédula</th><th>Rol</th><th>Sucursal</th><th>Estado</th><th></th></tr></thead>
+              <tbody>
+                <tr><td><div class="flex items-center gap-8"><div class="avatar" style="width:28px;height:28px;background:var(--c-light-gray);color:var(--c-main);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;">GI</div>Gisela Ibáñez</div></td><td class="mono">1712345678</td><td><span class="badge badge-neutral"><span class="badge-dot"></span>Propietaria</span></td><td>Matriz</td><td><span class="badge badge-ok"><span class="badge-dot"></span>Activo</span></td>
+                  <td><div class="row-actions"><button class="icon-btn"><i class="fa-solid fa-pen"></i></button><button class="icon-btn"><i class="fa-solid fa-user-slash"></i></button></div></td></tr>
+                <tr><td><div class="flex items-center gap-8"><div class="avatar" style="width:28px;height:28px;background:var(--c-light-gray);color:var(--c-main);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;">JR</div>Juan Ramírez</div></td><td class="mono">1798765432</td><td><span class="badge badge-neutral"><span class="badge-dot"></span>Administrador general</span></td><td>Matriz</td><td><span class="badge badge-ok"><span class="badge-dot"></span>Activo</span></td>
+                  <td><div class="row-actions"><button class="icon-btn"><i class="fa-solid fa-pen"></i></button><button class="icon-btn"><i class="fa-solid fa-user-slash"></i></button></div></td></tr>
+                <tr><td><div class="flex items-center gap-8"><div class="avatar" style="width:28px;height:28px;background:var(--c-light-gray);color:var(--c-main);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;">MP</div>María Paredes</div></td><td class="mono">1755566677</td><td><span class="badge badge-neutral"><span class="badge-dot"></span>Encargado de bodega</span></td><td>Matriz</td><td><span class="badge badge-ok"><span class="badge-dot"></span>Activo</span></td>
+                  <td><div class="row-actions"><button class="icon-btn"><i class="fa-solid fa-pen"></i></button><button class="icon-btn"><i class="fa-solid fa-user-slash"></i></button></div></td></tr>
+                <tr><td><div class="flex items-center gap-8"><div class="avatar" style="width:28px;height:28px;background:var(--c-mid-gray);color:var(--c-main);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;">CT</div>Carlos Toapanta</div></td><td class="mono">1733322211</td><td><span class="badge badge-neutral"><span class="badge-dot"></span>Carnicero</span></td><td>Matriz</td><td><span class="badge badge-bad"><span class="badge-dot"></span>Inactivo</span></td>
+                  <td><div class="row-actions"><button class="icon-btn"><i class="fa-solid fa-pen"></i></button><button class="icon-btn"><i class="fa-solid fa-user-check"></i></button></div></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+  <script src="app.js"></script>
+
+</body>
+</html>

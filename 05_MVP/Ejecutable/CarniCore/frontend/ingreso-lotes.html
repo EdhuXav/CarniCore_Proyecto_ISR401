@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ingreso de lotes · CarniCore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="app-shell">
+    <div id="sidebar-mount"></div>
+    <div class="main-col">
+      <div id="topbar-mount" data-title="Ingreso de lotes" data-eyebrow="Recepción"></div>
+      <main class="page">
+
+        <div class="page-head">
+          <div>
+            <div class="breadcrumb">CarniCore / <span>Ingreso de lotes</span></div>
+            <h1>Registro de ingreso de lotes</h1>
+            <p class="lead">Ingreso de animales individuales (cerdo, res con arete) o lotes agregados (aves) — RF-03.</p>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-title"><h3>Nuevo ingreso</h3></div>
+            <form onsubmit="event.preventDefault();alert('Prototipo visual: sin lógica de guardado.');">
+              <div class="form-grid">
+                <div class="field"><label>Proveedor</label><select><option>Granja San Vicente</option><option>Porcícola El Roble</option><option>Avícola Los Andes</option></select></div>
+                <div class="field"><label>N.° guía de origen</label><input class="input" type="text" placeholder="AGR-2026-0113"></div>
+                <div class="field"><label>Tipo de animal</label><select><option>Res</option><option>Cerdo</option><option>Pollo (lote)</option></select></div>
+                <div class="field"><label>Cantidad</label><input class="input" type="number" placeholder="0"></div>
+                <div class="field"><label>N.° de arete (si aplica)</label><input class="input" type="text" placeholder="AR-000123"></div>
+                <div class="field"><label>Fecha de ingreso</label><input class="input" type="date"></div>
+              </div>
+              <div class="notice"><i class="fa-solid fa-circle-info"></i>Para cerdo y res se exige arete único por animal; para aves solo se solicita la cantidad total.</div>
+              <div class="flex gap-8" style="justify-content:flex-end;">
+                <button type="button" class="btn btn-outline">Cancelar</button>
+                <button type="submit" class="btn btn-primary"><i class="fa-solid fa-check"></i> Guardar ingreso</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="card">
+            <div class="card-title"><h3>Ingresos de hoy</h3><span class="badge badge-neutral"><span class="badge-dot"></span>4 registros</span></div>
+            <div class="timeline">
+              <div class="timeline-item active"><div class="timeline-dot"><i class="fa-solid fa-check"></i></div>
+                <div class="timeline-card"><h4>Res · Arete AR-000481</h4><div class="meta">Granja San Vicente · 312 lb · 08:12</div></div></div>
+              <div class="timeline-item active"><div class="timeline-dot"><i class="fa-solid fa-check"></i></div>
+                <div class="timeline-card"><h4>Cerdo · Arete AR-000502</h4><div class="meta">Porcícola El Roble · 96 lb · 07:40</div></div></div>
+              <div class="timeline-item"><div class="timeline-dot"><i class="fa-solid fa-clock"></i></div>
+                <div class="timeline-card"><h4>Pollo · Lote L-2208</h4><div class="meta">Avícola Los Andes · 120 unidades · pendiente</div></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="card">
+          <div class="card-title"><h3>Tabla de registros</h3></div>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr><th>Fecha</th><th>Proveedor</th><th>Tipo</th><th>Arete / Lote</th><th>Cantidad</th><th>Estado</th></tr></thead>
+              <tbody>
+                <tr><td>02/08/2026</td><td>Granja San Vicente</td><td>Res</td><td class="mono">AR-000481</td><td>1 animal</td><td><span class="badge badge-ok"><span class="badge-dot"></span>Disponible</span></td></tr>
+                <tr><td>02/08/2026</td><td>Porcícola El Roble</td><td>Cerdo</td><td class="mono">AR-000502</td><td>1 animal</td><td><span class="badge badge-ok"><span class="badge-dot"></span>Disponible</span></td></tr>
+                <tr><td>01/08/2026</td><td>Avícola Los Andes</td><td>Pollo</td><td class="mono">L-2208</td><td>120 unid.</td><td><span class="badge badge-warn"><span class="badge-dot"></span>Pend. pesaje</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+  <script src="app.js"></script>
+
+</body>
+</html>

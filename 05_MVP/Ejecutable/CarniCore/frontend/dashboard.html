@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard · CarniCore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="app-shell">
+    <div id="sidebar-mount"></div>
+    <div class="main-col">
+      <div id="topbar-mount" data-title="Dashboard" data-eyebrow="Panel principal"></div>
+      <main class="page">
+
+        <div class="page-head">
+          <div>
+            <div class="breadcrumb">CarniCore / <span>Dashboard</span></div>
+            <h1>Buen día, Gisela</h1>
+            <p class="lead">Resumen general de la operación de Distribuidora Cárnicos Pucayacu — hoy, 02 de agosto.</p>
+          </div>
+          <div class="flex gap-8">
+            <button class="btn btn-outline"><i class="fa-solid fa-calendar"></i> Últimos 30 días</button>
+            <button class="btn btn-primary" onclick="window.location.href='ingreso-lotes.html'"><i class="fa-solid fa-plus"></i> Nuevo ingreso</button>
+          </div>
+        </div>
+
+        <div class="kpi-grid">
+          <div class="kpi-card">
+            <div class="kpi-icon"><i class="fa-solid fa-boxes-stacked"></i></div>
+            <div class="kpi-label">Total productos</div>
+            <div class="kpi-value">1,284</div>
+            <span class="kpi-delta up"><i class="fa-solid fa-arrow-up"></i> 4.2% vs. semana pasada</span>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-icon"><i class="fa-solid fa-warehouse"></i></div>
+            <div class="kpi-label">Inventario (lb)</div>
+            <div class="kpi-value">6,930 lb</div>
+            <span class="kpi-delta flat"><i class="fa-solid fa-minus"></i> sin variación</span>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-icon"><i class="fa-solid fa-hourglass-half"></i></div>
+            <div class="kpi-label">Próx. a vencer</div>
+            <div class="kpi-value">18</div>
+            <span class="kpi-delta down"><i class="fa-solid fa-arrow-up"></i> requiere atención</span>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-icon"><i class="fa-solid fa-cash-register"></i></div>
+            <div class="kpi-label">Ventas del mes</div>
+            <div class="kpi-value">$14,320</div>
+            <span class="kpi-delta up"><i class="fa-solid fa-arrow-up"></i> 12.8%</span>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-icon"><i class="fa-solid fa-truck-field"></i></div>
+            <div class="kpi-label">Compras del mes</div>
+            <div class="kpi-value">$9,110</div>
+            <span class="kpi-delta flat"><i class="fa-solid fa-minus"></i> estable</span>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+            <div class="kpi-label">Pérdidas del mes</div>
+            <div class="kpi-value">$412</div>
+            <span class="kpi-delta down"><i class="fa-solid fa-arrow-down"></i> -6.1%</span>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-title">
+              <h3>Ventas por tipo de producto</h3>
+              <span class="badge badge-neutral"><span class="badge-dot"></span>Últimos 7 días</span>
+            </div>
+            <div class="bars">
+              <div class="bar" style="height:70%"><span>Res</span><em>$5,120</em></div>
+              <div class="bar" style="height:52%"><span>Cerdo</span><em>$3,780</em></div>
+              <div class="bar" style="height:38%"><span>Pollo</span><em>$2,640</em></div>
+              <div class="bar" style="height:22%"><span>Embutidos</span><em>$1,510</em></div>
+              <div class="bar" style="height:15%"><span>Otros</span><em>$980</em></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title"><h3>Accesos rápidos</h3></div>
+            <div class="flex" style="flex-direction:column;gap:10px;">
+              <a class="nav-link" style="background:var(--c-secondary);border-color:rgba(230,230,230,.08);" href="pesaje.html"><i class="fa-solid fa-weight-scale"></i><span>Registrar pesaje</span></a>
+              <a class="nav-link" style="background:var(--c-secondary);border-color:rgba(230,230,230,.08);" href="ingreso-lotes.html"><i class="fa-solid fa-boxes-stacked"></i><span>Ingreso de lote</span></a>
+              <a class="nav-link" style="background:var(--c-secondary);border-color:rgba(230,230,230,.08);" href="baja-productos.html"><i class="fa-solid fa-triangle-exclamation"></i><span>Registrar baja</span></a>
+              <a class="nav-link" style="background:var(--c-secondary);border-color:rgba(230,230,230,.08);" href="trazabilidad.html"><i class="fa-solid fa-route"></i><span>Consultar trazabilidad</span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="card">
+          <div class="card-title">
+            <h3>Últimos movimientos</h3>
+            <a class="btn btn-ghost btn-sm" href="movimientos.html">Ver todos <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr><th>Fecha</th><th>Movimiento</th><th>Producto</th><th>Cámara</th><th>Cantidad</th><th>Estado</th></tr></thead>
+              <tbody>
+                <tr><td>02/08 · 08:12</td><td>Ingreso</td><td>Res — Canal #A-1042</td><td>Cámara Res</td><td>312 lb</td><td><span class="badge badge-ok"><span class="badge-dot"></span>Completado</span></td></tr>
+                <tr><td>02/08 · 07:50</td><td>Venta</td><td>Cerdo — Costilla</td><td>Cámara Cerdo</td><td>48 lb</td><td><span class="badge badge-ok"><span class="badge-dot"></span>Completado</span></td></tr>
+                <tr><td>01/08 · 17:30</td><td>Baja</td><td>Pollo entero</td><td>Cámara Pollo</td><td>15 lb</td><td><span class="badge badge-warn"><span class="badge-dot"></span>Pend. aprobación</span></td></tr>
+                <tr><td>01/08 · 14:05</td><td>Ingreso</td><td>Embutido — Chorizo</td><td>Cámara Embutidos</td><td>60 lb</td><td><span class="badge badge-ok"><span class="badge-dot"></span>Completado</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+  <script src="app.js"></script>
+
+</body>
+</html>

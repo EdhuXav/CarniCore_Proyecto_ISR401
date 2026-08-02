@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inventario · CarniCore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="app-shell">
+    <div id="sidebar-mount"></div>
+    <div class="main-col">
+      <div id="topbar-mount" data-title="Inventario" data-eyebrow="Almacenamiento"></div>
+      <main class="page">
+
+        <div class="page-head">
+          <div>
+            <div class="breadcrumb">CarniCore / <span>Inventario</span></div>
+            <h1>Inventario</h1>
+            <p class="lead">Consulta del stock disponible por cámara, sección y producto.</p>
+          </div>
+          <button class="btn btn-outline"><i class="fa-solid fa-download"></i> Exportar</button>
+        </div>
+
+        <div class="card">
+          <div class="toolbar">
+            <div class="toolbar-left">
+              <div class="search-field"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Buscar producto..." oninput="filterTable(this,'tblInventario')"></div>
+              <select><option>Todas las cámaras</option><option>Cámara Res</option><option>Cámara Cerdo</option><option>Cámara Pollo</option><option>Cámara Embutidos</option></select>
+              <select><option>Todos los estados</option><option>Óptimo</option><option>Próx. a vencer</option><option>Vencido</option></select>
+            </div>
+            <div class="toolbar-right">
+              <button class="btn btn-outline btn-sm"><i class="fa-solid fa-filter"></i> Filtros</button>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table class="data-table" id="tblInventario">
+              <thead><tr><th>Código</th><th>Producto</th><th>Cámara</th><th>Peso</th><th>Ingreso</th><th>Estado</th></tr></thead>
+              <tbody>
+                <tr><td class="mono">P-0001</td><td>Brazo de res</td><td>Cámara Res</td><td>45 lb</td><td>02/08/2026</td><td><span class="badge badge-ok"><span class="badge-dot"></span>Óptimo</span></td></tr>
+                <tr><td class="mono">P-0002</td><td>Pierna de res</td><td>Cámara Res</td><td>60 lb</td><td>02/08/2026</td><td><span class="badge badge-ok"><span class="badge-dot"></span>Óptimo</span></td></tr>
+                <tr><td class="mono">P-0003</td><td>Costilla de res</td><td>Cámara Res</td><td>30 lb</td><td>29/07/2026</td><td><span class="badge badge-warn"><span class="badge-dot"></span>Próx. a vencer</span></td></tr>
+                <tr><td class="mono">P-0004</td><td>Chuleta de cerdo</td><td>Cámara Cerdo</td><td>52 lb</td><td>01/08/2026</td><td><span class="badge badge-ok"><span class="badge-dot"></span>Óptimo</span></td></tr>
+                <tr><td class="mono">P-0005</td><td>Pollo entero</td><td>Cámara Pollo</td><td>15 lb</td><td>30/07/2026</td><td><span class="badge badge-bad"><span class="badge-dot"></span>Vencido</span></td></tr>
+                <tr><td class="mono">P-0006</td><td>Chorizo</td><td>Cámara Embutidos</td><td>60 lb</td><td>28/07/2026</td><td><span class="badge badge-ok"><span class="badge-dot"></span>Óptimo</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+  <script src="app.js"></script>
+
+</body>
+</html>

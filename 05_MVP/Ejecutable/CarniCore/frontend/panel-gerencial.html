@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panel gerencial · CarniCore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="app-shell">
+    <div id="sidebar-mount"></div>
+    <div class="main-col">
+      <div id="topbar-mount" data-title="Panel gerencial" data-eyebrow="Gestión"></div>
+      <main class="page">
+
+        <div class="page-head">
+          <div>
+            <div class="breadcrumb">CarniCore / <span>Panel gerencial</span></div>
+            <h1>Panel gerencial</h1>
+            <p class="lead">Ventas por producto, cliente principal y producto de mayor rotación (RF-14).</p>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-title"><h3>Distribución de ventas por tipo</h3></div>
+            <div class="flex" style="gap:26px;align-items:center;">
+              <div class="donut"><div class="donut-label"><b>$14.3k</b><small>total mes</small></div></div>
+              <div class="legend">
+                <div class="legend-item"><span class="legend-swatch" style="background:var(--c-light-gray);"></span>Res — 42%</div>
+                <div class="legend-item"><span class="legend-swatch" style="background:var(--c-mid-gray);"></span>Cerdo — 26%</div>
+                <div class="legend-item"><span class="legend-swatch" style="background:var(--c-dark-gray);"></span>Pollo — 18%</div>
+                <div class="legend-item"><span class="legend-swatch" style="background:var(--c-secondary);"></span>Embutidos — 14%</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title"><h3>Indicadores clave</h3></div>
+            <div class="flex justify-between items-center" style="padding:10px 0;border-bottom:1px solid rgba(230,230,230,.08);"><span class="text-mid small">Cliente que más compró</span><strong style="color:var(--c-white);">Restaurante El Fogón</strong></div>
+            <div class="flex justify-between items-center" style="padding:10px 0;border-bottom:1px solid rgba(230,230,230,.08);"><span class="text-mid small">Producto de mayor rotación</span><strong style="color:var(--c-white);">Costilla de res</strong></div>
+            <div class="flex justify-between items-center" style="padding:10px 0;border-bottom:1px solid rgba(230,230,230,.08);"><span class="text-mid small">Margen bruto estimado</span><strong style="color:var(--state-ok);">36.4%</strong></div>
+            <div class="flex justify-between items-center" style="padding:10px 0;"><span class="text-mid small">Pérdida sobre ventas</span><strong style="color:var(--state-warn);">2.9%</strong></div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="card">
+          <div class="card-title"><h3>Tendencia de ventas — últimas 5 semanas</h3></div>
+          <div class="bars" style="height:150px;">
+            <div class="bar" style="height:55%"><span>S27</span></div>
+            <div class="bar" style="height:62%"><span>S28</span></div>
+            <div class="bar" style="height:48%"><span>S29</span></div>
+            <div class="bar" style="height:74%"><span>S30</span></div>
+            <div class="bar" style="height:88%"><span>S31</span></div>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+  <script src="app.js"></script>
+
+</body>
+</html>

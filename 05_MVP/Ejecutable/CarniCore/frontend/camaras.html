@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cámaras frigoríficas · CarniCore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="app-shell">
+    <div id="sidebar-mount"></div>
+    <div class="main-col">
+      <div id="topbar-mount" data-title="Cámaras frigoríficas" data-eyebrow="Almacenamiento"></div>
+      <main class="page">
+
+        <div class="page-head">
+          <div>
+            <div class="breadcrumb">CarniCore / <span>Cámaras frigoríficas</span></div>
+            <h1>Cámaras frigoríficas</h1>
+            <p class="lead">Inventario diferenciado por sección: res, cerdo, pollo y embutidos (RF-07).</p>
+          </div>
+        </div>
+
+        <div class="grid-4">
+          <div class="chamber-card">
+            <span class="ch-temp"><i class="fa-solid fa-temperature-low"></i> -1.5 °C</span>
+            <div class="ch-icon"><i class="fa-solid fa-cow"></i></div>
+            <h3>Cámara Res</h3>
+            <div class="ch-sub">Capacidad 2,000 lb</div>
+            <div class="ch-bar-bg"><div class="ch-bar-fill" style="width:68%"></div></div>
+            <div class="ch-foot"><span>1,360 lb usados</span><span>68%</span></div>
+          </div>
+          <div class="chamber-card">
+            <span class="ch-temp"><i class="fa-solid fa-temperature-low"></i> -1.2 °C</span>
+            <div class="ch-icon"><i class="fa-solid fa-piggy-bank"></i></div>
+            <h3>Cámara Cerdo</h3>
+            <div class="ch-sub">Capacidad 1,500 lb</div>
+            <div class="ch-bar-bg"><div class="ch-bar-fill" style="width:44%"></div></div>
+            <div class="ch-foot"><span>660 lb usados</span><span>44%</span></div>
+          </div>
+          <div class="chamber-card">
+            <span class="ch-temp"><i class="fa-solid fa-temperature-low"></i> 2.0 °C</span>
+            <div class="ch-icon"><i class="fa-solid fa-drumstick-bite"></i></div>
+            <h3>Cámara Pollo</h3>
+            <div class="ch-sub">Capacidad 1,000 lb</div>
+            <div class="ch-bar-bg"><div class="ch-bar-fill" style="width:81%"></div></div>
+            <div class="ch-foot"><span>810 lb usados</span><span>81%</span></div>
+          </div>
+          <div class="chamber-card">
+            <span class="ch-temp"><i class="fa-solid fa-temperature-low"></i> 3.5 °C</span>
+            <div class="ch-icon"><i class="fa-solid fa-bacon"></i></div>
+            <h3>Cámara Embutidos</h3>
+            <div class="ch-sub">Capacidad 800 lb</div>
+            <div class="ch-bar-bg"><div class="ch-bar-fill" style="width:29%"></div></div>
+            <div class="ch-foot"><span>232 lb usados</span><span>29%</span></div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="card">
+          <div class="card-title"><h3>Detalle · Cámara Res</h3><a class="btn btn-ghost btn-sm" href="inventario.html">Ver inventario completo</a></div>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr><th>Producto</th><th>Peso</th><th>Ingreso</th><th>Vida útil</th></tr></thead>
+              <tbody>
+                <tr><td>Brazo</td><td>45 lb</td><td>02/08/2026</td><td><span class="badge badge-ok"><span class="badge-dot"></span>Óptimo</span></td></tr>
+                <tr><td>Pierna</td><td>60 lb</td><td>02/08/2026</td><td><span class="badge badge-ok"><span class="badge-dot"></span>Óptimo</span></td></tr>
+                <tr><td>Costilla</td><td>30 lb</td><td>29/07/2026</td><td><span class="badge badge-warn"><span class="badge-dot"></span>Próx. a vencer</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+  <script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iniciar sesión · CarniCore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-wrap">
+    <div class="login-side">
+      <div class="grain"></div>
+      <div style="position:relative;z-index:1;display:flex;align-items:center;gap:12px;">
+        <div class="mark" style="width:44px;height:44px;font-size:17px;">CC</div>
+        <div class="name" style="font-size:19px;">CarniCore</div>
+      </div>
+      <div class="quote">
+        “De la granja de origen a la venta final: control total del inventario, sin cuadernos ni hojas sueltas.”
+        <small>Sistema de trazabilidad, pesaje inteligente e inventario — Distribuidora Cárnicos Pucayacu, La Maná, Cotopaxi.</small>
+      </div>
+      <div class="small text-mid" style="position:relative;z-index:1;">© 2026 CarniCore · Prototipo visual UTEQ / ISR-401</div>
+    </div>
+
+    <div class="login-form-col">
+      <div class="login-box">
+        <div class="mark-lg">CC</div>
+        <h1>Bienvenida de nuevo</h1>
+        <p class="sub">Ingresa tus credenciales para acceder al panel de CarniCore.</p>
+
+        <form onsubmit="event.preventDefault(); window.location.href='dashboard.html';">
+          <div class="field">
+            <label>Usuario</label>
+            <input class="input" type="text" placeholder="usuario@carnicore.ec" value="gisela.ibanez">
+          </div>
+          <div class="field">
+            <label>Contraseña</label>
+            <div class="pw-field">
+              <input class="input" type="password" id="pwField" placeholder="••••••••" value="carnicore2026">
+              <button type="button" class="pw-toggle" onclick="togglePassword(this,'pwField')"><i class="fa-solid fa-eye"></i></button>
+            </div>
+          </div>
+          <div class="remember-row">
+            <div class="checkbox-row"><input type="checkbox" id="remember" checked><label for="remember">Recordarme</label></div>
+            <a href="#" class="text-mid">¿Olvidaste tu contraseña?</a>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block"><i class="fa-solid fa-right-to-bracket"></i> Ingresar</button>
+        </form>
+
+        <p class="foot-note">Prototipo visual — sin autenticación real. El botón navega directamente al Dashboard.</p>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

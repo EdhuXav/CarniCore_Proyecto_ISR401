@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alertas · CarniCore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="app-shell">
+    <div id="sidebar-mount"></div>
+    <div class="main-col">
+      <div id="topbar-mount" data-title="Alertas" data-eyebrow="Almacenamiento"></div>
+      <main class="page">
+
+        <div class="page-head">
+          <div>
+            <div class="breadcrumb">CarniCore / <span>Alertas</span></div>
+            <h1>Alertas</h1>
+            <p class="lead">Notificaciones de vencimiento, diferencias de inventario y bajas pendientes de aprobación.</p>
+          </div>
+          <button class="btn btn-outline btn-sm"><i class="fa-solid fa-check-double"></i> Marcar todas como leídas</button>
+        </div>
+
+        <div class="grid-2">
+          <div>
+            <div class="alert-item bad">
+              <div class="a-icon"><i class="fa-solid fa-circle-xmark"></i></div>
+              <div><div class="a-title">Producto vencido — Pollo entero (L-2201)</div><div class="a-desc">Superó el límite de vida útil de 3 días. Requiere baja inmediata.</div></div>
+              <div class="a-time">hace 2 h</div>
+            </div>
+            <div class="alert-item">
+              <div class="a-icon"><i class="fa-solid fa-hourglass-half"></i></div>
+              <div><div class="a-title">Costilla de res próxima a vencer</div><div class="a-desc">Queda 1 día antes del límite configurado para res.</div></div>
+              <div class="a-time">hace 3 h</div>
+            </div>
+            <div class="alert-item">
+              <div class="a-icon"><i class="fa-solid fa-clipboard-list"></i></div>
+              <div><div class="a-title">Diferencia detectada en conteo de inventario</div><div class="a-desc">Cámara Cerdo: -6 lb respecto al inventario del sistema.</div></div>
+              <div class="a-time">ayer</div>
+            </div>
+            <div class="alert-item ok">
+              <div class="a-icon"><i class="fa-solid fa-check"></i></div>
+              <div><div class="a-title">Baja aprobada</div><div class="a-desc">El administrador general aprobó la baja de 15 lb de pollo.</div></div>
+              <div class="a-time">ayer</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title"><h3>Configuración de alertas</h3></div>
+            <div class="field flex justify-between items-center" style="flex-direction:row;"><label style="margin:0;">Vencimiento de producto</label><input type="checkbox" checked></div>
+            <div class="field flex justify-between items-center" style="flex-direction:row;"><label style="margin:0;">Diferencias de inventario</label><input type="checkbox" checked></div>
+            <div class="field flex justify-between items-center" style="flex-direction:row;"><label style="margin:0;">Bajas pendientes de aprobación</label><input type="checkbox" checked></div>
+            <div class="field flex justify-between items-center" style="flex-direction:row;"><label style="margin:0;">Guías de origen incompletas</label><input type="checkbox"></div>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+  <script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vida útil · CarniCore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="app-shell">
+    <div id="sidebar-mount"></div>
+    <div class="main-col">
+      <div id="topbar-mount" data-title="Vida útil" data-eyebrow="Almacenamiento"></div>
+      <main class="page">
+
+        <div class="page-head">
+          <div>
+            <div class="breadcrumb">CarniCore / <span>Vida útil</span></div>
+            <h1>Control de vida útil</h1>
+            <p class="lead">Días restantes de conservación por tipo de producto, con alerta visual (RF-08).</p>
+          </div>
+        </div>
+
+        <div class="grid-3" style="margin-bottom:22px;">
+          <div class="card"><div class="flex items-center gap-12"><div class="icon-badge" style="background:rgba(63,167,115,.14);color:var(--state-ok);"><i class="fa-solid fa-check"></i></div><div><div class="kpi-label">Óptimo</div><div class="kpi-value" style="font-size:22px;">142</div></div></div></div>
+          <div class="card"><div class="flex items-center gap-12"><div class="icon-badge" style="background:rgba(214,166,60,.14);color:var(--state-warn);"><i class="fa-solid fa-triangle-exclamation"></i></div><div><div class="kpi-label">Próximos a vencer</div><div class="kpi-value" style="font-size:22px;">18</div></div></div></div>
+          <div class="card"><div class="flex items-center gap-12"><div class="icon-badge" style="background:rgba(193,80,63,.14);color:var(--state-bad);"><i class="fa-solid fa-circle-xmark"></i></div><div><div class="kpi-label">Vencidos</div><div class="kpi-value" style="font-size:22px;">4</div></div></div></div>
+        </div>
+
+        <div class="card">
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr><th>Producto</th><th>Tipo</th><th>Ingreso a cámara</th><th>Límite (días)</th><th>Días restantes</th><th>Estado</th></tr></thead>
+              <tbody>
+                <tr><td>Pollo entero — L-2201</td><td>Pollo</td><td>30/07/2026</td><td>3</td><td>-1</td><td><span class="badge badge-bad"><span class="badge-dot"></span>Vencido</span></td></tr>
+                <tr><td>Costilla de res</td><td>Res</td><td>29/07/2026</td><td>5</td><td>1</td><td><span class="badge badge-warn"><span class="badge-dot"></span>Próximo a vencer</span></td></tr>
+                <tr><td>Chuleta de cerdo</td><td>Cerdo</td><td>01/08/2026</td><td>6</td><td>5</td><td><span class="badge badge-ok"><span class="badge-dot"></span>Óptimo</span></td></tr>
+                <tr><td>Chorizo</td><td>Embutido</td><td>28/07/2026</td><td>10</td><td>7</td><td><span class="badge badge-ok"><span class="badge-dot"></span>Óptimo</span></td></tr>
+                <tr><td>Brazo de res</td><td>Res</td><td>02/08/2026</td><td>5</td><td>5</td><td><span class="badge badge-ok"><span class="badge-dot"></span>Óptimo</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+  <script src="app.js"></script>
+
+</body>
+</html>

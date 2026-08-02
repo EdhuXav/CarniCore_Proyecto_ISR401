@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movimientos de inventario · CarniCore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="app-shell">
+    <div id="sidebar-mount"></div>
+    <div class="main-col">
+      <div id="topbar-mount" data-title="Movimientos de inventario" data-eyebrow="Comercial"></div>
+      <main class="page">
+
+        <div class="page-head">
+          <div>
+            <div class="breadcrumb">CarniCore / <span>Movimientos</span></div>
+            <h1>Movimientos de inventario</h1>
+            <p class="lead">Historial de ingresos y egresos por cámara y fecha (RF-16).</p>
+          </div>
+          <button class="btn btn-outline"><i class="fa-solid fa-download"></i> Exportar</button>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-title"><h3>Línea de tiempo</h3></div>
+            <div class="timeline">
+              <div class="timeline-item active"><div class="timeline-dot"><i class="fa-solid fa-arrow-down"></i></div>
+                <div class="timeline-card"><h4>Ingreso · Res, canal #A-1042</h4><div class="meta">Cámara Res · +312 lb · 02/08 08:12</div></div></div>
+              <div class="timeline-item active"><div class="timeline-dot"><i class="fa-solid fa-arrow-up"></i></div>
+                <div class="timeline-card"><h4>Venta · Cerdo, costilla</h4><div class="meta">Cámara Cerdo · -48 lb · 02/08 07:50</div></div></div>
+              <div class="timeline-item"><div class="timeline-dot"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                <div class="timeline-card"><h4>Baja · Pollo entero</h4><div class="meta">Cámara Pollo · -15 lb · 01/08 17:30</div></div></div>
+              <div class="timeline-item"><div class="timeline-dot"><i class="fa-solid fa-arrow-down"></i></div>
+                <div class="timeline-card"><h4>Ingreso · Embutido, chorizo</h4><div class="meta">Cámara Embutidos · +60 lb · 01/08 14:05</div></div></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title"><h3>Filtros</h3></div>
+            <div class="field"><label>Cámara</label><select><option>Todas</option><option>Res</option><option>Cerdo</option><option>Pollo</option><option>Embutidos</option></select></div>
+            <div class="field"><label>Tipo de movimiento</label><select><option>Todos</option><option>Ingreso</option><option>Venta</option><option>Baja</option></select></div>
+            <div class="field"><label>Rango de fechas</label>
+              <div class="flex gap-8"><input class="input" type="date"><input class="input" type="date"></div>
+            </div>
+            <button class="btn btn-primary btn-block"><i class="fa-solid fa-filter"></i> Aplicar filtros</button>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="card">
+          <div class="card-title"><h3>Detalle tabular</h3></div>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr><th>Fecha</th><th>Tipo</th><th>Producto</th><th>Cámara</th><th>Cantidad</th></tr></thead>
+              <tbody>
+                <tr><td>02/08 08:12</td><td><span class="badge badge-ok"><span class="badge-dot"></span>Ingreso</span></td><td>Res, canal #A-1042</td><td>Cámara Res</td><td>+312 lb</td></tr>
+                <tr><td>02/08 07:50</td><td><span class="badge badge-neutral"><span class="badge-dot"></span>Venta</td><td>Costilla de cerdo</td><td>Cámara Cerdo</td><td>-48 lb</td></tr>
+                <tr><td>01/08 17:30</td><td><span class="badge badge-bad"><span class="badge-dot"></span>Baja</span></td><td>Pollo entero</td><td>Cámara Pollo</td><td>-15 lb</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+  <script src="app.js"></script>
+
+</body>
+</html>

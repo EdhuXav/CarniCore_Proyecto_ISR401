@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inicio · CarniCore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="app-shell">
+    <div id="sidebar-mount"></div>
+    <div class="main-col">
+      <div id="topbar-mount" data-title="Inicio" data-eyebrow="Bienvenida"></div>
+      <main class="page">
+
+        <div class="page-head">
+          <div>
+            <div class="breadcrumb">CarniCore / <span>Inicio</span></div>
+            <h1>Bienvenida a CarniCore</h1>
+            <p class="lead">Sistema de trazabilidad, pesaje inteligente e inventario para Distribuidora Cárnicos Pucayacu — La Maná, Cotopaxi.</p>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <div class="card-title"><div class="icon-badge"><i class="fa-solid fa-route"></i></div></div>
+            <h3 style="font-size:16px;margin-bottom:6px;">Trazabilidad completa</h3>
+            <p class="small text-mid">Desde la granja de origen hasta la venta final, cada producto queda vinculado a su guía, pesaje y despiece.</p>
+          </div>
+          <div class="card">
+            <div class="card-title"><div class="icon-badge"><i class="fa-solid fa-weight-scale"></i></div></div>
+            <h3 style="font-size:16px;margin-bottom:6px;">Pesaje inteligente</h3>
+            <p class="small text-mid">Cálculo automático del costo por libra al registrar el peso de cada producto.</p>
+          </div>
+          <div class="card">
+            <div class="card-title"><div class="icon-badge"><i class="fa-solid fa-hourglass-half"></i></div></div>
+            <h3 style="font-size:16px;margin-bottom:6px;">Control de vida útil</h3>
+            <p class="small text-mid">Alertas automáticas antes de que un producto llegue a su límite de conservación.</p>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="card">
+          <div class="card-title"><h3>Módulos del sistema</h3></div>
+          <div class="grid-4">
+            <a class="chamber-card" href="proveedores.html" style="text-decoration:none;">
+              <div class="ch-icon"><i class="fa-solid fa-truck-field"></i></div>
+              <h3>Proveedores</h3>
+              <p class="ch-sub">Gestión de granjas y proveedores certificados.</p>
+            </a>
+            <a class="chamber-card" href="pesaje.html" style="text-decoration:none;">
+              <div class="ch-icon"><i class="fa-solid fa-weight-scale"></i></div>
+              <h3>Pesaje</h3>
+              <p class="ch-sub">Registro de peso y cálculo de costos.</p>
+            </a>
+            <a class="chamber-card" href="inventario.html" style="text-decoration:none;">
+              <div class="ch-icon"><i class="fa-solid fa-warehouse"></i></div>
+              <h3>Inventario</h3>
+              <p class="ch-sub">Stock por cámara y sección.</p>
+            </a>
+            <a class="chamber-card" href="reportes.html" style="text-decoration:none;">
+              <div class="ch-icon"><i class="fa-solid fa-chart-column"></i></div>
+              <h3>Reportes</h3>
+              <p class="ch-sub">Ventas, compras y pérdidas por período.</p>
+            </a>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+  <script src="app.js"></script>
+
+</body>
+</html>

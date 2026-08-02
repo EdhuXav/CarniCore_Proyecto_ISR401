@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guías de origen · CarniCore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="app-shell">
+    <div id="sidebar-mount"></div>
+    <div class="main-col">
+      <div id="topbar-mount" data-title="Guías de origen" data-eyebrow="Recepción"></div>
+      <main class="page">
+
+        <div class="page-head">
+          <div>
+            <div class="breadcrumb">CarniCore / <span>Guías de origen</span></div>
+            <h1>Guías de origen y movilización</h1>
+            <p class="lead">Documento oficial de Agrocalidad que certifica procedencia y arete de los animales (RF-02).</p>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-title"><h3>Registrar nueva guía</h3></div>
+            <form onsubmit="event.preventDefault();alert('Prototipo visual: sin lógica de guardado.');">
+              <div class="form-grid">
+                <div class="field"><label>Número de guía</label><input class="input" type="text" placeholder="AGR-2026-0000"></div>
+                <div class="field"><label>Proveedor</label><select><option>Granja San Vicente</option><option>Porcícola El Roble</option><option>Avícola Los Andes</option></select></div>
+                <div class="field"><label>Cantidad de canales</label><input class="input" type="number" placeholder="0"></div>
+                <div class="field"><label>Fecha de emisión</label><input class="input" type="date"></div>
+                <div class="field span-2"><label>Médico veterinario</label><input class="input" type="text" placeholder="Nombre del veterinario de planta"></div>
+                <div class="field span-2 checkbox-row"><input type="checkbox" id="firmaVet"><label for="firmaVet" style="text-transform:none;font-weight:500;margin:0;color:var(--c-light-gray);">Confirmo que el documento fue firmado por el médico veterinario de planta</label></div>
+              </div>
+              <div class="flex gap-8" style="justify-content:flex-end;">
+                <button type="button" class="btn btn-outline">Cancelar</button>
+                <button type="submit" class="btn btn-primary"><i class="fa-solid fa-check"></i> Guardar guía</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="card">
+            <div class="card-title"><h3>Requisitos</h3></div>
+            <div class="notice"><i class="fa-solid fa-circle-info"></i>No se puede registrar un lote sin una guía de origen asociada (RF-02).</div>
+            <div class="notice"><i class="fa-solid fa-circle-info"></i>La guía debe incluir la validación del sello veterinario antes de su aprobación.</div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="card">
+          <div class="card-title"><h3>Guías registradas</h3></div>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr><th>N.° guía</th><th>Proveedor</th><th>Canales</th><th>Veterinario</th><th>Fecha</th><th>Estado</th></tr></thead>
+              <tbody>
+                <tr><td class="mono">AGR-2026-0113</td><td>Granja San Vicente</td><td>4</td><td>Dr. F. Naranjo</td><td>28/07/2026</td><td><span class="badge badge-ok"><span class="badge-dot"></span>Validada</span></td></tr>
+                <tr><td class="mono">AGR-2026-0087</td><td>Porcícola El Roble</td><td>6</td><td>Dra. M. Salazar</td><td>27/07/2026</td><td><span class="badge badge-ok"><span class="badge-dot"></span>Validada</span></td></tr>
+                <tr><td class="mono">AGR-2026-0221</td><td>Avícola Los Andes</td><td>120</td><td>—</td><td>26/07/2026</td><td><span class="badge badge-warn"><span class="badge-dot"></span>Falta sello</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+  <script src="app.js"></script>
+
+</body>
+</html>

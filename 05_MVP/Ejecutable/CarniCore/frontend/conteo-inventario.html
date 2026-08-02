@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conteo de inventario · CarniCore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="app-shell">
+    <div id="sidebar-mount"></div>
+    <div class="main-col">
+      <div id="topbar-mount" data-title="Conteo de inventario" data-eyebrow="Comercial"></div>
+      <main class="page">
+
+        <div class="page-head">
+          <div>
+            <div class="breadcrumb">CarniCore / <span>Conteo de inventario</span></div>
+            <h1>Conteo de inventario</h1>
+            <p class="lead">Conteo físico semanal por cámara, comparado contra el inventario del sistema (RF-12).</p>
+          </div>
+          <button class="btn btn-primary"><i class="fa-solid fa-floppy-disk"></i> Guardar conteo</button>
+        </div>
+
+        <div class="card">
+          <div class="toolbar">
+            <div class="toolbar-left">
+              <select><option>Cámara Res</option><option>Cámara Cerdo</option><option>Cámara Pollo</option><option>Cámara Embutidos</option></select>
+              <span class="badge badge-neutral"><span class="badge-dot"></span>Semana 31 · 2026</span>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr><th>Producto</th><th>Sistema (lb)</th><th>Conteo físico (lb)</th><th>Diferencia</th></tr></thead>
+              <tbody>
+                <tr><td>Brazo de res</td><td>45</td><td><input class="input" type="number" value="45" style="max-width:110px;padding:8px 10px;"></td><td><span class="badge badge-ok"><span class="badge-dot"></span>0 lb</span></td></tr>
+                <tr><td>Pierna de res</td><td>60</td><td><input class="input" type="number" value="57" style="max-width:110px;padding:8px 10px;"></td><td><span class="badge badge-warn"><span class="badge-dot"></span>-3 lb</span></td></tr>
+                <tr><td>Costilla de res</td><td>30</td><td><input class="input" type="number" value="30" style="max-width:110px;padding:8px 10px;"></td><td><span class="badge badge-ok"><span class="badge-dot"></span>0 lb</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="notice" style="margin-top:16px;"><i class="fa-solid fa-circle-info"></i>Diferencia total de la cámara: <strong style="color:var(--state-warn);">-3 lb</strong> (≈ -$6.30 al precio configurado).</div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+  <script src="app.js"></script>
+
+</body>
+</html>

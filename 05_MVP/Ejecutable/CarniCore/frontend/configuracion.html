@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Configuración · CarniCore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="app-shell">
+    <div id="sidebar-mount"></div>
+    <div class="main-col">
+      <div id="topbar-mount" data-title="Configuración" data-eyebrow="Gestión"></div>
+      <main class="page">
+
+        <div class="page-head">
+          <div>
+            <div class="breadcrumb">CarniCore / <span>Configuración</span></div>
+            <h1>Configuración</h1>
+            <p class="lead">Preferencias del sistema, tema visual y datos de la empresa.</p>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-title"><h3>Datos de la empresa</h3></div>
+            <div class="form-grid">
+              <div class="field span-2"><label>Razón social</label><input class="input" type="text" value="Distribuidora Cárnicos Pucayacu"></div>
+              <div class="field"><label>RUC</label><input class="input" type="text" value="1892034561001"></div>
+              <div class="field"><label>Teléfono</label><input class="input" type="text" value="03 2 700 000"></div>
+              <div class="field span-2"><label>Dirección</label><input class="input" type="text" value="La Maná, Cotopaxi, Ecuador"></div>
+            </div>
+            <button class="btn btn-primary"><i class="fa-solid fa-check"></i> Guardar cambios</button>
+          </div>
+
+          <div class="card">
+            <div class="card-title"><h3>Preferencias</h3></div>
+            <div class="field flex justify-between items-center" style="flex-direction:row;"><label style="margin:0;">Modo compacto de tablas</label><input type="checkbox"></div>
+            <div class="field flex justify-between items-center" style="flex-direction:row;"><label style="margin:0;">Notificaciones por correo</label><input type="checkbox" checked></div>
+            <div class="field flex justify-between items-center" style="flex-direction:row;"><label style="margin:0;">Modo de contingencia (offline)</label><input type="checkbox" checked></div>
+            <div class="divider"></div>
+            <div class="field"><label>Idioma</label><select><option>Español (Ecuador)</option><option>English</option></select></div>
+            <div class="field mb-0"><label>Tema</label>
+              <div class="flex gap-8">
+                <div class="input" style="text-align:center;background:var(--c-main);border-color:var(--c-mid-gray);flex:1;">Oscuro (activo)</div>
+                <div class="input" style="text-align:center;background:var(--c-secondary);flex:1;opacity:.5;">Claro (no disponible)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="card">
+          <div class="card-title"><h3>Vida útil por tipo de producto</h3></div>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr><th>Tipo de producto</th><th>Días de vida útil</th><th></th></tr></thead>
+              <tbody>
+                <tr><td>Pollo</td><td><input class="input" type="number" value="3" style="max-width:90px;padding:8px 10px;"></td><td><button class="btn btn-ghost btn-sm">Guardar</button></td></tr>
+                <tr><td>Res</td><td><input class="input" type="number" value="5" style="max-width:90px;padding:8px 10px;"></td><td><button class="btn btn-ghost btn-sm">Guardar</button></td></tr>
+                <tr><td>Cerdo</td><td><input class="input" type="number" value="6" style="max-width:90px;padding:8px 10px;"></td><td><button class="btn btn-ghost btn-sm">Guardar</button></td></tr>
+                <tr><td>Embutidos</td><td><input class="input" type="number" value="10" style="max-width:90px;padding:8px 10px;"></td><td><button class="btn btn-ghost btn-sm">Guardar</button></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+  <script src="app.js"></script>
+
+</body>
+</html>
