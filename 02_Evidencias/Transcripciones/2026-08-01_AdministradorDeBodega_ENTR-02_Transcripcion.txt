@@ -1,10 +1,9 @@
 Código de participante: ENTR-02
-Rol: Administrador de bodega
-Fecha: 01/08/2026
+Fecha: 2026-08-01
 ID de evidencia: EV-20
 
 [Entrevistador]: Buenas noches, gracias por su tiempo. Esta noche voy a hacer algunas preguntas relacionadas con los procesos de la distribuidora, con el fin de entender mejor cómo se manejan actualmente ciertas actividades del negocio. No hay respuesta correcta o incorrecta, solo cuénteme cómo se hacen las cosas en la práctica. Cuando esté listo empezamos. Vamos con el bloque 1, sobre la información general del entrevistado. ¿Cuál es su cargo dentro de la distribuidora?
-[ENTR-02]: Yo soy administrador de bodega aquí en la planta central.
+[ENTR-02]: Trabajo en el área de almacenamiento y control de productos.
 [Entrevistador]: ¿Cuáles son sus principales responsabilidades en el proceso de negocio?
 [ENTR-02]: Bueno, yo superviso todo lo que entra y sale de la bodega central, reviso que el pesaje cuadre, organizo dónde va cada producto en la cámara, autorizo las salidas hacia las sucursales y controlo que el personal cumpla las normas de manipulación. Y cuando hay que dar de baja algún producto, ahí sí yo soy el que levanta el sustento, o sea el peso y la foto, y se lo paso al administrador general, que es quien ya autoriza esa baja; él junto con la propietaria deciden si hace falta ajustar algo, sea con los proveedores o con nosotros mismos en bodega.
 [Entrevistador]: Bueno, siguiendo con el bloque de gestión de lotes, ¿cómo describiría el proceso actual de conformación y control de lotes? ¿Cómo identifica y diferencia un lote de otro actualmente?
