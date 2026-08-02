@@ -1,0 +1,215 @@
+Evidencia: EV-02
+Participante: P02
+Tipo de participante: Operario de Recepción y Pesaje
+Fecha de transcripción: 02/08/2026
+====================================================
+TRANSCRIPCIÓN ANONIMIZADA
+====================================================
+
+Entrevistador:
+Buenas noches, muchas gracias por aceptar esta entrevista para el sistema de gestión de un centro cárnico. Antes de comenzar, ¿acepta la grabación de audio y video?
+
+Participante P02:
+Buenas noches, sí, está bien, no pasa nada.
+
+Entrevistador:
+¿Cuál es su nombre y apellido?
+
+Participante P02:
+[Dato omitido por confidencialidad – Participante P02].
+
+Entrevistador:
+¿Qué cargo ostenta en la distribuidora?
+
+Participante P02:
+Trabajo en el área de recepción y pesaje, y también ayudo en bodega de vez en cuando.
+
+Entrevistador:
+¿Cuáles son sus principales responsabilidades en el puesto de trabajo que desempeña?
+
+Participante P02:
+Cuando llega el producto, lo recibo, lo peso y lo anoto en un cuaderno. Después ayudo a guardarlo en las cámaras, dependiendo si es cerdo o res. También verifico que toda la documentación esté completa antes de recibir la mercadería.
+
+Entrevistador:
+¿Qué herramientas o medios utiliza actualmente para realizar su trabajo? ¿Papel, Excel, celular o algún sistema?
+
+Participante P02:
+Todo lo hago en un cuaderno; no contamos con ningún tipo de tecnología, todo se anota a mano.
+
+BLOQUE: RECEPCIÓN Y VALIDACIÓN DE PROVEEDORES
+----------------------------------------------------
+
+Entrevistador:
+Cuando llega el producto, ¿qué documentos se encarga de revisar antes de aceptarlo?
+
+Participante P02:
+Lo primero que reviso es que venga la guía y que el animal tenga todos los sellos correspondientes. Si falta alguno de esos requisitos, lamentablemente no se puede recibir hasta que todo esté completo.
+
+Entrevistador:
+Si tuviera un sistema para su trabajo, ¿qué le gustaría que hiciera automáticamente al momento de recibir a un proveedor?
+
+Participante P02:
+Me gustaría que el sistema avise si un proveedor no está habilitado o si le falta algún documento, y que además guarde un historial de cada proveedor, para saber fácilmente si ha tenido algún problema anteriormente.
+
+Entrevistador:
+¿Ha tenido algún caso donde tuvo que rechazar una entrega? ¿Cómo lo manejó?
+
+Participante P02:
+Sí, en una ocasión llegó un lote de pollos sin la guía completa. Tuvimos que dejarlo en el camión hasta que el proveedor envió el documento faltante, lo que generó una pérdida considerable de tiempo. Como todo quedó registrado únicamente en papel, después casi nadie recordaba bien los detalles de lo ocurrido.
+
+BLOQUE: REGISTRO Y TRAZABILIDAD DE ANIMALES
+----------------------------------------------------
+
+Entrevistador:
+¿Qué datos anota usted cuando llega un animal o un lote de producto?
+
+Participante P02:
+Anoto el peso de cada animal en el cuaderno y el proveedor del que proviene. En el caso del cerdo, si todavía trae el arete, también lo verifico antes de que pase al faenamiento.
+
+Entrevistador:
+¿Podría describir cómo realiza el registro de un animal desde que llega hasta que queda anotado?
+
+Participante P02:
+El animal llega, lo pesamos en la báscula, yo digo el peso en voz alta y un compañero lo anota en el cuaderno junto con la fecha. Ese cuaderno queda guardado en la oficina y prácticamente nadie lo vuelve a revisar hasta que se necesita algún dato.
+
+Entrevistador:
+¿Qué problema le genera no tener esa información en un sistema digital?
+
+Participante P02:
+El problema más grande es que si alguien solicita un dato de semanas atrás, hay que revisar hoja por hoja hasta encontrarlo, y en ocasiones ni siquiera se logra porque la letra de algún compañero es difícil de leer. Con un sistema, bastaría con buscar el nombre o la fecha para que apareciera toda la información, lo cual sería mucho más eficiente.
+
+Entrevistador:
+Si el sistema pudiera generar un código o número para cada lote que ingresa, ¿le parecería útil?
+
+Participante P02:
+Sí, me parecería bastante útil, ya que permitiría identificar rápidamente el origen de cada producto sin necesidad de preguntar o buscar en el cuaderno. También ayudaría en caso de algún reclamo, pues se sabría exactamente qué lote fue el vendido.
+
+BLOQUE: GESTIÓN DE INVENTARIO Y BODEGA
+----------------------------------------------------
+
+Entrevistador:
+¿Tiene usted algún registro propio del inventario que hay en bodega?
+
+Participante P02:
+No, eso lo lleva el administrador. Yo tengo una idea aproximada porque lo veo a diario, pero no llevo un registro escrito de esa información.
+
+Entrevistador:
+¿Qué le gustaría que le mostrara un sistema de inventario para saber rápidamente qué hay disponible?
+
+Participante P02:
+Me gustaría poder visualizar de un vistazo cuánto queda de cada producto, separado por tipo: cerdo, res, pollo y embutidos. Así no tendría que ir físicamente a contar cada vez que alguien pregunta cuánto stock hay.
+
+Entrevistador:
+¿Les resulta fácil ubicar un producto específico cuando se lo piden con urgencia?
+
+Participante P02:
+Depende. Si es un producto de alta rotación, como las piernas de cerdo, es fácil de ubicar. Pero si es algo que no se pide con tanta frecuencia, a veces hay que buscar entre varias secciones de la cámara, lo que genera pérdida de tiempo cuando el pedido es urgente.
+
+Entrevistador:
+¿Le gustaría que el sistema avise cuando un producto está por agotarse o cuando lleva mucho tiempo almacenado?
+
+Participante P02:
+Claro, eso sería muy útil, porque a veces no nos damos cuenta de que un producto lleva varios días guardado hasta que ya está por dañarse. Una alerta automática ayudaría a venderlo a tiempo y evitaría pérdidas.
+
+BLOQUE: RECEPCIÓN, PESAJE Y DESPIECE
+----------------------------------------------------
+
+Entrevistador:
+¿Qué pasos sigue usted desde que llega el animal hasta que queda listo para clasificar?
+
+Participante P02:
+Primero se pesa el camión completo, luego se descarga y se pesa cada parte por separado, y posteriormente pasa con los carniceros, quienes despostan según lo que solicitan los clientes.
+
+Entrevistador:
+¿Qué problemas o inconvenientes ha tenido con el pesaje manual?
+
+Participante P02:
+A veces es lento porque hay que pesar uno por uno y anotar manualmente; si hay mucha demanda, se atrasa todo el proceso. También se presta para confusiones cuando dos personas anotan pesos distintos y no queda claro cuál es el dato correcto.
+
+Entrevistador:
+Si pudiera pedir una función específica del sistema relacionada con el pesaje, ¿cuál sería?
+
+Participante P02:
+Sería bueno que la báscula se pudiera conectar directamente al sistema, para que el peso se registre automáticamente sin que nadie tenga que anotarlo. Eso evitaría errores y ahorraría tiempo en horas de mucha demanda.
+
+Entrevistador:
+¿Cuánto tiempo cree usted que se pierde al día solo en el proceso de pesaje manual?
+
+Participante P02:
+Fácilmente se pierde una hora entre pesar, anotar y confirmar los datos con el compañero, sobre todo en los días de mayor demanda.
+
+Entrevistador:
+Durante el despiece, ¿usted anota alguna información? ¿Le gustaría que el sistema registrara algo en ese momento?
+
+Participante P02:
+No, en ese momento no se anota nada; solo se separan las partes según el pedido. Me gustaría que el sistema permitiera registrar cuántas piezas salen de cada animal, para conocer el rendimiento real y no calcularlo de forma aproximada, como se hace actualmente.
+
+BLOQUE: CONSERVACIÓN Y FRESCURA
+----------------------------------------------------
+
+Entrevistador:
+¿Cómo sabe usted que un producto ya está por vencer o por dañarse?
+
+Participante P02:
+Por el tiempo que lleva en la cámara. Por ejemplo, sabemos que el pollo no puede pasar de tres días, por lo que tratamos de venderlo primero, basándonos en la memoria, ya que no existe un registro escrito que lo recuerde.
+
+Entrevistador:
+¿Qué señales le indican que un producto ya no está fresco?
+
+Participante P02:
+El olor y el calor son las señales más claras de que el producto se está descomponiendo.
+
+Entrevistador:
+¿Le serviría que el sistema calculara automáticamente los días que lleva un producto almacenado y avisara cuándo está por vencerse?
+
+Participante P02:
+Sí, ayudaría bastante, porque actualmente eso depende de que uno lo recuerde o lo calcule mentalmente. Si el sistema mostrara una alerta con los días restantes, sería mucho más fácil priorizar la venta y evitar pérdidas.
+
+Entrevistador:
+¿Cuál es el mayor problema que enfrenta para mantener el producto en buen estado?
+
+Participante P02:
+Los apagones eléctricos, ya que cuando se va la energía por varias horas, la cámara se calienta y el producto puede dañarse, generando mal olor y pérdidas.
+
+BLOQUE: REPORTES, COMUNICACIÓN Y NECESIDADES DEL SISTEMA
+----------------------------------------------------
+
+Entrevistador:
+¿Usted reporta algo a sus superiores sobre lo que ocurre en su turno? ¿Cómo lo hace?
+
+Participante P02:
+Sí, al final del día le comento al administrador cuánto se recibió, cuánto se despachó y si hubo algún problema con el producto. Todo se hace de manera verbal o, en ocasiones, mediante un mensaje de WhatsApp; no queda un reporte formal guardado.
+
+Entrevistador:
+¿Qué información le gustaría tener a la mano para hacer mejor su trabajo?
+
+Participante P02:
+Me gustaría saber rápidamente cuánto stock queda de cada producto sin tener que contarlo físicamente, y también contar con un resumen de lo recibido y despachado en mi turno sin tener que reconstruirlo de memoria.
+
+Entrevistador:
+Si el sistema le permitiera generar un reporte de su turno con solo un botón, ¿qué información le gustaría que incluyera?
+
+Participante P02:
+Me gustaría que incluyera cuánto producto entró y salió, de qué proveedor provino, y si hubo alguna novedad, como un rechazo o un faltante, para que el administrador tenga la información clara sin necesidad de explicarla verbalmente cada vez.
+
+Entrevistador:
+Pensando en su trabajo diario, ¿cuál cree que sería la función más importante que debería tener el nuevo sistema?
+
+Participante P02:
+Para mí lo más importante sería que todo el registro de pesos y productos se realice automáticamente, sin tanto papel de por medio, ya que eso reduciría errores, ahorraría tiempo y brindaría información más confiable para la toma de decisiones.
+
+Entrevistador:
+¿Qué tan dispuesto estaría a usar un sistema digital en lugar de llevar anotaciones en cuaderno? ¿Qué necesitaría para sentirse cómodo usándolo?
+
+Participante P02:
+Totalmente dispuesto, ya que sería mucho más rápido y ordenado que el método actual. Eso sí, necesitaría que el sistema sea sencillo de usar, con pantallas claras, ya que no todo el personal del área está acostumbrado a manejar sistemas complejos.
+
+Entrevistador:
+Muchas gracias por su participación. Con esto concluimos la entrevista.
+
+Participante P02:
+Con mucho gusto. Espero que les haya servido de ayuda.
+
+====================================================
+FIN DE LA TRANSCRIPCIÓN
+====================================================
