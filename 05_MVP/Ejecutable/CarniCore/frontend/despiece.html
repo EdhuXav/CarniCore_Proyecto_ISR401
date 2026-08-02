@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Despiece y clasificación · CarniCore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="app-shell">
+    <div id="sidebar-mount"></div>
+    <div class="main-col">
+      <div id="topbar-mount" data-title="Despiece y clasificación" data-eyebrow="Pesaje y despiece"></div>
+      <main class="page">
+
+        <div class="page-head">
+          <div>
+            <div class="breadcrumb">CarniCore / <span>Despiece</span></div>
+            <h1>Despiece y clasificación de cortes</h1>
+            <p class="lead">Registro de cortes obtenidos al despostar un animal y su peso individual (RF-06).</p>
+          </div>
+          <span class="badge badge-neutral"><span class="badge-dot"></span>Animal base: 312 lb</span>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <div class="card-title"><h3>Brazos</h3><div class="icon-badge"><i class="fa-solid fa-scissors"></i></div></div>
+            <div class="field"><label>Peso registrado (lb)</label><input class="input" type="number" placeholder="0.0"></div>
+            <button class="btn btn-ghost btn-block btn-sm"><i class="fa-solid fa-plus"></i> Añadir corte</button>
+          </div>
+          <div class="card">
+            <div class="card-title"><h3>Piernas</h3><div class="icon-badge"><i class="fa-solid fa-scissors"></i></div></div>
+            <div class="field"><label>Peso registrado (lb)</label><input class="input" type="number" placeholder="0.0"></div>
+            <button class="btn btn-ghost btn-block btn-sm"><i class="fa-solid fa-plus"></i> Añadir corte</button>
+          </div>
+          <div class="card">
+            <div class="card-title"><h3>Costillas</h3><div class="icon-badge"><i class="fa-solid fa-scissors"></i></div></div>
+            <div class="field"><label>Peso registrado (lb)</label><input class="input" type="number" placeholder="0.0"></div>
+            <button class="btn btn-ghost btn-block btn-sm"><i class="fa-solid fa-plus"></i> Añadir corte</button>
+          </div>
+          <div class="card">
+            <div class="card-title"><h3>Lomos</h3><div class="icon-badge"><i class="fa-solid fa-scissors"></i></div></div>
+            <div class="field"><label>Peso registrado (lb)</label><input class="input" type="number" placeholder="0.0"></div>
+            <button class="btn btn-ghost btn-block btn-sm"><i class="fa-solid fa-plus"></i> Añadir corte</button>
+          </div>
+          <div class="card">
+            <div class="card-title"><h3>Cabeza</h3><div class="icon-badge"><i class="fa-solid fa-scissors"></i></div></div>
+            <div class="field"><label>Peso registrado (lb)</label><input class="input" type="number" placeholder="0.0"></div>
+            <button class="btn btn-ghost btn-block btn-sm"><i class="fa-solid fa-plus"></i> Añadir corte</button>
+          </div>
+          <div class="card">
+            <div class="card-title"><h3>Otros cortes</h3><div class="icon-badge"><i class="fa-solid fa-scissors"></i></div></div>
+            <div class="field"><label>Descripción</label><input class="input" type="text" placeholder="Ej. vísceras, hueso"></div>
+            <div class="field"><label>Peso registrado (lb)</label><input class="input" type="number" placeholder="0.0"></div>
+            <button class="btn btn-ghost btn-block btn-sm"><i class="fa-solid fa-plus"></i> Añadir corte</button>
+          </div>
+        </div>
+
+        <div class="notice" style="margin-top:20px;"><i class="fa-solid fa-circle-info"></i>La suma de los pesos de los cortes no debe superar el peso del animal ingresado, con un margen de merma configurable.</div>
+
+        <div class="card">
+          <div class="card-title"><h3>Cortes registrados</h3></div>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr><th>Tipo de corte</th><th>Peso</th><th>Fecha de despiece</th><th>Destino</th></tr></thead>
+              <tbody>
+                <tr><td>Brazo</td><td>45 lb</td><td>02/08/2026</td><td>Cámara Res</td></tr>
+                <tr><td>Pierna</td><td>60 lb</td><td>02/08/2026</td><td>Cámara Res</td></tr>
+                <tr><td>Costilla</td><td>30 lb</td><td>02/08/2026</td><td>Cámara Res</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+  <script src="app.js"></script>
+
+</body>
+</html>

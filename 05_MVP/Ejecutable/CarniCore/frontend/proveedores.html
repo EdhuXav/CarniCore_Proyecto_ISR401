@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proveedores · CarniCore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="app-shell">
+    <div id="sidebar-mount"></div>
+    <div class="main-col">
+      <div id="topbar-mount" data-title="Proveedores" data-eyebrow="Recepción"></div>
+      <main class="page">
+
+        <div class="page-head">
+          <div>
+            <div class="breadcrumb">CarniCore / <span>Proveedores</span></div>
+            <h1>Proveedores</h1>
+            <p class="lead">Registro de proveedores y granjas certificadas ante Agrocalidad (RF-01).</p>
+          </div>
+          <button class="btn btn-primary"><i class="fa-solid fa-plus"></i> Nuevo proveedor</button>
+        </div>
+
+        <div class="card">
+          <div class="toolbar">
+            <div class="toolbar-left">
+              <div class="search-field"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Buscar por RUC o nombre..." oninput="filterTable(this,'tblProveedores')"></div>
+              <select><option>Todos los tipos</option><option>Res</option><option>Cerdo</option><option>Pollo</option></select>
+            </div>
+            <div class="toolbar-right">
+              <button class="btn btn-outline btn-sm"><i class="fa-solid fa-filter"></i> Filtros</button>
+              <button class="btn btn-outline btn-sm"><i class="fa-solid fa-download"></i> Exportar</button>
+            </div>
+          </div>
+
+          <div class="table-wrap">
+            <table class="data-table" id="tblProveedores">
+              <thead><tr><th>RUC</th><th>Nombre</th><th>Tipo animal</th><th>Registro sanitario</th><th>Estado SRI</th><th></th></tr></thead>
+              <tbody>
+                <tr><td class="mono">1892034561001</td><td>Granja San Vicente</td><td>Res</td><td>AGR-2026-0113</td><td><span class="badge badge-ok"><span class="badge-dot"></span>Regularizado</span></td>
+                  <td><div class="row-actions"><button class="icon-btn"><i class="fa-solid fa-pen"></i></button><button class="icon-btn"><i class="fa-solid fa-trash"></i></button></div></td></tr>
+                <tr><td class="mono">1801122334001</td><td>Porcícola El Roble</td><td>Cerdo</td><td>AGR-2026-0087</td><td><span class="badge badge-ok"><span class="badge-dot"></span>Regularizado</span></td>
+                  <td><div class="row-actions"><button class="icon-btn"><i class="fa-solid fa-pen"></i></button><button class="icon-btn"><i class="fa-solid fa-trash"></i></button></div></td></tr>
+                <tr><td class="mono">1723456789001</td><td>Avícola Los Andes</td><td>Pollo</td><td>AGR-2026-0221</td><td><span class="badge badge-warn"><span class="badge-dot"></span>Pendiente</span></td>
+                  <td><div class="row-actions"><button class="icon-btn"><i class="fa-solid fa-pen"></i></button><button class="icon-btn"><i class="fa-solid fa-trash"></i></button></div></td></tr>
+                <tr><td class="mono">1908877665001</td><td>Hacienda La Pradera</td><td>Res</td><td>AGR-2025-0490</td><td><span class="badge badge-bad"><span class="badge-dot"></span>Vencido</span></td>
+                  <td><div class="row-actions"><button class="icon-btn"><i class="fa-solid fa-pen"></i></button><button class="icon-btn"><i class="fa-solid fa-trash"></i></button></div></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+  <script src="app.js"></script>
+
+</body>
+</html>

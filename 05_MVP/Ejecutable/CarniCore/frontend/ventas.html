@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ventas · CarniCore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="app-shell">
+    <div id="sidebar-mount"></div>
+    <div class="main-col">
+      <div id="topbar-mount" data-title="Ventas" data-eyebrow="Comercial"></div>
+      <main class="page">
+
+        <div class="page-head">
+          <div>
+            <div class="breadcrumb">CarniCore / <span>Ventas</span></div>
+            <h1>Ventas</h1>
+            <p class="lead">Registro de salida de producto por venta, referenciando el número de factura externo (RF-10).</p>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-title"><h3>Nueva venta</h3></div>
+            <form onsubmit="event.preventDefault();alert('Prototipo visual: sin lógica de guardado.');">
+              <div class="form-grid">
+                <div class="field span-2"><label>Cliente / sucursal</label><input class="input" type="text" placeholder="Nombre del cliente o sucursal"></div>
+                <div class="field span-2"><label>Producto</label><select><option>Brazo de res — 45 lb disponibles</option><option>Chuleta de cerdo — 52 lb disponibles</option><option>Chorizo — 60 lb disponibles</option></select></div>
+                <div class="field"><label>Cantidad (lb)</label><input class="input" type="number" placeholder="0.0"></div>
+                <div class="field"><label>N.° de factura (SRI)</label><input class="input" type="text" placeholder="001-001-000000123"></div>
+              </div>
+              <div class="flex gap-8" style="justify-content:flex-end;">
+                <button type="button" class="btn btn-outline">Cancelar</button>
+                <button type="submit" class="btn btn-primary"><i class="fa-solid fa-cash-register"></i> Registrar venta</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="card">
+            <div class="card-title"><h3>Resumen del día</h3></div>
+            <div class="kpi-grid" style="grid-template-columns:1fr 1fr;margin-bottom:0;">
+              <div class="kpi-card"><div class="kpi-label">Ventas hoy</div><div class="kpi-value">$842.30</div></div>
+              <div class="kpi-card"><div class="kpi-label">Transacciones</div><div class="kpi-value">11</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="card">
+          <div class="card-title"><h3>Historial de ventas</h3></div>
+          <div class="toolbar"><div class="toolbar-left"><div class="search-field"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Buscar por cliente o factura..." oninput="filterTable(this,'tblVentas')"></div></div></div>
+          <div class="table-wrap">
+            <table class="data-table" id="tblVentas">
+              <thead><tr><th>Fecha</th><th>Cliente</th><th>Producto</th><th>Cantidad</th><th>Factura</th><th>Total</th></tr></thead>
+              <tbody>
+                <tr><td>02/08 · 07:50</td><td>Mini Market La 9</td><td>Costilla de cerdo</td><td>48 lb</td><td class="mono">001-001-000122</td><td>$96.00</td></tr>
+                <tr><td>01/08 · 16:20</td><td>Sucursal Centro</td><td>Chorizo</td><td>20 lb</td><td class="mono">001-001-000119</td><td>$70.00</td></tr>
+                <tr><td>01/08 · 11:05</td><td>Restaurante El Fogón</td><td>Lomo de res</td><td>35 lb</td><td class="mono">001-001-000114</td><td>$122.50</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+  <script src="app.js"></script>
+
+</body>
+</html>

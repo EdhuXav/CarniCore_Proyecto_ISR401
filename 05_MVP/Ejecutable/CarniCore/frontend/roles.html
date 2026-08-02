@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roles · CarniCore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="app-shell">
+    <div id="sidebar-mount"></div>
+    <div class="main-col">
+      <div id="topbar-mount" data-title="Roles" data-eyebrow="Gestión"></div>
+      <main class="page">
+
+        <div class="page-head">
+          <div>
+            <div class="breadcrumb">CarniCore / <span>Roles</span></div>
+            <h1>Roles</h1>
+            <p class="lead">Definición de roles y permisos: propietaria, administrador general, encargado de bodega y carnicero.</p>
+          </div>
+          <button class="btn btn-primary"><i class="fa-solid fa-plus"></i> Nuevo rol</button>
+        </div>
+
+        <div class="grid-4">
+          <div class="card">
+            <div class="card-title"><h3>Propietaria</h3><div class="icon-badge"><i class="fa-solid fa-crown"></i></div></div>
+            <p class="small text-mid" style="margin-bottom:14px;">Acceso total a reportes gerenciales y configuración del negocio.</p>
+            <span class="badge badge-neutral"><span class="badge-dot"></span>1 usuario</span>
+          </div>
+          <div class="card">
+            <div class="card-title"><h3>Admin. general</h3><div class="icon-badge"><i class="fa-solid fa-user-shield"></i></div></div>
+            <p class="small text-mid" style="margin-bottom:14px;">Supervisa inventario, aprueba bajas y revisa diferencias de conteo.</p>
+            <span class="badge badge-neutral"><span class="badge-dot"></span>1 usuario</span>
+          </div>
+          <div class="card">
+            <div class="card-title"><h3>Enc. de bodega</h3><div class="icon-badge"><i class="fa-solid fa-warehouse"></i></div></div>
+            <p class="small text-mid" style="margin-bottom:14px;">Registra ingresos, pesajes y distribución de productos.</p>
+            <span class="badge badge-neutral"><span class="badge-dot"></span>1 usuario</span>
+          </div>
+          <div class="card">
+            <div class="card-title"><h3>Carnicero</h3><div class="icon-badge"><i class="fa-solid fa-knife"></i></div></div>
+            <p class="small text-mid" style="margin-bottom:14px;">Ejecuta el despiece y consulta los pedidos asignados.</p>
+            <span class="badge badge-neutral"><span class="badge-dot"></span>1 usuario</span>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="card">
+          <div class="card-title"><h3>Matriz de permisos</h3></div>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr><th>Módulo</th><th>Propietaria</th><th>Admin. general</th><th>Enc. bodega</th><th>Carnicero</th></tr></thead>
+              <tbody>
+                <tr><td>Proveedores y guías</td><td><i class="fa-solid fa-check" style="color:var(--state-ok);"></i></td><td><i class="fa-solid fa-check" style="color:var(--state-ok);"></i></td><td><i class="fa-solid fa-check" style="color:var(--state-ok);"></i></td><td><i class="fa-solid fa-minus" style="color:var(--c-dark-gray);"></i></td></tr>
+                <tr><td>Pesaje y despiece</td><td><i class="fa-solid fa-check" style="color:var(--state-ok);"></i></td><td><i class="fa-solid fa-check" style="color:var(--state-ok);"></i></td><td><i class="fa-solid fa-check" style="color:var(--state-ok);"></i></td><td><i class="fa-solid fa-check" style="color:var(--state-ok);"></i></td></tr>
+                <tr><td>Baja de productos</td><td><i class="fa-solid fa-check" style="color:var(--state-ok);"></i></td><td><i class="fa-solid fa-check" style="color:var(--state-ok);"></i></td><td><i class="fa-solid fa-minus" style="color:var(--c-dark-gray);"></i></td><td><i class="fa-solid fa-minus" style="color:var(--c-dark-gray);"></i></td></tr>
+                <tr><td>Reportes gerenciales</td><td><i class="fa-solid fa-check" style="color:var(--state-ok);"></i></td><td><i class="fa-solid fa-minus" style="color:var(--c-dark-gray);"></i></td><td><i class="fa-solid fa-minus" style="color:var(--c-dark-gray);"></i></td><td><i class="fa-solid fa-minus" style="color:var(--c-dark-gray);"></i></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+  <script src="app.js"></script>
+
+</body>
+</html>

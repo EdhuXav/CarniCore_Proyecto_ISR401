@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Baja de productos · CarniCore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="app-shell">
+    <div id="sidebar-mount"></div>
+    <div class="main-col">
+      <div id="topbar-mount" data-title="Baja de productos" data-eyebrow="Almacenamiento"></div>
+      <main class="page">
+
+        <div class="page-head">
+          <div>
+            <div class="breadcrumb">CarniCore / <span>Baja de productos</span></div>
+            <h1>Baja de productos</h1>
+            <p class="lead">Registro de bajas por vencimiento o deterioro, con evidencia fotográfica y aprobación del administrador (RF-09).</p>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-title"><h3>Nueva baja</h3></div>
+            <form onsubmit="event.preventDefault();alert('Prototipo visual: sin lógica de guardado.');">
+              <div class="form-grid">
+                <div class="field span-2"><label>Producto</label><select><option>Pollo entero — L-2201</option><option>Costilla de res</option><option>Chorizo</option></select></div>
+                <div class="field"><label>Peso dado de baja (lb)</label><input class="input" type="number" placeholder="0.0"></div>
+                <div class="field"><label>Motivo</label><select><option>Vencimiento</option><option>Deterioro</option><option>Corte de energía</option></select></div>
+                <div class="field span-2">
+                  <label>Evidencia fotográfica</label>
+                  <div class="upload-drop"><i class="fa-solid fa-camera"></i>Simulación de carga — arrastra una imagen o haz clic para seleccionar</div>
+                </div>
+              </div>
+              <div class="notice"><i class="fa-solid fa-circle-info"></i>La baja no se refleja en el inventario hasta que el administrador general la apruebe.</div>
+              <div class="flex gap-8" style="justify-content:flex-end;">
+                <button type="button" class="btn btn-outline">Cancelar</button>
+                <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Enviar a aprobación</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="card">
+            <div class="card-title"><h3>Pendientes de aprobación</h3><span class="badge badge-warn"><span class="badge-dot"></span>2</span></div>
+            <div class="alert-item bad">
+              <div class="a-icon"><i class="fa-solid fa-image"></i></div>
+              <div><div class="a-title">Pollo entero — 15 lb</div><div class="a-desc">Motivo: vencimiento · Reportado por E. Bodega</div></div>
+            </div>
+            <div class="flex gap-8" style="margin:-6px 0 16px;">
+              <button class="btn btn-primary btn-sm"><i class="fa-solid fa-check"></i> Aprobar</button>
+              <button class="btn btn-danger btn-sm"><i class="fa-solid fa-xmark"></i> Rechazar</button>
+            </div>
+            <div class="alert-item bad">
+              <div class="a-icon"><i class="fa-solid fa-image"></i></div>
+              <div><div class="a-title">Costilla de res — 8 lb</div><div class="a-desc">Motivo: deterioro · Reportado por E. Bodega</div></div>
+            </div>
+            <div class="flex gap-8" style="margin:-6px 0 0;">
+              <button class="btn btn-primary btn-sm"><i class="fa-solid fa-check"></i> Aprobar</button>
+              <button class="btn btn-danger btn-sm"><i class="fa-solid fa-xmark"></i> Rechazar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="card">
+          <div class="card-title"><h3>Historial de bajas</h3></div>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr><th>Fecha</th><th>Producto</th><th>Peso</th><th>Motivo</th><th>Supervisor</th><th>Estado</th></tr></thead>
+              <tbody>
+                <tr><td>01/08/2026</td><td>Pollo entero</td><td>15 lb</td><td>Vencimiento</td><td>Admin. General</td><td><span class="badge badge-ok"><span class="badge-dot"></span>Aprobada</span></td></tr>
+                <tr><td>29/07/2026</td><td>Chorizo</td><td>4 lb</td><td>Deterioro</td><td>Admin. General</td><td><span class="badge badge-ok"><span class="badge-dot"></span>Aprobada</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+  <script src="app.js"></script>
+
+</body>
+</html>

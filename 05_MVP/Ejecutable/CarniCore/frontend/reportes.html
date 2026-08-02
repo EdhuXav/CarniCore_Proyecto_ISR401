@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reportes · CarniCore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="app-shell">
+    <div id="sidebar-mount"></div>
+    <div class="main-col">
+      <div id="topbar-mount" data-title="Reportes" data-eyebrow="Gestión"></div>
+      <main class="page">
+
+        <div class="page-head">
+          <div>
+            <div class="breadcrumb">CarniCore / <span>Reportes</span></div>
+            <h1>Reportes</h1>
+            <p class="lead">Reportes filtrables de ventas, compras, pérdidas e inventario por período (RF-13).</p>
+          </div>
+          <div class="flex gap-8">
+            <button class="btn btn-outline"><i class="fa-solid fa-file-pdf"></i> Exportar PDF</button>
+            <button class="btn btn-outline"><i class="fa-solid fa-file-excel"></i> Exportar Excel</button>
+          </div>
+        </div>
+
+        <div class="grid-4">
+          <div class="card">
+            <div class="card-title"><h3>Ventas del período</h3><div class="icon-badge"><i class="fa-solid fa-cash-register"></i></div></div>
+            <div class="kpi-value" style="font-size:24px;">$14,320</div>
+            <span class="kpi-delta up small"><i class="fa-solid fa-arrow-up"></i> 12.8%</span>
+          </div>
+          <div class="card">
+            <div class="card-title"><h3>Compras del período</h3><div class="icon-badge"><i class="fa-solid fa-truck-field"></i></div></div>
+            <div class="kpi-value" style="font-size:24px;">$9,110</div>
+            <span class="kpi-delta flat small"><i class="fa-solid fa-minus"></i> estable</span>
+          </div>
+          <div class="card">
+            <div class="card-title"><h3>Pérdidas del período</h3><div class="icon-badge"><i class="fa-solid fa-triangle-exclamation"></i></div></div>
+            <div class="kpi-value" style="font-size:24px;">$412</div>
+            <span class="kpi-delta down small"><i class="fa-solid fa-arrow-down"></i> -6.1%</span>
+          </div>
+          <div class="card">
+            <div class="card-title"><h3>Inventario actual</h3><div class="icon-badge"><i class="fa-solid fa-warehouse"></i></div></div>
+            <div class="kpi-value" style="font-size:24px;">6,930 lb</div>
+            <span class="kpi-delta flat small"><i class="fa-solid fa-minus"></i> sin variación</span>
+          </div>
+        </div>
+
+        <div class="grid-2" style="margin-top:16px;">
+          <div class="card">
+            <div class="card-title"><h3>Ventas por producto</h3></div>
+            <div class="bars">
+              <div class="bar" style="height:70%"><span>Res</span><em>$5,120</em></div>
+              <div class="bar" style="height:52%"><span>Cerdo</span><em>$3,780</em></div>
+              <div class="bar" style="height:38%"><span>Pollo</span><em>$2,640</em></div>
+              <div class="bar" style="height:22%"><span>Embutidos</span><em>$1,510</em></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title"><h3>Generar reporte personalizado</h3></div>
+            <div class="field"><label>Tipo de reporte</label><select><option>Ventas</option><option>Compras</option><option>Pérdidas</option><option>Inventario</option></select></div>
+            <div class="field"><label>Rango de fechas</label><div class="flex gap-8"><input class="input" type="date"><input class="input" type="date"></div></div>
+            <button class="btn btn-primary btn-block"><i class="fa-solid fa-file-pdf"></i> Generar y exportar</button>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+  <script src="app.js"></script>
+
+</body>
+</html>
