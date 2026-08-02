@@ -1,0 +1,212 @@
+Evidencia: EV-01
+Participante: P01
+Tipo de participante: Propietaria
+Fecha de transcripción: 02/08/2026
+====================================================
+TRANSCRIPCIÓN ANONIMIZADA
+====================================================
+
+Entrevistador:
+Buenas noches. Somos los integrantes del grupo de la asignatura Ingeniería de Requerimientos y realizaremos una entrevista para la recolección de información del proyecto de gestión de una distribuidora de productos cárnicos.
+
+Participante P01:
+Buenas noches. Gracias por haber considerado a nuestra empresa para este proyecto.
+
+Entrevistador:
+¿Cuál es su nombre y apellido?
+
+Participante P01:
+[Dato omitido por confidencialidad – Participante P01].
+
+Entrevistador:
+¿Cuál es su cargo dentro de la distribuidora?
+
+Participante P01:
+Propietaria.
+
+Entrevistador:
+¿Cuáles son sus principales responsabilidades en el proceso del negocio?
+
+Participante P01:
+Una de mis principales responsabilidades es liderar el equipo de trabajo, coordinar las ventas, coordinar las compras y delegar funciones.
+
+BLOQUE: PROVEEDORES Y GRANJAS
+----------------------------------------------------
+
+Entrevistador:
+¿Cuáles son los criterios que se utilizan para seleccionar y evaluar a sus proveedores o granjas antes de aceptarlos como fuente confiable?
+
+Participante P01:
+Antes de aceptar a un proveedor como fuente confiable, este debe estar legalmente regularizado por el Servicio de Rentas Internas y contar con un RUC activo, ya que hoy en día no se puede realizar una compra ni un pago sin el debido sustento. Ese es uno de los principales requisitos para poder elegir un proveedor de pollo, res, cerdo o algún derivado.
+
+Entrevistador:
+¿Qué otro documento o certificación se solicita a un proveedor para garantizar el origen y la calidad?
+
+Participante P01:
+Todos los proveedores, al ser una empresa dedicada a la compra y venta de productos cárnicos, deben contar con el registro sanitario que certifica el origen y el transporte de los animales. El propietario debe facilitar una guía de emisión donde se especifique la cantidad de canales entregadas; por ejemplo, si son cien canales, deben estar debidamente certificadas y firmadas por el médico veterinario de planta. Los sellos no deben estar solo en una parte del animal, sino dos en los brazos, dos en las piernas y uno en la cabeza.
+
+Entrevistador:
+¿Podría describir el proceso paso a paso desde que se contacta al proveedor hasta que el animal es aceptado e ingresa a la distribuidora?
+
+Participante P01:
+Tomando como ejemplo las aves: el vehículo de reparto inicia con el lavado y desinfección de las jaulas. Luego se ingresa a la granja, donde se verifica nuevamente que las jaulas estén desinfectadas y lavadas, y se procede a pesar el camión. Posteriormente se ingresa a la granja donde están los pollos en pie y se carga la cantidad solicitada. El transporte se dirige hacia el cantón La Maná, ya que la mayor producción avícola se encuentra en la zona de Santo Domingo. Al llegar a la planta de procesamiento, las labores inician a las dos de la mañana con el faenamiento, que incluye el área de desplume, destripado, lavado, engavetado y finalmente la distribución del producto. Los procesos para res y cerdo son similares.
+
+BLOQUE: REGISTRO, TRAZABILIDAD Y AUDITORÍA DE LOS ANIMALES
+----------------------------------------------------
+
+Entrevistador:
+Al momento de ingresar un animal a la distribuidora, ¿se registran datos específicos del mismo?
+
+Participante P01:
+Esto aplica principalmente al cerdo y a la res, no al pollo, donde solo se registra la cantidad de aves ingresadas. El cerdo, desde que inicia su crianza, cuenta con un número de identificación con el cual se ingresa al sistema de Agrocalidad y se emite una guía para trasladarlo a un centro de faenamiento. Desde ese momento inicia la trazabilidad de cada animal.
+
+Entrevistador:
+¿Qué información considera necesaria para poder consultar rápidamente el historial completo de un producto vendido, en caso de que un cliente o autoridad lo solicite?
+
+Participante P01:
+La única autoridad que puede solicitar guías de origen es Agrocalidad, que revisa periódicamente las guías y verifica que los centros de faenamiento operen legalmente. Existen guías de movilización, para trasladar el cerdo a otra provincia, y guías de origen, donde se detalla la cantidad y el número de identificación (arete) de cada animal, así como la granja de procedencia. Esto permite tener trazabilidad.
+
+Entrevistador:
+¿Alguna vez ha necesitado rastrear un producto hasta su origen por algún reclamo o problema de calidad?
+
+Participante P01:
+En cuanto a calidad, existen médicos de planta en los camales. Si un animal presenta mastitis o alguna afección, entra al sacrificio pero no se entrega la carne. Si un órgano presenta un color anormal tampoco se entrega. En algunos camales, al no contar con tecnología adecuada, la verificación se basa en el color y la textura del producto; si no cumple, se decomisa.
+
+Entrevistador:
+¿Cómo es actualmente el proceso de registro de esos datos?
+
+Participante P01:
+Se realiza mediante una factura generada automáticamente en el sistema del Servicio de Rentas Internas, la cual se descarga al sistema contable interno. No existe un registro individualizado por animal con sus características; únicamente se registra el peso en un archivo de Excel, ya que este dato permite calcular la merma entre el peso en pie y el peso en canal, necesario para determinar costos.
+
+BLOQUE: GESTIÓN DE LOTES
+----------------------------------------------------
+
+Entrevistador:
+¿Cómo describiría el proceso actual de conformación y control de lotes?
+
+Participante P01:
+Contamos con una bodega central donde llegan todos los productos: res, cerdo, pollo y embutidos. Desde ahí se distribuyen a las demás sucursales según los pedidos. Una persona encargada gestiona el peso y la distribución de cada producto solicitado.
+
+Entrevistador:
+¿Los productos están almacenados y diferenciados por lotes?
+
+Participante P01:
+No, están separados únicamente por sección: la mitad de la cámara para cerdo y la otra mitad para res. Adicionalmente, la mayoría del producto ya se encuentra despostado por partes.
+
+Entrevistador:
+¿Llevan algún registro del inventario en bodega?
+
+Participante P01:
+Sí, pero de manera completamente manual, en un cuaderno.
+
+BLOQUE: RECEPCIÓN Y PROCESAMIENTO (DESPIECE)
+----------------------------------------------------
+
+Entrevistador:
+¿Cuáles son los pasos que se siguen desde que se recibe un animal hasta obtener los cortes listos para clasificar?
+
+Participante P01:
+Al llegar el camión de cerdo o de res, ingresa al área de pesado y se procede a despostar de acuerdo con la demanda del mercado. Por ejemplo, si se solicitan cien brazos, se desarman los cerdos necesarios para obtener esa cantidad, separando el producto por cliente o local.
+
+Entrevistador:
+¿Esta información se registra durante el despiece?
+
+Participante P01:
+No, no se registra; solo se separa de acuerdo con los pedidos.
+
+Entrevistador:
+¿Qué tipo de cortes se clasifican en la bodega?
+
+Participante P01:
+Brazos, piernas, costillas, lomos y cabezas, entre otros. Algunos productos requieren cámara de refrigeración y otros de congelación.
+
+Entrevistador:
+¿Quiénes participan en el proceso de recepción y despiece?
+
+Participante P01:
+Aproximadamente cinco carniceros con experiencia se encargan del despiece. La recepción del producto está a cargo del personal administrativo de la empresa.
+
+BLOQUE: PESAJE
+----------------------------------------------------
+
+Entrevistador:
+¿Cómo es el proceso de pesaje que utilizan actualmente?
+
+Participante P01:
+Es completamente manual. Se registra el peso en un cuaderno; no existe un sistema automatizado que etiquete el producto con su peso.
+
+Entrevistador:
+¿A qué se asigna ese peso registrado?
+
+Participante P01:
+En teoría al animal identificado, aunque en la práctica no es posible dar seguimiento individual, ya que después del faenamiento todos los cerdos quedan de un color similar y se retira el arete antes de la venta.
+
+Entrevistador:
+En su opinión, ¿qué aspectos deberían mejorarse en el proceso de pesaje si se desarrollara un sistema más automatizado?
+
+Participante P01:
+Sería ideal contar con una balanza que, al detectar que el peso se estabiliza, emita una señal para imprimir automáticamente un ticket con el peso en libras y el costo correspondiente, el cual podría adherirse al producto. Esta tecnología existe pero no está implementada en nuestro medio.
+
+BLOQUE: CONSERVACIÓN, FRIGORÍFICO Y DETECCIÓN DE FRESCURA
+----------------------------------------------------
+
+Entrevistador:
+¿Cuáles son los criterios que utiliza actualmente para determinar que un producto está próximo a vencer?
+
+Participante P01:
+Debido a la alta demanda, generalmente el producto se agota antes de llegar a los límites de tiempo permitidos. Por ejemplo, el pollo puede permanecer en cámara un máximo de tres días, ya que al cuarto día comienza a deteriorarse.
+
+Entrevistador:
+¿Cuáles son los criterios que determinan si un producto ya no está apto para la venta?
+
+Participante P01:
+El color y el olor son las principales señales de pérdida de frescura.
+
+Entrevistador:
+¿En qué momento del proceso se detectan esas señales?
+
+Participante P01:
+Generalmente durante la realización del inventario, cuando se saca y se pesa todo el producto.
+
+Entrevistador:
+¿Podría explicar el proceso de conservación desde que el producto ingresa hasta que se retira para la venta?
+
+Participante P01:
+Después del desposte, el producto ingresa a cámaras de refrigeración divididas en dos secciones: una para cerdo y otra para res. Todo el producto debe permanecer colgado en ganchos de acero inoxidable autorizados por el ente de control; nada puede estar en contacto con el piso. Únicamente los embutidos, al ser productos procesados con conservantes, pueden almacenarse engavetados.
+
+Entrevistador:
+¿Ha tenido pérdidas de producto por vencimiento o por condiciones de almacenamiento inadecuadas?
+
+Participante P01:
+Sí, durante el periodo de los apagones eléctricos a nivel nacional. Al comprar cantidades mínimas para el consumo diario, no se accedía a descuentos ni precios competitivos, lo que dificultó mantener el producto durante los cortes de energía prolongados, generando pérdidas durante uno o dos meses. Adquirir generadores con la capacidad necesaria para las cámaras de refrigeración implicaría un costo elevado, ya que tendrían que ser importados exclusivamente.
+
+BLOQUE: REPORTES Y ESTADÍSTICAS
+----------------------------------------------------
+
+Entrevistador:
+¿Qué tipo de reportes necesitaría generar con frecuencia para la toma de decisiones sobre compras, ventas o pérdidas?
+
+Participante P01:
+Un reporte sobre la insatisfacción de los clientes sería importante, ya que en ocasiones el producto sale de bodega en buen estado, pero el cliente reporta problemas días después. También sería útil un reporte de ventas: actualmente el sistema de facturación genera una tabla con descripción gráfica de las ventas mensuales por tipo de producto, cliente principal y producto más vendido, lo cual permite evaluar el desempeño de los proveedores.
+
+Entrevistador:
+¿Le sería útil un reporte sobre las compras realizadas o sobre las pérdidas registradas en el mes?
+
+Participante P01:
+Sí, sería de gran utilidad. Cuando un producto debe darse de baja, esto debe ser supervisado por el administrador general y sustentado con evidencia como peso y fotografía, especialmente al momento de realizar los inventarios semanales.
+
+Entrevistador:
+¿Le parecería útil un reporte basado en los movimientos del inventario, es decir, fechas de ingreso y egreso de productos?
+
+Participante P01:
+Sí, es muy importante, ya que permitiría conocer el stock disponible en cada local y la fecha exacta de ingreso de cada producto.
+
+Entrevistador:
+Con esto concluiríamos la entrevista para la recolección de datos. Muchas gracias por su colaboración y por participar en este proceso.
+
+Participante P01:
+De nada, quedamos a las órdenes.
+
+====================================================
+FIN DE LA TRANSCRIPCIÓN
+====================================================
