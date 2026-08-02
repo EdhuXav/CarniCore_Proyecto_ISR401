@@ -1,9 +1,8 @@
 Código de participante: ENTR-01
-Rol: Administrador de bodega
-Fecha: 02/08/2026
+Fecha: 2026-08-01
 ID de evidencia: EV-24
 [Entrevistador]: Buenas noches, gracias por tomarse un pequeño tiempo esta noche para realizarles algunas preguntas relacionadas con el proceso de la distribuidora, con el fin de entender mejor cómo se maneja actualmente ciertas actividades del negocio. No hay respuestas correctas o incorrectas, solo cuénteme cómo se hacían las cosas en la práctica. Cuando esté listo empezamos refiriéndonos al bloque 1 sobre la información general del entrevistado. ¿Cuál es su cargo dentro de la distribuidora?
-[ENTR-01]: Bueno, yo soy el administrador de la bodega y llevo algunos años en el puesto.
+[ENTR-01]: Bueno, Trabajo en el área de almacenamiento y control de productos desde hace varios años.
 [Entrevistador]: ¿Cuáles son sus principales responsabilidades en el proceso del negocio?
 [ENTR-01]: Bueno, básicamente yo controlo todo el movimiento de la bodega, reviso que lo que entre coincida con lo que se le ha pedido al proveedor, organizo cómo se acomoda cada cosa en las cámaras y coordino con los locales cuando se necesita. Cada día algo distinto que hago a todos lados, creo que es que llevo yo un mismo registro en una hoja de cálculo y no solo en el cuaderno, porque el dueño quería tener un respaldo aparte del físico. Al final del día un resumen corto de cómo se cierra todo.
 [Entrevistador]: Vamos ahora al bloque 4 sobre gestión de lotes. ¿Cómo describiría el proceso actual de conformación y control del lote? ¿Cómo identifica y diferencia un lote de otro actualmente?
