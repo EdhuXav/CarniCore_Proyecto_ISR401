@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+
+message: "If you use this repository, please cite it as follows."
+
+title: "CarniCore: Especificación de Requisitos Completa y Componente Empírico"
+
+version: "1.0.0"
+
+date-released: 2026-08-02
+
+authors:
+  - family-names: Castro Bajaña
+    given-names: Ariel Omar
+    orcid: "https://orcid.org/0009-0005-1575-8935"
+
+  - family-names: Crespo Espinoza
+    given-names: Kleber Obed
+    orcid: "https://orcid.org/0009-0000-9145-1357"
+  
+  - family-names: Gamarra Araujo
+    given-names: Edhu Xavier
+    orcid: "https://orcid.org/0009-0001-8312-9656"
+
+  - family-names: Pérez Ruiz
+    given-names: Carlos Andrés
+    orcid: "https://orcid.org/0009-0003-6741-9391"
+
+  - family-names: Quintero Gende
+    given-names: Erick Jahir
+    orcid: "https://orcid.org/0009-0000-6032-4179"
+
+repository-code: "https://github.com/EdhuXav/CarniCore_Proyecto_ISR401"
+
+license: "MIT"
