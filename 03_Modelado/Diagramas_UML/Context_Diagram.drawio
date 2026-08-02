@@ -1,0 +1,58 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Context Diagram - CarniCore" id="MLWyIbSPVOs_F51FdTgA">
+    <mxGraphModel dx="1433" dy="842" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uaenWX9ONqRslT9SA8HU-1" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=17;fontStyle=1;fontColor=#12324f;fillColor=none;strokeColor=#000000;" value="Figure 2.1 - Context diagram of the CarniCore system" vertex="1">
+          <mxGeometry height="30" width="900" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="uaenWX9ONqRslT9SA8HU-2" parent="1" style="rounded=6;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;strokeWidth=1.4;fontSize=14;fontStyle=1;fontColor=#1a2733;align=center;verticalAlign=middle;" value="CARNICORE&lt;br&gt;SYSTEM" vertex="1">
+          <mxGeometry height="90" width="180" x="360" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="uaenWX9ONqRslT9SA8HU-3" parent="1" style="rounded=6;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;strokeWidth=1.4;fontSize=11.5;fontStyle=1;fontColor=#1a2733;align=center;verticalAlign=middle;" value="Owner" vertex="1">
+          <mxGeometry height="64" width="140" x="50" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="uaenWX9ONqRslT9SA8HU-4" parent="1" style="rounded=6;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;strokeWidth=1.4;fontSize=11.5;fontStyle=1;fontColor=#1a2733;align=center;verticalAlign=middle;" value="General Administrator" vertex="1">
+          <mxGeometry height="64" width="140" x="710" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="uaenWX9ONqRslT9SA8HU-5" parent="1" style="rounded=6;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;strokeWidth=1.4;fontSize=11.5;fontStyle=1;fontColor=#1a2733;align=center;verticalAlign=middle;" value="Warehouse Supervisor" vertex="1">
+          <mxGeometry height="64" width="140" x="30" y="288" as="geometry" />
+        </mxCell>
+        <mxCell id="uaenWX9ONqRslT9SA8HU-6" parent="1" style="rounded=6;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;strokeWidth=1.4;fontSize=11.5;fontStyle=1;fontColor=#1a2733;align=center;verticalAlign=middle;" value="Butcher" vertex="1">
+          <mxGeometry height="64" width="140" x="730" y="288" as="geometry" />
+        </mxCell>
+        <mxCell id="uaenWX9ONqRslT9SA8HU-7" parent="1" style="rounded=6;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;strokeWidth=1.4;fontSize=11.5;fontStyle=1;fontColor=#1a2733;align=center;verticalAlign=middle;" value="Customer / Branch" vertex="1">
+          <mxGeometry height="64" width="140" x="80" y="518" as="geometry" />
+        </mxCell>
+        <mxCell id="uaenWX9ONqRslT9SA8HU-8" parent="1" style="rounded=6;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;strokeWidth=1.4;fontSize=11.5;fontStyle=1;fontColor=#1a2733;align=center;verticalAlign=middle;" value="Agrocalidad (Regulatory Body)" vertex="1">
+          <mxGeometry height="64" width="140" x="680" y="518" as="geometry" />
+        </mxCell>
+        <mxCell id="uaenWX9ONqRslT9SA8HU-9" parent="1" style="rounded=6;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;strokeWidth=1.4;fontSize=11.5;fontStyle=1;fontColor=#1a2733;align=center;verticalAlign=middle;" value="Supplier / Farm" vertex="1">
+          <mxGeometry height="64" width="140" x="380" y="548" as="geometry" />
+        </mxCell>
+        <mxCell id="uaenWX9ONqRslT9SA8HU-10" edge="1" parent="1" source="uaenWX9ONqRslT9SA8HU-3" style="html=1;endArrow=open;endFill=1;rounded=0;strokeColor=#000000;strokeWidth=1.5;fontSize=9.5;fontColor=#3a3a3a;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fillColor=none;" target="uaenWX9ONqRslT9SA8HU-2" value="manages / queries reports">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uaenWX9ONqRslT9SA8HU-11" edge="1" parent="1" source="uaenWX9ONqRslT9SA8HU-4" style="html=1;endArrow=open;endFill=1;rounded=0;strokeColor=#000000;strokeWidth=1.5;fontSize=9.5;fontColor=#3a3a3a;entryX=1;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fillColor=none;" target="uaenWX9ONqRslT9SA8HU-2" value="supervises write-offs and inventory">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uaenWX9ONqRslT9SA8HU-12" edge="1" parent="1" source="uaenWX9ONqRslT9SA8HU-5" style="html=1;endArrow=open;endFill=1;rounded=0;strokeColor=#000000;strokeWidth=1.5;fontSize=9.5;fontColor=#3a3a3a;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.998;exitY=0.44;exitDx=0;exitDy=0;exitPerimeter=0;fillColor=none;" target="uaenWX9ONqRslT9SA8HU-2" value="records entry/exit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uaenWX9ONqRslT9SA8HU-13" edge="1" parent="1" source="uaenWX9ONqRslT9SA8HU-6" style="html=1;endArrow=open;endFill=1;rounded=0;strokeColor=#000000;strokeWidth=1.5;fontSize=9.5;fontColor=#3a3a3a;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fillColor=none;" target="uaenWX9ONqRslT9SA8HU-2" value="assigns orders">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uaenWX9ONqRslT9SA8HU-14" edge="1" parent="1" source="uaenWX9ONqRslT9SA8HU-7" style="html=1;endArrow=open;endFill=1;rounded=0;strokeColor=#000000;strokeWidth=1.5;fontSize=9.5;fontColor=#3a3a3a;entryX=0.108;entryY=1.026;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fillColor=none;" target="uaenWX9ONqRslT9SA8HU-2" value="generates invoice / history">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uaenWX9ONqRslT9SA8HU-15" edge="1" parent="1" source="uaenWX9ONqRslT9SA8HU-8" style="html=1;endArrow=open;endFill=1;rounded=0;strokeColor=#000000;strokeWidth=1.5;fontSize=9.5;fontColor=#3a3a3a;entryX=0.851;entryY=1.003;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fillColor=none;" target="uaenWX9ONqRslT9SA8HU-2" value="exports traceability guides">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uaenWX9ONqRslT9SA8HU-16" edge="1" parent="1" source="uaenWX9ONqRslT9SA8HU-9" style="html=1;endArrow=open;endFill=1;rounded=0;strokeColor=#000000;strokeWidth=1.5;fontSize=9.5;fontColor=#3a3a3a;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fillColor=none;" target="uaenWX9ONqRslT9SA8HU-2" value="sends origin/movement guide">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
