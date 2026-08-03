@@ -1,0 +1,45 @@
+﻿ID;Ley-Art.;Objetivo;Interesado;EV;RF/RNF;CU;HU;CA;Componente;Mockup
+1;--;Trazabilidad de origen;Propietaria;EV-01;RF-01;CU-01;HU-01;CA-01;Backend-Proveedores;MU-02
+2;Art.30;Certificación sanitaria;Propietaria;EV-02;RF-02;CU-02;HU-02;CA-02;Backend-Guias;MU-02
+3;--;Registro de ingreso;Bodega;EV-03;RF-03;CU-01;HU-03;CA-03;Backend-Ingresos;MU-02
+4;--;Cálculo de costo;Bodega;EV-04;RF-04;CU-03;HU-04;CA-04;Backend-Pesaje;MU-03
+5;--;Comprobante físico;Bodega;EV-04;RF-05;CU-03;--;--;Backend-Pesaje;MU-03
+6;--;Registro de cortes;Carniceros;EV-05;RF-06;CU-04;HU-06;CA-06;Backend-Despiece;-
+7;--;Control por cámara;Admin. gral.;EV-06;RF-07;CU-06;HU-07;CA-07;Backend-Inventario;MU-04
+8;--;Evitar pérdidas;Admin. gral.;EV-06;RF-08;CU-07;HU-08;CA-08;Backend-VidaUtil;MU-04
+9;Art.38;Sustentar bajas;Admin. gral.;EV-07;RF-09;CU-10;HU-09;CA-09;Backend-Bajas;-
+10;--;Registrar ventas;Bodega/Cliente;EV-08;RF-10;CU-09;HU-10;CA-10;Backend-Ventas;-
+11;--;Historial completo;Agrocalidad/Prop.;EV-03;RF-11;CU-08;HU-11;CA-11;Backend-Trazabilidad;MU-06
+12;--;Diferencias de inventario;Admin. gral.;EV-09;RF-12;CU-11;--;--;Backend-Inventario;-
+13;--;Decisiones gerenciales;Propietaria;EV-08;RF-13;CU-12;HU-13;CA-13;Backend-Reportes;MU-05
+14;--;Desempeño del negocio;Propietaria;EV-08;RF-14;CU-12;--;--;Backend-Reportes;MU-05
+15;Art.7,9;Delegar por rol;Propietaria;EV-01;RF-15;--;HU-15;CA-15;Backend-Usuarios;MU-01
+16;--;Stock por fecha;Propietaria;EV-09;RF-16;CU-06;HU-16;CA-16;Backend-Inventario;-
+17;--;Georreferencia;Admin. gral.;EV-10;RF-17;CU-01;--;--;Backend-Proveedores;MU-04
+18;--;Historial de precios;Propietaria;EV-11;RF-18;--;--;--;Backend-Precios;MU-14
+19;--;Configurar precios;Propietaria;EV-11;RF-19;CU-03;HU-19;CA-19;Backend-Precios;MU-14
+20;--;Registrar apagones;Propietaria;EV-12;RF-20;CU-10;HU-20;CA-20;Backend-Incidentes;-
+21;--;Continuidad operativa;Bodega;EV-13;RF-21;CU-01/CU-03;HU-21;CA-21;Cliente-Offline;-
+22;--;Devoluciones;Bodega;EV-14;RF-22;CU-09;--;--;Backend-Ventas;MU-14
+23;--;Auditoría Agrocalidad;Admin. gral.;EV-15;RF-23;CU-08;HU-23;CA-23;Backend-Trazabilidad;MU-16
+24;--;Búsqueda de producto;Bodega;EV-09;RF-24;CU-06;--;--;Backend-Inventario;MU-10
+25;--;QR de trazabilidad;Cliente;EV-03;RF-25;CU-08;--;--;Backend-Trazabilidad;MU-16
+26;--;Rendimiento del pesaje;Bodega;EV-04;RNF-01;CU-03;--;--;Backend-Pesaje;MU-07
+27;--;Disponibilidad del servicio;Todos;EV-20;RNF-02;--;--;--;Infraestructura;MU-20
+28;Art.30;Autenticación segura;Admin. gral.;EV-01;RNF-03;--;--;--;Backend-Usuarios;--
+29;--;Usabilidad de bodega;Bodega;EV-09;RNF-04;CU-01;--;--;Cliente-Web/Móvil;MU-06
+30;--;Arquitectura mantenible;Equipo técnico;--;RNF-05;--;--;--;Backend (todos);--
+31;--;Acceso multi-navegador;Todos;--;RNF-06;--;--;--;Cliente-Web;--
+32;Art.38;Auditoría de bajas;Admin. gral.;EV-07;RNF-07;CU-10;--;--;Backend-Bajas;MU-13
+33;--;Cobertura RF Must en MVP;Docente/Equipo;EV-16;RNF-08;--;--;--;MVP;--
+34;--;Integración con báscula;Bodega;--;RNF-09;CU-03;--;--;Backend-Pesaje;MU-07
+35;--;Nuevos tipos de producto;Propietaria;EV-11;RNF-10;--;--;--;Backend-Precios;--
+36;--;Reportes con alto volumen;Propietaria;EV-08;RNF-11;CU-12;--;--;Backend-Reportes;MU-18
+37;Art.30;Cifrado de datos personales;Todos;--;RNF-12;--;--;--;Backend/BD;--
+38;--;Accesibilidad táctil;Bodega;EV-09;RNF-13;CU-01;--;--;Cliente-Móvil;--
+39;--;Recuperabilidad offline;Bodega;EV-13;RNF-14;CU-01/CU-03;HU-21;CA-21;Cliente-Offline;--
+40;--;Calidad del código MVP;Docente/Equipo;EV-16;RNF-15;--;--;--;MVP;--
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
