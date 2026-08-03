@@ -1,0 +1,213 @@
+LICENCIA DEL PROYECTO CarniCore — Sistema Inteligente para la Gestión Integral de un Centro Cárnico
+======================================================================================================
+
+Copyright (c) 2026
+  Castro Bajaña Ariel Omar
+  Gamarra Araujo Edhu Xavier
+  Crespo Espinoza Kleber Obed
+  Quintero Gende Erick Jahir
+  Pérez Ruiz Carlos Andrés
+Universidad Técnica Estatal de Quevedo (UTEQ) — Facultad de Ciencias de la Computación
+Asignatura: Ingeniería de Requerimientos (ISR-401) — 2026–2027 PPA
+
+Este repositorio aplica un régimen de licenciamiento MIXTO, compuesto por dos
+licencias coexistentes cuyo alcance se declara de forma expresa en este archivo.
+El uso, redistribución o reutilización de cualquier parte de este proyecto implica
+la aceptación de las condiciones aquí descritas.
+
+
+================================================================================
+ALCANCE DE LAS LICENCIAS — RESUMEN OPERATIVO
+================================================================================
+
+  Material                                              Licencia aplicable
+  ----------------------------------------------------- -----------------------
+  Código fuente del Producto Mínimo Viable (MVP)        MIT (o Apache-2.0)
+    (carpeta 05_MVP/, excluyendo dependencias externas)
+
+  Documento ERS/SRS (01_ERS/) y manuscrito paralelo     CC BY 4.0 Internacional
+  (07_Publicacion/)
+
+  Conjunto de datos anonimizado depositado en Zenodo    CC BY 4.0 Internacional
+  (07_Publicacion/dataset_zenodo/ y DOI asignado)
+
+  Material en 02_Evidencias/00_Restringido/             SIN LICENCIA — NO SE
+    (consentimientos originales, videos/audios sin      REDISTRIBUYE — NO FORMA
+    anonimizar, actas firmadas, documentos originales   PARTE DEL DEPÓSITO
+    del cliente)                                         ABIERTO
+
+  Material restante del repositorio (diagramas,         CC BY 4.0 Internacional
+  mockups, scripts de análisis, prompts LLM, matrices,
+  cuestionarios anonimizados, transcripciones
+  anonimizadas, fotos sin rostros ni GPS)               CC BY 4.0 Internacional
+
+
+================================================================================
+1. LICENCIA DEL CÓDIGO FUENTE DEL MVP — MIT License
+================================================================================
+
+Se aplica la Licencia MIT (Massachusetts Institute of Technology) al código
+fuente del Producto Mínimo Viable contenido en la carpeta 05_MVP/.
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  THE SOFTWARE.
+
+Texto oficial de referencia: https://opensource.org/licenses/MIT
+
+
+================================================================================
+2. LICENCIA DEL DOCUMENTO Y DEL CONJUNTO DE DATOS — CC BY 4.0
+================================================================================
+
+Se aplica la licencia Creative Commons Atribución 4.0 Internacional (CC BY 4.0)
+al documento ERS/SRS (01_ERS/), al manuscrito paralelo (07_Publicacion/), al
+conjunto de datos anonimizado (07_Publicacion/dataset_zenodo/) y al material
+restante del repositorio que no esté cubierto por la sección 3 siguiente.
+
+Usted es libre de:
+  Compartir — copiar y redistribuir el material en cualquier medio o formato.
+  Adaptar — remezclar, transformar y construir a partir del material para
+            cualquier propósito, incluso comercialmente.
+
+Bajo las siguientes condiciones:
+  Atribución — Debe dar crédito de manera adecuada, brindar un enlace a la
+               licencia, e indicar si se han realizado cambios. Puede hacerlo
+               en cualquier forma razonable, pero no de forma tal que sugiera
+               que usted o su uso tienen el apoyo del licenciante.
+
+  Sin restricciones adicionales — No puede aplicar términos legales ni
+                                  medidas tecnológicas que restrinjan
+                                  legalmente a otras personas a hacer cualquier
+                                  uso permitido por la licencia.
+
+Texto legal completo de la licencia: https://creativecommons.org/licenses/by/4.0/legalcode
+Resumen legible para humanos:       https://creativecommons.org/licenses/by/4.0/deed.es
+
+Forma de citación sugerida (ver también CITATION.cff):
+  Castro Bajaña A., Gamarra Araujo E., Crespo Espinoza K., Quintero Gende E.
+  & Pérez Ruiz C. (2026). CarniCore — Sistema Inteligente para la Gestión
+  Integral de un Centro Cárnico (Versión 2A-v1.0) [Software, Documentación,
+  Conjunto de datos]. Universidad Técnica Estatal de Quevedo.
+  https://github.com/EdhuXav/CarniCore_Proyecto_ISR401
+
+
+================================================================================
+3. MATERIAL EXCLUIDO DEL RÉGIMEN DE LICENCIAMIENTO ABIERTO
+================================================================================
+
+De conformidad con la Ley Orgánica de Protección de Datos Personales del
+Ecuador (Registro Oficial Suplemento No. 459, 2021), con el Paquete Integral
+de Anexos y Guías de Elaboración — Solicitud de Aprobación Ética de los
+Proyectos Fin de Curso (ISR-401, 2026–2027 PPA) y con los principios FAIR de
+gestión de datos (Wilkinson et al., 2016), el contenido del directorio
+
+    02_Evidencias/00_Restringido/
+
+NO se licencia, NO se redistribuye y NO forma parte del depósito abierto en
+Zenodo ni de ninguna publicación científica. Este material incluye, de forma
+no exhaustiva:
+
+  - Consentimientos informados originales con cédula y firma manuscrita
+    visibles.
+  - Videos (MP4) y audios (MP3/WAV) sin anonimizar, con rostro y voz de los
+    participantes.
+  - Actas de validación (walkthrough) con firma original.
+  - Documentos originales aportados por la organización cliente, con
+    información operativa, financiera o tributaria no anonimizada.
+
+El material restringido se conserva cifrado con AES-256 (7-Zip o VeraCrypt)
+durante 24 meses desde la finalización del proyecto y se elimina de forma
+segura con acta firmada al cierre de ese plazo. La clave del contenedor se
+entrega únicamente al docente responsable por el espacio de la actividad en
+el SGA; nunca se incluye en este repositorio ni en este archivo.
+
+Cualquier intento de publicación, redistribución o reutilización del material
+restringido sin autorización escrita del docente responsable y del
+correspondiente consentimiento del titular de los datos constituye una
+vulneración a la normativa ecuatoriana de protección de datos personales y
+activa el gatekeeper G8 de la rúbrica de la Entrega 3 (2A) del PFC.
+
+
+================================================================================
+4. DEPÓSITO EN ZENODO Y DATASET ABIERTO
+================================================================================
+
+El conjunto de datos anonimizado, preparado según los principios FAIR y
+depositado en Zenodo con un Identificador de Objeto Digital (DOI) asignado,
+se publica bajo la licencia CC BY 4.0 indicada en la sección 2. El depósito
+se realiza al momento del envío del manuscrito paralelo a la revista
+objetivo, en la semana 16 del periodo académico, y contiene únicamente:
+
+  - Transcripciones anonimizadas de entrevistas (JSON estructurado).
+  - Respuestas del cuestionario sin columnas identificativas (CSV).
+  - Corpus etiquetado de RF y RNF (JSON).
+  - Matriz de trazabilidad (CSV).
+  - Prompts y respuestas de los LLM, cuando aplique al enfoque empírico
+    elegido (Markdown / JSON).
+  - Scripts de análisis en R o Python.
+  - README_dataset.md con el diccionario de datos y las instrucciones de
+    citación.
+
+Queda prohibida cualquier publicación que vincule el DOI de Zenodo con
+material de la zona restringida o que permita la re-identificación de
+participantes a partir del dataset abierto.
+
+
+================================================================================
+5. TERCERAS PARTES Y DEPENDENCIAS
+================================================================================
+
+Este proyecto puede incorporar dependencias externas (bibliotecas, marcos de
+trabajo, plantillas LaTeX, herramientas, modelos de lenguaje, etc.) sujetas
+a sus propias licencias. Las licencias de terceros se indican, cuando
+corresponda, en los archivos de manifiesto correspondientes (por ejemplo,
+05_MVP/THIRD_PARTY_NOTICES, requirements.txt, package.json, pom.xml). La
+presencia de esas dependencias no implica la cesión de sus licencias al
+conjunto del proyecto.
+
+
+================================================================================
+6. SIN GARANTÍA
+================================================================================
+
+El software, la documentación y el conjunto de datos se proporcionan "TAL
+CUAL", sin garantía de ningún tipo, expresa o implícita, incluyendo, entre
+otras, las garantías de comerciabilidad, idoneidad para un propósito
+determinado y no vulneración. Las personas autoras y la Universidad Técnica
+Estatal de Quevedo no serán responsables en ningún caso de los daños o
+reclamaciones de cualquier tipo derivados del uso del material.
+
+
+================================================================================
+7. CONTACTO
+================================================================================
+
+Para consultas sobre licenciamiento, reutilización del material o
+solicitudes de acceso al material restringido con fines de verificación
+académica, contactar al analista líder del proyecto:
+
+  Castro Bajaña Ariel Omar — acastrob@uteq.edu.ec
+
+Docente responsable:
+  Ing. Guerrero Ulloa Gleiston Cicerón — Universidad Técnica Estatal de
+  Quevedo, Facultad de Ciencias de la Computación.
+
+================================================================================
+Fin del archivo LICENSE.
+Versión del documento: 2A-v1.0 — 2026.
+================================================================================
