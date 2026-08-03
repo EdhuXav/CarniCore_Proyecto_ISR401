@@ -85,7 +85,7 @@ Curso: ISR-401 · Nivel: 4to · Paralelo: A · Entrega: 3 (2A) · Licencia docs:
 |---|---|:---:|---|---|
 | 1A | Conformación del equipo y plan de trabajo | 4 | Cerrada | `01_ERS/` (anterior) |
 | 1B | ERS/SRS parcial + primera ronda de campo | 10 | Cerrada | `02_Evidencias/` (ronda 1) |
-| **2A** | **ERS/SRS completo + componente empírico** | **13** | **En curso (corte 29-jul-2026)** | `01_ERS/`, `06_Experimento/` |
+| **2A** | **ERS/SRS completo + componente empírico** | **13** | **En curso** | `01_ERS/`, `06_Experimento/` |
 | 2B / Defensa | Manuscrito paralelo + envío a revista JCR | 17 | Pendiente | `07_Publicacion/` |
 
 ---
