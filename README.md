@@ -162,19 +162,19 @@ CarniCore_Proyecto_ISR401/
 
 ## Entregables clave (enlaces)
 
-| Recurso | Ubicación / Enlace | Estado |
-|---|---|---|
-| ERS/SRS completo (PDF unificado) | `01_ERS/ERS_SRS_2A_v1.0.pdf` | <!-- TODO: subir PDF --> |
-| Diagramas UML | `03_Modelado/Diagramas_UML/` | <!-- TODO: subir --> |
-| Mockups | `03_Modelado/Mockups/` | <!-- TODO: subir --> |
-| Matriz de trazabilidad (>= 40 filas) | `04_Trazabilidad/matriz_trazabilidad.csv` | <!-- TODO: subir --> |
-| MVP funcional (dentro del repo) | `05_MVP/` | <!-- TODO: subir --> |
-| Video demo del MVP (<= 3 min) | `05_MVP/video_demo.mp4` | <!-- TODO: subir --> |
-| Protocolo experimental (PDF) | `06_Experimento/protocolo.pdf` | <!-- TODO: subir --> |
-| Registro OSF del protocolo | `06_Experimento/osf_registration.pdf` (con URL persistente https://osf.io/...) | <!-- TODO: subir --> |
-| Scripts de análisis | `06_Experimento/scripts_analisis/` | <!-- TODO: subir --> |
-| Dataset en Zenodo (DOI) | `07_Publicacion/dataset_zenodo/` → Zenodo | Pendiente (semana 16) |
-| Documentación ética | `08_Etica/` | <!-- TODO: subir paquete base + adenda --> |
+| Recurso | Ubicación / Enlace |
+|---|---|
+| ERS/SRS completo (PDF unificado) | `01_ERS/ERS_SRS_2A_v1.0.pdf` |
+| Diagramas UML | `03_Modelado/Diagramas_UML/` |
+| Mockups | `03_Modelado/Mockups/` |
+| Matriz de trazabilidad (>= 40 filas) | `04_Trazabilidad/matriz_trazabilidad.csv` |
+| MVP funcional (dentro del repo) | `05_MVP/` |
+| Video demo del MVP (<= 3 min) | `05_MVP/video_demo.mp4` |
+| Protocolo experimental (PDF) | `06_Experimento/protocolo.pdf` |
+| Registro OSF del protocolo | `06_Experimento/osf_registration.pdf` (con URL persistente https://osf.io/...) |
+| Scripts de análisis | `06_Experimento/scripts_analisis/` |
+| Dataset en Zenodo (DOI) | `07_Publicacion/dataset_zenodo/` → Zenodo |
+| Documentación ética | `08_Etica/` |
 
 > Nota sobre el MVP: este proyecto aloja el Producto Mínimo Viable **dentro del mismo repositorio**, en la carpeta `05_MVP/`. No se usa un repositorio Git separado.
 
