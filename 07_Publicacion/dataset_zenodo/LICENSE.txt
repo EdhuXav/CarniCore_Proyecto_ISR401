@@ -1,0 +1,35 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Este conjunto de datos se publica bajo la licencia Creative Commons
+Atribución 4.0 Internacional.
+
+Usted es libre de:
+  - Compartir: copiar y redistribuir el material en cualquier medio o formato.
+  - Adaptar: remezclar, transformar y crear a partir del material, para
+    cualquier propósito, incluso comercialmente.
+
+Bajo los siguientes términos:
+  - Atribución: debe dar crédito de manera adecuada, brindar un enlace a la
+    licencia e indicar si se realizaron cambios. Puede hacerlo de cualquier
+    manera razonable, pero no de forma tal que sugiera que usted o su uso
+    tienen el apoyo de quienes crearon el conjunto de datos.
+  - Sin restricciones adicionales: no puede aplicar términos legales ni
+    medidas tecnológicas que restrinjan legalmente a otras personas de
+    hacer cualquier cosa que la licencia permite.
+
+Texto legal completo (Legal Code) de la licencia:
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+Resumen legible por humanos:
+https://creativecommons.org/licenses/by/4.0/deed.es
+
+---
+
+Cómo citar este conjunto de datos (formato provisional, a completar con
+el DOI real de Zenodo una vez depositado):
+
+Castro Bajaña, A. O., Crespo Espinoza, K. O., Gamarra Araujo, E. X.,
+Pérez Ruiz, C. A., & Quintero Gende, E. J. (2026). Conjunto de datos:
+Detección automática de ambigüedad en requisitos funcionales -- estudio
+de caso CarniCore [Conjunto de datos]. Zenodo.
+https://doi.org/[PENDIENTE -- DOI asignado al depositar datos reales]
