@@ -13,7 +13,7 @@ ID,Ley-Art.,Objetivo,Interesado,EV,RF/RNF,CU,HU,CA,Componente,Mockup
 12,,Diferencias de inventario,Admin. gral.,EV-09,RF-12,CU-12,HU-12,CA-12,Backend-Inventario,MU-05
 13,,Decisiones gerenciales,Propietaria,EV-08,RF-13,CU-12,HU-13,CA-13,Backend-Reportes,MU-05
 14,,Desempeño del negocio,Propietaria,EV-08,RF-14,CU-12,HU-13,CA-13,Backend-Reportes,MU-05
-15,Art.7,9,Delegar por rol,Propietaria,EV-01,RF-15,CU-01,HU-15,CA-01,Backend-Usuarios,MU-01
+15,"Art.7,9",Delegar por rol,Propietaria,EV-01,RF-15,CU-01,HU-15,CA-01,Backend-Usuarios,MU-01
 16,,Stock por fecha,Bodega,EV-09,RF-16,CU-06,HU-16,CA-06,Backend-Inventario,MU-04
 17,,Georreferencia,Admin. gral.,EV-10,RF-17,CU-17,HU-17,CA-17,Backend-Proveedores,MU-14
 18,,Historial de precios,Propietaria,EV-11,RF-18,,HU-18,,Backend-Precios,MU-14
