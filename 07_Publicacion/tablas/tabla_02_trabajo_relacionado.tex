@@ -1,0 +1,25 @@
+\begin{table}[ht]
+\centering
+\caption{Comparación de estudios relacionados sobre detección de ambigüedad y \textit{smells} en requisitos}
+\label{tab:related-work}
+\begin{tabularx}{\linewidth}{p{2.8cm}ccp{2.5cm}p{2.5cm}p{3cm}}
+\toprule
+\textbf{Referencia} & \textbf{Año} & \textbf{Tipo} & \textbf{Intervención} & \textbf{Resultado principal} & \textbf{Diferencia con este trabajo} \\
+\midrule
+Ferrari \& Esuli~\cite{ferrari2019nlp}
+  & 2019 & Experimental & NLP cross-domain & F$_1 \geq 0.70$ en 3 dominios & No español, no dominios alimentarios \\
+Femmer et al.~\cite{femmer2017smells}
+  & 2017 & Caso estudio & Herramienta de smells & 80+ RF analizados en industria & No regex, no español \\
+Gervasi et al.~\cite{gervasi2017ambiguity}
+  & 2017 & Revisión & Marco de clasificación & Taxonomía de ambigüedad & Marco teórico sin detector aplicado \\
+Fischbach et al.~\cite{fischbach2023acceptance}
+  & 2023 & Experimento & NLP + LLM & Alta precisión en aceptación & LLM, no regex, inglés industrial \\
+Arora et al.~\cite{arora2024genai}
+  & 2024 & Revisión & LLMs en IR & Estado del arte & Sin detector aplicado al español \\
+Cheng et al.~\cite{cheng2026genai}
+  & 2026 & Revisión sistemática & GenAI para IR & 100+ estudios clasificados & Sin corpus real latinoamericano \\
+\midrule
+\textbf{Este trabajo} & \textbf{2026} & \textbf{Exploratorio} & \textbf{Regex, español} & \textbf{1/27 RF ambiguo} & \textbf{Corpus real, Ecuador, dominio cárnico} \\
+\bottomrule
+\end{tabularx}
+\end{table}
