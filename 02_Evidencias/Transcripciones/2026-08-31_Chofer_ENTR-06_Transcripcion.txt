@@ -1,0 +1,109 @@
+CODIGO DE ENTREVSUTADO: ENTR-06
+
+Entrevistador: Bueno, soy [Entrevistador]. Un agradecimiento de antemano por aceptar lo que es esta entrevista para lo que es nuestro proyecto. Antes de empezar, ¿está de acuerdo con solicitar más que nada la grabación de esta entrevista?
+
+ENTR-06: Sí.
+
+Entrevistador: Listo. Para empezar con el proyecto, con algunas preguntas, pues, vamos a hacer unas preguntas más o menos de información general. ¿Podría decir su nombre, su apellido?
+
+ENTR-06: Mi nombre y apellido es [ENTR-06].
+
+Entrevistador: ¿Cuál sería su cargo dentro de la distribuidora?
+
+ENTR-06: Mi cargo es ser chofer, llevar los pedidos a las sucursales o a veces Hago entrega a clientes que solicitan con anticipación un pedido.
+
+Entrevistador: Listo. ¿Cuáles serían sus principales responsabilidades en su puesto de trabajo?
+
+ENTR-06: Pues empacar los pedidos y llevarlos a cada uno de los clientes de una manera puntual.
+
+Entrevistador: ¿Qué herramientas o qué medios utiliza para hacer su trabajo?
+
+ENTR-06: El camión. Y una de las más importantes creo que es estar pendiente al móvil, el cual nos notifican a dónde tenemos que ir y los pedidos. Estamos al pendiente de las personas, de las ubicaciones de las personas.
+
+Entrevistador: El medio de transporte, el camión, un medio de comunicación básicamente.
+
+ENTR-06: Sí.
+
+Entrevistador: En cuanto al proceso de las cargas y salidas, ¿puedes describirme cómo inicia su jornada?
+
+ENTR-06: Pues, llego temprano, espero que el carnicero o el tercenario haga el despacho de los pedidos, y en la mañana embarco todo el camión con normalidad, y me voy a dirigir a cada una de las sucursales, de las cuales necesitan abastecer su almacenamiento. Y en la tarde regreso y de regreso el camión y ayudo en lo que haya que hacer en el local principal.
+
+Entrevistador: Listo. ¿Cómo sabe usted qué producto corresponde a tal sucursal?
+
+ENTR-06: La bolsa tiene un nombre, ahí se le pone una etiqueta, el cual es de... ya va marcado para la ruta, ya tiene la ruta, el sucursal o incluso el nombre del cliente, la cédula y así podemos identificar la información general
+
+Entrevistador: listo, ¿eso de pronto le ha generado algún problema?
+
+ENTR-06: no, hasta ahorita en el momento no
+
+Entrevistador: recibe algún documento o lista antes de salir con el camión?
+
+ENTR-06: sí Recibo una nota de entrega, la cual tengo que al momento de entregar, hacer revisar con el cliente o con las demás sucursales una lista de los productos o de los que necesitaban para que todo esté completo.
+
+Entrevistador: ¿Le gustaría recibir esa información de manera digital antes de salir?
+
+ENTR-06: Sí.
+
+Entrevistador: Listo, ahora hablando un poco ya de lo que es la entrega en sucursales, ¿qué ocurre cuando llega a la sucursal a entregar?
+
+ENTR-06: Descarga el producto, las personas que reciben revisan si está todo y firman el papel de entrega o el residuo y nada más.
+
+Entrevistador: Ha habido algunos casos, este... en que por ejemplo la sucursal diga que no llevó algo bien
+
+ENTR-06: sí en ese caso el problema es porque si no hay comprobante yo no puedo demostrar que si entregué la sucursal dice que faltó entonces no se puede probar nada con tal un por ejemplo un registro digital que confirme en el momento yo creo que eso se lo podía resolver
+
+Entrevistador: Bueno, ahora, ¿cómo se verifica la cantidad de entrega en la sucursal?
+
+ENTR-06: Bueno, ahí al momento de nosotros entregar, se entrega ya de acuerdo a la información del cliente y el peso. Por decir, nosotros nos dan la factura, cuánto va en tal parte, cuánto va de este, cuánto el otro, cuánto logramos esto y esto. Entonces, en unas que otras sucursales no tienen la báscula de pesaje, entonces si hay una diferencia en que si hay algún problema en eso, se presenta alguna dificultad, entonces tenemos que responder ante esa y reponer, reponer si falta o si falta producto.
+
+Entrevistador: Entonces, básicamente, el que recibe la cuenta o el encargado de pesaje, ¿no?
+
+ENTR-06: Sí, son los responsables.
+
+Entrevistador: ¿Le parecería útil que el sistema generara un comprobante digital de entrega que ambas partes puedan confirmar?
+
+ENTR-06: Sí, me facilitaría mucho más rápido el trabajo, ya sea para el propietario y para la sucursal o el cliente que reciba, ya que ellos ambos podrán saber la cantidad exacta al momento de recibir.
+
+Entrevistador: En cuanto a la ruta y tiempo de entrega, ¿Cuántas sucursales visita en un día normal y cuánto tiempo le toma la ruta completa?
+
+ENTR-06: Normalmente son dos o tres sucursales por día, depende del volumen que me abastezcan para despachar o lo que se pueda desplazar. se puede entregar al día, pero normalmente son unas 3 o 2, máximo 4 secursales en el día. La ruta se puede tomar entre 2-4 horas ya que unas están largas, otras son entre el mismo pueblo.
+
+Entrevistador: ¿Existe alguna hoja de ruta que usted siga entregar las entregas cada día?
+
+ENTR-06: No, yo despacho conforme a mí se me dé el tiempo mucho más fácil para llegar al cliente, mucho más cómodo para mí.
+
+Entrevistador: Entonces, bueno, más que nada entregan las órdenes como sea mejor conveniente, ¿no? O las indicaciones del administrador también.
+
+ENTR-06: Sí.
+
+Entrevistador: ¿Un sistema que le sugiriera el orden óptimo de entrega sería de ayuda?
+
+ENTR-06: Sí, para ir en orden y ir primero, no sé, primero tendría que no pensar tanto a dónde ir o me ahorraría el, por decir, sería un poco más ordenado.
+
+Entrevistador: Listo, Léo. ¿Tiene usted contacto con el área de producción o recepción mientras está en ruta?
+
+ENTR-06: Solo por teléfono. Si hay algún problema, en la ruta nos avisan si hace falta o si hubo un error. Entonces toca resolverlo. No hay forma de que yo desde el camión vaya hasta la planta que esté disponible.
+
+Entrevistador: Listo, listo. En cuanto al apartado de comunicación y algunas necesidades, ¿Cómo se comunica con la administración mientras está fuera de la planta?
+
+ENTR-06: Casi siempre es por WhatsApp. Soy un camión de último momento de un pedido, me llega el mensaje y me dispongo a entregarlo. Pero el problema es que a veces estoy manejando y no veo los mensajes a tiempo y ahí hay un poco de contracciones y problemas en el área de trabajo. Puede ser un inconveniente estar en ruta y no poder ver las ventajas si hay algún problema.
+
+Entrevistador: ¿Qué información le gustaría tener disponible desde su teléfono cuando está en ruta?
+
+ENTR-06: Quizás algo para confirmar que no llegó, una notificación. o contactarnos con la sucursal de la cual vamos a llegar o la que lleguemos más temprano para ya con eso tener la novedad del trabajo que tendríamos que hacer.
+
+Entrevistador: Si el sistema genera un resumen de lo que entregó en su jornada, ¿qué información le gustaría que incluyera?
+
+ENTR-06: Cuántos kilos lleve, porque así los clientes no... A veces existen reclamos o la gente se quiere aprovechar y me sería mucho más fácil llevar como por ejemplo en antes que me hizo la pregunta que ambos nos llegue el peso exacto o una nota de venta al cliente y al propietario y la hora de entrega sería también que uno llegue puntual al entregar la secursal y eso creo que sería suficiente para que el administrador sepa cómo estuvo el día sin tener Si tiene que preguntarle.
+
+Entrevistador: Bueno, ahora, pensando en su trabajo diario, ¿cuál sería la función más importante que debería tener el sistema?
+
+ENTR-06: Yo creo que una lista antes de salir. O sea, una lista bien clara y confirmada para que cuando llegue a la sucursal yo sepa exactamente en lo que entrego. el peso, la cantidad cuántos paquetes y así cuántas envolturas y evitar errores en el viaje para más que menos ahorrarse el trabajo porque errores pueden costar tiempo y combustible evitar esos errores
+
+Entrevistador: ¿estaría dispuesto a usar esto en su móvil? o sea, en el móvil registrar las entregas
+
+ENTR-06: Sí, siempre y cuando sea una aplicación sencilla de llevar, no sea complicada el sistema de manejo, que uno lo entienda y sea mucho más fácil para mí entregar. Y entregar y sea una aplicación sencilla, que sea como de dos top, que es sin tener que escribir mucho y mucho más ágil incluso para la tecnología, porque hay compañeros que son compañeros de más edad y a veces la tecnología ahora les cuesta adaptarse entonces sería algo más práctico para en edad general
+
+Entrevistador: listo, listo muchas gracias señor [ENTR-06] le agradecemos su participación en este proyecto gracias por responder a las preguntas
+
+ENTR-06: gracias
