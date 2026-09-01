@@ -1,0 +1,179 @@
+Evidencia: EV-12
+Participante: P12
+Tipo de participante: Administrador General y Contador
+Fecha de transcripción: 31/08/2026
+====================================================
+TRANSCRIPCIÓN ANONIMIZADA
+====================================================
+
+Entrevistador:
+Muy buen día. Somos los integrantes del grupo de la asignatura Ingeniería de Requerimientos y realizaremos una entrevista para la recolección de información del proyecto de gestión de una distribuidora de productos cárnicos. Con su permiso, nos gustaría grabar la conversación en audio para poder revisar sus respuestas con exactitud al momento de redactar el documento. ¿Nos autoriza usted a proceder con la grabación?
+
+Participante P03:
+Sí.
+
+Entrevistador:
+Continuemos con el primer bloque. ¿Cuál es su nombre y apellido?
+
+Participante P12:
+[Dato omitido por confidencialidad – Participante P12].
+
+Entrevistador:
+¿Cuál es su cargo dentro de la distribuidora?
+
+Participante P03:
+Soy el administrador general y también llevo la parte contable. Me encargo de controlar los costos, gestionar los pagos a proveedores, supervisar que las áreas operen correctamente y generar los reportes que necesita la propietaria para tomar decisiones.
+
+Entrevistador:
+¿Cuáles son sus principales responsabilidades en su puesto de trabajo?
+
+Participante P03:
+Controlar el flujo de caja, registrar las compras y ventas, coordinar con proveedores, autorizar bajas de inventario, revisar que los despachos cuadren con lo facturado, supervisar el desempeño de cada área, y preparar informes semanales y mensuales para la propietaria.
+
+BLOQUE: HERRAMIENTAS Y CONTROL DE INGRESOS Y EGRESOS
+----------------------------------------------------
+
+Entrevistador:
+¿Qué herramientas o medios usa actualmente para hacer su trabajo?
+
+Participante P03:
+Principalmente hojas de cálculo en Excel para el control de costos y ventas, además de una libreta para anotar los movimientos del día, y las facturas de proveedores las archivo físicamente. No hay un sistema integrado; cada área maneja su propio registro y yo trato de consolidar todo al final del día o de la semana.
+
+Entrevistador:
+¿Cómo lleva usted el control de los ingresos y egresos del negocio?
+
+Participante P03:
+Registro las compras a proveedores cuando llegan las facturas, y los ingresos los consolido a partir de lo que me reportan las sucursales y la venta directa en planta. Todo va en una hoja de Excel donde categorizo por tipo de gasto: materia prima, transporte, nómina, servicios; y al final del mes cuadro todo para presentar a la propietaria.
+
+Entrevistador:
+¿Cuánto tiempo le toma consolidar esa información manualmente?
+
+Participante P03:
+Varias horas a la semana, y a veces un día completo al mes para el cierre. El problema es que los datos no vienen en un formato uniforme: unas áreas me mandan fotos de cuadernos, otras me llaman por teléfono, y yo tengo que escribirlo todo en un solo lugar. Con un sistema centralizado ese tiempo se reduciría drásticamente.
+
+BLOQUE: COSTOS DE PRODUCCIÓN
+----------------------------------------------------
+
+Entrevistador:
+¿Cómo determina usted el costo real de producción de cada corte?
+
+Participante P03:
+Es muy difícil hacerlo con precisión ahora mismo. Sé cuánto pagué por el animal, pero no tengo datos exactos de cuántos kilos de cada corte salieron de él. El costo por kilo lo estimo de forma general, no por tipo de corte, y eso hace que los precios de venta no siempre reflejen el costo real.
+
+Entrevistador:
+¿Le ayudaría que el sistema registrara el rendimiento de cada animal por corte para calcular costos precisos?
+
+Participante P03:
+Sería fundamental. Si el sistema me dice que de un cerdo de 90 kilos salieron 20 kilos de brazo, 15 de lomo y 10 de costilla, puedo calcular el costo exacto de cada corte y fijar precios con margen real. Ahora estoy adivinando, y eso puede generar pérdidas sin que uno se dé cuenta.
+
+BLOQUE: CUENTAS POR PAGAR A PROVEEDORES
+----------------------------------------------------
+
+Entrevistador:
+¿Cómo controla usted las cuentas por pagar a proveedores?
+
+Participante P03:
+En una hoja de Excel tengo anotado a quién le debo, cuánto y para cuándo vence el pago. Pero si me llegan varias facturas en la semana y no actualizo a tiempo, se me puede pasar una fecha. Ha habido casos en que un proveedor me llama a cobrar y ahí me doy cuenta de que tenía el pago pendiente.
+
+Entrevistador:
+¿Le ayudaría que el sistema registrara cada compra y generara alertas de vencimiento de pagos?
+
+Participante P03:
+Sí, muchísimo. Que cuando uno ingresa una factura de proveedor, el sistema me ponga la fecha de vencimiento y me avise con anticipación. Así no se me pasa ningún pago y puedo mantener una buena relación con los proveedores.
+
+BLOQUE: EVALUACIÓN DE PROVEEDORES
+----------------------------------------------------
+
+Entrevistador:
+¿Cómo evalúa usted el desempeño de los proveedores?
+
+Participante P03:
+De manera informal. Sé por experiencia cuáles proveedores entregan animales de mejor calidad o con pesos más exactos, pero no tengo datos concretos para respaldarlo. Si hay un reclamo de calidad, no puedo recordar con certeza quién trajo el lote, porque no llevo un historial sistematizado por proveedor.
+
+Entrevistador:
+¿Le gustaría que el sistema generara un historial de desempeño por proveedor con datos de peso, calidad y cumplimiento?
+
+Participante P03:
+Sería bastante valioso. Con ese historial podría negociar mejor los precios, priorizar a los proveedores más confiables y tener argumentos concretos si hay una disputa de calidad. Ahora esas decisiones las tomo con intuición, no con datos.
+
+BLOQUE: BAJAS DE INVENTARIO
+----------------------------------------------------
+
+Entrevistador:
+¿Cómo controla usted las bajas de inventario por producto dañado o perdido?
+
+Participante P03:
+Cuando un área reporta un producto en mal estado, primero me avisan, lo verificamos, lo pesamos y lo autorizamos para dar de baja. Anoto el peso y el motivo en un papel y luego lo paso al Excel. Ese proceso a veces se demora bastante, o el papel se puede perder antes de que uno lo registre.
+
+Entrevistador:
+¿Le gustaría que el sistema permitiera registrar y justificar cada baja con evidencia, y actualizar el inventario automáticamente?
+
+Participante P03:
+Exactamente. Que desde el área correspondiente puedan registrar la baja con el motivo, el peso y una foto si es posible, y que eso llegue a mí para aprobarlo en el sistema. Así queda documentado, el inventario se actualiza solo y yo tengo el historial de pérdidas para el análisis mensual.
+
+BLOQUE: VISIBILIDAD DE INVENTARIO Y DESPACHOS
+----------------------------------------------------
+
+Entrevistador:
+¿Tiene usted visibilidad en tiempo real del inventario total de la distribuidora?
+
+Participante P03:
+No. Para saber cuánto hay en la planta tengo que llamar a la encargada de recepción o ir físicamente. Para saber qué tiene cada sucursal, tengo que llamarles. No hay ningún panel donde pueda ver todo consolidado; eso me hace bastante dependiente de que cada área me informe a tiempo.
+
+Entrevistador:
+¿Cómo supervisa usted que los despachos a sucursales sean correctos?
+
+Participante P03:
+Principalmente comparo lo que el carnicero dice que despachó con lo que la sucursal dice que recibió. Si hay una diferencia hay que investigar, y el problema es que ninguno de los dos tiene un registro formal. Uno me puede decir de palabra y el otro me puede mandar un mensaje; sin documentos no puedo saber quién tiene la razón.
+
+Entrevistador:
+¿Le ayudaría que el sistema generara comprobantes digitales de despacho y recepción confirmados por ambas partes?
+
+Participante P03:
+Sería una solución perfecta para el problema. Si el carnicero registra lo que despachó y la sucursal confirma lo que recibió, yo puedo ver esa información desde mi panel sin tener que mediar en cada discusión. Las diferencias quedarían evidentes y se resolverían con datos, no con palabras.
+
+BLOQUE: REPORTES Y COMUNICACIÓN
+----------------------------------------------------
+
+Entrevistador:
+¿Qué reportes genera usted actualmente y con qué frecuencia?
+
+Participante P03:
+Un resumen semanal de ventas y gastos para la propietaria, además de un cierre mensual más detallado con márgenes por área. También preparo el reporte de nómina cada quincena. Todo lo hago a mano en Excel, compilando información de varias fuentes; es un proceso que me toma bastante tiempo y en el que pueden ocurrir errores de transcripción.
+
+Entrevistador:
+¿Cómo se comunica con las diferentes áreas para obtener la información necesaria?
+
+Participante P03:
+Por WhatsApp en su mayoría, o de palabra cuando estoy en la planta. Cada área tiene su propio cuaderno o papel y yo tengo que recopilar toda esa información de forma manual. No hay un canal único ni un sistema que centralice los datos operativos, y eso puede generar retrasos y datos incompletos.
+
+BLOQUE: REQUERIMIENTOS DEL SISTEMA
+----------------------------------------------------
+
+Entrevistador:
+¿Qué información le gustaría tener disponible en tiempo real desde su rol de administrador?
+
+Participante P03:
+Un panorama actual de planta y sucursales, el total de despachos del día, las ventas acumuladas por sucursal, las cuentas por pagar próximas a vencer y las alertas de productos próximos a vencerse en cámara. Con eso tendría una visión completa del negocio sin depender de que cada área me informe.
+
+Entrevistador:
+Pensando en su trabajo diario, ¿cuál sería la función más importante que debería tener el nuevo sistema desde su perspectiva?
+
+Participante P03:
+La trazabilidad completa de cada movimiento, desde que entra el animal del proveedor hasta que el corte llega al cliente final. Si tengo ese rastro en el sistema puedo responder cualquier pregunta: de dónde vino el producto, cuánto costó, quién lo despachó, cuándo llegó a la sucursal y cuánto se vendió. Eso es lo que hoy no existe y lo que más le hace falta al negocio.
+
+Entrevistador:
+¿Estaría dispuesto a liderar la implementación del sistema en todas las áreas?
+
+Participante P03:
+Sí, es parte de mi rol. Lo que necesitaría es que el sistema tenga niveles de usuario bien definidos, que sea posible capacitar a cada área en sus módulos específicos sin abrumarlos con funciones que no les corresponden, y que yo pueda tener una visión global de todo. Si el sistema está bien diseñado, la adopción no debería ser difícil; la gente cambia cuando ve que el sistema le facilita el trabajo, no cuando se lo imponen.
+
+Entrevistador:
+Con esto concluiríamos la entrevista para la recolección de datos. Muchas gracias y que tenga buen día.
+
+Participante P03:
+Muchas gracias a ustedes.
+
+====================================================
+FIN DE LA TRANSCRIPCIÓN
+====================================================
