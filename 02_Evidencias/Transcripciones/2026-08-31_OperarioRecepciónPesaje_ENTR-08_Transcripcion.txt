@@ -1,8 +1,6 @@
 CÓDIGO DE ENTREVISTADO: ENTR-08
 
-Entrevistador: Buenas noches. En esta ocasión vamos a realizar una entrevista como parte del levantamiento de requisitos para nuestro proyecto CarniCore. La información que nos proporcione nos ayudará a identificar las principales necesidades y problemas del proceso actual, para posteriormente plantear funcionalidades que puedan ser incorporadas al sistema. La entrevista será breve y consta de varias preguntas relacionadas con sus actividades diarias. No existen respuestas correctas o incorrectas; lo que nos interesa es conocer cómo se realiza realmente el trabajo desde su experiencia. Si está de acuerdo, podemos comenzar. Para empezar, ¿cuál es su nombre y apellido?
-
-ENTR-08: Mi nombre es Carlos José Muñoz Sánchez.
+Entrevistador: Buenas noches. En esta ocasión vamos a realizar una entrevista como parte del levantamiento de requisitos para nuestro proyecto CarniCore. La información que nos proporcione nos ayudará a identificar las principales necesidades y problemas del proceso actual, para posteriormente plantear funcionalidades que puedan ser incorporadas al sistema. La entrevista será breve y consta de varias preguntas relacionadas con sus actividades diarias. No existen respuestas correctas o incorrectas; lo que nos interesa es conocer cómo se realiza realmente el trabajo desde su experiencia. Si está de acuerdo, podemos comenzar.
 
 Entrevistador: ¿Cuál es su cargo dentro de la distribuidora?
 
