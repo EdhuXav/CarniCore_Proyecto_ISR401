@@ -1,7 +1,7 @@
 """
 detector_ambiguedad.py
 Detector automático de ambigüedad y malos olores (smells) en requisitos --
-CarniCore, Entrega 3 (2A), Enfoque 2 del componente empírico.
+CarniCore, Entrega 4 (2B), Enfoque 2 del componente empírico.
 
 Implementa, sobre texto en español, las 3 categorías de patrón descritas en
 la Sección 7 del protocolo experimental y en el Método del manuscrito:
@@ -15,9 +15,13 @@ debe coincidir con lo declarado en el protocolo antes de ejecutar el
 experimento real con el panel de personas expertas (no debe ajustarse
 después de ver los resultados).
 
-Entrada:  25 RF verbatim del ERS/SRS (Sección 3.2, main.tex), sin ID,
-          nombre, fuente ni prioridad -- tal como los vería el panel ciego.
-Salida:   clasificaciones_detector.csv (07_Publicacion/dataset_zenodo/)
+Entrada:  27 RF verbatim del ERS/SRS v2.0 (Sección 3.2, ERS_SRS_2B_v2.0.tex), sin ID,
+          nombre, fuente ni prioridad -- tal como los vería el panel ciego. Los 25 RF
+          heredados de la Entrega 3 (2A) se mantienen sin alterar (rf25.json -> rf27.json
+          es un append puro, verificado); RF-26 y RF-27 se incorporan con el texto literal
+          de sus fichas en el ERS v2.0.
+Salida:   clasificaciones_detector.csv (mismo directorio que este script:
+          06_Experimento/scripts_analisis/)
 """
 
 import csv
@@ -123,7 +127,7 @@ def clasificar_rf(rf):
 
 
 def main():
-    entrada = Path(__file__).with_name("rf25.json")
+    entrada = Path(__file__).with_name("rf27.json")
     with open(entrada, encoding="utf-8") as f:
         rf_list = json.load(f)
 
