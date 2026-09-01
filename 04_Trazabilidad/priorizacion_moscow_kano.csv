@@ -1,4 +1,4 @@
-﻿ID-RF,MoSCoW,Kano,WSJF,Justificación breve
+ID-RF,MoSCoW,Kano,WSJF,Justificación breve
 RF-01,Must,Básica,8.0,Sin proveedor regularizado no hay trazabilidad legal de origen.
 RF-02,Must,Básica,8.0,Exigencia directa de Agrocalidad; riesgo regulatorio si se omite.
 RF-03,Must,Básica,8.0,Núcleo operativo diario de bodega.
@@ -6,9 +6,9 @@ RF-04,Must,Básica,7.5,"Reemplaza el cálculo manual, fuente principal de errore
 RF-05,Should,Desempeño,3.0,Mejora la experiencia pero no bloquea la operación.
 RF-06,Must,Básica,7.0,Sin despiece registrado no hay inventario por corte.
 RF-07,Must,Básica,7.0,Base del control de inventario por cámara.
-RF-08,Must,Deleite/Desempeño,6.5,Ataca directamente la pérdida por vencimiento reportada por la propietaria.
+RF-08,Must,Deleite,6.5,Ataca directamente la pérdida por vencimiento.
 RF-09,Must,Básica,6.5,Sustenta pérdidas con evidencia y control gerencial.
-RF-10,Must,Básica,7.0,Sin descuento automático el inventario queda desincronizado de las ventas.
+RF-10,Must,Básica,7.0,Sin descuento automático el inventario queda desincronizado.
 RF-11,Must,Deleite,6.0,Responde a auditorías de Agrocalidad en tiempo real.
 RF-12,Should,Desempeño,2.5,Mejora el control pero no es indispensable para operar.
 RF-13,Must,Desempeño,5.5,Insumo directo de decisiones gerenciales.
@@ -18,9 +18,11 @@ RF-16,Must,Básica,5.5,Permite auditar diferencias de inventario por fecha.
 RF-17,Should,Deleite,1.5,"Enriquece la trazabilidad, no crítico."
 RF-18,Could,Indiferente,1.0,Consulta histórica de valor secundario.
 RF-19,Must,Desempeño,5.0,Necesario para operar cambios de precio sin intervención técnica.
-RF-20,Must,Deleite,4.5,Sustenta bajas por causa específica identificada en la entrevista (apagones).
-RF-21,Must,Básica,6.0,Requisito de continuidad operativa ante conectividad intermitente.
+RF-20,Must,Deleite,4.5,Sustenta bajas por apagones identificados en la entrevista.
+RF-21,Must,Básica,6.0,Continuidad operativa ante conectividad intermitente.
 RF-22,Should,Desempeño,2.5,Mejora el control de postventa.
 RF-23,Must,Deleite,4.0,Reduce tiempo de respuesta ante auditorías.
 RF-24,Should,Desempeño,2.0,Mejora la usabilidad operativa de bodega.
-RF-25,Could,Deleite,1.0,"Diferenciador de cara al cliente final, no bloqueante."
+RF-25,Could,Deleite,1.0,"Diferenciador de cara al cliente, no bloqueante."
+RF-26,Must,Básica,5.5,Delimita campos públicos del QR; exigido por LOPDP (minimización).
+RF-27,Must,Desempeño,4.5,Permite análisis por proveedor; aprobado por CCB (RFC-01).
