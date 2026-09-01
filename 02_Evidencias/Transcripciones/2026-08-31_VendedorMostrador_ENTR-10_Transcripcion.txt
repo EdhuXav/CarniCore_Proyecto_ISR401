@@ -1,0 +1,109 @@
+CODIGO DE ENTREVISTADO: ENTR-10
+
+Entrevistador: Buenas noches, en esta ocasión vamos a realizar una entrevista como parte del levantamiento de requisitos para nuestro proyecto CARNICOR. El objetivo de esta entrevista es conocer cómo se realizan actualmente las actividades en el área de resección y bodega, especialmente en procesos como resección de animales o materia prima, el pesaje, el registro de proveedores, el control de inventario y la coordinación con las demás áreas. La información que nos proporcione nos ayudará a identificar las principales necesidades y problemas del proceso actual, para posteriormente plantear funcionalidades que pueden ser incorporadas al sistema.
+
+La entrevista será breve y consta de varias preguntas relacionadas con sus actividades diarias. No existen respuestas correctas o incorrectas, lo que nos interesa es conocer cómo se realiza realmente el trabajo desde su experiencia. Para empezar, ¿cuál es su nombre y apellido?
+
+ENTR-10: Buenas noches, mi nombre es Manuel Lorenzo Peralta Santillán.
+
+Entrevistador: ¿Cuál es su cargo dentro de la distribuidora?
+
+ENTR-10: Soy vendedor del mostrador en la planta, llevo un año aquí, antes trabajé en una tienda de abarrotes, así que la atención al cliente no me es nueva, pero lo de la carne sí fue aprender desde cero.
+
+Entrevistador: ¿Cuáles son sus principales responsabilidades en su puesto de trabajo?
+
+ENTR-10: Atender a la gente que viene a comprar, pesar lo que piden, decirles cuánto es, cobrar y entregar bien empacado. También cuido que el mostrador esté presentable todo el tiempo, porque si el producto no se ve bien, la gente no compra.
+
+Al cierre, hago el cuadre de caja y anoto lo que sobro.
+
+Entrevistador: En base a esto, ¿qué herramientas o medios usa actualmente para hacer su trabajo?
+
+ENTR-10: Bueno, yo uso lo que es la báscula, la calculadora del teléfono y un cuaderno. Los precios me los sé de memoria o los busco en una hojita que tenemos pegada en el mostrador, pero esa hoja no siempre está actualizada, no hay sistema de cobro ni nada por el estilo.
+
+Entrevistador: Yerto nos habló que dos sobre el proceso de atención y venta al cliente. Describa de paso a paso cómo atiende a un cliente desde que llega hasta que se va.
+
+ENTR-10: Bueno, yo atiendo a un cliente, el cliente me dice que quiere y yo voy a la vitrina a sacar el corte, lo pongo en la báscula, le muestro el peso, él aprueba o me pide un poco más o menos, y ahí calculo el precio con la calculadora, empaco, cobro y entrego.
+
+Si el cliente es de los frecuentes, ya sé lo que suele pedir, y lo tengo listo y es más rápido.
+
+Entrevistador: ¿Cómo sabe usted qué productos tiene disponibles para vender en cada momento?
+
+ENTR-10: Lo quedo en la vitrina y en las bandejas del mostrador, si algo no está en la vista, pregunto al carnicero. No siempre me contesta rápido porque está ocupado, así que a veces le digo al cliente que espera un momento, o voy a verificar yo mismo, eso interrumpe la atención a veces.
+
+Entrevistador: ¿Esa situación la ha causado inconvenientes con los clientes?
+
+ENTR-10: Sí, claro, específicamente con los que vienen apurados en la mañana, hay gente que no quiere esperar y se van. Si yo tuviera una pantalla que me dijera que hay disponibles sin tener que ir a preguntar, atendería más rápido y perdía menos venta.
+
+Entrevistador: ¿Cómo determina usted el precio de cada corte al momento de la venta?
+
+ENTR-10: Tenemos una hoja pegada en la pared del mostrador, con los precios por kilo de cada corte, pero el problema es que no siempre está al día, cuando la propietaria cambia un precio, a veces se olvida de actualizar la hoja, y uno cobra lo viejo sin saberlo, causando pérdidas.
+
+Eso también genera descuadres en la caja al final del día.
+
+Entrevistador: ¿En base a esto, le ayudaría que los precios estuvieran actualizados en una pantalla del sistema?
+
+ENTR-10: Sí, claro, así en cuanto cambie un precio, yo ya lo veo sin que nadie me tenga que avisar, y si el sistema ya calcula el total al poner el peso, mejor todavía porque ya no necesito la calculadora ni la hoja.
+
+Entrevistador: Yendo a bloque 3, sobre cobro, caja y registro de venta, dígame, ¿cómo registra usted las ventas durante el día?
+
+ENTR-10: Bueno, yo las registro en el cuaderno, anoto cada venta, qué corte fue, cuánto pesó y cuánto cobré, al final sumo todo y lo comparo con la plata de la caja, si no cuadra, reviso venta por venta hasta encontrar el error, es tedioso sí, sobre todo cuando hay muchas ventas pequeñas en el día.
+
+Entrevistador: ¿Con qué frecuencia hay errores en el cuadro de caja?
+
+ENTR-10: Al menos 2 o 3 veces por semana, hay alguna diferencia, aunque sea de centavos, a veces porque anoté mal el precio, otras porque me equivoqué a dar el vuelto, si el sistema registrara cada venta automáticamente, el cuadro sería automático también y yo solo confirmaría que el dinero que hay en caja coincida.
+
+Entrevistador: ¿Y usted cómo maneja las situaciones en que hay varios clientes esperando al mismo tiempo?
+
+ENTR-10: La verdad a veces trato de ser ágil, pero cuando hay que buscar un corte que no está en la mano o cuando el cliente quiere que le corte algo especial, se forma la cola y eso causa problemas, los lunes y los fines de semana son los días más complicados, me gustaría poder despachar más rápido sin cometer errores de cobro.
+
+Entrevistador: ¿En base a esto le gustaría que el sistema agilizara el proceso de cobro?
+
+ENTR-10: Sí, sí, que yo pese el sistema calcule el total y digamos que yo solo diga el número al cliente y cobre, sin calculadora, sin anotar en el cuaderno en ese momento, eso me haría fácil un minuto por cliente y en hora pico eso se notaría mucho.
+
+Entrevistador: ¿Los clientes suelen pagar solo en efectivo o también de otra forma?
+
+ENTR-10: Casi todos en efectivo, pero hay gente que pregunta si puede hacer una transferencia, cuando le digo que no, algunos se molestan o se van, ya hasta vi que en la carnicería de más abajo se aceptan transferencias y parece que les va bien, creo que estamos perdiendo clientes por eso también.
+
+Entrevistador: Yelda nos habló que cuatro sobre la gestión del producto en el mostrador, ¿cómo mantiene usted surtido el mostrador durante el turno?
+
+ENTR-10: La verdad yo voy viendo lo que se va acabando y aviso al carnicero, pero como no siempre puede atender de inmediato hay momentos en que la vitrina queda con poco producto y eso da mala impresión, algunos clientes ven el mostrador medio vacío y mejor siguen de largo sin preguntar.
+
+Entrevistador: ¿Le gustaría poder avisar al área de producción desde el sistema sin dejar el mostrador?
+
+ENTR-10: Uy la verdad si sería perfecto, que toque un botón y le llegue la solicitud al carnicero directamente, así no grito desde acá ni dejo al cliente solo mientras voy a avisar, el mostrador siempre tiene que tener a alguien.
+
+Entrevistador: ¿Qué hace usted con el producto que sobra al final del turno?
+
+ENTR-10: Lo que todavía está fresco lo devuelvo a la cámara con una nota de cuánto pesa y que corte, si ahí lleva mucho tiempo expuesto lo separo y lo aviso al compañero del turno siguiente o al administrador, pero a veces no queda clara la comunicación y al día siguiente sacan ese producto como si fuera nuevo.
+
+Entrevistador: ¿En base a esto le gustaría registrar esos sobrantes en el sistema al cerrar el turno?
+
+ENTR-10: Si, y que quede visible para el siguiente vendedor también, que él puede ver al llegar que hay tanto de tal corte que ya lleva un día y lo prioriza para vender primero, así no se pierde producto por falta de comunicación entre turnos también.
+
+Entrevistador: ¿Ha tenido situaciones en que un cliente reclame por el peso o el precio cobrado?
+
+ENTR-10: La verdad que si, un par de veces, una señora vino al día siguiente a decir que le había cobrado de más, yo no tenía cómo comprobar lo que había pesado porque no queda ningún registro de esa venta en particular, al final la propietaria le devolvió la diferencia para no perder a la clienta, pero yo quedé mal parado sin haber hecho nada mal con un comprobante de cada venta.
+
+Con un comprobante de cada venta la verdad que eso no pasaría.
+
+Entrevistador: Bueno, yéndonos al último bloque, que es el bloque 5, sobre comunicación y necesidades del sistema. ¿Cómo se comunica usted en el área de producción y con la administración durante su turno?
+
+ENTR-10: Con el carnicero de viva voz porque el área no está muy lejos, con el administrador por whatsapp o cuando pasa por el mostrador, si necesito algo urgente y nadie me responde tengo que resolverlo solo o dejar al cliente esperando, no hay un canal formal que funcione en tiempo real.
+
+Entrevistador: ¿Qué información le gustaría tener disponible en el mostrador para trabajar mejor?
+
+ENTR-10: Principalmente los precios, actualizados y el stock disponible, esas cosas son las que más me hacen falta en el momento de atender, si además el sistema muestra cuánto he vendido en el día puedo saber si el ritmo es normal o si está flojo y ofrecer algo a los clientes que se acerquen.
+
+Entrevistador: Bueno, en tal caso, si el sistema generaba un resumen de cierre de turno, ¿qué datos le gustaría que incluyera?
+
+ENTR-10: Me gustaría que incluyera el total vendido en plata, kilos por tipo de corte, sobrante del mostrador y si hubo alguna novedad como un reclamo o un producto que se tuvo que retirar, con esto la propietaria sabe cómo estuvo el turno sin que yo tenga que contarle todo de memoria al final del día.
+
+Entrevistador: Pensando en su trabajo diario, ¿cuál sería la función más importante que debería tener el nuevo sistema desde su perspectiva?
+
+ENTR-10: El registro automático de cada venta, con el precio calculado desde la báscula, ahora mismo ese proceso es el que más errores genera y el que más tiempo me quita la verdad, si el sistema hace ese cálculo, yo solo me concentro en atender bien al cliente y el cuadro de caja al final es mucho más rápido y exacto, eso cambiaría bastante mi día a día.
+
+Entrevistador: Y bueno, por último, ¿estaría dispuesto a usar un sistema digital en el mostrador?
+
+ENTR-10: Si claro, sin problema, en la tienda donde trabajaba antes teníamos una caja registradora con sistema y me acostumbré rápido, lo que pido es que no sea algo que se trabe seguido porque con clientes esperando no se puede estar reiniciando pantallas, yo quisiera que sea estable, rápido y que si no hay internet igual funcione, porque aquí a veces la señal falla y eso causa problemas.
+
+Entrevistador: Bueno, pues muchas gracias por el tiempo que has tomado en esta entrevista, le agradezco mucho y que tenga una buena noche.
