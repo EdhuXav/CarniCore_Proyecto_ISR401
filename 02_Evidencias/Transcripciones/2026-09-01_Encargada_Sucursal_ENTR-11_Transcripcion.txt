@@ -1,0 +1,182 @@
+Evidencia: EV-11
+Participante: P11
+Tipo de participante: Encargada de Sucursal
+Fecha de transcripción: 31/08/2026
+====================================================
+TRANSCRIPCIÓN ANONIMIZADA
+====================================================
+
+Entrevistador:
+Buenas tardes. Somos los integrantes del grupo de la asignatura Ingeniería de Requerimientos y realizaremos una entrevista para la recolección de información del proyecto de gestión de una distribuidora de productos cárnicos. Con su permiso, nos gustaría grabar la conversación en audio para poder revisar las respuestas con exactitud al momento de redactar el documento. Esta grabación no será publicada ni difundida. ¿Nos autoriza usted a proceder con la grabación?
+
+Participante P02:
+Sí, claro.
+
+Entrevistador:
+Continuamos con el bloque de información general. ¿Cuál es su nombre y apellido?
+
+Participante P02:
+[Dato omitido por confidencialidad – Participante P11].
+
+Entrevistador:
+¿Cuál es su cargo dentro de la distribuidora?
+
+Participante P02:
+Soy la encargada de la sucursal del centro. Me toca abrir el local, recibir la mercadería que envía la planta, atender a los clientes, llevar el control de lo que se vende y, al final del día, reportar a la propietaria.
+
+Entrevistador:
+¿Cuáles son sus principales responsabilidades en su puesto de trabajo?
+
+Participante P02:
+Recibo los cortes que llegan del despacho, verifico que todo esté completo según el pedido que hicimos, atiendo a los clientes en el mostrador, controlo que el producto se mantenga en buen estado durante el día y hago el cierre con el conteo de lo que sobró y lo que se vendió.
+
+BLOQUE: HERRAMIENTAS Y MEDIOS DE TRABAJO
+----------------------------------------------------
+
+Entrevistador:
+¿Qué herramientas o medios usa actualmente para hacer su trabajo?
+
+Participante P02:
+Para vender por peso uso una báscula, para cobrar la caja registradora, y el teléfono para comunicarme con la planta, ya que los pedidos los mando por WhatsApp. El control del stock lo llevo aparte en un cuaderno. No tenemos ningún sistema integrado con la planta.
+
+BLOQUE: RECEPCIÓN DE MERCADERÍA
+----------------------------------------------------
+
+Entrevistador:
+Descríbame cómo recibe usted la mercadería cuando llega el chofer de despacho.
+
+Participante P02:
+El chofer llega con las bolsas y yo las recibo en el mostrador. Reviso más o menos si están bien los cortes que pedí, pero no siempre tengo tiempo de revisar todo en el momento porque hay clientes esperando. Si hay un papel lo firmo, o solo recibo de palabra y no queda nada escrito.
+
+Entrevistador:
+En ese caso, ¿verifica usted el peso de lo que le entregan contra lo que pidió?
+
+Participante P02:
+A veces, cuando hay tiempo, pero muchos días el chofer llega en hora pico y no puedo ponerme a revisar todo. Si después noto que faltó algo, llamo a la planta y ahí empieza el problema, porque nadie tiene un registro claro de lo que ha salido.
+
+Entrevistador:
+¿Existe algún documento formal que respalde cada entrega que recibe?
+
+Participante P02:
+Casi nunca hay uno. A veces el chofer trae una nota en papel con el peso total, pero no detalla por corte. Hay días que no hay nada escrito y una recibe así, de buena fe. Si el sistema generara un comprobante que yo pudiera ver y también confirmar desde mi lado, eso cambiaría todo.
+
+Entrevistador:
+¿Le gustaría poder confirmar la recepción desde su teléfono o una tableta?
+
+Participante P02:
+Sí, que yo pueda indicar si recibí todo o si me faltó algo, y que eso quede registrado. Así ya no hay discusión después; ahorita solo es mi palabra contra la del chofer o la del carnicero.
+
+BLOQUE: PEDIDOS A LA PLANTA CENTRAL
+----------------------------------------------------
+
+Entrevistador:
+¿Cómo hace usted sus pedidos a la planta central?
+
+Participante P02:
+Siempre por WhatsApp. Le mando un mensaje a la propietaria o al administrador con lo que necesito para el día siguiente. No hay un formato fijo; solo escribo, por ejemplo, "necesito 5 kilos de lomo, 3 de costilla, 2 de brazo". A veces me contestan y a veces no.
+
+Entrevistador:
+¿Ha perdido pedidos o ha recibido productos equivocados por ese método?
+
+Participante P02:
+Sí, ya varias veces. Un día pedí hígado y me mandaron riñón porque leyeron mal el mensaje. Otro día no leyeron el pedido y me mandaron lo mismo del día anterior, que ya no me hacía falta. Si hubiera un formulario en el sistema para hacer el pedido, eso no pasaría.
+
+Entrevistador:
+¿Con cuánta anticipación hace el pedido para el día siguiente?
+
+Participante P02:
+Generalmente al final del día, porque ya sé qué se vendió y qué sobró. En el cuaderno hago mis cálculos y mando el mensaje. Pero si la propietaria no lo ve a tiempo, al día siguiente puede que no tengan todo listo cuando llegue el despacho.
+
+Entrevistador:
+¿Le ayudaría que el sistema mostrara su historial de pedidos y de ventas para hacer el pedido con más precisión?
+
+Participante P02:
+Claro, porque a veces uno pide de más o de menos por no recordar bien cuánto se vendió la semana pasada. Si el sistema me muestra que los martes se venden más brazos que costillas, hago un pedido más inteligente.
+
+Entrevistador:
+¿Puede usted ver en tiempo real lo que hay disponible en la planta para pedirlo?
+
+Participante P02:
+No, para nada. Solo pido lo que necesito y espero que en la planta lo tengan. A veces me mandan menos de lo que pedí porque ya no había más, y solo me entero cuando llega el despacho; eso me complica las ventas del día.
+
+BLOQUE: CONTROL DE STOCK Y VENTAS
+----------------------------------------------------
+
+Entrevistador:
+¿Cómo lleva el control del producto que tiene en la sucursal durante el día?
+
+Participante P02:
+En el cuaderno anoto lo que llegó y voy tachando conforme se vende. Al final del día cuento lo que sobró en el mostrador y en el refrigerador pequeño que tenemos, y lo comparo con lo que llegó para saber cuánto se vendió. Todo es manual y a veces hay errores.
+
+Entrevistador:
+¿Le gustaría que el sistema registrara automáticamente las ventas y le mostrara el stock disponible en tiempo real?
+
+Participante P02:
+Sí, claro que sí. Que cada vez que peso y cobro un producto, el sistema lo descuente del stock automáticamente. Así, al final del día el reporte ya está hecho y no tengo que contar todo de nuevo.
+
+BLOQUE: PRODUCTO SOBRANTE Y CONSERVACIÓN
+----------------------------------------------------
+
+Entrevistador:
+¿Qué hace usted con el producto que sobra al final del día?
+
+Participante P02:
+Lo guardo en el refrigerador de la sucursal. Si es poco y está fresco, lo pongo al día siguiente. Se lleva máximo dos días y se le consulta a la propietaria qué se hace. Algunos días hay pérdida porque el producto no se vendió y ya no está en condiciones de seguir.
+
+Entrevistador:
+¿Le ayudaría que el sistema le avisara cuántos días lleva cada producto en la sucursal?
+
+Participante P02:
+Mucho, porque a veces una se olvida de lo que llegó el lunes y ya es miércoles con el local lleno. Si el sistema avisa que tal corte lleva dos días, lo pongo al frente o hago una promoción antes de que se pierda.
+
+BLOQUE: REPORTES Y COMUNICACIÓN
+----------------------------------------------------
+
+Entrevistador:
+¿Cómo reporta usted las ventas del día a la administración?
+
+Participante P02:
+Cuando termina el día le mando un mensaje a la propietaria con cuánto se vendió y, a veces, con los cortes que más se vendieron. No hay un formato fijo; si me pide más detalle busco en el cuaderno y le cuento. Eso toma tiempo y a veces no tengo los datos exactos.
+
+Entrevistador:
+¿Cómo se comunica con la planta central durante su turno?
+
+Participante P02:
+Por WhatsApp o por llamada, solo por esos dos medios. Si necesito algo urgente llamo directamente a la propietaria. No hay ningún canal formal ni sistema que centralice la comunicación. A veces mando un mensaje y no me contestan hasta varias horas después porque están ocupados en la planta.
+
+BLOQUE: REQUERIMIENTOS DEL SISTEMA
+----------------------------------------------------
+
+Entrevistador:
+¿Qué información le gustaría tener disponible desde la sucursal para trabajar mejor?
+
+Participante P02:
+Quisiera ver en tiempo real qué hay disponible en la planta para hacer mis pedidos con certeza, y también saber a qué hora va a llegar el despacho. También me gustaría tener un historial de mis ventas por día o por semana para planificar mejor, y poder hacer el pedido directamente desde un sistema y no solo por WhatsApp.
+
+Entrevistador:
+Si el sistema generara un resumen del cierre del día para la sucursal, ¿qué información le gustaría que incluyera?
+
+Participante P02:
+Qué llegó, qué se vendió, qué sobró, cuánto dinero se recaudó en el día, y si hubo alguna devolución o novedad para anotarla. Con eso la propietaria tiene todo el panorama sin que yo le tenga que explicar nada por teléfono.
+
+Entrevistador:
+Pensando en su trabajo diario, ¿cuál sería la función más importante que debería tener el nuevo sistema desde su perspectiva?
+
+Participante P02:
+Para mí lo más importante sería poder hacer pedidos desde el sistema de forma clara, que lleguen directo a la planta y que me confirmen si los van a poder cumplir. Ese proceso es el que más fallas tiene ahora, porque el mensaje se pierde, lo leen mal o no alcanza el producto. Si eso funcionara bien, el resto del día fluiría mucho mejor.
+
+Entrevistador:
+¿Estaría dispuesta a usar un sistema digital en la sucursal?
+
+Participante P02:
+Sí, yo estoy dispuesta. Preferiría algo que pueda usarse desde el teléfono, porque no siempre tengo una computadora a la mano, que sea rápido de usar, con botones grandes y sin muchas letras. Lo que más me importa es que me ahorre tiempo y no me complique cuando hay clientes esperando.
+
+Entrevistador:
+Con esto concluiríamos la entrevista para la recolección de datos. Muchas gracias por su colaboración y por participar en este proceso.
+
+Participante P02:
+De nada.
+
+====================================================
+FIN DE LA TRANSCRIPCIÓN
+====================================================
