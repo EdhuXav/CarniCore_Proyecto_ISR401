@@ -1,0 +1,141 @@
+CODIGO DE ENTREVISTADO: ENTR-09
+
+Entrevistador: Buenas noches, en esta ocasión vamos a realizar una entrevista como parte de levantamiento de requisitos para nuestro proyecto CARNICO. La información que nos proporciona nos ayudará a identificar las principales necesidades y problemas del proceso actual, para posteriormente plantear funcionalidades que pueden ser incorporadas al sistema. La entrevista será breve y consta de varias preguntas relacionadas con sus actividades diarias.
+
+No existen respuestas correctas e incorrectas, lo que nos interesa conocer es cómo se realiza realmente el trabajo desde su experiencia. Empezamos con la primera pregunta, ¿cuál es su nombre y apellido?
+
+ENTR-09: Buenas noches, mi nombre es Joao Muñoz.
+
+Entrevistador: ¿Cuál es su cargo dentro de la distribuidora?
+
+ENTR-09: Soy vendedor de mostradora aquí en la planta, me encargo de atender a los clientes que vienen a comprar directamente, peso el producto que piden, cobro y entrego, también mantengo el mostrador limpio y ordenado durante el turno.
+
+Entrevistador: ¿Cuáles son sus principales responsabilidades en su puesto de trabajar?
+
+ENTR-09: Atender a los clientes del mostrador, pesar los cortes que solicitan, decirles el precio, cobrar, dar el vuelto y entregar el producto bien empacado. Al final del turno, hago el cuadre de caja y le entrego el dinero al administrador junto con el conteo de lo que se vendió.
+
+Entrevistador: ¿Qué herramientas o medios usa actualmente para hacer su trabajo?
+
+ENTR-09: La báscula del mostrador, una calculadora para sacar el total cuando hay varios cortes y la caja donde guardo el dinero.
+
+Todo el cobro es manual, calcula el precio a mano, anota en un papel las ventas del día y al final de todo, no tenemos caja registradora ni sistemas de venta.
+
+Entrevistador: Llénenos al bloque 2 sobre el proceso de atención y venta al cliente. Descríbeme paso a paso cómo atienda a un cliente desde que llega hasta que se va.
+
+ENTR-09: El cliente llega al mostrador y me dice que quiere, por ejemplo, un kilo de lomo de res o medio kilo de costilla de cerdo. Yo voy a la vitrina o a la cámara, saco el corte, le pongo en la báscula, le digo el peso y el precio. Si le parece bien, lo empaco en funda o en papel, cobro y listo.
+
+Si quiere algo que no hay en el mostrador, le pregunto al carnicero. Si puede cortarlo en el momento, le digo que no hay.
+
+Entrevistador: ¿Cómo sabe usted qué productos tiene disponibles para vender en cada momento?
+
+ENTR-09: Por lo que veo en la vitrina y en el mostrador.
+
+Si algo se acaba, voy a preguntar al área de producción si hay más o si pueden preparar. No hay ningún sistema que me diga el stock en tiempo real. Tengo que ir físicamente a verificar o preguntarle al carnicero.
+
+Entrevistador: ¿Esa falta de información le ha generado problemas con los clientes?
+
+ENTR-09: Sí, varias veces. Un cliente pide algo y yo le digo que sí hay. Voy a buscarlo y resulta que ya se acabó o que el carnicero lo apartó para un pedido de sucursal.
+
+Eso incomoda al cliente y a veces se van sin comprar. Si yo pudiera ver en una pantalla que hay disponible en ese momento, evitaría ese problema.
+
+Entrevistador: ¿Cómo determina usted el precio de cada corte al momento de la venda?
+
+ENTR-09: Me sé los precios de memoria porque la propietara los actualiza de vez en cuando y no los comunica de palabra o por un papel pegado en el área.
+
+Si hay un cambio de precio y no me avisaron, puedo cobrar mal sin darme cuenta. No hay una lista de precios actualizadas en el mostrador ni nada digital.
+
+Entrevistador: ¿En base a esto le ayudaría que el sistema mostrara los precios actualizados automáticamente en su área de trabajo?
+
+ENTR-09: Muchísimo.
+
+Así no dependo de que me avisen ni de acordarme de memoria. Si el precio cambia en el sistema, yo lo veo de inmediato y cobro bien. Eso evita errores después que generan descuadras en la caja.
+
+Entrevistador: Viendonos al bloque 3 sobre cobro, caja y registro de venta. ¿Cómo registra usted las ventas durante el día?
+
+ENTR-09: En un cuadro anoto cada venta, el corte, el peso y el valor cobrado. Al final del turno sumo todo y se lo comparo con el dinero que hay en la caja.
+
+Si cuadra bien, si no hay que revisar dónde estuvo el error. Ese proceso me toma bastante tiempo y a veces hay diferencias pequeñas que no logro explicar.
+
+Entrevistador: ¿Con qué frecuencia hay diferencias entre lo que anotó y el dinero en caja?
+
+ENTR-09: No todos los días, pero sí seguido.
+
+A veces es un error de cálculo mío. Otras veces es que anoté mal el precio o el peso. En días muy ocupados, cuando hay varios clientes al mismo tiempo.
+
+Es más fácil cometer errores porque uno está apurado. Un sistema que calcula automáticamente el total al pesar, elimina esos errores.
+
+Entrevistador: ¿Cómo maneja usted las situaciones en que varios clientes esperan al mismo tiempo?
+
+ENTR-09: Trato de atender en orden, pero a veces se complica cuando uno pide algo que hay que ir a buscar al fondo y el siguiente ya está impaciente.
+
+En hora pico, entre las 7 y las 9 de la mañana, es cuando más presión hay. Si el proceso de pesar y cobrar fuera más rápido con un sistema, podría atender a más clientes en menos tiempo.
+
+Entrevistador: ¿Le gustaría que el sistema calculara el precio total automáticamente al ingresar el peso?
+
+ENTR-09: Sí, que yo ponga el corte y el sistema me diga cuánto vale si tenga que calcular.
+
+Yo así lo cobro, entrego y envuelto y listo. Ese paso de la calculadora es el que más tiempo me quita cuando hay gente esperando.
+
+Entrevistador: ¿Acepta la distribuidora pago con tarjeta o transferencia o solo efectivo?
+
+ENTR-09: Solo efectivo por ahora.
+
+Hay clientes que preguntan si pueden pagar con transferencia y les toca decirles que no. Algunos se van a otro lado. Si el sistema permitiera registrar pagos digitales y confirmarlos, creo que vendería más porque ya mucha gente no carga efectivo.
+
+Entrevistador: Viendonos al bloque 4 sobre gestión del producto en el mostrador. ¿Cómo mantiene usted surtido el mostrador durante el turno?
+
+ENTR-09: Cuando veo que se está acabando algo, le aviso al carnicero para que prepare más o saco de la cámara. Si hay stock, listo.
+
+Pero no siempre hay comunicación fluida. A veces el carnicero está ocupado y no puede atenderme de inmediato y el mostrador que se queda vacío por un rato. Eso se nota y los clientes preguntan.
+
+Entrevistador: ¿Le gustaría poder hacer una solicitud de producto al área de producción desde el sistema sin tener que ir hasta allá?
+
+ENTR-09: Sería muy cómodo que yo toque el botón en el sistema que diga necesito más lomo de res y le llegue la alerta al carnicero. Así no tengo que dejar el mostrador solo ni interrumpo a gritos desde acá.
+
+Entrevistador: ¿Qué hace usted con el producto que sobra en el mostrador al final del turno?
+
+ENTR-09: Lo que está en buenas condiciones va de vuelta a la cámara.
+
+Lo que ya estuvo mucho tiempo, expuesto, se lo muestra al administrador y él decide qué hacer. Yo anoto en el cuaderno qué sobra y cuánto pesaba para que al día siguiente sepan que hay disponible sin tener que pesar de nuevo.
+
+Entrevistador: En base a esto, ¿le gustaría que el sistema registrara automáticamente lo que sobró al cerrar el turno?
+
+ENTR-09: Sí, que al final del día yo confirme las cantidades en el sistema y eso quede guardado como inventario disponible para el día siguiente.
+
+Así el carnicero sabe qué hay en el mostrador sin que yo tenga que avisarle de palabra.
+
+Entrevistador: ¿Ha tenido situaciones en que un cliente reclame por el peso o por el precio que le cobró?
+
+ENTR-09: Sí, de vez en cuando. Algunos clientes traen su propia balanza pequeña y verifican el peso en casa.
+
+Si hay diferencias vienen a reclamar. Eso es incómodo porque no queda ningún registro de lo que pesé yo en ese momento. Si el sistema genera un comprobante de cada venta con el peso y el precio, yo podría mostrárselo al cliente y no habría discusión.
+
+Entrevistador: Viendo el último bloque 5 sobre comunicación y necesidades del sistema, ¿cómo se comunica usted con el área de producción y con la administración durante su turno?
+
+ENTR-09: Con el carnicero de palabra porque estamos cerca, con el administrador por whatsapp o cuando pasa por el área. No hay ningún canal formal entre el mostrador y el resto de las áreas. Si necesito saber si hay un producto específico, tengo que ir a preguntar o esperar a que alguien pase por acá.
+
+Entrevistador: ¿Qué información le gustaría tener disponible en el mostrador para trabajar mejor?
+
+ENTR-09: La lista de productos disponible con su precio actualizado para saber qué puede ofrecer sin ir a preguntar. También me gustaría ver cuánto ha vendido en el día para saber si estoy bien o si necesito ofrecer más y que el sistema calcule el total de la venta automáticamente para no usar la calculadora.
+
+Entrevistador: Si el sistema genera un resumen de cierre de turno para el mostrador, ¿qué información le gustaría que incluyera?
+
+ENTR-09: Total de ventas en dinero, cuántos kilos se vendieron por tipo de corte, cuánto sobró en el mostrador y si hubo algún reclamo o devolución.
+
+Con eso el administrador tiene el panorama completo sin que yo tenga que explicar todo de memoria al final del día.
+
+Entrevistador: Pensando en su trabajo diario, ¿cuál sería la función más importante que debería tener el nuevo sistema desde su perspectiva?
+
+ENTR-09: Que calcule el precio automáticamente cuando pongo el peso. Ese es el paso que más tiempo me quita y donde más errores ocurren.
+
+Si yo peso el corte, el sistema me dice cuánto vale y yo solo cobro. El servicio es más rápido, hay menos errores en la caja y el cliente se va más satisfecho. Todo lo demás es importante, pero eso es lo que más impacto tendría en mi trabajo diario.
+
+Entrevistador: Y como última pregunta, ¿estaría dispuesto a usar un sistema digital en el mostrador?
+
+ENTR-09: Sí, con gusto. Lo que necesito es que sea rápido porque en el mostrador no puedo detenerme a aprender cosas en medio de la atención. Si antes que entre el primer cliente del día me explican cómo funciona y sencillo, no tendría ningún problema.
+
+Lo ideal sería una pantalla táctil en el mostrador que sea fácil de limpiar, porque aquí todo es en sangre y moja.
+
+Entrevistador: Bueno, esta ha sido la entrevista por hoy. Le agradezco mucho por tomarse el tiempo esta noche, así que muchas gracias.
+
+ENTR-09: Igualmente, muchas gracias.
