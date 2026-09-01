@@ -1,0 +1,182 @@
+Evidencia: EV-16
+Participante: P16
+Tipo de participante: Vendedor Demostrador
+Fecha de transcripción: 31/08/2026
+====================================================
+TRANSCRIPCIÓN ANONIMIZADA
+====================================================
+
+Entrevistador:
+Buenas noches, estimado. Primero que todo, agradecerle por brindarme su tiempo y colaboración para esta entrevista orientada a la elicitación de requisitos de nuestro sistema para la gestión inteligente de un centro cárnico. Antes de empezar, quisiera saber si está de acuerdo y autoriza que esta entrevista pueda ser grabada en audio y video únicamente con fines académicos.
+
+Participante P16:
+Buenas noches. Sí, no hay problema.
+
+Entrevistador:
+Muchas gracias. Procedemos con la entrevista, dividida en bloques. Empezamos por el bloque 1, que corresponde a información general del entrevistado. ¿Cuál es su nombre y apellido?
+
+Participante P16:
+[Dato omitido por confidencialidad – Participante P16].
+
+Entrevistador:
+¿Cuál es su cargo dentro de la distribuidora?
+
+Participante P16:
+Soy vendedor demostrador en la planta y llevo ocho meses trabajando aquí. Antes trabajaba atendiendo pedidos en un local de comida, así que ya estaba acostumbrado a tratar con clientes y a trabajar con bastante movimiento.
+
+Entrevistador:
+¿Cuáles son sus principales responsabilidades en su puesto de trabajo?
+
+Participante P16:
+Principalmente recibir clientes, escuchar el pedido, seleccionar el producto, pesarlo, cobrar y entregar el pedido con los cálculos correspondientes. También reviso que el área quede ordenada, apoyo cuando llega mercadería al mostrador y al terminar el turno verifico el dinero y la información que dejé anotada.
+
+BLOQUE: HERRAMIENTAS Y MEDIOS DE TRABAJO
+----------------------------------------------------
+
+Entrevistador:
+¿Qué herramientas o medios usa actualmente para hacer su trabajo?
+
+Participante P16:
+La báscula principalmente, un cuaderno para mis registros, una lista de productos para tener todo organizado y una calculadora. Para comunicar alguna novedad también uso mi celular. Todo está separado, así que tengo que pasar de una herramienta a otra durante la atención.
+
+BLOQUE: PROCESO DE ATENCIÓN Y VENTA AL CLIENTE
+----------------------------------------------------
+
+Entrevistador:
+¿Podría describirme paso a paso cómo es el proceso de atención a un cliente desde que llega hasta que se va?
+
+Participante P16:
+Primero saludo y pregunto qué producto necesita el cliente. Busco el corte solicitado, lo peso y confirmo la cantidad. Consulto el precio, hago el cálculo, preparo el producto y recibo el pago. Finalmente entrego el pedido y continúo con el siguiente cliente. Cuando hay mucha gente, trato de seguir el mismo orden para no confundir los pedidos.
+
+Entrevistador:
+¿Cómo sabe usted qué productos tiene disponibles para vender en cada momento?
+
+Participante P16:
+Normalmente reviso lo que queda en la vitrina y me fijo en lo que se ha vendido durante el turno para tener una idea de qué está por terminarse. Si un cliente pregunta por algo que no veo, consulto al personal del área de producción, porque desde el mostrador no puedo conocer con certeza todo lo que hay disponible.
+
+Entrevistador:
+¿Esa situación le ha causado inconvenientes con los clientes?
+
+Participante P16:
+Sí. Ha pasado que confirmo un producto pensando que todavía hay y luego resulta que ya se terminó. En esos casos tengo que ofrecer otra opción o pedir al cliente que espere mientras hago la verificación. Eso puede causar molestias, especialmente cuando la persona ya sabe exactamente lo que vino a comprar. Un sistema con existencias actualizadas podría evitar estas confusiones.
+
+Entrevistador:
+¿Cómo determina usted el precio de cada corte al momento de la venta?
+
+Participante P16:
+Consulto una tabla de precios que tenemos disponible en el área de venta, tomo el valor por kilo y lo multiplico por el peso. El problema es que debo estar pendiente de cualquier modificación, porque la información a veces no se actualiza automáticamente y eso puede generar errores.
+
+Entrevistador:
+¿Cree que le ayudaría que los precios estuvieran actualizados en una pantalla del sistema?
+
+Participante P16:
+Sí, claro. Tendría una sola fuente de información: seleccionar el producto, ingresar el peso y ver el valor final automáticamente. Además, sería más fácil capacitar a alguien nuevo porque no tendría que aprenderse todos los precios de memoria.
+
+BLOQUE: COBRO, CAJA Y REGISTRO DE VENTAS
+----------------------------------------------------
+
+Entrevistador:
+¿Cómo registra usted las ventas durante el día?
+
+Participante P16:
+Después de cada venta anoto los datos principales en un cuaderno y voy acumulando los valores. Cuando el ritmo es tranquilo puedo hacerlo con más cuidado, pero en las horas concurridas tengo que registrar rápido para seguir atendiendo. Al cierre reviso las anotaciones y el cálculo total para compararlo con el efectivo.
+
+Entrevistador:
+¿Con qué frecuencia hay errores en el cuadre de caja?
+
+Participante P16:
+No ocurre todos los días, pero sí aparecen diferencias de vez en cuando. Generalmente el problema está en alguna anotación incompleta o en una operación hecha con apuro. Cuando esto ocurre, revisar todo desde el inicio toma bastante tiempo. Con un registro digital sería más sencillo localizar una venta específica.
+
+Entrevistador:
+¿Cómo maneja las situaciones en que hay varios clientes esperando al mismo tiempo?
+
+Participante P16:
+Procuro atender por orden y dejar cada pedido terminado antes de comenzar otro. Cuando alguien pide varios cortes, trato de organizar los productos para no mezclarlos. Lo más complicado cuando la fila aumenta mucho es mantener la rapidez sin equivocarme en el peso, el pedido o el cobro.
+
+Entrevistador:
+¿Le gustaría que el sistema agilizara el proceso de cobro?
+
+Participante P16:
+Sí, sería muy útil. Que después de registrar el producto y el peso, el total aparezca automáticamente. Así podría dedicar menos tiempo a los cálculos y más a preparar correctamente los pedidos, y también se reduciría la posibilidad de cobrar un valor equivocado.
+
+Entrevistador:
+¿Los clientes suelen pagar solo en efectivo o también ha presenciado otros métodos de pago?
+
+Participante P16:
+La mayoría paga en efectivo por la zona donde está ubicado el negocio, pero también hay clientes que preguntan por transferencias o pagos electrónicos. Cuando no hay una forma clara de registrar esos pagos, la atención se complica porque hay que verificar por otros medios. Sería conveniente que el sistema permita identificar el tipo de pago de cada venta.
+
+BLOQUE: GESTIÓN DEL PRODUCTO EN EL MOSTRADOR
+----------------------------------------------------
+
+Entrevistador:
+¿Cómo mantiene usted surtido el mostrador durante el turno?
+
+Participante P16:
+Voy revisando la cantidad de cada producto y cuando noto que alguno está bajando, solicito la reposición de inmediato. Busco anticiparme antes de que se termine por completo, porque eso perjudica directamente al negocio. Aunque no siempre es posible, ya que depende de la disponibilidad y del trabajo que tenga producción en ese momento.
+
+Entrevistador:
+¿Le gustaría poder avisar al área de producción desde el sistema sin dejar el mostrador?
+
+Participante P16:
+Sí, sería bastante práctico. Poder enviar una solicitud indicando el producto y la cantidad aproximada que necesito. De esa manera producción recibiría el aviso y yo podría continuar atendiendo sin tener que alejarme del punto de venta.
+
+Entrevistador:
+¿Qué hace usted con el producto que sobra al final del turno?
+
+Participante P16:
+Reviso qué productos quedaron en el mostrador y los separo según su categoría, peso y estado. También anoto el tipo de corte y la cantidad aproximada para informar al siguiente turno o al responsable. El proceso depende mucho de que la información escrita se entienda y llegue a la persona correcta.
+
+Entrevistador:
+¿Le gustaría registrar esos sobrantes en el sistema al cerrar el turno?
+
+Participante P16:
+Sí, claro. Quedaría una historia clara de lo que se dejó y de lo que se trabajó. El siguiente vendedor podría revisar esa información antes de empezar y saber qué productos deben venderse primero. También ayudaría a controlar las cantidades que permanecen de un día para otro.
+
+Entrevistador:
+¿Ha tenido situaciones en que un cliente reclame por el peso o el precio cobrado?
+
+Participante P16:
+Sí, lamentablemente sí. Especialmente cuando un cliente recuerda un precio diferente al de la lista, o cuando quiere confirmar el peso después de recibir el producto. Como el registro es manual, buscar los datos exactos de una venta anterior puede ser complicado porque hay que revisar hoja por hoja. Un comprobante digital facilitaría atender estos reclamos.
+
+BLOQUE: COMUNICACIÓN Y REQUERIMIENTOS DEL SISTEMA
+----------------------------------------------------
+
+Entrevistador:
+¿Cómo se comunica usted con el área de producción y con la administración durante su turno?
+
+Participante P16:
+Con producción hablo directamente cuando tengo la oportunidad. Con administración uso mensajes o llamadas y espero a que el responsable esté disponible. El problema es que algunas solicitudes quedan solo de palabra y después no es fácil saber si ya fueron atendidas o si siguen pendientes.
+
+Entrevistador:
+¿Qué información le gustaría tener disponible en el mostrador para trabajar mejor?
+
+Participante P16:
+Me gustaría consultar en un mismo lugar el inventario disponible, los precios vigentes y las ventas realizadas durante mi turno. También sería útil recibir avisos cuando un producto tenga poca cantidad o cuando haya algún cambio importante que afecte la venta.
+
+Entrevistador:
+Si el sistema generara un resumen de cierre de turno, ¿qué datos le gustaría que aparecieran?
+
+Participante P16:
+El número de ventas realizadas, el valor total recaudado, los productos con mayor salida, las cantidades sobrantes y el detalle de los diferentes tipos de pago. Además, creo que debería existir un espacio para registrar cualquier incidencia que ocurra durante el turno.
+
+Entrevistador:
+Pensando en su trabajo diario, ¿cuál sería la función más importante que debería tener el nuevo sistema desde su perspectiva?
+
+Participante P16:
+Para mí lo más importante sería poder consultar y registrar toda la venta desde una sola pantalla: productos, precios, forma de pago y comprobantes en un mismo proceso. Eso reduciría los pasos manuales y permitiría que cada operación quede guardada sin depender de apuntes.
+
+Entrevistador:
+¿Estaría dispuesto a usar un sistema digital en el mostrador?
+
+Participante P16:
+Sí, claro que sí. Considero que armonizaría mejor el trabajo, siempre que sea fácil de aprender y responda rápido. También sería importante contar con instrucciones sencillas para resolver situaciones básicas y evitar que una falla detenga por completo la atención.
+
+Entrevistador:
+Con esto finalizamos la entrevista estructurada para el levantamiento de requisitos del sistema de gestión para el centro cárnico. Nuevamente agradecerle por su colaboración y por brindarnos su tiempo. Muchas gracias y que tenga una buena noche.
+
+Participante P16:
+Muchas gracias a usted. Igualmente.
+
+====================================================
+FIN DE LA TRANSCRIPCIÓN
+====================================================
