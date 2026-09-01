@@ -2,9 +2,7 @@ CODIGO DE ENTREVISTADO: ENTR-10
 
 Entrevistador: Buenas noches, en esta ocasión vamos a realizar una entrevista como parte del levantamiento de requisitos para nuestro proyecto CARNICOR. El objetivo de esta entrevista es conocer cómo se realizan actualmente las actividades en el área de resección y bodega, especialmente en procesos como resección de animales o materia prima, el pesaje, el registro de proveedores, el control de inventario y la coordinación con las demás áreas. La información que nos proporcione nos ayudará a identificar las principales necesidades y problemas del proceso actual, para posteriormente plantear funcionalidades que pueden ser incorporadas al sistema.
 
-La entrevista será breve y consta de varias preguntas relacionadas con sus actividades diarias. No existen respuestas correctas o incorrectas, lo que nos interesa es conocer cómo se realiza realmente el trabajo desde su experiencia. Para empezar, ¿cuál es su nombre y apellido?
-
-ENTR-10: Buenas noches, mi nombre es Manuel Lorenzo Peralta Santillán.
+La entrevista será breve y consta de varias preguntas relacionadas con sus actividades diarias. No existen respuestas correctas o incorrectas, lo que nos interesa es conocer cómo se realiza realmente el trabajo desde su experiencia. Para empezar.
 
 Entrevistador: ¿Cuál es su cargo dentro de la distribuidora?
 
