@@ -1,0 +1,138 @@
+
+CODIGO DE ENTREVISTADO: ENTR-07
+
+Entrevistador: Me presento, soy [Entrevistador]. En este caso, de antemano, agradezco su participación en esta entrevista, lo que es para el proyecto de CARNICORE. Antes de empezar, ¿acepta lo que es el uso y la grabación de audio para esta entrevista?
+
+ENTR-07: Sí, no hay problema.
+
+Entrevistador: Vamos a empezar. Primeramente, ¿podría presentarse?
+
+ENTR-07: Soy [ENTR-07].
+
+Entrevistador: ¿Qué cargo usted ostenta dentro de la distribuidora?
+
+ENTR-07: Recibo los animales cuando llegan de los proveedores. Verifico que están en buen estado, coordino el pesaje inicial, luego coordino lo que entra y sale a la bodega o la cámara.
+
+Entrevistador: El cargo de recepcionista, ¿no?
+
+ENTR-07: Sí.
+
+Entrevistador: ¿Cuáles serían sus principales responsabilidades en el puesto de trabajo?
+
+ENTR-07: Recibir y revisar que los animales con la materia prima que llegan y verificar que el peso y la cantidad concuerden.
+
+Entrevistador: Bueno, ¿qué herramientas o medios utiliza actualmente lo que es para hacer su trabajo?
+
+ENTR-07: La báscula grande para el pesaje de los animales, un cuaderno donde anoto las entradas, el teléfono para enviarle a la propietaria o al carnicero, y nada más.
+
+Entrevistador: Vamos a hablar un poco del proceso de recepción de materia prima. ¿Puede describir paso a paso cómo recibe usted un lote de animales o materia prima?
+
+ENTR-07: Primero llega el camión con el proveedor. Yo salgo a revisar los animales, que están bien faenados, que no vengan con golpes o señales de maltrato, y que el peso que me dice el proveedor sea el real.
+
+Entrevistador: Básicamente que esté en buenas condiciones el estado de la materia prima, ¿no?
+
+ENTR-07: Sí.
+
+Entrevistador: ¿Cómo verifica usted que el peso y la cantidad de lotes son correctos?
+
+ENTR-07: Pues lo pesamos nosotros mismos en la báscula. Si el proveedor dice que el cerdo pesa 90 kilos y en nuestra báscula marca 86, hay que negociar o rechazar la diferencia.
+
+Entrevistador: Bueno, bien. Eso se decide con la propietaria, ¿verdad?
+
+ENTR-07: Sí, con la propietaria lo decidimos.
+
+Entrevistador: ¿Esa diferencia de peso le ha generado algún conflicto entre los proveedores?
+
+ENTR-07: Sí, a veces. Hay proveedores que insisten, molestan con su peso, y hay que llamar a la propietaria y hay que estar molestándola para que ella resuelva.
+
+Entrevistador: ¿Registra usted el proveedor de cada animal o lote que entra?
+
+ENTR-07: Sí, lo anotamos, como le había dicho, en un cuaderno. Fecha, proveedor, cantidad de animales, peso total. Por eso este registro es solo para mí, por si acaso. Si alguna producción necesita saber de qué proveedor vino un animal, tiene que venir a preguntarme a mí o ver en el cuaderno.
+
+Entrevistador: ¿Le parecería útil que ese dato quede vinculado a un animal, lo que es en un sistema, para que todos puedan verlo?
+
+ENTR-07: Sería muy útil, porque ahora mismo si el carnicero necesita saber qué proveedor es el animal que está despostando, no tiene cómo verlo sin preguntarme.
+
+Entrevistador: Ahora vamos a hablar un poco sobre el control que se lleva en el inventario, en la bodega. ¿Cómo lleva usted el control de lo que hay en la bodega y en las cámaras de frío?
+
+ENTR-07: Como le había dicho, de memoria y por el cuaderno. Sé más o menos cuánto entró y cuánto salió, pero no llevo un conteo exacto en tiempo real.
+
+Entrevistador: ¿Con qué frecuencia hace un conteo físico del inventario?
+
+ENTR-07: No hay un horario fijo. Lo hago cuando me lo piden o cuando noto que están bajando el producto. A veces la propietaria pregunta cuánto hay y tengo que ir a revisar en ese momento. Si hubiera un sistema como el inventario actualizado, eso vendría por ella misma sin interrumpirme.
+
+Entrevistador: ¿Usted tiene dificultades para saber cuánto tiempo lleva el producto en la cámara?
+
+ENTR-07: Sí, es complicado. Uno sabe más o menos por la fecha de ingreso que anoté, pero cuando hay mucho movimiento y entran y salen productos seguidos, es difícil llevar el conteo exacto.
+
+Entrevistador: ¿Le ayudaría que el sistema mostrara la fecha de ingresos de cada producto y alertara cuando esté próximo a caducarse la carne o el producto que reciba?
+
+ENTR-07: Sí, muchísimo. Si el sistema me avisa que tal lote lleva más de dos o tres días en cámara, yo lo saco primero y evito las pérdidas. Ahora mismo depende de que yo me acuerde, y en días muy ocupados uno no puede estar pendiente de todo.
+
+Entrevistador: ¿Qué pasa cuando detecta que un producto ya no está en buen estado?
+
+ENTR-07: Lo separo del resto y le aviso a la propietaria o al administrador. Ellos autorizan la baja y hay que pesar el producto dañado, anotar el motivo, como le había dicho en el cuaderno, y a veces tomar una foto.
+
+Entrevistador: Ese proceso siempre es supervisado por el administrador, ¿verdad?
+
+ENTR-07: Sí.
+
+Entrevistador: ¿Le gustaría que el sistema permitiera registrar esa baja con el motivo, el peso y la fecha?
+
+ENTR-07: Sí, porque así queda documentado y nadie puede cuestionar que el producto se perdió sin justificación.
+
+Entrevistador: Listo. ¿Cómo coordina usted con el área de despiece lo que hay disponible para trabajar cada día?
+
+ENTR-07: De palabra o por WhatsApp. En la mañana le digo al carnicero cuántos animales hay disponibles y de qué tipo, y él me dice si hay un lote nuevo o también aviso, por si acaso.
+
+Entrevistador: ¿Ha habido casos en que el carnicero empieza a trabajar sin saber exactamente qué tiene disponible?
+
+ENTR-07: Sí, cuando hay mucho movimiento, la verdad, y no me alcanza el tiempo para avisarle, entonces tiene que venir a preguntarme o suponer. Si el sistema se pudiera ver en tiempo real, sería mejor. Cuánto producto hay en bodega y eso.
+
+Entrevistador: ¿Cómo le comunica a la administradora las entradas del día?
+
+ENTR-07: Al final del día le digo y le cuento a la propietaria o le mando mensaje con lo que entró, cuántos animales, de qué proveedor, cuánto pesaron. Si ella toma nota de eso para compararlo con las facturas que llegan después, si hay diferencia me llama.
+
+Entrevistador: ¿Le facilitaría que el sistema pueda generar automáticamente un reporte de entradas al día?
+
+ENTR-07: Claro, así no tendría que escribir un resumen manualmente, porque yo registro cada entrada en el sistema durante el día y al final el reporte ya está listo. Eso ahorraría bastante tiempo y reduciría errores.
+
+Entrevistador: En cuanto a los errores, ¿serían errores de memoria?
+
+ENTR-07: Que uno a veces se olvida. Eso, uno se anda olvidando y eso afecta.
+
+Entrevistador: ¿Coordina usted con el área de despacho cuando el chofer va a retirar el producto?
+
+ENTR-07: A veces sí. Si el chofer va a llevar algo que está en mi bodega, me avisa para yo separarlo, pero no siempre me dicen con anticipación. Y hay momentos en que el chofer llega y el producto no está listo, o no sé exactamente qué va a llevar, y eso a uno lo hace enojar.
+
+Entrevistador: A veces hay retrasos e inconvenientes.
+
+ENTR-07: Sí, hay retrasos y eso afecta en el trabajo.
+
+Entrevistador: ¿Cómo se comunica con las demás áreas durante su turno?
+
+ENTR-07: Como le he dicho, casi todo es por WhatsApp o de palabra. Si necesito algo de la administración, llamo o mando mensaje. Con el carnicero es cara a cara porque trabajo cerca. Con el chofer, a veces no me entero de lo que sale hasta que ya salió.
+
+Entrevistador: ¿Qué información le gustaría tener disponible en tiempo real para hacer mejor su trabajo?
+
+ENTR-07: La verdad es que quisiera ver los pedidos que tiene previsto despachar el carnicero ese día, para saber qué animal priorizar. También me gustaría saber cuándo va a llegar un proveedor, porque uno nunca sabe, más que todo para no ser el último en enterarme y estar preparado en caso de algo imprevisto.
+
+Entrevistador: Sí, no hay que perder las ganancias. Si el sistema genera un resumen de las entradas del día, ¿qué información le gustaría que se incluyera ahí?
+
+ENTR-07: Que muestre al proveedor, como le he dicho, el tipo de animal o materia prima, la cantidad o el peso total, la hora de ingreso y si hubo alguna observación como diferencia de peso o el estado en que llega la materia prima proporcionada por un proveedor.
+
+Entrevistador: Pensando en su trabajo diario, ¿cuál sería la función más importante que debería tener el nuevo sistema desde su perspectiva?
+
+ENTR-07: Desde mi perspectiva, para mí lo más importante sería mejorar el registro de cada entrada con el proveedor y el peso de forma inmediata, y que ese dato quede visible para todos. Así el carnicero sabe qué hay, el administrador sabe qué entró, y si hay reclamo, el proveedor y yo tenemos el peso registrado con la hora exacta. Eso lo resolvería.
+
+Entrevistador: ¿Estaría dispuesto a usar un sistema digital para registrar las entradas y el inventario?
+
+ENTR-07: Claro, con gusto. O sea, lo importante es que sea práctico. Que yo pueda ingresar los datos rápido mientras esté recibiendo el orden, sin tener que escribir mucho porque eso me demora. Y si hay una pantalla sencilla donde ponga el proveedor, el peso y el tipo de producto, sería mejor, lo puedo hacer sin problemas. Lo que no me gustaría es que sea algo muy complicado, con muchos pasos o cosas que me distraigan cuando estoy revisando los animales, porque sería inconveniente.
+
+Entrevistador: Por ejemplo, no sería bueno que estuviera muy cargado, con muchas cosas complicadas de entender.
+
+ENTR-07: Sí, porque entonces se me acumularía mucho trabajo y me chocaría a la hora de hacer el trabajo.
+
+Entrevistador: Muchas gracias por aceptar esta entrevista. Muchas gracias por sus respuestas de parte del grupo. Muchas gracias por su atención también.
+
+ENTR-07: Igualmente, muy amable por hacerme la entrevista.
