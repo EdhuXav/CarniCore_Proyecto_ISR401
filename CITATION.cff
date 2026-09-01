@@ -2,33 +2,74 @@ cff-version: 1.2.0
 
 message: "If you use this repository, please cite it as follows."
 
-title: "CarniCore: Especificación de Requisitos Completa y Componente Empírico"
+title: "CarniCore: Detección automática de patrones de ambigüedad en requisitos funcionales — Paquete de replicación Entrega 4 (2B)"
 
-version: "1.0.0"
+version: "2.0.0"
 
-date-released: 2026-08-02
+date-released: 2026-08-28
+
+abstract: >
+  Paquete de replicación completo del estudio empírico (Enfoque 2: detección automática
+  de ambigüedad) aplicado sobre los 27 requisitos funcionales del sistema CarniCore,
+  más la Especificación de Requisitos de Software (ERS/SRS) v2.0 definitiva.
+  Incluye detector automático en Python, datos crudos y procesados, scripts
+  reproducibles y el manuscrito para revista JCR. El DOI y SWHID deben actualizarse
+  tras el depósito en Zenodo y el archivado en Software Heritage.
 
 authors:
   - family-names: Castro Bajaña
     given-names: Ariel Omar
     orcid: "https://orcid.org/0009-0005-1575-8935"
+    email: acastrob@uteq.edu.ec
+    affiliation: "Universidad Técnica Estatal de Quevedo (UTEQ)"
 
   - family-names: Crespo Espinoza
     given-names: Kleber Obed
     orcid: "https://orcid.org/0009-0000-9145-1357"
-  
+    email: kcrespoe@uteq.edu.ec
+    affiliation: "Universidad Técnica Estatal de Quevedo (UTEQ)"
+
   - family-names: Gamarra Araujo
     given-names: Edhu Xavier
     orcid: "https://orcid.org/0009-0001-8312-9656"
+    email: egamarraa@uteq.edu.ec
+    affiliation: "Universidad Técnica Estatal de Quevedo (UTEQ)"
 
   - family-names: Pérez Ruiz
     given-names: Carlos Andrés
     orcid: "https://orcid.org/0009-0003-6741-9391"
+    email: cperezr3@uteq.edu.ec
+    affiliation: "Universidad Técnica Estatal de Quevedo (UTEQ)"
 
   - family-names: Quintero Gende
     given-names: Erick Jahir
     orcid: "https://orcid.org/0009-0000-6032-4179"
+    email: equinterog@uteq.edu.ec
+    affiliation: "Universidad Técnica Estatal de Quevedo (UTEQ)"
 
 repository-code: "https://github.com/EdhuXav/CarniCore_Proyecto_ISR401"
 
-license: "MIT"
+url: "https://github.com/EdhuXav/CarniCore_Proyecto_ISR401"
+
+doi: "10.5281/zenodo.22225854"
+
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22225854"
+    description: "DOI del paquete de replicación en Zenodo"
+  - type: swh
+    value: "swh:1:dir:5741b167af89a201c815b061cc965309d8167069"
+    description: "Software Heritage identifier del código fuente"
+
+license: MIT
+
+keywords:
+  - requirements engineering
+  - requirements ambiguity
+  - automatic ambiguity detection
+  - requirements smells
+  - empirical study
+  - Ecuador
+  - Latin America
+  - meat traceability
+  - software requirements specification
