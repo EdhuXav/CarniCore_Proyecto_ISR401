@@ -1,0 +1,194 @@
+Evidencia: EV-13
+Participante: P13
+Tipo de participante: Chofer de Despacho
+Fecha de transcripción: 29/08/2026
+====================================================
+TRANSCRIPCIÓN ANONIMIZADA
+====================================================
+
+Entrevistador:
+Buenos días. Somos los integrantes del grupo de la asignatura Ingeniería de Requerimientos y realizaremos una entrevista para la recolección de información del proyecto de gestión de una distribuidora de productos cárnicos. Con su permiso, nos gustaría grabar la conversación en audio para poder revisar sus respuestas con exactitud al momento de redactar el documento. ¿Nos autoriza usted a proceder con la grabación?
+
+Participante P04:
+Sí, les autorizo.
+
+Entrevistador:
+Comencemos con el primer bloque, información general del entrevistado. ¿Cuál es su nombre y apellido?
+
+Participante P04:
+[Dato omitido por confidencialidad – Participante P04].
+
+Entrevistador:
+¿Cuál es su cargo dentro de la distribuidora?
+
+Participante P04:
+Actualmente soy chofer de despacho. Llevo los pedidos a las sucursales y, cuando hay clientes mayoristas que piden entrega a domicilio, también los atiendo. Llevo alrededor de un año y medio en este cargo.
+
+Entrevistador:
+¿Cuáles son sus principales responsabilidades en su puesto de trabajo?
+
+Participante P04:
+Cargar el camión con lo que ya tengo listo dentro del área de producción, entregar en cada punto designado según donde me indiquen, traer de vuelta cualquier devolución que me hayan reportado, y a veces cambiar la ruta. También me toca cuidar que la carga no se dañe durante el viaje, sobre todo en días de mucho calor.
+
+BLOQUE: HERRAMIENTAS Y ORGANIZACIÓN DE LA CARGA
+----------------------------------------------------
+
+Entrevistador:
+¿Qué herramientas o medios usa actualmente para hacer su trabajo?
+
+Participante P04:
+Actualmente utilizo el camión y mi teléfono, nada más. A veces me dan una hoja con los destinos, pero no es usual. Antes de trabajar aquí estuve en una empresa de transporte donde usábamos una aplicación para registrar entregas, pero no la entendí muy bien, así que me llevo mejor con el papel.
+
+Entrevistador:
+¿Cómo se organiza la carga del camión antes de salir?
+
+Participante P04:
+El carnicero o el despachador separan los pedidos en el área de carga y yo los subo al camión, tratando de organizarlos por destino: primero lo que va más lejos, para que lo que está más cerca quede al alcance cuando llegue. Pero eso lo decido yo solo; no hay ninguna indicación escrita de cómo hacerlo.
+
+Entrevistador:
+¿Esa falta de organización le ha causado problemas durante la ruta?
+
+Participante P04:
+Sí, ciertas veces. Tuve que descargar casi todo el camión en la primera parada porque el pedido de esa sucursal había quedado al fondo. Eso tomó tiempo y el producto estuvo más tiempo expuesto al calor del que debía. Si la carga estuviera ordenada según la ruta desde el principio, eso no hubiera pasado.
+
+BLOQUE: RUTAS Y ENTREGAS
+----------------------------------------------------
+
+Entrevistador:
+¿Recibe usted alguna indicación sobre el orden de las entregas antes de salir?
+
+Participante P04:
+A veces. El despachador me dice por dónde empezar, pero no siempre. Los días que no me dicen nada, yo decido el orden según lo que me parece más conveniente. No hay ninguna hoja de ruta ni nada en el teléfono que me pueda guiar.
+
+Entrevistador:
+¿Le ayudaría contar con una ruta sugerida desde el sistema antes de salir?
+
+Participante P04:
+La verdad que sí, especialmente cuando hay entregas a clientes nuevos cuya dirección no conozco bien. Si el sistema me muestra los destinos en orden y con la ubicación exacta, llegaría más rápido y no tendría que estar llamando para preguntar dónde queda.
+
+Entrevistador:
+¿Sabe usted con exactitud qué lleva en el camión antes de salir?
+
+Participante P04:
+No exactamente, pero sí tengo una idea. Sé los bultos que cargo, pero no siempre tengo el detalle de cuántos kilos de cada corte hay por destino. Si me preguntan en ruta cuánto lomo va para el local del centro, tengo que adivinar o llamar a la planta, y eso es incómodo cuando el cliente pregunta.
+
+Entrevistador:
+¿Cómo realiza usted la entrega cuando llega a una sucursal o con un cliente?
+
+Participante P04:
+Descargo el producto, la persona que recibe lo revisa, ve si está todo bien y listo. Si está todo bien sigo a las siguientes paradas; si hay alguna observación la atiendo en el momento. Rara vez hay un documento formal de entrega; generalmente es de palabra, o a lo mucho una nota que firma quien recibe.
+
+Entrevistador:
+¿Qué tan frecuente es que no haya ningún documento de respaldo?
+
+Participante P04:
+Yo diría que de cada diez entregas, la mayoría son sin papel; solo cuando el cliente lo pide expresamente se hace una nota. Eso es un problema porque, si después hay un reclamo, no tengo cómo comprobar que entregué todo completo y en buen estado.
+
+Entrevistador:
+¿Ha tenido situaciones en las que el cliente reclame algo que usted sí entregó?
+
+Participante P04:
+Sí, me pasó hace unos meses. Un cliente mayorista dijo que le habían faltado dos kilos de costilla; yo estaba seguro de que entregué todo lo que me dieron, pero como no había comprobante, el administrador tuvo que ceder y mandar el producto de nuevo. Eso no fue justo.
+
+Entrevistador:
+¿Cómo le gustaría que el sistema manejara ese tipo de situación?
+
+Participante P04:
+Que al momento de entregar yo pueda registrar en el teléfono lo que realmente dejé, con el peso y la hora exacta, y que el cliente confirme desde su lado. Así, si hay un reclamo posterior, hay un registro de qué pasó y a qué hora se hizo la entrega, y eso me protege a mí y a la distribuidora.
+
+BLOQUE: DEVOLUCIONES Y CONSERVACIÓN DEL PRODUCTO
+----------------------------------------------------
+
+Entrevistador:
+¿Cómo maneja usted una devolución cuando el cliente rechaza algún producto?
+
+Participante P04:
+Lo traigo de vuelta en el camión y aviso por teléfono a la planta; el producto regresa y le explico al administrador qué pasó. No hay ningún formato para registrar eso: la devolución llega sin documentación y el administrador tiene que confiar en lo que yo le digo.
+
+Entrevistador:
+¿Le gustaría poder registrar la devolución desde su teléfono en el momento en que ocurre?
+
+Participante P04:
+Yo diría que sí, sería bastante bueno, ya que así quedaría registrado en el momento con el motivo real, y no después, cuando uno ya no recuerda bien los detalles. Si se puede agregar una foto del producto devuelto, mejor; eso evita malentendidos cuando llega a la planta.
+
+Entrevistador:
+¿Qué hace usted para asegurarse de que el producto llegue en buen estado durante el trayecto?
+
+Participante P04:
+El camión tiene un compartimiento refrigerado, pero no siempre funciona al cien por ciento. En días de mucho calor trato de no detenerme más de lo necesario y hago las entregas lo más rápido posible. Si noto que algo viene mal desde la carga, le aviso al despachador antes de salir.
+
+Entrevistador:
+¿Ha tenido casos en que el producto llegue en mal estado al destino?
+
+Participante P04:
+Sí, una vez el sistema de refrigeración del camión falló a la mitad de la ruta, y cuando llegué a la segunda sucursal el pollo ya no estaba en condiciones. Eso generó una pérdida grande. Un sensor de temperatura que el sistema monitoreara podría avisar antes de que el daño sea irreversible.
+
+BLOQUE: TIEMPOS Y COMUNICACIÓN EN RUTA
+----------------------------------------------------
+
+Entrevistador:
+¿Cuánto tiempo pasa desde que carga el camión hasta que termina todas las entregas?
+
+Participante P04:
+Depende del día y de los destinos. En un día normal, entre dos y tres horas; cuando hay clientes mayoristas fuera de la ciudad puede ser hasta cinco horas. Los viernes y sábados son los más pesados porque hay más pedidos y más tráfico.
+
+Entrevistador:
+¿Le parece que la ruta actual está bien optimizada en términos de tiempo?
+
+Participante P04:
+No siempre. Hay días que voy y vengo por el mismo sector porque los pedidos no están organizados por zona. Si el sistema agrupara las entregas por zona geográfica, haría menos kilómetros, terminaría antes y eso también ahorraría combustible.
+
+Entrevistador:
+¿Cómo se comunica con la planta cuando está en ruta?
+
+Participante P04:
+Solo por teléfono, con WhatsApp. Si hay un problema llamo; si hay un cambio de último momento en un pedido me mandan un mensaje. El problema es que, manejando, no siempre puedo revisar el teléfono, y cuando lo veo a veces ya tomé una decisión diferente.
+
+Entrevistador:
+¿Le gustaría recibir notificaciones en el sistema que no requieran que conteste por teléfono?
+
+Participante P04:
+Me parecería muy bien: algo que suene o vibre y que yo pueda ver rápido en un semáforo sin tener que escribir de vuelta, que diga por ejemplo "cambio en el pedido del local centro", y que yo pueda confirmar con un clic. Eso sería mucho más seguro que estar llamando mientras conduzco.
+
+BLOQUE: REPORTES Y REQUERIMIENTOS DEL SISTEMA
+----------------------------------------------------
+
+Entrevistador:
+¿Qué información le gustaría tener disponible en su teléfono durante la ruta?
+
+Participante P04:
+Principalmente la lista de entregas del día con la dirección de cada destino, los kilos y cortes que corresponden a cada uno, y un campo para registrar si la entrega fue completa o si hubo alguna novedad. También me gustaría ver si hay algún cambio de pedido antes de llegar.
+
+Entrevistador:
+¿Qué tan cómodo se siente usando aplicaciones en el teléfono?
+
+Participante P04:
+La verdad es que me siento bastante cómodo; uso varias aplicaciones a diario y no se me complica. Lo importante es que sea clara y que no pida demasiados pasos para registrar una entrega. Si en tres toques puedo confirmar que entregué y anotar alguna novedad, está perfecto.
+
+Entrevistador:
+¿Qué le parecería que el sistema generara un resumen de su jornada al final del día?
+
+Participante P04:
+Me parecería muy útil, tanto para mí como para el administrador: cuántas entregas realicé, si hubo devoluciones, a qué hora terminé y cuántos kilómetros recorrí, si se puede calcular. Así el administrador tiene el reporte sin que yo tenga que contarle todo por teléfono.
+
+Entrevistador:
+Pensando en su trabajo diario, ¿cuál sería la función más importante que debería tener el nuevo sistema desde su perspectiva?
+
+Participante P04:
+Principalmente el comprobante digital de entrega, sin ninguna duda. Es lo que más nos hace falta: que cuando deje un pedido quede registrado con hora exacta, cantidad y confirmación de quién lo recibe. Eso me protegería a mí si hay un reclamo, y le da tranquilidad al administrador de que el despacho llegó bien. Todo lo demás es útil, pero esto es lo más urgente.
+
+Entrevistador:
+¿Estaría dispuesto a usar una aplicación en su teléfono para gestionar sus entregas?
+
+Participante P04:
+Sí, completamente. De hecho ya usé algo parecido en otro trabajo y funcionaba bastante bien. Lo que pido es que sea rápida e intuitiva, que no se cuelgue cuando hay mala señal, y que guarde los datos aunque no haya internet en ese momento para poder subirlos después. En algunas zonas de la ruta la señal es muy mala, y eso no debería ser una excusa para no registrar la entrega.
+
+Entrevistador:
+Con esto concluiríamos la entrevista. Muchas gracias por su colaboración.
+
+Participante P04:
+Muchas gracias a ustedes.
+
+====================================================
+FIN DE LA TRANSCRIPCIÓN
+====================================================
