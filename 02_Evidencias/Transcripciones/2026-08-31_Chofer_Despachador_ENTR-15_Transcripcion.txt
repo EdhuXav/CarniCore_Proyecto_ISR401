@@ -1,0 +1,182 @@
+Evidencia: EV-15
+Participante: P15
+Tipo de participante: Chofer Despachador
+Fecha de transcripción: 31/08/2026
+====================================================
+TRANSCRIPCIÓN ANONIMIZADA
+====================================================
+
+Entrevistador:
+Buenas noches, estimado. Primero que todo, agradecerle por su colaboración y su tiempo para apoyarnos con esta entrevista de elicitación de requisitos para nuestra asignatura de Ingeniería de Requerimientos. Antes de comenzar, quisiera preguntarle si está de acuerdo con que podamos usar grabaciones de audio de esta entrevista únicamente con fines académicos. ¿Nos autoriza?
+
+Participante P15:
+Buenas noches. Para mí es un gusto poder servirles en los requisitos que están recopilando. Sí, estoy de acuerdo con que puedan usar el audio.
+
+Entrevistador:
+Muchas gracias. Comenzamos con la entrevista, dividida en bloques. Empezamos por el bloque 1, que corresponde a información general del entrevistado. ¿Cuál es su nombre y apellido?
+
+Participante P15:
+[Dato omitido por confidencialidad – Participante P15].
+
+Entrevistador:
+¿Cuál es su cargo dentro de la distribuidora?
+
+Participante P15:
+Soy el chofer del despacho. Me encargo de llevar los pedidos de la planta a las sucursales y, de vez en cuando, también a clientes que compran en cantidad y piden entrega directa.
+
+Entrevistador:
+¿Cuáles son sus principales responsabilidades en su puesto de trabajo?
+
+Participante P15:
+La principal es recoger el producto cuando ya está listo en bodega, acomodarlo bien en el camión para que no se estropee ni se caliente, llevarlo a cada destino, entregarlo y traer de vuelta cualquier comprobante o novedad que me den en las sucursales.
+
+BLOQUE: HERRAMIENTAS Y MEDIOS DE TRABAJO
+----------------------------------------------------
+
+Entrevistador:
+¿Qué herramientas o medios utiliza actualmente para hacer su trabajo?
+
+Participante P15:
+Lo principal es el camión, mi teléfono y una libreta donde anoto lo que llevo, porque la empresa a veces no me da ninguna hoja formal. Las órdenes me llegan casi siempre de palabra o por WhatsApp.
+
+BLOQUE: PROCESO DE CARGA Y SALIDA
+----------------------------------------------------
+
+Entrevistador:
+¿Puede describirme paso a paso cómo inicia su jornada de reparto?
+
+Participante P15:
+Llego temprano a la planta y pregunto directamente al encargado del despacho qué está listo para salir. Voy revisando junto con él lo que corresponde a cada sucursal, y cargo por tandas dejando lo del primer destino más accesible en el camión.
+
+Entrevistador:
+¿Cómo sabe usted qué producto corresponde a cada sucursal?
+
+Participante P15:
+Generalmente me lo dicen de palabra mientras cargo. Yo mismo separo las cajas por destino, poniéndolas en lados distintos del camión. Como no hay etiquetas ni nada escrito de forma oficial, tengo que estar muy atento en ese momento.
+
+Entrevistador:
+¿Eso le ha generado problemas?
+
+Participante P15:
+Sí. Algunas veces he mezclado pedidos de dos sucursales porque las cajas se veían muy parecidas y nadie las había marcado. Tuve que hacer un viaje extra para corregirlo. Con una etiqueta o algo digital que confirme el destino, ese problema se evitaría.
+
+Entrevistador:
+¿Recibe algún documento o lista antes de salir con el camión?
+
+Participante P15:
+Casi nunca es algo formal. A veces me escriben en un papelito los kilos y el destino, pero muchas veces es solo de palabra. Yo no firmo nada ni queda constancia de lo que salió conmigo.
+
+Entrevistador:
+¿Le gustaría recibir esa información de forma digital antes de salir?
+
+Participante P15:
+Sí, sería muy útil. Con solo ver en el teléfono qué llevo, para qué sucursal es cada cosa y cuánto pesa, cargaría más rápido, reduciría el tiempo de preparación y tendría más seguridad de no equivocarme.
+
+BLOQUE: ENTREGA EN SUCURSALES
+----------------------------------------------------
+
+Entrevistador:
+¿Qué ocurre cuando llega a la sucursal a entregar?
+
+Participante P15:
+Empiezo a bajar el producto y se lo entrego a quien esté a cargo. En algunas sucursales me hacen firmar una constancia, pero en otras solo confían de palabra. Depende mucho de quién esté recibiendo ese día.
+
+Entrevistador:
+¿Ha habido casos en que la sucursal diga que algo no llegó o llegó mal?
+
+Participante P15:
+Sí. Me ha tocado que después dicen que faltó una caja o que un producto llegó en mal estado. Como no hay un papel firmado en el momento, es mi palabra contra la de ellos, y eso genera desconfianza de ambos lados.
+
+Entrevistador:
+¿Cómo se verifica la cantidad que se entrega a la sucursal?
+
+Participante P15:
+En algunas sucursales pesan lo que reciben; en otras solo cuentan las cajas por encima. El control no es parejo. Cuando hay una diferencia, me llaman y tenemos que aclararlo por teléfono, muchas veces sin tener cómo comprobar nada.
+
+Entrevistador:
+¿Le parecería útil que el sistema generara un comprobante digital de entrega confirmado por ambas partes?
+
+Participante P15:
+Claro, sería muy útil. Si yo registro la entrega y la sucursal la confirma desde su lado en el sistema, ya no dependemos de si alguien firmó un papel o no. Queda un respaldo para los dos.
+
+Entrevistador:
+¿Ha tenido situaciones en que el cliente o la sucursal rechace un producto al momento de la entrega?
+
+Participante P15:
+Sí. Una vez llevé un pedido y en la sucursal notaron que el empaque venía roto. No me lo aceptaron y tuve que devolverlo a la planta. Fue pérdida de tiempo y de producto, y encima tuve que explicar por teléfono qué había pasado.
+
+Entrevistador:
+¿Cómo registra usted una devolución actualmente?
+
+Participante P15:
+No hay un registro formal. Solo aviso por WhatsApp al administrador y regreso con el producto físicamente. Nadie anota oficialmente el motivo ni el peso de lo devuelto, así que es difícil rastrear esas pérdidas.
+
+BLOQUE: RUTAS Y TIEMPOS DE ENTREGA
+----------------------------------------------------
+
+Entrevistador:
+¿Cuántas sucursales visita en un día normal y cuánto tiempo le toma la ruta completa?
+
+Participante P15:
+En un día normal visito entre tres y cuatro sucursales. La ruta completa me toma entre 3 y 5 horas, dependiendo del tráfico y de cuánto se demoran en recibirme en cada punto. Los sábados es cuando más se alarga.
+
+Entrevistador:
+¿Existe una hoja de ruta definida o usted decide el orden de las entregas cada día?
+
+Participante P15:
+El orden lo defino casi siempre yo, según lo que conozco de las calles y cuál sucursal suele tener más movimiento temprano. A veces el administrador me pide cambiar el orden por alguna urgencia y eso me desorganiza el resto del día.
+
+Entrevistador:
+¿Cree que le ayudaría un sistema que le sugiriera el orden óptimo de entrega?
+
+Participante P15:
+Sí, me ayudaría bastante, sobre todo los días con muchos puntos de entrega. Si el sistema ya me indica por dónde conviene empezar según la urgencia de cada pedido, no tendría que calcular la ruta de memoria cada mañana.
+
+Entrevistador:
+¿Tiene contacto con el área de producción o recepción mientras está en ruta?
+
+Participante P15:
+Muy poco. Solo si surge algún problema me contactan. Si en el camino me dicen que hubo algún cambio en lo que debía llevar, ya es tarde porque el camión ya salió cargado. No tengo forma de ver desde la ruta qué hay disponible en la planta en ese momento.
+
+BLOQUE: COMUNICACIÓN Y REQUERIMIENTOS DEL SISTEMA
+----------------------------------------------------
+
+Entrevistador:
+¿Cómo se comunica con la administración mientras está fuera de la planta?
+
+Participante P15:
+Casi siempre por WhatsApp y, si es urgente, por llamada telefónica. El problema es que cuando estoy cargando o manejando no puedo revisar el teléfono al instante. Para cuando leo un mensaje, ya tomé una decisión distinta y no hay vuelta atrás.
+
+Entrevistador:
+¿Qué información le gustaría tener disponible desde su teléfono mientras está en ruta?
+
+Participante P15:
+Ver claramente qué llevo para cada sucursal, el contacto de quien recibe en cada punto, y que si hay un cambio de último momento me llegue como una notificación clara y no se pierda entre otros mensajes de WhatsApp.
+
+Entrevistador:
+Si el sistema le generara un resumen de lo que entregó en su jornada, ¿qué información le gustaría que incluyera?
+
+Participante P15:
+Qué entregué en cada sucursal, los kilos, la hora en que llegué a cada punto, y si hubo alguna devolución o reclamo. Así el administrador tendría el panorama del día sin que yo tenga que contarle uno por uno los detalles al regresar.
+
+Entrevistador:
+Pensando en su trabajo diario, ¿cuál sería la función más importante que debería tener el nuevo sistema desde su perspectiva?
+
+Participante P15:
+Tener claro antes de salir exactamente qué cargo y para dónde va cada cosa, de forma confirmada y sin depender de que alguien me lo diga de palabra. Eso me ayudaría a evitar errores de destino y los viajes extras que me quitan mucho tiempo.
+
+Entrevistador:
+¿Estaría dispuesto a usar una aplicación en su teléfono para el registro de las entregas?
+
+Participante P15:
+Sí, sin ningún problema, mientras sea algo rápido y sencillo de usar desde el camión. No me gusta perder tiempo llenando formularios largos, pero si es confirmar con pocos toques, lo usaría sin complicación.
+
+Entrevistador:
+Con esto llegamos al final de la entrevista. Le agradezco nuevamente por su tiempo y su apoyo. Que tenga una buena noche.
+
+Participante P15:
+Muy amable. Espero que esta información les sea útil para sus estudios. Que les vaya muy bien. Estamos a las órdenes.
+
+====================================================
+FIN DE LA TRANSCRIPCIÓN
+====================================================
