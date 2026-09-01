@@ -75,7 +75,4 @@ duplica ni reemplaza:
 
 ## Estado de esta carpeta
 
-Paquete A01–A13 y Adenda de Segunda Ronda completos. Pendiente: crear la
-subcarpeta `Categoria_C/` con la documentación de clasificación de riesgo
-correspondiente, si el comité de ética la exige como entregable separado del
-resto del paquete base.
+Paquete A01–A13 y Adenda de Segunda Ronda completos.
