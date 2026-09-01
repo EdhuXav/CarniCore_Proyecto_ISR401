@@ -1,0 +1,105 @@
+CÓDIGO DE ENTREVISTADO: ENTR-08
+
+Entrevistador: Buenas noches. En esta ocasión vamos a realizar una entrevista como parte del levantamiento de requisitos para nuestro proyecto CarniCore. La información que nos proporcione nos ayudará a identificar las principales necesidades y problemas del proceso actual, para posteriormente plantear funcionalidades que puedan ser incorporadas al sistema. La entrevista será breve y consta de varias preguntas relacionadas con sus actividades diarias. No existen respuestas correctas o incorrectas; lo que nos interesa es conocer cómo se realiza realmente el trabajo desde su experiencia. Si está de acuerdo, podemos comenzar. Para empezar, ¿cuál es su nombre y apellido?
+
+ENTR-08: Mi nombre es Carlos José Muñoz Sánchez.
+
+Entrevistador: ¿Cuál es su cargo dentro de la distribuidora?
+
+ENTR-08: Soy el encargado del área de recepción y apoyo también con el control de los productos que ingresan y permanecen en bodega.
+
+Entrevistador: ¿Cuáles son sus principales responsabilidades en su puesto de trabajo?
+
+ENTR-08: Recibo los animales y la materia prima de los proveedores. Verifico cantidades y pesos, reviso que la entrega esté en condiciones adecuadas y registro cualquier novedad antes de ingresar a la bodega.
+
+Entrevistador: ¿Qué herramientas o medios usa actualmente para hacer su trabajo?
+
+ENTR-08: Uso principalmente la báscula para comprobar los pesos, un cuaderno para registrar las entradas y el teléfono para comunicar novedades o coordinar con administración y producción.
+
+Entrevistador: Pasando al bloque 2, sobre el proceso de recepción de materia prima: descríbame paso a paso cómo recibe usted un lote de animales o materia prima.
+
+ENTR-08: Cuando llega el proveedor, reviso primero la documentación y lo que está entregando. Después compruebo visualmente el estado de la materia prima. Realizo el pesaje y comparo los resultados con la información del proveedor. Si todo coincide, registro la entrada y traslado el producto al área correspondiente.
+
+Entrevistador: ¿Cómo verifica usted que el peso y la cantidad del lote sean correctos?
+
+ENTR-08: Compruebo la cantidad recibida y realizo el pesaje en nuestra propia báscula. Luego comparo esos datos con la nota de entrega. Si encuentro una diferencia, la dejo anotada y comunico la situación antes de aceptar definitivamente el lote.
+
+Entrevistador: ¿Esa diferencia de peso le ha generado conflictos con los proveedores?
+
+ENTR-08: Sí, en algunas ocasiones el peso registrado por el proveedor no coincide con el que obtenemos aquí. Para evitar discusiones, considero importante conservar el peso real, la fecha y la hora en que se hizo la recepción.
+
+Entrevistador: ¿Registra usted el proveedor de cada animal o lote que entra?
+
+ENTR-08: Sí, actualmente anoto el proveedor, la fecha, el tipo de animal o producto, la cantidad y el peso. Sin embargo, como se hace manualmente, consultar información de entradas anteriores puede tomar bastante tiempo.
+
+Entrevistador: ¿Le parecería útil que ese dato quedara vinculado a cada animal en el sistema, para que todos lo pudieran ver?
+
+ENTR-08: Sí, sería útil que cada ingreso tuviera asociado el proveedor, la fecha y el peso, porque así cualquier área podría consultar el origen de un producto sin depender de mis apuntes.
+
+Entrevistador: ¿Cómo lleva usted el control de lo que hay en la bodega y en las cámaras de frío?
+
+ENTR-08: Llevo el control mediante las anotaciones de entrada y salida y mediante revisiones físicas. Cuando hay mucho movimiento, mantener las cantidades actualizadas únicamente con el cuaderno se vuelve complicado.
+
+Entrevistador: ¿Con qué frecuencia hace un conteo físico del inventario?
+
+ENTR-08: No existe una frecuencia completamente fija. Normalmente reviso el inventario cuando llega nueva mercadería, después de movimientos importantes, o cuando administración necesita conocer las existencias.
+
+Entrevistador: ¿Tiene dificultades para saber cuánto tiempo lleva un producto en la cámara?
+
+ENTR-08: Sí, sobre todo cuando ingresan varios lotes del mismo producto. Tengo que revisar las fechas anotadas, y eso puede generar confusión cuando hay bastante movimiento.
+
+Entrevistador: ¿Le ayudaría que el sistema mostrara la fecha de ingreso de cada producto y alertara cuando esté próximo a vencer?
+
+ENTR-08: Sí, una alerta me permitiría identificar qué productos deben salir primero y controlar mejor aquellos que tienen menor tiempo de conservación.
+
+Entrevistador: ¿Qué pasa cuando detecta que un producto ya no está en buen estado?
+
+ENTR-08: Lo separo inmediatamente de los productos que están en buenas condiciones y comunico la novedad al responsable. Después se verifica el producto y se decide si corresponde registrar una baja.
+
+Entrevistador: ¿Le gustaría que el sistema permitiera registrar esa baja con el motivo, el peso y la fecha?
+
+ENTR-08: Sí, porque quedaría un respaldo de cada pérdida. También sería más sencillo revisar posteriormente por qué una cantidad determinada dejó de formar parte del inventario.
+
+Entrevistador: ¿Cómo coordina usted con el área de despiece lo que hay disponible para trabajar cada día?
+
+ENTR-08: Les comunico al inicio del día qué animales o productos están disponibles. Cuando llega una nueva entrega, aviso nuevamente para que puedan organizar las actividades de acuerdo con lo que realmente tenemos.
+
+Entrevistador: ¿Ha habido casos en que el carnicero empiece a trabajar sin saber exactamente qué tiene disponible?
+
+ENTR-08: Puede suceder cuando llegan varias entregas o cuando estamos ocupados con la recepción. En esos casos el personal tiene que acercarse a preguntar. Un inventario actualizado ayudaría a evitar esa situación.
+
+Entrevistador: ¿Cómo le comunica a la administración las entradas del día?
+
+ENTR-08: Voy registrando las entregas y, al finalizar la jornada, informo los principales datos de las entradas. Si existe alguna diferencia de peso o una observación, la comunico para que pueda revisarse.
+
+Entrevistador: ¿Le facilitaría que el sistema generara automáticamente un reporte de entradas del día?
+
+ENTR-08: Sí. Si el sistema genera el reporte con la información que ya registré, evitaría tener que preparar nuevamente el resumen y reduciría errores al copiar los datos.
+
+Entrevistador: ¿Coordina usted con el área de despacho cuando el chofer va a retirar producto?
+
+ENTR-08: Sí, cuando recibo la información con anticipación. Necesito saber qué producto se va a retirar para localizarlo, separarlo y comprobar que la cantidad entregada corresponda con lo solicitado.
+
+Entrevistador: Pasando al bloque 5, sobre comunicación y necesidades del sistema: ¿cómo se comunica con las demás áreas durante su turno?
+
+ENTR-08: Principalmente de manera directa, por llamadas y mediante WhatsApp. La comunicación funciona, pero cuando hay varias actividades al mismo tiempo puede ocurrir que alguna información no llegue a tiempo.
+
+Entrevistador: ¿Qué información le gustaría tener disponible en tiempo real para hacer mejor su trabajo?
+
+ENTR-08: Me gustaría consultar las existencias actuales, las próximas entregas de proveedores, los productos que deben prepararse para despacho y las novedades registradas durante el día.
+
+Entrevistador: Si el sistema generara un resumen de las entradas del día, ¿qué información le gustaría que incluyera?
+
+ENTR-08: Debería incluir proveedor, fecha y hora de ingreso, tipo de animal o materia prima, cantidad, peso total, ubicación donde se almacenó y cualquier observación de la recepción.
+
+Entrevistador: Pensando en su trabajo diario, ¿cuál sería la función más importante que debería tener el nuevo sistema desde su perspectiva?
+
+ENTR-08: La función más importante sería registrar una recepción de manera rápida y que la información quede disponible para las demás áreas. Así se tendría un historial de proveedores, pesos, cantidades y fechas.
+
+Entrevistador: Y con la última pregunta: ¿estaría dispuesto a usar un sistema digital para registrar las entradas y el inventario?
+
+ENTR-08: Sí, me parece una buena opción siempre que sea sencillo y rápido. Durante la recepción no puedo dedicar demasiado tiempo a llenar formularios, por lo que el registro debería requerir pocos pasos.
+
+Entrevistador: Bueno, esta ha sido la entrevista. Muchas gracias por su participación.
+
+ENTR-08: Muchas gracias.
