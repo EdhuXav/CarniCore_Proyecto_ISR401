@@ -2,9 +2,7 @@ CODIGO DE ENTREVISTADO: ENTR-09
 
 Entrevistador: Buenas noches, en esta ocasión vamos a realizar una entrevista como parte de levantamiento de requisitos para nuestro proyecto CARNICO. La información que nos proporciona nos ayudará a identificar las principales necesidades y problemas del proceso actual, para posteriormente plantear funcionalidades que pueden ser incorporadas al sistema. La entrevista será breve y consta de varias preguntas relacionadas con sus actividades diarias.
 
-No existen respuestas correctas e incorrectas, lo que nos interesa conocer es cómo se realiza realmente el trabajo desde su experiencia. Empezamos con la primera pregunta, ¿cuál es su nombre y apellido?
-
-ENTR-09: Buenas noches, mi nombre es Joao Muñoz.
+No existen respuestas correctas e incorrectas, lo que nos interesa conocer es cómo se realiza realmente el trabajo desde su experiencia. Empezamos con la primera pregunta.
 
 Entrevistador: ¿Cuál es su cargo dentro de la distribuidora?
 
