@@ -1,7 +1,20 @@
 """
 detector_ambiguedad.py
 Detector automático de ambigüedad y malos olores (smells) en requisitos --
-CarniCore, Entrega 4 (2B), Enfoque 2 del componente empírico.
+CarniCore, Enfoque 2 del componente empírico.
+
+===========================================================================
+LÓGICA CONGELADA. NO MODIFICAR.
+---------------------------------------------------------------------------
+Los patrones, los umbrales y la regla de decisión de este archivo son los
+declarados en el protocolo pre-registrado en OSF (https://osf.io/yp7t3,
+2026-08-02) y son idénticos a los usados en la Entrega 3 (2A).
+
+Ajustarlos después de haber visto los resultados del panel experto
+invalidaría la comparación pre-registrada. Si alguna vez hay que cambiarlos,
+el cambio se registra ANTES como desviación en 07_Datos/desviaciones.md y en
+el propio registro OSF, nunca después.
+===========================================================================
 
 Implementa, sobre texto en español, las 3 categorías de patrón descritas en
 la Sección 7 del protocolo experimental y en el Método del manuscrito:
@@ -10,18 +23,44 @@ la Sección 7 del protocolo experimental y en el Método del manuscrito:
   3. Voz pasiva sin agente explícito
 
 Un RF se marca como "ambiguo" (ambiguo_detector = 1) si activa AL MENOS UNA
-categoría. Esta regla de decisión, junto con el listado completo de patrones,
-debe coincidir con lo declarado en el protocolo antes de ejecutar el
-experimento real con el panel de personas expertas (no debe ajustarse
-después de ver los resultados).
+categoría.
 
-Entrada:  27 RF verbatim del ERS/SRS v2.0 (Sección 3.2, ERS_SRS_2B_v2.0.tex), sin ID,
-          nombre, fuente ni prioridad -- tal como los vería el panel ciego. Los 25 RF
-          heredados de la Entrega 3 (2A) se mantienen sin alterar (rf25.json -> rf27.json
-          es un append puro, verificado); RF-26 y RF-27 se incorporan con el texto literal
-          de sus fichas en el ERS v2.0.
-Salida:   clasificaciones_detector.csv (mismo directorio que este script:
-          06_Experimento/scripts_analisis/)
+ENTRADA
+-------
+rf27.json: los 27 RF del ERS/SRS v2.0, sin ID, nombre, fuente ni prioridad,
+tal como los vería el panel ciego.
+
+IMPORTANTE -- procedencia del corpus (corregida el 2026-09-03, DEV-03).
+Hasta esa fecha, rf27.json se mantenía A MANO y este docstring afirmaba que
+su contenido era "verbatim" del ERS v2.0. No lo era: 21 de los 27 requisitos
+conservaban la redacción de la Entrega 3 (2A) y no recogían las precisiones
+--umbrales, rangos, condiciones-- incorporadas al ERS v2.0.
+
+Desde entonces el corpus NO se mantiene a mano. Se genera con:
+
+    python extraer_rf_desde_tex.py --salida rf27.json
+
+que lo extrae de los argumentos de la macro \\rfitem de
+01_ERS/ERS_SRS_2B_v2.0.tex. La desviación está documentada en
+07_Datos/desviaciones.md.
+
+Se comprobó que la corrección del corpus NO altera ningún resultado: tras
+regenerarlo desde el .tex v2.0 y reejecutar el pipeline, todas las salidas
+son idénticas byte a byte. El detector sigue marcando 0 de 27.
+
+SALIDA
+------
+clasificaciones_detector.csv, en este mismo directorio.
+
+NOTA SOBRE EL RESULTADO 0/27
+----------------------------
+El detector no activa ninguna categoría sobre este corpus. No es un fallo de
+ejecución. Verificado patrón por patrón:
+  - C1: ninguno de los 26 patrones de cuantificador vago aparece en el corpus.
+  - C2: el umbral es ">3" conectores; el máximo observado es 2.
+  - C3: los 27 RF usan la forma activa "El sistema deberá permitir...".
+Léase junto a la sección 4 de 07_Datos/README_datos.md antes de interpretar
+las métricas: con VP=0 y FP=0, la precisión es 0/0, indefinida en rigor.
 """
 
 import csv
