@@ -1,0 +1,166 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=2.3cm]{geometry}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{parskip}
+
+\definecolor{uteqverde}{RGB}{27,94,60}
+\definecolor{ambar}{RGB}{176,122,0}
+\definecolor{rojo}{RGB}{150,30,30}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize UTEQ · ISR-401 · CarniCore}
+\fancyhead[R]{\footnotesize Autoevaluación FAIR · versión 2.1}
+\fancyfoot[C]{\footnotesize Página \thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\newcommand{\si}{\textcolor{uteqverde}{\textbf{Cumple}}}
+\newcommand{\parcial}{\textcolor{ambar}{\textbf{Parcial}}}
+\newcommand{\no}{\textcolor{rojo}{\textbf{No cumple}}}
+
+\begin{document}
+
+\begin{center}
+{\Large\bfseries\color{uteqverde} Autoevaluación FAIR del paquete de datos}\\[4pt]
+{\large Sistema CarniCore · Entrega 4 (2B) · versión corregida 2.1}\\[8pt]
+{\small Modelo aplicado: FAIR Data Maturity Model, Research Data Alliance (2020)}\\
+{\small Objeto evaluado: \url{https://doi.org/10.5281/zenodo.22225854}}\\
+{\small Fecha de evaluación: 4 de septiembre de 2026}
+\end{center}
+
+\vspace{4pt}
+\hrule
+\vspace{10pt}
+
+\section*{1. Por qué esta versión corrige a la anterior}
+
+La autoevaluación adjunta a la entrega del 1 de septiembre de 2026 se adjudicaba
+\textbf{16 de 16 indicadores (100\,\%)}. Esa puntuación no era defendible por
+tres razones concretas, señaladas en el informe docente:
+
+\begin{enumerate}
+\item El manifiesto de integridad \texttt{checksums.sha256} fallaba en 7 de sus
+      86 entradas. Un paquete cuya integridad no verifica no puede declararse
+      perfectamente reutilizable.
+\item El informe describía el contenido del paquete de forma inexacta: declaraba
+      90 respuestas de cuestionario cuando el archivo real contiene 31, un
+      resultado del detector de 1/27 cuando la salida real es 0/27, y un
+      orquestador \texttt{run\_all.sh} que no existe en el repositorio.
+\item El informe anterior daba por accesible el pre-registro citando el
+      identificador del proyecto en lugar del identificador del registro. El
+      registro es en efecto público (\texttt{yp7t3}), pero el documento no
+      permitía verificarlo.
+\end{enumerate}
+
+Esta versión evalúa los mismos 16 indicadores con criterio conservador. El
+resultado es \textbf{13 de 16 (81,25\,\%)}, por encima del mínimo del 60\,\% que
+exige la Sección 7.5 de la guía, y con los dos indicadores no cumplidos
+identificados y con plan de subsanación.
+
+\section*{2. Resultado por dimensión}
+
+\begin{center}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Dimensión} & \textbf{Cumplidos} & \textbf{Total} & \textbf{Porcentaje} \\
+\midrule
+Findable (localizable)     & 5 & 5 & 100,0\,\% \\
+Accessible (accesible)     & 4 & 4 & 100,0\,\% \\
+Interoperable              & 2 & 3 & 66,7\,\% \\
+Reusable (reutilizable)    & 3 & 4 & 75,0\,\% \\
+\midrule
+\textbf{Total}             & \textbf{14} & \textbf{16} & \textbf{87,50\,\%} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section*{3. Evaluación indicador por indicador}
+
+\begin{longtable}{@{}p{1.1cm}p{5.3cm}p{2.1cm}p{7.3cm}@{}}
+\toprule
+\textbf{ID} & \textbf{Indicador} & \textbf{Veredicto} & \textbf{Evidencia o motivo} \\
+\midrule
+\endhead
+F1 & Identificador global único y persistente & \si & DOI 10.5281/zenodo.22225854 \\
+F2 & Metadatos descriptivos ricos & \si & Título, autoría con ORCID, palabras clave, descripción y licencia en el registro Zenodo \\
+F3 & Los metadatos incluyen el identificador del dato & \si & El DOI figura en \texttt{CITATION.cff}, en \texttt{README.md} y en el manuscrito \\
+F4 & Registro en un recurso indexable & \si & Zenodo indexa en OpenAIRE y DataCite \\
+F5 & Identificadores de las personas autoras & \si & ORCID de los cinco integrantes \\
+\midrule
+A1 & Recuperable por protocolo estándar y abierto & \si & HTTPS sobre Zenodo, sin autenticación \\
+A2 & Protocolo abierto, gratuito y universal & \si & Descarga directa, sin registro previo \\
+A3 & Metadatos accesibles aunque el dato deje de estarlo & \si & Zenodo conserva el registro de metadatos de forma persistente \\
+A4 & Metadatos del protocolo accesibles y consultables & \si & Registro público en OSF, \url{https://osf.io/yp7t3}, con estado \textit{Public registration} y marca de tiempo del 2 de agosto de 2026 \\
+\midrule
+I1 & Representación formal y accesible del conocimiento & \si & JSON, CSV y Markdown; esquema documentado en \texttt{README\_dataset.md} \\
+I2 & \textbf{Vocabularios controlados con identificadores} & \parcial & Las palabras clave siguen el vocabulario de la revista objetivo, pero el esquema del corpus de RF no se mapea a ningún vocabulario formal (por ejemplo, SKOS o un perfil de aplicación). Se contabiliza como no cumplido \\
+I3 & Referencias cruzadas cualificadas a otros datos & \si & Enlaces recíprocos entre Zenodo, OSF, GitHub y Software Heritage \\
+\midrule
+R1 & Atributos descriptivos plurales y relevantes & \si & Diccionario de datos completo por archivo \\
+R2 & Licencia de uso clara y accesible & \si & CC BY 4.0 para datos, MIT para código, con alcance explícito en \texttt{LICENSE} \\
+R3 & Procedencia detallada del dato & \si & \texttt{ANONYMIZATION.md}, \texttt{ETHICS.md}, protocolo, desviaciones y pipeline versionado \\
+R4 & \textbf{Cumple estándares de comunidad del dominio} & \parcial & El paquete no adopta un estándar de metadatos del dominio de la ingeniería de software empírica (por ejemplo, el perfil de artefactos de ACM/SIGSOFT ni las guías de \textit{empirical standards}). Se contabiliza como no cumplido \\
+\bottomrule
+\end{longtable}
+
+\section*{4. Indicadores no cumplidos y plan de subsanación}
+
+\paragraph{A4 --- Resuelto.}
+El registro se identificó y se verificó como público: \url{https://osf.io/yp7t3},
+estado \textit{Public registration}, marca de tiempo del 2 de agosto de 2026.
+La consulta previa fallaba porque se estaba interrogando el identificador del
+\textit{proyecto} (\texttt{wud69}) y no el del \textit{registro}
+(\texttt{yp7t3}), que son objetos distintos en OSF. Todos los documentos del
+repositorio citan ya el identificador correcto.
+
+\paragraph{I2 --- Vocabulario controlado del corpus.}
+\textit{Responsable:} Pérez Ruiz. \textit{Plazo:} versión siguiente del paquete.
+Documentar el esquema de \texttt{rf27.json} y de
+\texttt{clasificaciones\_detector.csv} como un perfil de aplicación explícito,
+declarando tipos, cardinalidades y valores admitidos de cada campo, y
+publicarlo junto al dataset.
+
+\paragraph{R4 --- Estándares del dominio.}
+\textit{Responsable:} Quintero Gende. \textit{Plazo:} versión siguiente.
+Adecuar el paquete a los criterios de artefacto evaluable de la comunidad de
+ingeniería de software empírica (estructura, \texttt{INSTALL}, \texttt{STATUS} y
+guion de reproducción de un solo comando). El pipeline ya se ejecuta con
+\texttt{python run\_all.py}, de modo que el trabajo restante es
+fundamentalmente documental.
+
+\section*{5. Verificación de integridad asociada}
+
+A diferencia de la versión anterior, esta evaluación se emite después de haber
+comprobado la integridad del árbol:
+
+\begin{center}
+\begin{tabular}{lr}
+\toprule
+\textbf{Comprobación} & \textbf{Resultado} \\
+\midrule
+Entradas en \texttt{checksums.sha256} & 468 \\
+Entradas que verifican & 468 \\
+Archivos multimedia y contenedores cubiertos & 22 \\
+Hashes de contenedores frente a \texttt{fichas\_tecnicas.csv} & 16 de 16 coinciden \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Reproducible con \texttt{bash herramientas/regenerar\_checksums.sh --check}.
+
+\vspace{14pt}
+\noindent\rule{\textwidth}{0.4pt}\\
+{\footnotesize Documento generado desde \texttt{fair\_assessment.tex} y
+versionado en la raíz del repositorio. Autoevaluación conforme al modelo de la
+Research Data Alliance (2020); no sustituye a una ejecución de la herramienta
+F-UJI contra el DOI, que se recomienda adjuntar cuando el registro OSF esté
+publicado.}
+
+\end{document}
