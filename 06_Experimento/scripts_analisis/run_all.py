@@ -11,6 +11,8 @@ reales:
   3. 02_calcular_kappa.py      -> kappa_resultados.json
   4. 03_matriz_confusion_prf1.py -> matriz_confusion_prf1.json, tabla_confusion.csv
   5. 04_bootstrap_ic95.py      -> bootstrap_ic95.json
+  6. 05_generar_figuras.py     -> figuras y tablas LaTeX del manuscrito
+  7. 06_analisis_potencia.py   -> analisis_potencia.json, curva de potencia
 
 Ninguno de estos pasos genera datos de ejemplo o simulados: si falta el
 archivo de entrada real (06_Experimento/resultados/etiquetas_expertos.csv,
@@ -34,6 +36,8 @@ PASOS = [
     "02_calcular_kappa.py",
     "03_matriz_confusion_prf1.py",
     "04_bootstrap_ic95.py",
+    "05_generar_figuras.py",
+    "06_analisis_potencia.py",
 ]
 
 
@@ -57,8 +61,11 @@ def main():
             sys.exit(resultado.returncode)
 
     print("\n" + "=" * 70)
-    print("Pipeline completo. Todas las tablas y figuras están regeneradas en")
-    print("06_Experimento/resultados/ a partir de datos reales.")
+    print("Pipeline completo. Los resultados numéricos están en")
+    print("06_Experimento/resultados/ y las figuras y tablas del manuscrito en")
+    print("07_Publicacion/figuras/ y 07_Publicacion/tablas/, todas regeneradas")
+    print("a partir de los datos crudos. Ninguna cifra del manuscrito se")
+    print("escribe a mano: si una cifra cambia, recompile el manuscrito.")
     print("=" * 70)
 
 
