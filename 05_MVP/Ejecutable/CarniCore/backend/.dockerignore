@@ -1,0 +1,16 @@
+# Sin este archivo, `COPY . .` del Dockerfile copia dentro de la imagen el
+# node_modules del host --compilado para otra arquitectura-- y, lo que es
+# peor, el archivo .env con los secretos.
+node_modules
+npm-debug.log
+.env
+*.env
+!.env.example
+.git
+.gitignore
+Dockerfile
+.dockerignore
+README.md
+coverage
+.nyc_output
+*.log
