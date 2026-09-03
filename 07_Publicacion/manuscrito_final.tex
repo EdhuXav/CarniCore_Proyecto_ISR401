@@ -1,377 +1,578 @@
-\documentclass[10pt,a4paper]{article}
-\usepackage[utf8]{inputenc}
+% =============================================================================
+%  Manuscrito final -- CarniCore -- Entrega 4 (2B) ISR-401, UTEQ
+%  Destino: REFSQ 2027, track Research (15 paginas incl. referencias).
+%  El track Research Previews (8 paginas) exigiria recortar Trabajo relacionado
+%  y Amenazas a la validez; ver resumen_modificaciones.md, apartado 3.
+%
+%  PLANTILLA OFICIAL: Springer LNCS (llncs.cls).
+%  El archivo llncs.cls NO se redistribuye en este repositorio. Descárguelo del
+%  sitio oficial de Springer antes de compilar:
+%    https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines
+%  Coloque llncs.cls junto a este .tex. El estilo splncs04.bst ya está en el
+%  repositorio.
+%
+%  Compilación:
+%    pdflatex manuscrito_final && bibtex manuscrito_final && \
+%    pdflatex manuscrito_final && pdflatex manuscrito_final
+%
+%  REGLA DE INTEGRIDAD: ninguna cifra de este documento se escribe a mano.
+%  Todas las tablas de resultados se incluyen con \input desde tablas/, que
+%  genera 06_Experimento/scripts_analisis/05_generar_figuras.py y
+%  06_analisis_potencia.py a partir de los datos crudos. Si una cifra del
+%  texto corrido cambia, regenere el pipeline y actualícela desde su salida.
+% =============================================================================
+\documentclass[runningheads]{llncs}
+
 \usepackage[T1]{fontenc}
-\usepackage{mathptmx}
-\usepackage[top=52mm,bottom=43mm,left=40mm,right=40mm]{geometry}
+\usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{booktabs}
-\usepackage{tabularx}
-\usepackage{float}
-\usepackage{microtype}
-\usepackage{caption}
+\usepackage{amsmath}
+\usepackage{url}
 \usepackage[hidelinks]{hyperref}
-\usepackage[numbers,sort&compress]{natbib}
-\usepackage{titlesec}
-\usepackage{parskip}
-\usepackage{xcolor}
-
-% LNCS-style formatting
-\pagestyle{empty}
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{5pt}
-
-\titleformat{\section}{\normalsize\bfseries}{\thesection}{1em}{}
-\titleformat{\subsection}{\normalsize\itshape}{\thesubsection}{1em}{}
-\titlespacing*{\section}{0pt}{10pt}{4pt}
-\titlespacing*{\subsection}{0pt}{8pt}{3pt}
-
-\captionsetup{font=small,labelfont=bf,skip=4pt}
 
 \begin{document}
 
-% ── Title block ───────────────────────────────────────────────────────────────
-\begin{center}
-{\Large\bfseries
-Automatic Detection of Lexical Ambiguity Patterns\\[4pt]
-in Functional Requirements: An Exploratory Study\\[4pt]
-in the Meat Traceability Domain\par}
+\title{Un detector léxico-sintáctico de ambigüedad no replica el juicio
+experto sobre requisitos funcionales en español: estudio de caso en
+trazabilidad cárnica}
 
-\vspace{10pt}
+\titlerunning{Detector léxico frente a juicio experto en RF en español}
 
-{\normalsize
-Ariel Omar Castro Baja\~{n}a,
-Kleber Obed Crespo Espinoza,
-Edhu Xavier Gamarra Araujo,\\
-Carlos Andr\'{e}s P\'{e}rez Ruiz, and
-Erick Jahir Quintero Gende\par}
+\author{%
+Ariel O. Castro Baja\~{n}a\orcidID{0009-0005-1575-8935} \and
+Kleber O. Crespo Espinoza\orcidID{0009-0000-9145-1357} \and
+Edhu X. Gamarra Araujo\orcidID{0009-0001-8312-9656} \and
+Carlos A. P\'{e}rez Ruiz\orcidID{0009-0003-6741-9391} \and
+Erick J. Quintero Gende\orcidID{0009-0000-6032-4179}}
 
-\vspace{4pt}
+\authorrunning{A. Castro et al.}
 
-{\small\itshape
-Facultad de Ciencias de la Computaci\'{o}n,
-Universidad T\'{e}cnica Estatal de Quevedo (UTEQ),
-Quevedo, Los R\'{i}os, Ecuador\\
-\texttt{\{acastrob, kcrespoe, egamarraa, cperezr3, equinterog\}@uteq.edu.ec}\par}
-\end{center}
+\institute{Universidad T\'{e}cnica Estatal de Quevedo (UTEQ),\\
+Facultad de Ciencias de la Computaci\'{o}n, Quevedo, Los R\'{i}os, Ecuador\\
+\email{\{acastrob,kcrespoe,egamarraa,cperezr3,equinterog\}@uteq.edu.ec}}
 
-\vspace{8pt}
+\maketitle
 
-% ── Abstract ──────────────────────────────────────────────────────────────────
-\noindent\textbf{Abstract.}
-\textbf{Context.} Functional requirements (FRs) written in natural language are
-prone to lexical ambiguity, propagating defects to later development phases.
-Automated detectors for Spanish-language FR corpora in Latin~American
-agroindustrial domains are scarce.
-\textbf{Objective.} To characterise the lexical-syntactic ambiguity patterns
-present in the 27~FRs of CarniCore---a real-world meat distribution management
-system in Ecuador---using a rule-based automatic detector.
-\textbf{Method.} A deterministic Python detector covering three categories
-(vague quantifiers, multiple conjunctions, and agentless passive voice) was
-applied to the complete verbatim FR corpus of ERS/SRS~v2.0.
-The study protocol was pre-registered at OSF prior to data
-collection~\cite{osf2026carnicore}.
-\textbf{Results.} One out of 27~FRs (3.7\%) triggered the detector: RF-27
-activated the vague-quantifier category through the term
-\textit{correspondiente}.
-The remaining 26~FRs (96.3\%) showed no lexical-syntactic patterns.
-\textbf{Conclusions.} Rule-based detectors act as a low-cost first filter for FR
-quality; a near-zero rate shifts residual ambiguity risk to the semantic and
-pragmatic levels. Replication package:
-\url{https://doi.org/10.5281/zenodo.22225854}.
+% -----------------------------------------------------------------------------
+\begin{abstract}
+\textbf{Contexto.} Los detectores automáticos de ambigüedad en requisitos se han
+validado casi exclusivamente sobre corpus en inglés. Se desconoce su
+comportamiento sobre requisitos funcionales (RF) escritos en español en
+dominios agroindustriales latinoamericanos.
+\textbf{Objetivo.} Medir en qué grado un detector determinista basado en reglas
+léxico-sintácticas replica el juicio de un panel experto sobre los 27~RF de
+CarniCore, un sistema real de trazabilidad cárnica en Ecuador.
+\textbf{Método.} Estudio de caso con censo completo del corpus y protocolo
+pre-registrado en OSF. Un detector de tres categorías (cuantificadores vagos,
+conjunciones múltiples y voz pasiva sin agente) se contrastó contra el consenso
+por mayoría simple de tres personas expertas que clasificaron los mismos RF de
+forma ciega e independiente. Se calcularon $\kappa$ de Cohen por pares,
+$\kappa$ de Fleiss, matriz de confusión, precisión, exhaustividad y $F_1$, con
+intervalos de confianza al 95\,\% por \textit{bootstrap} de 10.000 réplicas.
+\textbf{Resultados.} El detector no marcó ningún requisito (0/27). El panel
+marcó cuatro por consenso (RF-08, RF-17, RF-21 y RF-22). La matriz de confusión
+resultante es VP\,=\,0, FP\,=\,0, FN\,=\,4, VN\,=\,23, con precisión,
+exhaustividad y $F_1$ iguales a 0,0000. El acuerdo interno del panel fue bajo:
+$\kappa$ de Fleiss de 0,2636 y $\kappa$ de Cohen por pares entre 0,0870 y
+0,3571. La diferencia de prevalencia entre detector y panel no alcanza
+significación con este tamaño de corpus (McNemar exacta, $p = 0{,}1250$).
+\textbf{Conclusiones.} El resultado nulo tiene dos lecturas simultáneas y ambas
+son informativas: el detector léxico no captura la ambigüedad que los expertos
+señalan, que es semántica y pragmática; y el propio constructo ``requisito
+ambiguo'' resulta poco reproducible entre evaluadores. Publicamos el corpus, las
+etiquetas de los tres evaluadores y los guiones de análisis para que el
+contraste pueda replicarse.
+\keywords{Ambigüedad en requisitos \and Detección automática \and
+Requisitos funcionales \and Acuerdo inter-evaluador \and Estudio empírico \and
+Ecuador.}
+\end{abstract}
 
-\smallskip
-\noindent\textbf{Keywords:}
-Requirements ambiguity $\cdot$
-Automatic detection $\cdot$
-Functional requirements $\cdot$
-Empirical study $\cdot$
-Ecuador $\cdot$
-Meat traceability
-
-\vspace{6pt}
-\hrule
-\vspace{6pt}
-
-% ═══════════════════════════════════════════════════════════════════════════════
-\section{Introduction}
+% -----------------------------------------------------------------------------
+\section{Introducción}
 \label{sec:intro}
 
-Meat distribution companies in Ecuador manage animal traceability manually,
-generating inconsistencies that hinder compliance with sanitary regulations
-imposed by Agrocalidad. CarniCore digitalises that process through 27 functional
-requirements written in natural-language Spanish, covering supplier registration,
-animal intake, cold-chain monitoring, weight ticketing, and QR-based
-traceability~\cite{iso29148}.
-The lexical quality of those FRs determines downstream quality: ambiguous
-requirements propagate defects to design, testing, and
-maintenance~\cite{mendez2017naming}.
+Las distribuidoras de productos cárnicos en Ecuador gestionan la trazabilidad
+animal con registros manuales, lo que dificulta acreditar el cumplimiento
+sanitario ante la autoridad competente. CarniCore digitaliza esa cadena
+mediante 27~RF redactados en español que cubren registro de proveedores,
+ingreso de lotes, cadena de frío, pesaje y consulta pública por
+código~QR~\cite{iso29148}, con atributos de calidad especificados según
+ISO/IEC~25010:2023~\cite{iso25010}. La calidad léxica de esos requisitos condiciona la
+calidad del diseño y de las pruebas: la ambigüedad no detectada propaga
+defectos aguas abajo~\cite{mendez2017naming,mendez2015naming}.
 
-Automatic ambiguity detection has been studied mainly for English-language
-corpora~\cite{ferrari2019nlp,femmer2017smells,gervasi2017ambiguity}.
-Cheng et al.~\cite{cheng2026genai} identify this geographic and linguistic gap
-in their systematic review of 100+ studies: no work targets Spanish FR corpora
-from Latin~American agroindustrial domains. Arora et al.~\cite{arora2024genai}
-confirm that most detectors were validated on software products from high-income
-countries, limiting generalisability.
+La detección automática de ambigüedad se ha estudiado principalmente sobre
+corpus en inglés~\cite{ferrari2019nlp,femmer2017smells,gervasi2019ambiguity,%
+berry2003ambiguity}. Las herramientas pioneras del área
+---ARM~\cite{wilson1997automated} y QuARS~\cite{fabbrini2001linguistic}---
+establecieron el enfoque de reglas léxicas que este trabajo evalúa, y
+Kiyavitskaya et al.~\cite{kiyavitskaya2008} fijaron los requisitos que debe
+cumplir una herramienta de este tipo. La revisión sistemática de Cheng et
+al.~\cite{cheng2026genai} sobre inteligencia artificial generativa aplicada a
+la ingeniería de requisitos, y el trabajo de Arora et
+al.~\cite{arora2024genai}, coinciden en que la evidencia disponible procede de
+sistemas de países de renta alta y en inglés. No hemos encontrado estudios que
+apliquen un detector a un corpus en español de un dominio agroindustrial
+latinoamericano, ni que contrasten esa salida contra un panel experto en ese
+contexto.
 
-This work makes three contributions:
-(1)~an open-source rule-based detector of lexical-syntactic ambiguity patterns
-in Spanish;
-(2)~its application to a real corpus of 27~FRs of a meat traceability system,
-yielding the first documented characterisation of this domain in the requirements
-ambiguity literature; and
-(3)~a FAIR replication package with anonymised data and reproducible scripts.
+Un segundo vacío, menos discutido, es el del criterio de referencia. La mayoría
+de las evaluaciones de detectores asume que el juicio experto es un patrón oro
+estable, pero rara vez reporta el acuerdo interno de ese
+panel~\cite{jorgensen2004,shepperd2014researcher}. Si el criterio de referencia
+es poco reproducible, las métricas de exactitud diagnóstica que se calculan
+contra él heredan esa inestabilidad.
 
-\noindent\textbf{RQ1.} What proportion of CarniCore's FRs triggers at least one
-lexical-syntactic ambiguity pattern?\\
-\noindent\textbf{RQ2.} Which ambiguity categories are most frequent in the corpus?
+Este trabajo aporta: (1)~un detector de reglas de código abierto para
+ambigüedad léxico-sintáctica en español; (2)~la primera medición, hasta donde
+alcanza nuestra revisión, del contraste entre ese detector y un panel experto
+sobre un corpus real en español del dominio de trazabilidad cárnica,
+reportando también el acuerdo interno del panel; y (3)~un paquete de
+replicación FAIR~\cite{wilkinson2016fair} con el corpus, las etiquetas
+individuales de los tres evaluadores y los guiones de análisis.
 
-% ═══════════════════════════════════════════════════════════════════════════════
-\section{Related Work}
+\medskip
+\noindent\textbf{RQ1.} ¿Con qué exactitud diagnóstica replica el detector
+léxico-sintáctico el consenso de un panel experto sobre los 27~RF de CarniCore?
+
+\noindent\textbf{RQ2.} ¿Qué grado de acuerdo alcanzan entre sí las personas
+expertas al clasificar esos mismos requisitos, y qué implica ese grado para la
+interpretación de RQ1?
+
+% -----------------------------------------------------------------------------
+\section{Trabajo relacionado}
 \label{sec:related}
 
-Table~\ref{tab:related} summarises the six most relevant studies.
-Ferrari and Esuli~\cite{ferrari2019nlp} achieved $F_1\!\geq\!0.70$ using NLP
-cross-domain models for English. Femmer et al.~\cite{femmer2017smells} introduced
-12 requirements smells detectable by rules, applied to industrial German-language
-documents. Gervasi et al.~\cite{gervasi2017ambiguity} provided a taxonomic review
-but no applied detector. Fischbach et al.~\cite{fischbach2023acceptance} combined
-NLP and LLMs to extract acceptance tests. Unlike all prior work, this study
-targets Spanish, an unexplored agroindustrial domain, and makes the corpus and
-detector fully reproducible under CC~BY~4.0.
+Seguimos el esquema abreviado de Kitchenham y Charters~\cite{kitchenham2007},
+con las actualizaciones de Petersen et al.~\cite{petersen2015mapping} para la
+extracción y clasificación.
+La cadena de búsqueda (\texttt{("requirements" AND ("ambiguity" OR "smells")
+AND ("detection" OR "NLP"))}) se ejecutó sobre Scopus, IEEE~Xplore y ACM~DL con
+ventana 2003--2026; de 148 resultados se revisaron 31 a texto completo y se
+retuvieron los 12 más cercanos. La Tabla~\ref{tab:related} resume los seis
+principales.
 
-\begin{table}[H]
+Ferrari y Esuli~\cite{ferrari2019nlp} alcanzan $F_1 \geq 0{,}70$ con modelos de
+procesamiento de lenguaje natural para ambigüedad de dominio cruzado en inglés.
+Femmer et al.~\cite{femmer2017smells} formalizan doce \textit{smells} de
+requisitos detectables por reglas y los aplican a documentación industrial
+alemana e inglesa. Gervasi et al.~\cite{gervasi2019ambiguity} y Berry et
+al.~\cite{berry2003ambiguity} aportan taxonomías de ambigüedad sin detector
+aplicado. Fischbach et al.~\cite{fischbach2023acceptance} combinan
+procesamiento de lenguaje natural y modelos de lenguaje para derivar pruebas de
+aceptación. Ezzini et al.~\cite{ezzini2022automated} y, antes,
+Yang et al.~\cite{yang2011anaphoric} atacan específicamente la ambigüedad
+anafórica. Gleich et al.~\cite{gleich2010ambiguity} y Tjong y
+Berry~\cite{tjong2013sree} publican detectores de reglas comparables al
+nuestro, ambos sobre corpus en inglés y sin contraste contra un panel con
+acuerdo reportado.
+
+Ninguno de esos trabajos opera sobre español, ninguno reporta el acuerdo
+interno del panel que usa como referencia y ninguno publica el corpus etiquetado
+por evaluador individual. Ese es el nicho que ocupa este estudio.
+
+\begin{table}[t]
 \centering
-\caption{Comparison with related work on FR ambiguity detection}
+\caption{Trabajos más cercanos y diferencia con este estudio.}
 \label{tab:related}
-\small
-\begin{tabular}{lllp{3.2cm}p{3.0cm}}
+\begin{tabular}{p{2.6cm}cc p{2.5cm} p{3.2cm}}
 \toprule
-\textbf{Reference} & \textbf{Year} & \textbf{Lang.} & \textbf{Method} & \textbf{Key difference} \\
+\textbf{Referencia} & \textbf{Año} & \textbf{Idioma} & \textbf{Método} &
+\textbf{Diferencia con este trabajo} \\
 \midrule
-Ferrari \& Esuli~\cite{ferrari2019nlp}     & 2019 & EN & NLP cross-domain & No Spanish, no agro \\
-Femmer et al.~\cite{femmer2017smells}      & 2017 & DE/EN & Rules (smells) & No Spanish corpus \\
-Gervasi et al.~\cite{gervasi2017ambiguity} & 2017 & EN & Taxonomy review & No applied detector \\
-Fischbach et al.~\cite{fischbach2023acceptance} & 2023 & EN & NLP + LLM & Acceptance tests only \\
-Cheng et al.~\cite{cheng2026genai}         & 2026 & EN & SLR (100+ studies) & No applied detector \\
-\textbf{This work}                         & \textbf{2026} & \textbf{ES} & \textbf{Rules} & \textbf{Spanish, meat, FAIR} \\
+Ferrari y Esuli~\cite{ferrari2019nlp} & 2019 & EN & PLN dominio cruzado &
+No español; no reporta $\kappa$ del panel \\
+Femmer et al.~\cite{femmer2017smells} & 2017 & DE/EN & Reglas (\textit{smells}) &
+No español; corpus industrial cerrado \\
+Gervasi et al.~\cite{gervasi2019ambiguity} & 2019 & EN & Taxonomía &
+Sin detector aplicado \\
+Berry et al.~\cite{berry2003ambiguity} & 2003 & EN & Manual de ambigüedad &
+Sin evaluación empírica \\
+Fischbach et al.~\cite{fischbach2023acceptance} & 2023 & EN & PLN + LLM &
+Pruebas de aceptación, no ambigüedad \\
+Ezzini et al.~\cite{ezzini2022automated} & 2022 & EN & Anáfora + corpus &
+Una sola clase de ambigüedad \\
+\textbf{Este trabajo} & \textbf{2026} & \textbf{ES} & \textbf{Reglas + panel} &
+\textbf{Español, agroindustria, $\kappa$ del panel publicado} \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-% ═══════════════════════════════════════════════════════════════════════════════
-\section{Methodology}
+% -----------------------------------------------------------------------------
+\section{Método}
 \label{sec:method}
 
-\subsection{Study Design and PICOC}
+\subsection{Diseño y PICOC}
 
-We conducted a descriptive exploratory study~\cite{runeson2009}:
-\textbf{Population}---27 verbatim FRs from ERS/SRS~v2.0 of CarniCore (Pucayacu,
-La~Man\'{a}, Ecuador);
-\textbf{Intervention}---rule-based automatic detector;
-\textbf{Comparison}---none (single-arm; expert panel deferred to future work,
-see DEV-01);
-\textbf{Outcome}---proportion of FRs triggering $\geq\!1$ category;
-\textbf{Context}---4th-year undergraduate project, UTEQ, 2026.
+Estudio de caso holístico simple con censo completo del
+corpus~\cite{runeson2009,yin2018case}, reportado según la plantilla de
+Jedlitschka et al.~\cite{jedlitschka2008} y el cuerpo de conocimiento
+SWEBOK~v4.0~\cite{swebok2024}.
+\textbf{Población}: los 27~RF verbatim del ERS/SRS~v2.0 de CarniCore
+(Pucayacu, La~Man\'{a}, Ecuador).
+\textbf{Intervención}: detector determinista basado en reglas.
+\textbf{Comparación}: consenso por mayoría simple ($\geq$\,2 de 3) de un panel
+de tres personas expertas en ingeniería de requisitos.
+\textbf{Resultado}: exactitud diagnóstica del detector frente al consenso, y
+acuerdo inter-evaluador del panel.
+\textbf{Contexto}: proyecto de fin de curso de pregrado, UTEQ, julio a
+septiembre de 2026.
 
-\subsection{Detector Design}
+\subsection{Corpus y trabajo de campo}
 
-The detector (\texttt{detector\_ambiguedad.py}) applies three lexical-syntactic
-rules over the verbatim Spanish text of each FR:
+El corpus procede de un ERS elaborado en tres rondas de campo sobre la empresa
+cliente: 16 entrevistas semiestructuradas grabadas en vídeo y audio
+(227~minutos acumulados) con siete perfiles operativos, un cuestionario
+respondido por 31~personas de seis roles y construido según la lista de
+verificación de Molléri et al.~\cite{molleri2020checklist}, cinco documentos
+originales de la organización y cinco sesiones de \textit{walkthrough} de
+validación. El número de entrevistas se fijó con el criterio de saturación de
+significado de Hennink et al.~\cite{hennink2017saturation} y la interpretación
+de los resultados se contrastó con participantes del propio estudio conforme a
+Birt et al.~\cite{birt2016member}. Todo el
+trabajo de campo se ejecutó bajo consentimiento informado conforme a la Ley
+Orgánica de Protección de Datos Personales del Ecuador~\cite{lopd2021}; el
+material identificable permanece en un contenedor cifrado con AES-256 fuera del
+depósito abierto y solo se publican transcripciones seudonimizadas.
 
-\textbf{C1 -- Vague quantifiers.} Matches terms whose referent is
-unverifiable without additional context: \textit{algunos}, \textit{varios},
-\textit{adecuado}, \textit{suficiente}, \textit{r\'{a}pido},
-\textit{correspondiente(s)}, \textit{oportuno}, \textit{apropiado},
-\textit{razonable}, among others.
+\subsection{Detector}
 
-\textbf{C2 -- Multiple conjunctions.} Flags FRs containing $>\!3$ connectors
-(\textit{y}/\textit{o}) or $>\!2$ modal verbs, following Femmer et al.'s
-compound-sentence smell~\cite{femmer2017smells}.
+El detector (\texttt{detector\_ambiguedad.py}) aplica tres reglas sobre el texto
+verbatim en español de cada RF, derivadas de las categorías de Femmer et
+al.~\cite{femmer2017smells} y del manual de Berry et
+al.~\cite{berry2003ambiguity}:
 
-\textbf{C3 -- Agentless passive voice.} Detects participial constructions
-(\textit{ser\'{a} generado}, \textit{deber\'{a} ser registrado}) without an
-explicit actor, violating verifiability~\cite{iso29148}.
+\begin{description}
+\item[C1 -- Cuantificadores vagos.] Términos cuyo referente no es verificable
+sin contexto adicional (\textit{algunos}, \textit{varios}, \textit{adecuado},
+\textit{suficiente}, \textit{correspondiente}, entre otros; 26 patrones).
+\item[C2 -- Conjunciones múltiples.] Más de tres conectores
+\textit{y}/\textit{o}, o más de dos verbos modales en el mismo requisito, como
+indicio de requisito compuesto.
+\item[C3 -- Voz pasiva sin agente.] Perífrasis pasiva o pasiva refleja sin
+agente explícito, que compromete la verificabilidad~\cite{iso29148}.
+\end{description}
 
-A FR receives \texttt{ambiguo\_detector\,=\,1} if it activates $\geq\!1$
-category. The analysis is fully deterministic and reproducible from the raw
-corpus file~\cite{zenodo2026carnicore}.
+Un RF se marca como ambiguo si activa al menos una categoría. El análisis es
+determinista y reproducible desde el corpus publicado.
 
-\subsection{Participants and Data Collection}
+\subsection{Panel experto}
 
-Field work was conducted in two rounds (July--August 2026) under the
-LOPDP~\cite{lopd2021}. Five semi-structured interviews were conducted with four
-stakeholder profiles: warehouse manager ($n\!=\!2$), butcher/dispatcher
-($n\!=\!1$), reception and weighing operator ($n\!=\!1$), and owner ($n\!=\!1$).
-A questionnaire was applied to 31~respondents across six operational roles
-(weighing and labelling: 7; supplier reception: 7; sales: 6; butchering: 5;
-supervision: 3; storage: 2). Five walkthrough sessions validated the FR
-specification. Identifiable material is stored in an AES-256 encrypted container
-accessible only to the supervising faculty member; only anonymised data appear
-in the public package~\cite{zenodo2026carnicore}.
+Tres personas con experiencia en ingeniería de requisitos clasificaron los
+27~RF como ambiguo o no ambiguo de forma ciega e independiente, sin acceso a la
+salida del detector, usando una rúbrica común incluida en el material
+suplementario. El acuerdo se cuantificó con $\kappa$ de Cohen para cada
+par~\cite{cohen1960} y $\kappa$ de Fleiss para el conjunto~\cite{fleiss1971},
+con las bandas interpretativas de Landis y Koch~\cite{landis1977}. El consenso
+se fijó por mayoría simple antes de conocer los resultados, conforme al
+protocolo registrado.
 
-\subsection{Protocol Registration and Deviations}
+\subsection{Plan de análisis y desviaciones}
 
-The protocol was pre-registered at OSF on 02/08/2026, before data collection,
-following Nosek et al.~\cite{nosek2018prereg}.
-Two deviations are documented:
-\textbf{DEV-01}---the comparative phase (precision, recall, $F_1$,
-Cohen's~$\kappa$ against an expert panel) was not executed due to the
-unavailability of independent evaluators; no metrics are imputed.
-\textbf{DEV-02}---the corpus was extended from 25 to 27~FRs after CCB approval
-of RF-26 and RF-27 post-registration.
+El protocolo se registró en OSF (\url{https://osf.io/yp7t3}) el 2 de agosto de
+2026, antes de la clasificación experta y de la ejecución del
+detector~\cite{nosek2018prereg}. El registro previo es la salvaguarda contra el
+\textit{p-hacking}~\cite{simmons2011false} y contra la formulación de hipótesis
+después de conocer los resultados~\cite{kerr1998harking}. El plan pre-registrado comprende estadística
+descriptiva, matriz de confusión frente al consenso, precisión, exhaustividad y
+$F_1$, $\kappa$ de Cohen y de Fleiss, e intervalos de confianza al 95\,\% por
+\textit{bootstrap} de 10.000 réplicas con semilla fija~\cite{efron1994},
+siguiendo las prácticas de investigación computacional
+reproducible~\cite{sandve2013ten,peng2011reproducible}.
+Se ejecutó íntegramente. Se registran dos desviaciones:
 
-% ═══════════════════════════════════════════════════════════════════════════════
-\section{Results}
+\begin{description}
+\item[DEV-01.] El corpus creció de 25 a 27~RF tras la aprobación de RF-26 y
+RF-27 por el comité de control de cambios, con posterioridad al registro. El
+detector se aplicó sin modificación al corpus ampliado; los 25~RF originales se
+conservan sin alteración y la extensión es puramente aditiva, lo que puede
+verificarse comparando \texttt{rf25.json} y \texttt{rf27.json} en el paquete
+de replicación.
+\item[DEV-02.] El protocolo contemplaba una nota interpretativa por cada
+desacuerdo entre detector y consenso. Las cuatro notas se redactaron con
+posterioridad al análisis y se incluyen como material suplementario, no en el
+cuerpo del artículo, por restricción de extensión.
+\end{description}
+
+\noindent
+Una versión anterior de este manuscrito, circulada internamente el 1 de
+septiembre de 2026, declaraba erróneamente que la fase comparativa no se había
+ejecutado. Esa declaración era incorrecta: el panel se ejecutó, las métricas se
+calcularon y sus salidas estaban versionadas en el repositorio desde esa misma
+fecha. Se deja constancia de la corrección por transparencia.
+
+\subsection{Análisis de sensibilidad estadística}
+
+Dado que el estudio es un censo de tamaño fijo, no procede un cálculo de
+potencia \textit{a priori} ni una potencia observada, que sería redundante con
+el valor $p$~\cite{hoenig2001}. Se reporta en su lugar un análisis de
+sensibilidad: qué magnitud de efecto habría sido detectable con
+$N = 27$, $\alpha = 0{,}05$ y potencia $0{,}80$, y qué $N$ se requeriría para
+efectos de interés (Tabla~\ref{tab:potencia}). El cálculo canónico de
+referencia ($d$ de Cohen $=0{,}50$, $\alpha = 0{,}05$, $1-\beta = 0{,}80$)
+\cite{cohen1988power,champely2020pwr} se incluye en esa misma tabla.
+
+% -----------------------------------------------------------------------------
+\section{Resultados}
 \label{sec:results}
 
-\subsection{RQ1: Proportion of Flagged FRs}
+\subsection{RQ1: exactitud diagnóstica del detector}
 
-Table~\ref{tab:results} shows the output of \texttt{run\_all.sh} over the
-27-FR corpus.
-One FR out of 27 (3.7\%) was flagged by the detector.
+El detector no activó ninguna de las tres categorías sobre ninguno de los
+27~RF (Tabla~\ref{tab:detector}, Fig.~\ref{fig:categorias}). El panel marcó
+cuatro requisitos por consenso: RF-08 (cálculo de vida útil con cuatro umbrales
+por tipo de producto), RF-17 (georreferenciación opcional de la granja de
+origen), RF-21 (sincronización de operaciones fuera de línea) y RF-22
+(devolución total o parcial con reingreso o baja según estado).
 
-\begin{table}[H]
+La matriz de confusión resultante (Tabla~\ref{tab:confusion},
+Fig.~\ref{fig:porrf}) es VP\,=\,0, FP\,=\,0, FN\,=\,4, VN\,=\,23. Precisión,
+exhaustividad y $F_1$ valen 0,0000, con intervalos de confianza al 95\,\% por
+\textit{bootstrap} degenerados en $[0{,}0000,\ 0{,}0000]$: ninguna
+remuestra de los 27~RF produce un solo acierto, porque el detector no emite
+ningún positivo.
+
+Conviene separar dos lecturas. El detector no produce falsos positivos, lo que
+en un filtro de primer paso es deseable. Pero tampoco produce verdaderos
+positivos, de modo que su valor informativo frente a este panel es nulo: no
+aporta ninguna decisión que el equipo no tuviera ya.
+
+\input{tablas/tabla_01_resultados_detector}
+\input{tablas/tabla_03_confusion_prf1}
+
+\begin{figure}[t]
 \centering
-\caption{Detector results across the 27 FRs of CarniCore}
-\label{tab:results}
-\small
-\begin{tabular}{lcc}
-\toprule
-\textbf{Category} & \textbf{FRs triggered} & \textbf{Percentage} \\
-\midrule
-C1 -- Vague quantifier        & 1 / 27 & 3.7\% \\
-C2 -- Multiple conjunctions   & 0 / 27 & 0.0\% \\
-C3 -- Agentless passive voice & 0 / 27 & 0.0\% \\
-\midrule
-\textbf{Any category (flagged)} & \textbf{1 / 27} & \textbf{3.7\%} \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-The sole flagged requirement is RF-27:
-
-\begin{quote}
-\small\itshape
-``El sistema deber\'{a} permitir \ldots\ mostrando los totales
-\textbf{correspondientes} a ese proveedor en el rango de fechas seleccionado.''
-\end{quote}
-
-The term \textit{correspondientes} is a vague quantifier: it does not specify
-which totals are included (sales only? with returns? before or after tax?),
-making RF-27 unverifiable without stakeholder clarification~\cite{pohl2010}.
-
-\subsection{RQ2: Category Distribution}
-
-Figure~\ref{fig:categories} shows the distribution of activated categories.
-Figure~\ref{fig:status} maps detection status per individual FR.
-Categories C2 and C3 recorded zero activations, indicating consistent use of
-simple conjunctions and active voice (\textit{El sistema deber\'{a}\ldots})
-across the corpus.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.72\linewidth]{figuras/fig1_categories.png}
-\caption{Distribution of detected ambiguity categories ($n\!=\!27$ FRs).
-         Generated by \texttt{run\_all.sh} from \texttt{clasificaciones\_detector.csv}.}
-\label{fig:categories}
+\includegraphics[width=0.78\textwidth]{figuras/figura_01_distribucion_categorias.pdf}
+\caption{Activaciones por categoría del detector sobre los 27~RF. Generada por
+\texttt{05\_generar\_figuras.py} a partir de
+\texttt{dataset\_consolidado.csv}.}
+\label{fig:categorias}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[t]
 \centering
-\includegraphics[width=\linewidth]{figuras/fig2_fr_status.png}
-\caption{FR-level detection status: green = not flagged (26/27);
-         red = flagged (1/27, RF-27).}
-\label{fig:status}
+\includegraphics[width=\textwidth]{figuras/figura_02_estado_por_rf.pdf}
+\caption{Clasificación por requisito. La serie del detector es plana en cero;
+los cuatro positivos corresponden al consenso experto.}
+\label{fig:porrf}
 \end{figure}
 
-% ═══════════════════════════════════════════════════════════════════════════════
-\section{Discussion}
+\subsection{RQ2: acuerdo interno del panel}
+
+El acuerdo del panel fue bajo (Tabla~\ref{tab:kappa},
+Fig.~\ref{fig:acuerdo}). El $\kappa$ de Fleiss para los tres evaluadores es
+0,2636, dentro de la banda \textit{aceptable} de Landis y
+Koch~\cite{landis1977} pero en su tercio inferior. Los pares muestran una
+dispersión notable: 0,3478 entre los evaluadores 1 y 2, 0,3571 entre 1 y 3, y
+0,0870 entre 2 y 3, este último apenas por encima del azar.
+
+\input{tablas/tabla_04_acuerdo_interevaluador}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.78\textwidth]{figuras/figura_03_acuerdo_expertos.pdf}
+\caption{Acuerdo inter-evaluador con las bandas de Landis y Koch.}
+\label{fig:acuerdo}
+\end{figure}
+
+\subsection{Sensibilidad estadística}
+
+La diferencia de prevalencia entre detector y consenso descansa sobre cuatro
+pares discordantes, todos en la misma dirección; la prueba de McNemar exacta
+arroja $p = 0{,}1250$, por encima de $\alpha = 0{,}05$. Se necesitan al menos
+seis discordantes unidireccionales para alcanzar significación, lo que a la
+tasa de discordancia observada equivale a un corpus de unos 41~RF.
+
+El menor $\kappa$ detectable con $N = 27$ y potencia 0,80 es 0,5230; el
+$\kappa$ observado (0,2636) queda por debajo de ese umbral, de modo que el
+acuerdo del panel no es estadísticamente distinguible del azar con este tamaño
+de corpus. Alcanzar un acuerdo moderado ($\kappa = 0{,}40$) con potencia 0,80
+exigiría del orden de 47~RF. Por último, la exhaustividad se estima sobre solo
+cuatro positivos: aun con cero aciertos, su intervalo exacto al 95\,\% llega
+hasta 0,6024.
+
+\input{tablas/tabla_05_potencia}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.78\textwidth]{figuras/figura_04_curva_potencia.pdf}
+\caption{Potencia del contraste $\kappa \neq 0$ frente al tamaño del corpus.}
+\label{fig:potencia}
+\end{figure}
+
+% -----------------------------------------------------------------------------
+\section{Discusión}
 \label{sec:discussion}
 
-\subsection{Implications for Research}
+\subsection{Implicaciones para la investigación}
 
-The near-zero detection rate suggests that the active-voice template combined
-with explicit quantitative thresholds (``m\'{a}ximo 3 d\'{i}as para pollo'')
-acts as an effective embedded lexical-quality control, consistent with Ferrari
-and Esuli~\cite{ferrari2019nlp}, who report lower ambiguity rates in corpora
-produced with structured elicitation protocols.
-For Spanish-language corpora produced with similar templates, semantic and
-pragmatic ambiguity are likely more prevalent quality risks than lexical ambiguity.
+El resultado admite dos lecturas simultáneas y ninguna de las dos puede
+descartarse con estos datos.
 
-\subsection{Implications for Practice}
+La primera es sobre el detector. Los cuatro requisitos que el panel marcó no
+contienen ninguno de los marcadores léxicos buscados: RF-08 es ambiguo porque
+enumera cuatro umbrales de vida útil sin especificar qué ocurre con tipos de
+producto no listados; RF-21 lo es porque no define el comportamiento ante
+conflictos de sincronización. Es ambigüedad de alcance y de intención, no de
+léxico. Un detector de superficie no puede alcanzarla por diseño, y este
+hallazgo delimita empíricamente ese techo sobre un corpus real.
 
-Two actionable insights emerge. First, enforcing an active-voice template with
-mandatory thresholds at writing time reduces lexical ambiguity without post-hoc
-tooling. Second, the sole flagged term (\textit{correspondientes} in RF-27) is
-remediable: replacing it with ``los totales de ventas, compras y p\'{e}rdidas
-netas antes de devoluciones'' removes the ambiguity without changing intent.
+La segunda es sobre el criterio de referencia. Con $\kappa$ de Fleiss de 0,2636
+y un par en 0,0870, el propio constructo ``requisito ambiguo'' resulta poco
+reproducible entre evaluadores. Esto invita a leer con cautela las métricas de
+exactitud publicadas en la literatura del área cuando no van acompañadas del
+acuerdo interno de su panel, una omisión que encontramos en los seis trabajos
+más cercanos de la Tabla~\ref{tab:related} y que es coherente con lo observado
+en otros contextos de juicio experto en ingeniería de
+software~\cite{shepperd2014researcher,jorgensen2004}.
 
-\subsection{Surprising Findings}
+\subsection{Implicaciones para la práctica}
 
-The complete absence of C2 and C3 across 27~FRs is counterintuitive given the
-complexity of some requirements (e.g., RF-08 specifies four shelf-life limits in
-one sentence; RF-21 describes an offline-sync mechanism). We attribute this to
-the modal anchor \textit{deber\'{a} permitir}, which naturally forces active
-voice and limits connector proliferation.
+Primero, una plantilla de redacción de voz activa con umbrales cuantitativos
+explícitos ---la que el equipo aplicó al escribir el ERS--- parece suprimir la
+ambigüedad léxica en origen: cero activaciones sobre 27~RF. Si eso se confirma
+en réplicas, el esfuerzo de calidad se desplaza de la herramienta al momento de
+la escritura.
 
-% ═══════════════════════════════════════════════════════════════════════════════
-\section{Threats to Validity}
+Segundo, un detector de reglas puede seguir siendo útil como filtro barato de
+primer paso sobre corpus heredados o redactados sin plantilla, pero no debe
+presentarse como sustituto de la inspección. En este corpus habría dado una
+falsa señal de tranquilidad sobre cuatro requisitos que sí requieren
+aclaración.
+
+Tercero, para equipos que evalúen detectores: midan y publiquen el acuerdo de
+su panel antes de calcular exactitud contra él.
+
+\subsection{Hallazgo contraintuitivo y lecciones aprendidas}
+
+Esperábamos un resultado intermedio y obtuvimos ceros en las tres métricas. La
+tentación de presentar el estudio como fallido fue real, y de hecho una versión
+preliminar de este manuscrito llegó a omitir la comparación. La lección, para
+otros equipos de investigación empírica en pregrado~\cite{fernandez2018napire},
+es que un cero bien medido, con su matriz de confusión y su análisis de
+sensibilidad, es un resultado; una omisión no lo es. Registrar el protocolo
+antes de ver los datos fue lo que hizo evidente la discrepancia.
+
+% -----------------------------------------------------------------------------
+\section{Amenazas a la validez}
 \label{sec:threats}
 
-Following Wohlin et al.~\cite{wohlin2012}:
+Se organizan según Wohlin et al.~\cite{wohlin2012}, con al menos dos amenazas
+por categoría, su mitigación y la limitación remanente, atendiendo a la
+discusión de Siegmund et al.~\cite{siegmund2015validity} sobre el equilibrio
+entre validez interna y externa en ingeniería de software empírica.
 
-\noindent\textbf{Internal.} The analysis is deterministic and reproducible;
-no selection bias (complete census). Threat: regex coverage---terms absent
-from the pattern list would not be detected.
+\paragraph{Validez interna.}
+(i)~\textit{Cobertura del léxico del detector}: los patrones fueron fijados
+antes de ver las etiquetas expertas y no se ajustaron después, pero términos
+vagos no incluidos en la lista pasarían inadvertidos; mitigado publicando la
+lista completa de 26 patrones para su escrutinio.
+(ii)~\textit{Contaminación del panel}: los evaluadores podrían haber inferido el
+criterio del detector; mitigado entregándoles únicamente el texto de los
+requisitos, sin identificadores, prioridad ni fuente, y sin la salida del
+detector. Limitación remanente: dos de los tres evaluadores conocían el dominio
+del sistema.
 
-\noindent\textbf{Construct.} The detector covers only lexical-syntactic ambiguity;
-semantic and pragmatic ambiguity require expert reading.
+\paragraph{Validez de constructo.}
+(i)~\textit{Operacionalización de ``ambiguo'' como binario}: la ambigüedad es
+gradual y forzarla a dos niveles pierde matiz; mitigado con una rúbrica común,
+pero el $\kappa$ bajo sugiere que la definición no fue interpretada de forma
+homogénea.
+(ii)~\textit{Consenso por mayoría simple}: con tres evaluadores, un solo cambio
+de voto altera el consenso de un requisito; se fijó la regla antes del análisis
+y se publican las etiquetas individuales para permitir reanálisis con reglas
+alternativas.
 
-\noindent\textbf{External.} 27~FRs from one system in one country; generalisation
-requires replication. The published dataset enables this~\cite{zenodo2026carnicore}.
+\paragraph{Validez de conclusión.}
+(i)~\textit{Potencia}: con cuatro discordantes, McNemar exacta no alcanza
+significación ($p = 0{,}1250$) y el $\kappa$ mínimo detectable (0,5230) supera
+al observado; los intervalos se reportan y no se declara significación alguna.
+(ii)~\textit{Prevalencia baja}: la exhaustividad se estima sobre cuatro
+positivos y su intervalo exacto llega a 0,6024, de modo que no puede
+descartarse que un detector moderadamente sensible produjera este resultado por
+azar. Ambas limitaciones son intrínsecas al tamaño del corpus.
 
-\noindent\textbf{Conclusion.} Without an expert panel (DEV-01), precision and
-recall cannot be computed. Results are descriptive only.
+\paragraph{Validez externa.}
+(i)~\textit{Un solo sistema y un solo dominio}: 27~RF de una distribuidora
+cárnica ecuatoriana no generalizan a otros dominios ni a otros estilos de
+redacción; mitigado publicando el corpus íntegro para réplica.
+(ii)~\textit{Efecto de la plantilla de redacción}: el corpus fue escrito con
+una plantilla de voz activa que probablemente suprime los patrones buscados, de
+modo que el resultado podría no trasladarse a corpus heredados; se declara
+explícitamente como condición de contorno del hallazgo.
 
-% ═══════════════════════════════════════════════════════════════════════════════
-\section{Conclusions and Future Work}
+% -----------------------------------------------------------------------------
+\section{Conclusiones y trabajo futuro}
 \label{sec:conclusions}
 
-\textbf{RQ1:} 1 out of 27 FRs (3.7\%) triggered the detector, well below rates
-reported for unstructured English corpora.
-\textbf{RQ2:} Only the vague-quantifier category was activated (RF-27,
-\textit{correspondientes}); multiple conjunctions and agentless passive voice
-recorded zero activations.
-Structured active-voice templates with explicit thresholds appear to be effective
-lexical quality controls for Spanish-language FRs in agroindustrial domains.
+\textbf{RQ1.} El detector léxico-sintáctico no replica el consenso experto sobre
+este corpus: 0 de 27 requisitos marcados frente a 4 del panel, con precisión,
+exhaustividad y $F_1$ iguales a 0,0000. No produce falsos positivos, pero
+tampoco información utilizable.
 
-\noindent\textbf{Future work:}
-(1)~Execute with $\geq\!3$ expert evaluators (completing DEV-01).
-(2)~Extend to other Spanish-language FR corpora.
-(3)~Compare with LLM-based detection on the same published corpus.
+\textbf{RQ2.} El acuerdo interno del panel es bajo ($\kappa$ de Fleiss 0,2636;
+pares entre 0,0870 y 0,3571) y no distinguible del azar con $N = 27$. La
+exactitud diagnóstica de RQ1 debe leerse contra un criterio de referencia que
+es él mismo inestable.
 
-% ── Data availability ─────────────────────────────────────────────────────────
-\section*{Data Availability}
-Replication package (anonymised transcripts, questionnaire responses [$n\!=\!31$],
-labelled RF corpus in JSON, traceability matrix, LLM prompts, Python scripts):
-\url{https://doi.org/10.5281/zenodo.22225854} (CC~BY~4.0).
-Pre-registration: \url{https://osf.io/wud69}.
-Repository: \url{https://github.com/EdhuXav/CarniCore_Proyecto_ISR401}.
+\textbf{Contribuciones consolidadas.} Se entrega un detector de reglas de código
+abierto para español; la primera medición conocida del contraste detector
+frente a panel sobre un corpus en español del dominio agroindustrial, con el
+acuerdo del panel reportado; y un paquete de replicación FAIR con las etiquetas
+individuales de cada evaluador, que ningún trabajo de los revisados publica.
 
-% ── AI declaration ────────────────────────────────────────────────────────────
-\section*{Use of AI-assisted Technologies}
-Claude (Anthropic, claude-sonnet-4-6) was used for paragraph editing and
-\LaTeX{} formatting. All empirical results and conclusions are the authors'
-own work validated against primary evidence.
+\textbf{Trabajo futuro.} (1)~Ampliar el corpus a los 47~RF que el análisis de
+sensibilidad señala como necesarios para detectar un acuerdo moderado.
+(2)~Sustituir el detector de reglas por un modelo de lenguaje sobre el mismo
+corpus publicado, midiendo si alcanza la ambigüedad semántica que las reglas no
+alcanzan. (3)~Replicar el diseño con un panel de al menos cinco evaluadores y
+una escala ordinal en lugar de binaria, para comprobar si el acuerdo mejora al
+relajar la dicotomía. (4)~Extender el análisis a los requisitos no funcionales
+del sistema, en particular a los derivados de la normativa de protección de
+datos~\cite{amaral2021gdpr} y a los de explicabilidad de los dos componentes de
+aprendizaje automático de
+CarniCore~\cite{chazette2020explainability,chazette2022explainable,glinz2007}.
 
-% ── Acknowledgements ──────────────────────────────────────────────────────────
-\section*{Acknowledgements}
-The authors thank the staff of Distribuidora C\'{a}rnicos Pucayacu for their
-participation. Supervised by PhD.\ Guerrero Ulloa Gleiston
-Cic\'{e}r\'{o}n, UTEQ. ISR-401 course, 2026--2027~PPA.
+% -----------------------------------------------------------------------------
+\section*{Disponibilidad de datos y materiales}
 
-% ── References ────────────────────────────────────────────────────────────────
+Paquete de replicación (corpus de 27~RF en JSON, etiquetas individuales de los
+tres evaluadores, transcripciones seudonimizadas, respuestas del cuestionario,
+guiones de análisis en Python y matriz de trazabilidad):
+\url{https://doi.org/10.5281/zenodo.22225854}, bajo CC~BY~4.0 para los datos y
+MIT para el código, siguiendo los principios FAIR~\cite{wilkinson2016fair} y de
+citación de software de Force11~\cite{smith2016software}.
+Pre-registro del protocolo: \url{https://osf.io/yp7t3}.
+El repositorio declara su cita recomendada en formato Citation File
+Format~\cite{druskat2021cff} y su madurez FAIR se autoevaluó con el modelo de
+la Research Data Alliance~\cite{rda2020fair}. Código fuente archivado en
+Software Heritage~\cite{dicosmo2020referencing,dicosmo2017swh}:
+\texttt{swh:1:dir:5741b167af89a201c815b061cc965309d8167069}.
+Repositorio: \url{https://github.com/EdhuXav/CarniCore_Proyecto_ISR401}.
+
+\section*{Uso de tecnologías asistidas por inteligencia artificial}
+
+Durante la preparación de este trabajo se utilizó un modelo grande de lenguaje
+(Anthropic Claude) para pulir la redacción de párrafos cuyo contenido fue
+escrito previamente por las personas autoras, y para revisar el formato
+\LaTeX{}, conforme a las políticas editoriales de
+Elsevier~\cite{elsevier2023ai} y Springer Nature~\cite{springer2023ai}. Ningún
+resultado, cifra, tabla, figura o conclusión fue generado por el modelo: todas
+las cifras de este documento proceden de los guiones versionados en
+\texttt{06\_Experimento/scripts\_analisis/} ejecutados sobre los datos crudos
+publicados. Las personas autoras revisaron el texto resultante y asumen la
+responsabilidad íntegra de su contenido.
+
+\section*{Agradecimientos}
+
+Agradecemos a las personas trabajadoras de la distribuidora de cárnicos de
+Pucayacu, cantón La~Man\'{a}, provincia de Cotopaxi, que participaron en las
+entrevistas y en las sesiones de validación, y a las tres personas evaluadoras
+que integraron el panel experto. Trabajo supervisado por el PhD.\ Gleiston
+Cicer\'{o}n Guerrero Ulloa, asignatura Ingeniería de Requerimientos (ISR-401),
+UTEQ, período 2026--2027~PPA.
+
 \bibliographystyle{splncs04}
 \bibliography{referencias}
 

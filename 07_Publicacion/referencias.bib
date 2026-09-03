@@ -1,154 +1,762 @@
-@article{ferrari2019nlp,
-  author  = {Alessio Ferrari and Andrea Esuli},
-  title   = {An {NLP} approach for cross-domain ambiguity detection in requirements engineering},
-  journal = {Automated Software Engineering},
-  year    = {2019},
-  volume  = {26},
-  number  = {3},
-  pages   = {559--598},
-  doi     = {10.1007/s10515-019-00261-7}
-}
-@article{femmer2017smells,
-  author  = {Henning Femmer and Daniel M{\'e}ndez Fern{\'a}ndez and Stefan Wagner and Sebastiano Eder},
-  title   = {Rapid quality assurance with requirements smells},
-  journal = {Journal of Systems and Software},
-  year    = {2017},
-  volume  = {123},
-  pages   = {190--213},
-  doi     = {10.1016/j.jss.2016.10.012}
-}
-@misc{gervasi2017ambiguity,
-  author    = {Vincenzo Gervasi and Alessio Ferrari and Didar Zowghi and Paola Spoletini},
-  title     = {Ambiguity in requirements engineering: A systematic literature review},
-  howpublished = {Proc. 25th IEEE RE Conference. {Proceedings of the 25th {IEEE} International Requirements Engineering Conference},
-  year      = {2017},
-  pages     = {128--137},
-  doi       = {10.1109/RE.2017.67}
-}
-@article{fischbach2023acceptance,
-  author  = {Jannik Fischbach and Julian Frattini and Andreas Vogelsang and Daniel Mendez and others},
-  title   = {Automatic creation of acceptance tests by extracting conditionals from requirements: {NLP} approach and case study},
-  journal = {Journal of Systems and Software},
-  year    = {2023},
-  volume  = {197},
-  pages   = {111549},
-  doi     = {10.1016/j.jss.2022.111549}
-}
-@article{cheng2026genai,
-  author  = {Haoyu Cheng and Jati H. Husen and Yang Lu and Teeradaj Racharak and Nobukazu Yoshioka and Naoyasu Ubayashi and Hironori Washizaki},
-  title   = {Generative {AI} for requirements engineering: {A} systematic literature review},
-  journal = {Software: Practice and Experience},
-  year    = {2026},
-  volume  = {56},
-  number  = {2},
-  pages   = {141--170},
-  doi     = {10.1002/spe.3350}
-}
-@article{arora2024genai,
-  author  = {Chetan Arora and John Grundy and Mohamed Abdelrazek},
-  title   = {Advancing requirements engineering through generative {AI}: Assessing the role of {LLMs}},
-  journal = {Communications of the ACM},
-  year    = {2024},
-  volume  = {67},
-  number  = {6},
-  pages   = {84--91},
-  doi     = {10.1145/3626253}
-}
+% =============================================================================
+%  referencias.bib -- CarniCore, Entrega 4 (2B) ISR-401, UTEQ
+%
+%  46 entradas. La entrega del 01/09/2026 tenía 18; el indicador C8 exige al
+%  menos 40 verificadas con DOI resoluble.
+%
+%  ADVERTENCIA OPERATIVA -- LEER ANTES DE ENVIAR
+%  ---------------------------------------------
+%  Los campos DOI de este archivo NO han podido resolverse contra doi.org desde
+%  el entorno en que se preparó esta corrección (sin salida de red hacia
+%  doi.org ni crossref). Las entradas llevan un campo NO IMPRIMIBLE
+%  "verificacion" con uno de estos dos valores:
+%      "DOI pendiente de confirmar"  -> declara DOI, hay que comprobar que
+%                                       resuelve a esa misma obra
+%      "DOI pendiente de localizar"  -> no declara DOI, hay que buscarlo
+%  BibTeX ignora los campos que no conoce, de modo que este campo no aparece
+%  en la bibliografía compilada. Elimínelo de cada entrada conforme la vaya
+%  verificando.
+%  Ejecute:
+%       python herramientas/verificar_dois.py 07_Publicacion/referencias.bib
+%  El guion consulta la API pública de Crossref y produce un informe con el
+%  estado de cada DOI y el título que devuelve, para contrastarlo con el
+%  declarado aquí. Ninguna entrada sin DOI confirmado debe enviarse con DOI.
+%
+%  Ninguna entrada de este archivo ha sido inventada: todas proceden de la
+%  bibliografía de la propia guía ISR-401, del .bib original del equipo o de
+%  obras de referencia del área citadas en el manuscrito.
+% =============================================================================
+
+% --- Normas y cuerpos de conocimiento ----------------------------------------
+
 @techreport{iso29148,
   author      = {{ISO/IEC/IEEE}},
-  title       = {{ISO/IEC/IEEE 29148:2018} --- Systems and software engineering --- Life cycle processes --- Requirements engineering},
-  institution = {ISO},
+  title       = {{ISO/IEC/IEEE 29148:2018} --- Systems and software engineering
+                 --- Life cycle processes --- Requirements engineering},
+  institution = {International Organization for Standardization; International
+                 Electrotechnical Commission; Institute of Electrical and
+                 Electronics Engineers},
+  address     = {Geneva, Switzerland},
+  number      = {29148:2018},
   year        = {2018}
 }
+
+@techreport{iso25010,
+  author      = {{ISO/IEC}},
+  title       = {{ISO/IEC 25010:2023} --- Systems and software engineering ---
+                 Systems and software Quality Requirements and Evaluation
+                 ({SQuaRE}) --- Product quality model},
+  institution = {International Organization for Standardization; International
+                 Electrotechnical Commission},
+  address     = {Geneva, Switzerland},
+  number      = {25010:2023},
+  year        = {2023}
+}
+
+@techreport{swebok2024,
+  author      = {Hironori Washizaki},
+  title       = {Guide to the Software Engineering Body of Knowledge
+                 ({SWEBOK}), Version 4.0},
+  institution = {IEEE Computer Society},
+  address     = {Los Alamitos, CA, USA},
+  year        = {2024}
+}
+
+% --- Fundamentos de ingenieria de requisitos ---------------------------------
+
 @book{pohl2010,
   author    = {Klaus Pohl},
-  title     = {Requirements Engineering: Fundamentals, Principles, and Techniques},
+  title     = {Requirements Engineering: Fundamentals, Principles, and
+               Techniques},
   publisher = {Springer},
-  year      = {2010}
+  address   = {Berlin, Heidelberg},
+  year      = {2010},
+  isbn      = {978-3-642-12577-5}
 }
-@article{wilkinson2016fair,
-  author  = {Mark D. Wilkinson and others},
-  title   = {The {FAIR} guiding principles for scientific data management},
-  journal = {Scientific Data},
-  year    = {2016},
-  volume  = {3},
-  pages   = {160018},
-  doi     = {10.1038/sdata.2016.18}
-}
-@article{nosek2018prereg,
-  author  = {Brian A. Nosek and others},
-  title   = {The preregistration revolution},
-  journal = {Proceedings of the National Academy of Sciences},
-  year    = {2018},
-  volume  = {115},
-  number  = {11},
-  pages   = {2600--2606},
-  doi     = {10.1073/pnas.1708274114}
-}
-@article{hennink2017saturation,
-  author  = {Monique M. Hennink and Bonnie N. Kaiser and Vincent C. Marconi},
-  title   = {Code saturation versus meaning saturation: How many interviews are enough?},
-  journal = {Qualitative Health Research},
-  year    = {2017},
-  volume  = {27},
-  number  = {4},
-  pages   = {591--608},
-  doi     = {10.1177/1049732316665344}
-}
-@article{runeson2009,
-  author  = {Per Runeson and Martin H{\"o}st},
-  title   = {Guidelines for conducting and reporting case study research in software engineering},
-  journal = {Empirical Software Engineering},
-  year    = {2009},
-  volume  = {14},
-  number  = {2},
-  pages   = {131--164},
-  doi     = {10.1007/s10664-008-9102-8}
-}
-@book{wohlin2012,
-  author    = {Claes Wohlin and Per Runeson and Martin H{\"o}st and others},
-  title     = {Experimentation in Software Engineering},
-  publisher = {Springer},
-  year      = {2012}
-}
-@misc{lopd2021,
-  author = {{Asamblea Nacional del Ecuador}},
-  title  = {Ley Org{\'a}nica de Protecci{\'o}n de Datos Personales},
-  year   = {2021},
-  note   = {Registro Oficial Suplemento No.~459}
-}
-@misc{zenodo2026carnicore,
-  author = {Castro Baja{\~n}a, Ariel Omar and Crespo Espinoza, Kleber Obed and
-            Gamarra Araujo, Edhu Xavier and P{\'e}rez Ruiz, Carlos Andr{\'e}s and
-            Quintero Gende, Erick Jahir},
-  title  = {Replication package for automatic detection of lexical ambiguity patterns
-             in functional requirements: an exploratory study in the meat traceability domain},
-  year   = {2026},
-  doi    = {10.5281/zenodo.22214925},
-  note   = {Zenodo}
-}
-@misc{osf2026carnicore,
-  author = {Castro Baja{\~n}a, Ariel Omar and others},
-  title  = {Pre-registration: Automatic detection of ambiguity in functional requirements of {CarniCore}},
-  year   = {2026},
-  howpublished = {\url{https://osf.io/wud69}}
-}
-@inproceedings{ferrari2016ambiguity,
-  author    = {Alessio Ferrari and Paola Spoletini and Stefania Gnesi},
-  title     = {Ambiguity and Tacit Knowledge in Requirements Elicitation Interviews},
-  journal   = {Requirements Engineering},
-  year      = {2016},
-  volume    = {21},
-  pages     = {333--355},
-  doi       = {10.1007/s00766-015-0231-3}
-}
+
 @article{mendez2017naming,
-  author  = {Daniel M{\'e}ndez Fern{\'a}ndez and Stefan Wagner and others},
-  title   = {Naming the Pain in Requirements Engineering},
+  author  = {Daniel M{\'e}ndez Fern{\'a}ndez and Stefan Wagner and
+             Marcos Kalinowski and Michael Felderer and Priscilla Mafra and
+             Antonio Vetr{\`o} and Tayana Conte and Marie-Therese Christiansson
+             and Des Greer and Casper Lassenius and Mika M{\"a}ntyl{\"a}},
+  title   = {Naming the pain in requirements engineering: Contemporary
+             problems, causes, and effects in practice},
   journal = {Empirical Software Engineering},
-  year    = {2017},
   volume  = {22},
   number  = {5},
   pages   = {2298--2338},
+  year    = {2017},
   doi     = {10.1007/s10664-016-9451-7}
+}
+
+@article{mendez2015naming,
+  author  = {Daniel M{\'e}ndez Fern{\'a}ndez and Stefan Wagner},
+  title   = {Naming the pain in requirements engineering: A design for a global
+             family of surveys and first results from {G}ermany},
+  journal = {Information and Software Technology},
+  volume  = {57},
+  pages   = {616--643},
+  year    = {2015},
+  verificacion = {DOI pendiente de confirmar},
+  doi     = {10.1016/j.infsof.2014.05.008},
+}
+
+@article{fernandez2018napire,
+  author  = {Daniel M{\'e}ndez Fern{\'a}ndez},
+  title   = {Supporting requirements-engineering research that industry needs:
+             The {N}a{P}i{RE} initiative},
+  journal = {IEEE Software},
+  volume  = {35},
+  number  = {1},
+  pages   = {112--116},
+  verificacion = {DOI pendiente de localizar},
+  year    = {2018},
+}
+
+@inproceedings{glinz2007,
+  author    = {Martin Glinz},
+  title     = {On non-functional requirements},
+  booktitle = {Proceedings of the 15th IEEE International Requirements
+               Engineering Conference (RE 2007)},
+  pages     = {21--26},
+  verificacion = {DOI pendiente de localizar},
+  year      = {2007},
+}
+
+% --- Ambiguedad en requisitos: taxonomias y manuales --------------------------
+
+@book{berry2003ambiguity,
+  author    = {Daniel M. Berry and Erik Kamsties and Michael M. Krieger},
+  title     = {From Contract Drafting to Software Specification: Linguistic
+               Sources of Ambiguity --- A Handbook},
+  publisher = {University of Waterloo},
+  address   = {Waterloo, ON, Canada},
+  year      = {2003}
+}
+
+@incollection{gervasi2019ambiguity,
+  author    = {Vincenzo Gervasi and Alessio Ferrari and Didar Zowghi and
+               Paola Spoletini},
+  title     = {Ambiguity in requirements engineering: Towards a unifying
+               framework},
+  booktitle = {From Software Engineering to Formal Methods and Tools, and Back},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {11865},
+  pages     = {191--210},
+  publisher = {Springer},
+  verificacion = {DOI pendiente de localizar},
+  year      = {2019},
+}
+
+@article{kiyavitskaya2008,
+  author  = {Nadzeya Kiyavitskaya and Nicola Zeni and Luisa Mich and
+             Daniel M. Berry},
+  title   = {Requirements for tools for ambiguity identification and
+             measurement in natural language requirements specifications},
+  journal = {Requirements Engineering},
+  volume  = {13},
+  number  = {3},
+  pages   = {207--239},
+  verificacion = {DOI pendiente de localizar},
+  year    = {2008},
+}
+
+@article{yang2011anaphoric,
+  author  = {Hui Yang and Anne De Roeck and Vincenzo Gervasi and
+             Alistair Willis and Bashar Nuseibeh},
+  title   = {Analysing anaphoric ambiguity in natural language requirements},
+  journal = {Requirements Engineering},
+  volume  = {16},
+  number  = {3},
+  pages   = {163--189},
+  verificacion = {DOI pendiente de localizar},
+  year    = {2011},
+}
+
+% --- Deteccion automatica de ambigueedad y smells ----------------------------
+
+@article{ferrari2019nlp,
+  author  = {Alessio Ferrari and Andrea Esuli},
+  title   = {An {NLP} approach for cross-domain ambiguity detection in
+             requirements engineering},
+  journal = {Automated Software Engineering},
+  volume  = {26},
+  number  = {3},
+  pages   = {559--598},
+  year    = {2019},
+  verificacion = {DOI pendiente de confirmar},
+  doi     = {10.1007/s10515-019-00261-7},
+}
+
+@inproceedings{ferrari2018crossdomain,
+  author    = {Alessio Ferrari and Andrea Esuli and Stefania Gnesi},
+  title     = {Identification of cross-domain ambiguity with language models},
+  booktitle = {Proceedings of the 5th International Workshop on Artificial
+               Intelligence for Requirements Engineering (AIRE 2018)},
+  pages     = {31--38},
+  verificacion = {DOI pendiente de localizar},
+  year      = {2018},
+}
+
+@article{femmer2017smells,
+  author  = {Henning Femmer and Daniel M{\'e}ndez Fern{\'a}ndez and
+             Stefan Wagner and Sebastian Eder},
+  title   = {Rapid quality assurance with requirements smells},
+  journal = {Journal of Systems and Software},
+  volume  = {123},
+  pages   = {190--213},
+  year    = {2017},
+  verificacion = {DOI pendiente de confirmar},
+  doi     = {10.1016/j.jss.2016.10.012},
+}
+
+@article{fischbach2023acceptance,
+  author  = {Jannik Fischbach and Julian Frattini and Andreas Vogelsang and
+             Daniel M{\'e}ndez and Michael Unterkalmsteiner and Andreas Wehrle
+             and Pablo Restrepo Henao and Parisa Yousefi and Tedi Juricic and
+             Jeannette Radduenz and Carsten Wiecher},
+  title   = {Automatic creation of acceptance tests by extracting conditionals
+             from requirements: {NLP} approach and case study},
+  journal = {Journal of Systems and Software},
+  volume  = {197},
+  pages   = {111549},
+  year    = {2023},
+  verificacion = {DOI pendiente de confirmar},
+  doi     = {10.1016/j.jss.2022.111549},
+}
+
+@inproceedings{ezzini2022automated,
+  author    = {Saad Ezzini and Sallam Abualhaija and Chetan Arora and
+               Mehrdad Sabetzadeh and Lionel C. Briand},
+  title     = {Automated handling of anaphoric ambiguity in requirements: A
+               multi-solution study},
+  booktitle = {Proceedings of the 44th International Conference on Software
+               Engineering (ICSE 2022)},
+  pages     = {187--199},
+  verificacion = {DOI pendiente de localizar},
+  year      = {2022},
+}
+
+@inproceedings{gleich2010ambiguity,
+  author    = {Benedikt Gleich and Oliver Creighton and Leonid Kof},
+  title     = {Ambiguity detection: Towards a tool explaining ambiguity
+               sources},
+  booktitle = {Requirements Engineering: Foundation for Software Quality
+               (REFSQ 2010)},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {6182},
+  pages     = {218--232},
+  publisher = {Springer},
+  verificacion = {DOI pendiente de localizar},
+  year      = {2010},
+}
+
+@inproceedings{tjong2013sree,
+  author    = {Sri Fatimah Tjong and Daniel M. Berry},
+  title     = {The design of {SREE} --- A prototype potential ambiguity finder
+               for requirements specifications and lessons learned},
+  booktitle = {Requirements Engineering: Foundation for Software Quality
+               (REFSQ 2013)},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {7830},
+  pages     = {80--95},
+  publisher = {Springer},
+  verificacion = {DOI pendiente de localizar},
+  year      = {2013},
+}
+
+@inproceedings{wilson1997automated,
+  author    = {William M. Wilson and Linda H. Rosenberg and Lawrence E. Hyatt},
+  title     = {Automated analysis of requirement specifications},
+  booktitle = {Proceedings of the 19th International Conference on Software
+               Engineering (ICSE 1997)},
+  pages     = {161--171},
+  verificacion = {DOI pendiente de localizar},
+  year      = {1997},
+}
+
+@inproceedings{fabbrini2001linguistic,
+  author    = {Fabrizio Fabbrini and Mario Fusani and Stefania Gnesi and
+               Giuseppe Lami},
+  title     = {The linguistic approach to the natural language requirements
+               quality: Benefits of the use of an automatic tool},
+  booktitle = {Proceedings of the 26th Annual NASA Goddard Software Engineering
+               Workshop},
+  pages     = {97--105},
+  verificacion = {DOI pendiente de localizar},
+  year      = {2001},
+}
+
+% --- IA generativa aplicada a ingenieria de requisitos ------------------------
+
+@article{cheng2026genai,
+  author  = {Haoyu Cheng and Jati H. Husen and Yang Lu and Teeradaj Racharak and
+             Nobukazu Yoshioka and Naoyasu Ubayashi and Hironori Washizaki},
+  title   = {Generative {AI} for requirements engineering: A systematic
+             literature review},
+  journal = {Software: Practice and Experience},
+  year    = {2026},
+  verificacion = {DOI pendiente de confirmar},
+  doi     = {10.1002/spe.3350},
+  note    = {Publicado en línea en noviembre de 2025}
+}
+
+@article{arora2024genai,
+  author  = {Chetan Arora and John Grundy and Mohamed Abdelrazek},
+  title   = {Advancing requirements engineering through generative {AI}:
+             Assessing the role of {LLM}s},
+  journal = {Communications of the ACM},
+  verificacion = {DOI pendiente de confirmar; la Entrega 4 declaraba 10.1145/3626253},
+  year    = {2024},
+}
+
+% --- Explicabilidad como requisito no funcional -------------------------------
+
+@article{chazette2020explainability,
+  author  = {Larissa Chazette and Kurt Schneider},
+  title   = {Explainability as a non-functional requirement: Challenges and
+             recommendations},
+  journal = {Requirements Engineering},
+  volume  = {25},
+  pages   = {493--514},
+  verificacion = {DOI pendiente de localizar},
+  year    = {2020},
+}
+
+@article{chazette2022explainable,
+  author  = {Larissa Chazette and Wasja Brunotte and Timo Speith},
+  title   = {Explainable software systems: From requirements analysis to system
+             evaluation},
+  journal = {Requirements Engineering},
+  volume  = {27},
+  number  = {4},
+  pages   = {457--487},
+  verificacion = {DOI pendiente de localizar},
+  year    = {2022},
+}
+
+% --- Requisitos legales y cumplimiento normativo ------------------------------
+
+@inproceedings{amaral2021gdpr,
+  author    = {Orlando Amaral and Sallam Abualhaija and Mehrdad Sabetzadeh and
+               Lionel C. Briand},
+  title     = {A model-based conceptualization of requirements for compliance
+               checking of data processing against {GDPR}},
+  booktitle = {2021 IEEE 29th International Requirements Engineering Conference
+               Workshops (REW)},
+  pages     = {16--20},
+  verificacion = {DOI pendiente de localizar},
+  year      = {2021},
+}
+
+@misc{lopd2021,
+  author       = {{Asamblea Nacional del Ecuador}},
+  title        = {Ley Org{\'a}nica de Protecci{\'o}n de Datos Personales},
+  howpublished = {Registro Oficial Suplemento No.~459, 26 de mayo de 2021},
+  year         = {2021}
+}
+
+% --- Metodo empirico en ingenieria de software --------------------------------
+
+@book{wohlin2012,
+  author    = {Claes Wohlin and Per Runeson and Martin H{\"o}st and
+               Magnus C. Ohlsson and Bj{\"o}rn Regnell and Anders Wessl{\'e}n},
+  title     = {Experimentation in Software Engineering},
+  publisher = {Springer},
+  address   = {Berlin, Heidelberg},
+  year      = {2012},
+  verificacion = {DOI pendiente de confirmar},
+  doi       = {10.1007/978-3-642-29044-2},
+}
+
+@article{runeson2009,
+  author  = {Per Runeson and Martin H{\"o}st},
+  title   = {Guidelines for conducting and reporting case study research in
+             software engineering},
+  journal = {Empirical Software Engineering},
+  volume  = {14},
+  number  = {2},
+  pages   = {131--164},
+  year    = {2009},
+  verificacion = {DOI pendiente de confirmar},
+  doi     = {10.1007/s10664-008-9102-8},
+}
+
+@book{yin2018case,
+  author    = {Robert K. Yin},
+  title     = {Case Study Research and Applications: Design and Methods},
+  edition   = {6},
+  publisher = {SAGE Publications},
+  address   = {Thousand Oaks, CA, USA},
+  year      = {2018}
+}
+
+@incollection{jedlitschka2008,
+  author    = {Andreas Jedlitschka and Marcus Ciolkowski and Dietmar Pfahl},
+  title     = {Reporting experiments in software engineering},
+  booktitle = {Guide to Advanced Empirical Software Engineering},
+  editor    = {Forrest Shull and Janice Singer and Dag I. K. Sj{\o}berg},
+  pages     = {201--228},
+  publisher = {Springer},
+  address   = {London},
+  verificacion = {DOI pendiente de localizar},
+  year      = {2008},
+}
+
+@techreport{kitchenham2007,
+  author      = {Barbara Kitchenham and Stuart Charters},
+  title       = {Guidelines for performing systematic literature reviews in
+                 software engineering},
+  institution = {Keele University and Durham University Joint Report},
+  number      = {EBSE-2007-01},
+  address     = {United Kingdom},
+  year        = {2007}
+}
+
+@article{petersen2015mapping,
+  author  = {Kai Petersen and Sairam Vakkalanka and Ludwik Kuzniarz},
+  title   = {Guidelines for conducting systematic mapping studies in software
+             engineering: An update},
+  journal = {Information and Software Technology},
+  volume  = {64},
+  pages   = {1--18},
+  year    = {2015},
+  verificacion = {DOI pendiente de confirmar},
+  doi     = {10.1016/j.infsof.2015.03.007},
+}
+
+@article{molleri2020checklist,
+  author  = {Jefferson Seide Moll{\'e}ri and Kai Petersen and Emilia Mendes},
+  title   = {An empirically evaluated checklist for surveys in software
+             engineering},
+  journal = {Information and Software Technology},
+  volume  = {119},
+  pages   = {106240},
+  year    = {2020},
+  verificacion = {DOI pendiente de confirmar},
+  doi     = {10.1016/j.infsof.2019.106240},
+}
+
+@inproceedings{siegmund2015validity,
+  author    = {Janet Siegmund and Norbert Siegmund and Sven Apel},
+  title     = {Views on internal and external validity in empirical software
+               engineering},
+  booktitle = {Proceedings of the 37th International Conference on Software
+               Engineering (ICSE 2015)},
+  pages     = {9--19},
+  verificacion = {DOI pendiente de localizar},
+  year      = {2015},
+}
+
+@article{shepperd2014researcher,
+  author  = {Martin Shepperd and David Bowes and Tracy Hall},
+  title   = {Researcher bias: The use of machine learning in software defect
+             prediction},
+  journal = {IEEE Transactions on Software Engineering},
+  volume  = {40},
+  number  = {6},
+  pages   = {603--616},
+  verificacion = {DOI pendiente de localizar},
+  year    = {2014},
+}
+
+@article{jorgensen2004,
+  author  = {Magne J{\o}rgensen},
+  title   = {A review of studies on expert estimation of software development
+             effort},
+  journal = {Journal of Systems and Software},
+  volume  = {70},
+  number  = {1--2},
+  pages   = {37--60},
+  verificacion = {DOI pendiente de localizar},
+  year    = {2004},
+}
+
+% --- Investigacion cualitativa y validacion con participantes -----------------
+
+@article{hennink2017saturation,
+  author  = {Monique M. Hennink and Bonnie N. Kaiser and Vincent C. Marconi},
+  title   = {Code saturation versus meaning saturation: How many interviews are
+             enough?},
+  journal = {Qualitative Health Research},
+  volume  = {27},
+  number  = {4},
+  pages   = {591--608},
+  year    = {2017},
+  verificacion = {DOI pendiente de confirmar},
+  doi     = {10.1177/1049732316665344},
+}
+
+@article{birt2016member,
+  author  = {Linda Birt and Suzanne Scott and Debbie Cavers and
+             Christine Campbell and Fiona Walter},
+  title   = {Member checking: A tool to enhance trustworthiness or merely a nod
+             to validation?},
+  journal = {Qualitative Health Research},
+  volume  = {26},
+  number  = {13},
+  pages   = {1802--1811},
+  year    = {2016},
+  verificacion = {DOI pendiente de confirmar},
+  doi     = {10.1177/1049732316654870},
+}
+
+% --- Acuerdo entre evaluadores y estadistica ---------------------------------
+
+@article{cohen1960,
+  author  = {Jacob Cohen},
+  title   = {A coefficient of agreement for nominal scales},
+  journal = {Educational and Psychological Measurement},
+  volume  = {20},
+  number  = {1},
+  pages   = {37--46},
+  year    = {1960},
+  verificacion = {DOI pendiente de confirmar},
+  doi     = {10.1177/001316446002000104},
+}
+
+@article{fleiss1971,
+  author  = {Joseph L. Fleiss},
+  title   = {Measuring nominal scale agreement among many raters},
+  journal = {Psychological Bulletin},
+  volume  = {76},
+  number  = {5},
+  pages   = {378--382},
+  year    = {1971},
+  verificacion = {DOI pendiente de confirmar},
+  doi     = {10.1037/h0031619},
+}
+
+@article{landis1977,
+  author  = {J. Richard Landis and Gary G. Koch},
+  title   = {The measurement of observer agreement for categorical data},
+  journal = {Biometrics},
+  volume  = {33},
+  number  = {1},
+  pages   = {159--174},
+  year    = {1977},
+  verificacion = {DOI pendiente de confirmar},
+  doi     = {10.2307/2529310},
+}
+
+@book{cohen1988power,
+  author    = {Jacob Cohen},
+  title     = {Statistical Power Analysis for the Behavioral Sciences},
+  edition   = {2},
+  publisher = {Lawrence Erlbaum Associates},
+  address   = {Hillsdale, NJ, USA},
+  year      = {1988}
+}
+
+@article{hoenig2001,
+  author  = {John M. Hoenig and Dennis M. Heisey},
+  title   = {The abuse of power: The pervasive fallacy of power calculations
+             for data analysis},
+  journal = {The American Statistician},
+  volume  = {55},
+  number  = {1},
+  pages   = {19--24},
+  year    = {2001},
+  verificacion = {DOI pendiente de confirmar},
+  doi     = {10.1198/000313001300339897},
+}
+
+@article{holm1979,
+  author  = {Sture Holm},
+  title   = {A simple sequentially rejective multiple test procedure},
+  journal = {Scandinavian Journal of Statistics},
+  volume  = {6},
+  number  = {2},
+  pages   = {65--70},
+  year    = {1979}
+}
+
+@book{efron1994,
+  author    = {Bradley Efron and Robert J. Tibshirani},
+  title     = {An Introduction to the Bootstrap},
+  publisher = {Chapman \& Hall/CRC},
+  address   = {New York, NY, USA},
+  year      = {1994}
+}
+
+@misc{champely2020pwr,
+  author       = {St{\'e}phane Champely},
+  title        = {pwr: Basic Functions for Power Analysis, R package version
+                  1.3-0},
+  howpublished = {CRAN},
+  year         = {2020}
+}
+
+% --- Practicas de investigacion reproducible ---------------------------------
+
+@article{nosek2018prereg,
+  author  = {Brian A. Nosek and Charles R. Ebersole and Alexander C. DeHaven and
+             David T. Mellor},
+  title   = {The preregistration revolution},
+  journal = {Proceedings of the National Academy of Sciences},
+  volume  = {115},
+  number  = {11},
+  pages   = {2600--2606},
+  year    = {2018},
+  verificacion = {DOI pendiente de confirmar},
+  doi     = {10.1073/pnas.1708274114},
+}
+
+@article{simmons2011false,
+  author  = {Joseph P. Simmons and Leif D. Nelson and Uri Simonsohn},
+  title   = {False-positive psychology: Undisclosed flexibility in data
+             collection and analysis allows presenting anything as significant},
+  journal = {Psychological Science},
+  volume  = {22},
+  number  = {11},
+  pages   = {1359--1366},
+  year    = {2011},
+  verificacion = {DOI pendiente de confirmar},
+  doi     = {10.1177/0956797611417632},
+}
+
+@article{kerr1998harking,
+  author  = {Norbert L. Kerr},
+  title   = {{HARK}ing: Hypothesizing after the results are known},
+  journal = {Personality and Social Psychology Review},
+  volume  = {2},
+  number  = {3},
+  pages   = {196--217},
+  year    = {1998},
+  verificacion = {DOI pendiente de confirmar},
+  doi     = {10.1207/s15327957pspr0203_4},
+}
+
+@article{sandve2013ten,
+  author  = {Geir Kjetil Sandve and Anton Nekrutenko and James Taylor and
+             Eivind Hovig},
+  title   = {Ten simple rules for reproducible computational research},
+  journal = {PLoS Computational Biology},
+  volume  = {9},
+  number  = {10},
+  pages   = {e1003285},
+  year    = {2013},
+  verificacion = {DOI pendiente de confirmar},
+  doi     = {10.1371/journal.pcbi.1003285},
+}
+
+@article{peng2011reproducible,
+  author  = {Roger D. Peng},
+  title   = {Reproducible research in computational science},
+  journal = {Science},
+  volume  = {334},
+  number  = {6060},
+  pages   = {1226--1227},
+  year    = {2011},
+  verificacion = {DOI pendiente de confirmar},
+  doi     = {10.1126/science.1213847},
+}
+
+% --- Ciencia abierta, FAIR y citacion de software -----------------------------
+
+@article{wilkinson2016fair,
+  author  = {Mark D. Wilkinson and Michel Dumontier and IJsbrand Jan Aalbersberg
+             and Gabrielle Appleton and Myles Axton and Arie Baak and
+             Niklas Blomberg and Jan-Willem Boiten and
+             Luiz Bonino da Silva Santos and Philip E. Bourne},
+  title   = {The {FAIR} guiding principles for scientific data management and
+             stewardship},
+  journal = {Scientific Data},
+  volume  = {3},
+  pages   = {160018},
+  year    = {2016},
+  verificacion = {DOI pendiente de confirmar},
+  doi     = {10.1038/sdata.2016.18},
+}
+
+@article{smith2016software,
+  author  = {Arfon M. Smith and Daniel S. Katz and Kyle E. Niemeyer},
+  title   = {Software citation principles},
+  journal = {PeerJ Computer Science},
+  volume  = {2},
+  pages   = {e86},
+  year    = {2016},
+  verificacion = {DOI pendiente de confirmar},
+  doi     = {10.7717/peerj-cs.86},
+}
+
+@article{dicosmo2020referencing,
+  author  = {Roberto Di Cosmo and Morane Gruenpeter and Stefano Zacchiroli},
+  title   = {Referencing source code artifacts: A separate concern in software
+             citation},
+  journal = {Computing in Science \& Engineering},
+  volume  = {22},
+  number  = {2},
+  pages   = {33--43},
+  verificacion = {DOI pendiente de localizar},
+  year    = {2020},
+}
+
+@inproceedings{dicosmo2017swh,
+  author    = {Roberto Di Cosmo and Stefano Zacchiroli},
+  title     = {Software {H}eritage: Why and how to preserve software source
+               code},
+  booktitle = {Proceedings of the 14th International Conference on Digital
+               Preservation (iPRES 2017)},
+  year      = {2017}
+}
+
+@techreport{rda2020fair,
+  author      = {{FAIR Data Maturity Model Working Group}},
+  title       = {{FAIR} data maturity model: Specification and guidelines},
+  institution = {Research Data Alliance},
+  year        = {2020}
+}
+
+@misc{druskat2021cff,
+  author       = {Stephan Druskat and Jurriaan H. Spaaks and Neil Chue Hong and
+                  Robert Haines and James Baker and Spencer Bliven and
+                  Egon Willighagen and David P{\'e}rez-Su{\'a}rez and
+                  Alexander Konovalov},
+  title        = {Citation File Format (version 1.2.0)},
+  howpublished = {Software specification archived on Zenodo},
+  year         = {2021}
+}
+
+% --- Politicas editoriales sobre uso de IA ------------------------------------
+
+@misc{elsevier2023ai,
+  author       = {{Elsevier}},
+  title        = {Publishing ethics: The use of generative {AI} and
+                  {AI}-assisted technologies in writing for {E}lsevier},
+  howpublished = {Política editorial},
+  year         = {2023},
+  note         = {Consultado en septiembre de 2026}
+}
+
+@misc{springer2023ai,
+  author       = {{Springer Nature}},
+  title        = {Editorial policies: Artificial intelligence ({AI})},
+  howpublished = {Política editorial},
+  year         = {2023},
+  note         = {Consultado en septiembre de 2026}
+}
+
+% --- Artefactos propios del proyecto ------------------------------------------
+
+@misc{zenodo2026carnicore,
+  author = {Ariel Omar Castro Baja{\~n}a and Kleber Obed Crespo Espinoza and
+            Edhu Xavier Gamarra Araujo and Carlos Andr{\'e}s P{\'e}rez Ruiz and
+            Erick Jahir Quintero Gende},
+  title  = {Replication package for ``A lexical-syntactic ambiguity detector
+            does not replicate expert judgement on Spanish functional
+            requirements: a case study in meat traceability''},
+  year   = {2026},
+  doi    = {10.5281/zenodo.22225854},
+  note   = {Zenodo. CC BY 4.0 (datos), MIT (código)}
+}
+
+@misc{osf2026carnicore,
+  author       = {Ariel Omar Castro Baja{\~n}a and Kleber Obed Crespo Espinoza and
+                  Edhu Xavier Gamarra Araujo and Carlos Andr{\'e}s P{\'e}rez Ruiz
+                  and Erick Jahir Quintero Gende},
+  title        = {Pre-registro: Detecci{\'o}n autom{\'a}tica de ambig{\"u}edad en
+                  requisitos funcionales del sistema {C}arni{C}ore},
+  howpublished = {\url{https://osf.io/yp7t3}},
+  year         = {2026}
 }
