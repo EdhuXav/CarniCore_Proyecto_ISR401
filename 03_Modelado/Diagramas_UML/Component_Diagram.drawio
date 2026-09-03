@@ -1,0 +1,163 @@
+<mxfile host="Electron">
+  <diagram name="Página-1" id="kUcmW1s8koGqkQT0Maw-">
+    <mxGraphModel dx="2575" dy="1685" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1350" pageHeight="1150" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;fontSize=16;" value="Component Diagram - CarniCore System" vertex="1">
+          <mxGeometry height="30" width="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="L1" parent="1" style="swimlane;html=1;childLayout=none;startSize=26;horizontal=1;fontStyle=1;align=center;" value="Presentation Layer" vertex="1">
+          <mxGeometry height="130" width="1300" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="web" parent="L1" style="shape=component;align=center;html=1;whiteSpace=wrap;spacingLeft=8;" value="&lt;&lt;component&gt;&gt;&lt;br&gt;&lt;b&gt;Web Interface (Client)&lt;/b&gt;&lt;br&gt;Chrome / Edge / Firefox" vertex="1">
+          <mxGeometry height="60" width="220" x="30" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="L2" parent="1" style="swimlane;html=1;childLayout=none;startSize=26;horizontal=1;fontStyle=1;align=center;" value="Authentication &amp; User Management" vertex="1">
+          <mxGeometry height="130" width="1300" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="auth" parent="L2" style="shape=component;align=center;html=1;whiteSpace=wrap;spacingLeft=8;" value="&lt;&lt;component&gt;&gt;&lt;br&gt;&lt;b&gt;Authentication&lt;/b&gt;&lt;br&gt;JWT / HTTPS / Role Control" vertex="1">
+          <mxGeometry height="60" width="200" x="30" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="usermgmt" parent="L2" style="shape=component;align=center;html=1;whiteSpace=wrap;spacingLeft=8;" value="&lt;&lt;component&gt;&gt;&lt;br&gt;&lt;b&gt;User Management&lt;/b&gt;&lt;br&gt;Roles &amp; Permissions" vertex="1">
+          <mxGeometry height="60" width="200" x="280" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="L3" parent="1" style="swimlane;html=1;childLayout=none;startSize=26;horizontal=1;fontStyle=1;align=center;" value="Business Logic Layer (Backend API - REST)" vertex="1">
+          <mxGeometry height="340" width="1300" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="recep" parent="L3" style="shape=component;align=center;html=1;whiteSpace=wrap;spacingLeft=8;" value="&lt;&lt;component&gt;&gt;&lt;br&gt;&lt;b&gt;Animal Reception&lt;/b&gt;&lt;br&gt;(RF-03, CU-01)" vertex="1">
+          <mxGeometry height="60" width="160" x="30" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="weigh" parent="L3" style="shape=component;align=center;html=1;whiteSpace=wrap;spacingLeft=8;" value="&lt;&lt;component&gt;&gt;&lt;br&gt;&lt;b&gt;Weighing&lt;/b&gt;&lt;br&gt;(RF-04, CU-03)" vertex="1">
+          <mxGeometry height="60" width="160" x="210" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="butch" parent="L3" style="shape=component;align=center;html=1;whiteSpace=wrap;spacingLeft=8;" value="&lt;&lt;component&gt;&gt;&lt;br&gt;&lt;b&gt;Butchering (Cuts)&lt;/b&gt;&lt;br&gt;(RF-06, CU-04)" vertex="1">
+          <mxGeometry height="60" width="160" x="390" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="class" parent="L3" style="shape=component;align=center;html=1;whiteSpace=wrap;spacingLeft=8;" value="&lt;&lt;component&gt;&gt;&lt;br&gt;&lt;b&gt;Product Classification&lt;/b&gt;&lt;br&gt;(RF-06, CU-05)" vertex="1">
+          <mxGeometry height="60" width="160" x="570" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cold" parent="L3" style="shape=component;align=center;html=1;whiteSpace=wrap;spacingLeft=8;" value="&lt;&lt;component&gt;&gt;&lt;br&gt;&lt;b&gt;Cold Room Inventory&lt;/b&gt;&lt;br&gt;(RF-07, CU-06)" vertex="1">
+          <mxGeometry height="60" width="160" x="750" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="shelf" parent="L3" style="shape=component;align=center;html=1;whiteSpace=wrap;spacingLeft=8;" value="&lt;&lt;component&gt;&gt;&lt;br&gt;&lt;b&gt;Shelf Life Control&lt;/b&gt;&lt;br&gt;(RF-08, CU-07)" vertex="1">
+          <mxGeometry height="60" width="160" x="930" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sales" parent="L3" style="shape=component;align=center;html=1;whiteSpace=wrap;spacingLeft=8;" value="&lt;&lt;component&gt;&gt;&lt;br&gt;&lt;b&gt;Sales&lt;/b&gt;&lt;br&gt;(RF-10, CU-09)" vertex="1">
+          <mxGeometry height="60" width="160" x="1110" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="trace" parent="L3" style="shape=component;align=center;html=1;whiteSpace=wrap;spacingLeft=8;" value="&lt;&lt;component&gt;&gt;&lt;br&gt;&lt;b&gt;Traceability&lt;/b&gt;&lt;br&gt;(RF-11, CU-08)" vertex="1">
+          <mxGeometry height="60" width="160" x="30" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="wo" parent="L3" style="shape=component;align=center;html=1;whiteSpace=wrap;spacingLeft=8;" value="&lt;&lt;component&gt;&gt;&lt;br&gt;&lt;b&gt;Product Write-off&lt;/b&gt;&lt;br&gt;(RF-09, CU-10)" vertex="1">
+          <mxGeometry height="60" width="160" x="220" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="invc" parent="L3" style="shape=component;align=center;html=1;whiteSpace=wrap;spacingLeft=8;" value="&lt;&lt;component&gt;&gt;&lt;br&gt;&lt;b&gt;Inventory Count&lt;/b&gt;&lt;br&gt;(RF-12, CU-11)" vertex="1">
+          <mxGeometry height="60" width="160" x="410" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="reports" parent="L3" style="shape=component;align=center;html=1;whiteSpace=wrap;spacingLeft=8;" value="&lt;&lt;component&gt;&gt;&lt;br&gt;&lt;b&gt;Reports&lt;/b&gt;&lt;br&gt;(RF-13/14, CU-12)" vertex="1">
+          <mxGeometry height="60" width="160" x="600" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="price" parent="L3" style="shape=component;align=center;html=1;whiteSpace=wrap;spacingLeft=8;" value="&lt;&lt;component&gt;&gt;&lt;br&gt;&lt;b&gt;Price Configuration&lt;/b&gt;&lt;br&gt;(RF-19)" vertex="1">
+          <mxGeometry height="60" width="160" x="790" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="energy" parent="L3" style="shape=component;align=center;html=1;whiteSpace=wrap;spacingLeft=8;" value="&lt;&lt;component&gt;&gt;&lt;br&gt;&lt;b&gt;Energy Incident&lt;/b&gt;&lt;br&gt;(RF-20)" vertex="1">
+          <mxGeometry height="60" width="160" x="980" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="r1_0" edge="1" parent="1" source="recep" style="html=1;endArrow=open;endFill=0;elbow=vertical;dashed=1;" target="weigh" value="CU-03">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r1_1" edge="1" parent="1" source="weigh" style="html=1;endArrow=open;endFill=0;elbow=vertical;dashed=1;" target="butch" value="CU-04">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r1_2" edge="1" parent="1" source="butch" style="html=1;endArrow=open;endFill=0;elbow=vertical;dashed=1;" target="class" value="CU-05">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r1_3" edge="1" parent="1" source="class" style="html=1;endArrow=open;endFill=0;elbow=vertical;dashed=1;" target="cold" value="CU-06">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r1_4" edge="1" parent="1" source="cold" style="html=1;endArrow=open;endFill=0;elbow=vertical;dashed=1;" target="shelf" value="CU-07">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L4" parent="1" style="swimlane;html=1;childLayout=none;startSize=26;horizontal=1;fontStyle=1;align=center;" value="Data Access Layer" vertex="1">
+          <mxGeometry height="130" width="1300" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="dataaccess" parent="L4" style="shape=component;align=center;html=1;whiteSpace=wrap;spacingLeft=8;" value="&lt;&lt;component&gt;&gt;&lt;br&gt;&lt;b&gt;Data Access&lt;/b&gt;&lt;br&gt;ORM / Repository Pattern" vertex="1">
+          <mxGeometry height="60" width="220" x="550" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="L5" parent="1" style="swimlane;html=1;childLayout=none;startSize=26;horizontal=1;fontStyle=1;align=center;" value="Persistence Layer" vertex="1">
+          <mxGeometry height="220" width="1300" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="db" parent="L5" style="shape=component;align=center;html=1;whiteSpace=wrap;spacingLeft=8;" value="&lt;&lt;component&gt;&gt;&lt;br&gt;&lt;b&gt;Database CarniCore&lt;/b&gt;&lt;br&gt;PostgreSQL / MySQL (Usuario, Animal, Corte, CamaraFrigorifica, Inventario, Venta, VidaUtil, BajaProducto, ...)" vertex="1">
+          <mxGeometry height="90" width="360" x="480" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="einvoice" parent="L5" style="shape=component;align=center;html=1;whiteSpace=wrap;spacingLeft=8;dashed=1;fontColor=#999999;strokeColor=#999999;fillColor=#f5f5f5;" value="&lt;&lt;component&gt;&gt;&lt;br&gt;&lt;b&gt;Electronic Invoicing - SRI&lt;/b&gt;&lt;br&gt;(future integration)" vertex="1">
+          <mxGeometry height="90" width="260" x="950" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c_web_auth" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;" value="uses">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="240" as="sourcePoint" />
+            <mxPoint x="130" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_um_auth" edge="1" parent="1" source="usermgmt" style="html=1;endArrow=open;endFill=0;elbow=vertical;dashed=1;" target="auth" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c_auth_bl" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="390" as="sourcePoint" />
+            <mxPoint x="120" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dl_recep" edge="1" parent="1" source="recep" style="html=1;endArrow=open;endFill=0;elbow=vertical;dashed=1;" target="dataaccess" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dl_weigh" edge="1" parent="1" source="weigh" style="html=1;endArrow=open;endFill=0;elbow=vertical;dashed=1;" target="dataaccess" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dl_butch" edge="1" parent="1" source="butch" style="html=1;endArrow=open;endFill=0;elbow=vertical;dashed=1;" target="dataaccess" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dl_class" edge="1" parent="1" source="class" style="html=1;endArrow=open;endFill=0;elbow=vertical;dashed=1;" target="dataaccess" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dl_cold" edge="1" parent="1" source="cold" style="html=1;endArrow=open;endFill=0;elbow=vertical;dashed=1;" target="dataaccess" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dl_shelf" edge="1" parent="1" source="shelf" style="html=1;endArrow=open;endFill=0;elbow=vertical;dashed=1;" target="dataaccess" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dl_sales" edge="1" parent="1" source="sales" style="html=1;endArrow=open;endFill=0;elbow=vertical;dashed=1;" target="dataaccess" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dl2_trace" edge="1" parent="1" source="trace" style="html=1;endArrow=open;endFill=0;elbow=vertical;dashed=1;" target="dataaccess" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dl2_wo" edge="1" parent="1" source="wo" style="html=1;endArrow=open;endFill=0;elbow=vertical;dashed=1;" target="dataaccess" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dl2_invc" edge="1" parent="1" source="invc" style="html=1;endArrow=open;endFill=0;elbow=vertical;dashed=1;" target="dataaccess" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dl2_reports" edge="1" parent="1" source="reports" style="html=1;endArrow=open;endFill=0;elbow=vertical;dashed=1;" target="dataaccess" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dl2_price" edge="1" parent="1" source="price" style="html=1;endArrow=open;endFill=0;elbow=vertical;dashed=1;" target="dataaccess" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dl2_energy" edge="1" parent="1" source="energy" style="html=1;endArrow=open;endFill=0;elbow=vertical;dashed=1;" target="dataaccess" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c_sales_future" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;" value="future">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1190" y="410" as="sourcePoint" />
+            <mxPoint x="1080" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_da_db" edge="1" parent="1" source="dataaccess" style="html=1;endArrow=open;endFill=0;elbow=vertical;" target="db" value="TCP/SQL">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
