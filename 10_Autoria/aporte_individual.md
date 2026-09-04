@@ -1249,9 +1249,9 @@ Fecha: ___ / ___ / 2026
 - ORCID: [0009-0000-6032-4179](https://orcid.org/0009-0000-6032-4179)
 - Correo: equinterog@uteq.edu.ec
 
-Firma: ____________________________________________
+Firma: _Erick Jahir Quintero Gende_
 
-Fecha: ___ / ___ / 2026
+Fecha: _03_ / _09_ / 2026
 
 ---
 
