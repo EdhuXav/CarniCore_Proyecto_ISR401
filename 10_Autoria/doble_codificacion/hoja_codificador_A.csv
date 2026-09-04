@@ -1,0 +1,28 @@
+id,codigo,objetivo_referencia
+RF-01,RT,Registrar proveedor
+RF-02,RT,Registrar guía de origen
+RF-03,RT,Registrar ingreso de lote o animal
+RF-04,RT,Registrar pesaje de producto
+RF-05,RT,Emitir comprobante de pesaje
+RF-06,RT,Registrar despiece y clasificación de cortes
+RF-07,RT,Registrar ingreso de producto a cámara frigorífica
+RF-08,CC,Calcular y alertar vida útil del producto
+RF-09,RT,Registrar baja de producto
+RF-10,RT,Registrar venta o salida de producto
+RF-11,TA,Consultar trazabilidad de producto
+RF-12,RA,Realizar conteo de inventario
+RF-13,RA,"Generar reportes de ventas, compras y pérdidas"
+RF-14,RA,Visualizar panel resumen del negocio
+RF-15,GC,Gestionar usuarios y roles
+RF-16,RT,Registrar movimientos de inventario por fecha
+RF-17,RT,Registrar georreferencia de proveedor/granja
+RF-18,RA,Consultar historial de precios por libra
+RF-19,GC,Configurar precios por tipo de producto y temporada
+RF-20,CC,Registrar incidentes de corte de energía
+RF-21,CC,Operar en modo de contingencia offline
+RF-22,RT,Registrar devoluciones de clientes
+RF-23,TA,Exportar evidencia de trazabilidad para auditoría
+RF-24,TA,Buscar producto por código de lote en cámaras
+RF-25,TA,Generar código QR de trazabilidad
+RF-26,TA,Vista pública de trazabilidad vía QR - campos delimitados
+RF-27,RA,Filtrar reportes por proveedor

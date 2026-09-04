@@ -1,0 +1,35 @@
+{
+  "n_unidades_codificadas": 27,
+  "hoja_a": "hoja_codificador_A_SIMULACION.csv",
+  "hoja_b": "hoja_codificador_B_SIMULACION.csv",
+  "categorias_observadas": [
+    "CC",
+    "GC",
+    "RA",
+    "RT",
+    "TA"
+  ],
+  "acuerdo_observado_bruto": 0.7778,
+  "kappa_cohen": 0.7071,
+  "ic95_bootstrap": {
+    "low": 0.4844,
+    "high": 0.8993,
+    "replicas": 10000,
+    "semilla": 42,
+    "metodo": "bootstrap de percentiles sobre las unidades codificadas"
+  },
+  "interpretacion_landis_koch": "sustancial",
+  "matriz_contingencia": {
+    "RT|RT": 8,
+    "RT|TA": 2,
+    "CC|RA": 1,
+    "TA|TA": 5,
+    "RA|GC": 1,
+    "RA|RA": 4,
+    "GC|GC": 2,
+    "RT|RA": 1,
+    "CC|CC": 2,
+    "RT|CC": 1
+  },
+  "nota_metodologica": "La escala de Landis y Koch (1977) es una convencion de lectura, no un umbral estadistico. Reporte siempre el valor y su intervalo, no solo la etiqueta cualitativa. Un IC que cruza el cero indica que el acuerdo no se distingue del azar con el tamano de muestra disponible."
+}
