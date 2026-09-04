@@ -1,0 +1,74 @@
+# =============================================================================
+# .gitattributes - CarniCore_Proyecto_ISR401
+# =============================================================================
+
+# Por defecto: detectar automáticamente texto vs binario,
+# y normalizar saltos de línea a LF en el repositorio (checkin),
+# dejando que Git decida el formato al hacer checkout según el SO.
+* text=auto eol=lf
+
+# -----------------------------------------------------------------------------
+# Código fuente: forzar LF explícito (evita el problema de "LF will be
+# replaced by CRLF" que tuvimos con el backend)
+# -----------------------------------------------------------------------------
+*.js      text eol=lf
+*.jsx     text eol=lf
+*.ts      text eol=lf
+*.tsx     text eol=lf
+*.json    text eol=lf
+*.html    text eol=lf
+*.css     text eol=lf
+*.py      text eol=lf
+*.sh      text eol=lf
+*.yml     text eol=lf
+*.yaml    text eol=lf
+*.md      text eol=lf
+*.txt     text eol=lf
+*.tex     text eol=lf
+*.bib     text eol=lf
+*.csv     text eol=lf
+*.gitattributes text eol=lf
+*.gitignore     text eol=lf
+Dockerfile      text eol=lf
+.dockerignore   text eol=lf
+.env.example    text eol=lf
+
+# Scripts .bat/.cmd de Windows sí deben llevar CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# -----------------------------------------------------------------------------
+# Archivos binarios: nunca tocar, nunca mostrar diff de texto
+# -----------------------------------------------------------------------------
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.webp  binary
+*.pdf   binary
+*.pptx  binary
+*.docx  binary
+*.xlsx  binary
+*.mp4   binary
+*.mov   binary
+*.7z    binary
+*.zip   binary
+*.ico   binary
+
+# -----------------------------------------------------------------------------
+# Archivos de diagramas / diseño: tratar como texto (son XML) pero sin
+# forzar diffs línea a línea ruidosos si no lo necesitas
+# -----------------------------------------------------------------------------
+*.drawio text eol=lf diff=xml
+
+# -----------------------------------------------------------------------------
+# Marcar notebooks y datasets grandes para que no infle diffs (opcional)
+# -----------------------------------------------------------------------------
+*.ipynb linguist-generated
+
+# -----------------------------------------------------------------------------
+# Excluir carpetas/archivos generados del cálculo de estadísticas de lenguaje
+# de GitHub (Linguist), para que no cuente PDFs/diagramas como "código"
+# -----------------------------------------------------------------------------
+*.pdf linguist-vendored
+*.drawio linguist-documentation
