@@ -1,0 +1,107 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="CU-06 Sequence" id="cu06seq">
+    <mxGraphModel dx="1084" dy="592" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="620" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;fontSize=14;" value="CU-06 - Sequence diagram: Register cold storage chamber intake" vertex="1">
+          <mxGeometry height="30" width="640" x="180" as="geometry" />
+        </mxCell>
+        <mxCell id="actorWS" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Warehouse staff" vertex="1">
+          <mxGeometry height="60" width="50" x="35" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="uiBox" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="Web/mobile UI" vertex="1">
+          <mxGeometry height="40" width="160" x="180" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="icBox" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="Inventory controller" vertex="1">
+          <mxGeometry height="40" width="160" x="380" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="spBox" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="StoredProduct" vertex="1">
+          <mxGeometry height="40" width="160" x="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cscBox" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="ColdStorageChamber" vertex="1">
+          <mxGeometry height="40" width="160" x="780" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lifeWS" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="60" y="95" as="sourcePoint" />
+            <mxPoint x="60" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lifeUI" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="80" as="sourcePoint" />
+            <mxPoint x="260" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lifeIC" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="80" as="sourcePoint" />
+            <mxPoint x="460" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lifeSP" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="660" y="80" as="sourcePoint" />
+            <mxPoint x="660" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lifeCSC" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="860" y="80" as="sourcePoint" />
+            <mxPoint x="860" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m1" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;" value="1. select product and destination chamber">
+          <mxGeometry relative="1" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="60" y="130" as="sourcePoint" />
+            <mxPoint x="260" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m2" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;" value="2. registerChamberIntake(data)">
+          <mxGeometry relative="1" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="260" y="180" as="sourcePoint" />
+            <mxPoint x="460" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m3" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;" value="3. validateSection(chamber)">
+          <mxGeometry relative="1" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="460" y="230" as="sourcePoint" />
+            <mxPoint x="860" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m4" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;fontSize=11;" value="4. section valid">
+          <mxGeometry relative="1" y="-10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="860" y="280" as="sourcePoint" />
+            <mxPoint x="460" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m5" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;" value="5. create(StoredProduct)">
+          <mxGeometry relative="1" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="460" y="330" as="sourcePoint" />
+            <mxPoint x="660" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m6" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;" value="6. calculateShelfLifeDays()">
+          <mxGeometry relative="1" y="-10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="660" y="380" as="sourcePoint" />
+            <mxPoint x="460" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m7" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;" value="7. inventory updated">
+          <mxGeometry relative="1" y="-10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="460" y="430" as="sourcePoint" />
+            <mxPoint x="260" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
