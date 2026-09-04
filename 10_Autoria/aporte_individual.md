@@ -1215,7 +1215,7 @@ Fecha: ___ / ___ / 2026
 
 Firma: _Carlos Andrés Pérez Ruíz_
 
-Fecha: ___ / ___ / 2026
+Fecha: _03_ / _09_ / 2026
 
 ---
 
