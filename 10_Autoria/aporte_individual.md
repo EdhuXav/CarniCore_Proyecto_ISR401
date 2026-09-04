@@ -1225,9 +1225,9 @@ Fecha: _03_ / _09_ / 2026
 - ORCID: [0009-0000-9145-1357](https://orcid.org/0009-0000-9145-1357)
 - Correo: kcrespoe@uteq.edu.ec
 
-Firma: ____________________________________________
+Firma: _Kleber Obed Crespo Espinoza_
 
-Fecha: ___ / ___ / 2026
+Fecha: _03_ / _09_ / 2026
 
 ---
 
