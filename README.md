@@ -36,9 +36,9 @@
 |Motor|**pdfTeX** 3.141592653-2.6-1.40.25|
 |Distribución|**TeX Live 2023** (probado en Debian/Ubuntu)|
 |Clase|`article`, `11pt`, `a4paper`|
-|Bibliografía|**BibTeX** — `\\bibliographystyle{plain}`, `\\bibliography{referencias}`|
+|Bibliografía|**BibTeX** — `\\\\bibliographystyle{plain}`, `\\\\bibliography{referencias}`|
 |Archivo `.bib`|`01\_ERS/referencias.bib`|
-|Figuras|`01\_ERS/figures/` — 104 referencias `\\includegraphics`, todas resueltas|
+|Figuras|`01\_ERS/figures/` — todas las referencias `\\\\includegraphics` están resueltas|
 
 **Paquetes:** `inputenc\[utf8]`, `fontenc\[T1]`, `geometry`, `longtable`, `booktabs`,
 `array`, `colortbl`, `xcolor`, `graphicx`, `hyperref`, `enumitem`, `titlesec`,
@@ -80,8 +80,8 @@ Smallpdf ni ningún otro servicio web: eso deja rastro en los metadatos (`/Produ
 rompe la trazabilidad entre la fuente y el entregable.
 
 Si hace falta reducir el tamaño, hágase con herramientas locales, documentando la orden
-aquí mismo. Las 104 figuras son la causa del peso; varias JPG de consentimientos superan
-1 MB. Opción local, sin servicios externos:
+aquí mismo. Las figuras de consentimientos (JPG multipágina en `01\_ERS/figures/`) son la
+principal causa del peso. Opción local, sin servicios externos:
 
 ```bash
 gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.7 -dPDFSETTINGS=/prepress \\
@@ -99,14 +99,18 @@ pdfinfo 01\_ERS/ERS\_SRS\_2B\_v2.0.pdf | grep -i producer   # debe decir pdfTeX,
 
 |Documento|Fuente|Orden|
 |-|-|-|
-|Manuscrito|`07\_Publicacion/manuscrito\_final.tex`|`pdflatex → bibtex → pdflatex ×2`|
-|Autoevaluación FAIR|`fair\_assessment.tex`|`pdflatex ×2`|
-|Desviaciones OSF|`06\_Experimento/osf\_deviations.tex`|`pdflatex ×2`|
+|ERS / SRS|`01\_ERS/ERS\_SRS\_2B\_v2.0.tex`|`pdflatex → bibtex → pdflatex ×2`|
+|Manuscrito|`08\_Publicacion/manuscrito\_final.tex`|`pdflatex → bibtex → pdflatex ×2`|
+|Autoevaluación FAIR|`fair\_assessment.tex` (en la raíz)|`pdflatex ×2`|
 
 > \*\*El manuscrito depende del pipeline.\*\* Incluye las figuras en `.pdf` y las tablas con
 > `\\input{tablas/...}`, y esos archivos son \*\*salidas generadas\*\*, no fuentes. Ejecute
 > primero `python 07\_Datos/scripts/run\_all.py` y después compile. Si compila antes,
 > faltarán las figuras.
+
+> `06\_Experimento/osf\_deviations.pdf` se publica como PDF (no existe fuente `.tex`); se
+> edita con cualquier visor/edidor de PDF o se regenera desde un `.tex` si fuera
+> necesario volver a redactarlo.
 
 \---
 
@@ -120,7 +124,9 @@ python 07\_Datos/scripts/run\_all.py
 
 Una sola orden regenera, desde los datos crudos y sin intervención manual, todas las
 tablas y figuras que aparecen en el manuscrito. Detalle completo en
-[`07\_Datos/README\_datos.md`](07_Datos/README_datos.md).
+[`07\_Datos/scripts/README.md`](07_Datos/scripts/README.md); información de contexto
+del paquete en [`07\_Datos/registro\_deposito.md`](07_Datos/registro_deposito.md) y
+desviaciones en [`07\_Datos/desviaciones.md`](07_Datos/desviaciones.md).
 
 **Ninguna cifra de ningún documento está escrita a mano.** Todas proceden de la salida
 de un script. Verificado: el pipeline regenera las cuatro figuras idénticas byte a byte.
@@ -129,19 +135,30 @@ de un script. Verificado: el pipeline regenera las cuatro figuras idénticas byt
 
 ## 3\. Cómo verificar la integridad del repositorio
 
+El repositorio incluye un manifiesto `checksums.sha256` (en la raíz) firmado con el
+conjunto de archivos versionados. La verificación es estándar con `sha256sum`:
+
 ```bash
-bash herramientas/regenerar\_checksums.sh --check
+# desde la raíz del repositorio
+sha256sum -c checksums.sha256
 ```
 
-Comprueba dos cosas: que todas las entradas del manifiesto verifican **y** que el
-manifiesto cubre el 100 % del árbol. Un manifiesto que verifica pero deja archivos fuera
-no acredita nada.
+El comando recorre cada entrada del manifiesto, recalcula el hash y compara con el
+registrado. Termina con `OK` por línea si todo verifica; cualquier `FAILED` indica que
+un archivo fue modificado fuera de un commit.
 
-Para regenerarlo tras un cambio legítimo:
+> El manifiesto cubre \*\*únicamente\*\* los archivos versionados (los que están en `git`).
+> Los archivos cifrados de `02\_Evidencias/00\_Restringido/` \*\*no\*\* entran en
+> `checksums.sha256`: su integridad se acredita por separado, mediante los hashes
+> registrados en `02\_Evidencias/00\_Restringido/README.md` y contrastados contra los
+> contenedores entregados al docente por SGA.
+
+Para regenerar el manifiesto tras un cambio legítimo:
 
 ```bash
-bash herramientas/regenerar\_checksums.sh          # árbol completo
-bash herramientas/regenerar\_checksums.sh --datos  # sólo 07\_Datos/
+# sólo sobre los archivos versionados, sin metadatos de git
+find . -type f -not -path './.git/\*' -not -path './02\_Evidencias/00\_Restringido/\*.7z' \\
+  -exec sha256sum {} \\; | sort -k2 > checksums.sha256
 ```
 
 \---
@@ -221,29 +238,39 @@ CarniCore\_Proyecto\_ISR401/
 ├── checksums.sha256 · fair\_assessment.pdf/.tex
 ├── .gitignore · .gitattributes · .mailmap
 │
-├── herramientas/            Scripts de mantenimiento del repositorio
 ├── 01\_ERS/                  ERS/SRS v2.0 (.tex + .pdf) · figures/ · referencias.bib
 ├── 02\_Evidencias/           Consentimientos, transcripciones, fotos, walkthrough
-│   └── 00\_Restringido/      Inventario y hashes de la zona cifrada (no su contenido)
-├── 03\_Modelado/             UML (.drawio + .png) · 20 mockups
-├── 04\_Trazabilidad/         Matriz de 60 filas · priorización MoSCoW/Kano
+│   ├── 00\_Restringido/      Inventario y hashes de la zona cifrada (no su contenido)
+│   ├── Consentimientos/ · Transcripciones/ · Documentos\_Organizacion/
+│   ├── Fotos\_Entorno/ · Validacion\_Walkthrough/ · Codificacion\_Tematica/
+│   └── Cuestionario/{Fotos\_Aplicacion,Respuestas}/
+├── 03\_Modelado/             UML en Diagramas\_UML/ (.drawio + .png) · Mockups/ (20)
+├── 04\_Trazabilidad/         Matriz\_Trazabilidad.csv · priorizacion\_moscow\_kano.csv
 ├── 05\_MVP/                  Backend Node/Express + PostgreSQL · frontend · demo
-├── 06\_Experimento/          Protocolo, registro OSF, desviaciones, instrumentos
+│   └── Ejecutable/CarniCore/ (docker-compose.yml, backend/, frontend/, docs/, video\_demo.mp4)
+├── 06\_Experimento/          Protocolo.pdf · osf\_registration.pdf · osf\_deviations.pdf
+│   ├── instrumentos/        Cuestionario, guion, consentimiento, rúbrica, panel
+│   └── prompts\_llm/         Tres prompts de apoyo al análisis cualitativo
 ├── 07\_Datos/                PAQUETE DE DATOS (§7 de la guía)
 │   ├── datos\_crudos/ · datos\_procesados/ · resultados/
-│   ├── scripts/             Cadena de análisis + run\_all.py (orquestador único)
-│   ├── diccionario\_datos.csv · LICENSE-DATA.txt · checksums\_datos.sha256
-│   └── README\_datos.md · desviaciones.md · registro\_deposito.md
-├── 07\_Publicacion/          Manuscrito · figuras y tablas generadas · dataset Zenodo
-├── 08\_Etica/                A01–A13 · Adenda · README\_Etica
-├── 09\_Defensa/              Presentación · guion · vídeo · folleto
-└── 10\_Autoria/              EVIDENCIA DE AUTORÍA A1–A12 (§6 de la guía)
+│   ├── scripts/             Cadena numerada (01–06) + run\_all.py + Makefile + requirements.txt
+│   ├── diccionario\_datos.csv · LICENSE-DATA.txt
+│   ├── registro\_deposito.md · desviaciones.md
+│   └── checksums\_datos.sha256 (manifiesto del paquete, separado del general)
+├── 08\_Publicacion/          Manuscrito\_final.tex/.pdf · figuras/ · tablas/ · splncs04.bst
+│   └── dataset\_zenodo/      README\_dataset.md · ETHICS.md · ANONYMIZATION.md · LICENSE.txt
+├── 09\_Etica/                A01–A13 + Adenda + README\_Etica.md + Categoria\_C/
+├── 10\_Autoria/              EVIDENCIA DE AUTORÍA (§6 de la guía)
+│   ├── aporte\_individual.md · capturas/ · notas\_campo/ · correspondencia/
+│   ├── doble\_codificacion/ · fotos\_equipo/ · grabaciones/
+│   └── fuentes\_editables/   Class/Component/Context/Deployment/Strategic + Diagramas\_Actividad/ + Diagramas\_Secuencia/
+└── 11\_Defensa/              presentacion.pdf/.pptx · guion.pdf · folleto\_una\_hoja.pdf · video\_defensa.mp4
 ```
 
-> \*\*Los scripts de análisis se movieron\*\* de `06\_Experimento/scripts\_analisis/` a
-> `07\_Datos/scripts/`, junto con `datos\_crudos/`, `datos\_procesados/` y `resultados/`.
-> Lo exige el §7. Sus rutas internas son relativas, de modo que el traslado no requirió
-> modificar código. `06\_Experimento/` conserva protocolo, registro OSF, desviaciones,
+> \*\*Los scripts de análisis viven en `07\_Datos/scripts/`.\*\* Es donde los espera la
+> rúbrica del §7 de la guía. Las rutas internas son relativas, de modo que el
+> repositorio se puede clonar en cualquier directorio y el pipeline funciona sin
+> reconfigurar. `06\_Experimento/` conserva protocolo, registro OSF, desviaciones,
 > instrumentos y prompts.
 
 \---
@@ -278,7 +305,8 @@ sistema deberá permitir…». La ambigüedad que las personas expertas sí perc
 la que además concuerdan poco, κ = 0,2636— **no es la que capturan los patrones léxicos
 superficiales** sobre un corpus redactado con plantilla uniforme. Eso es un hallazgo del
 estudio, no un fallo del instrumento. Discusión completa en
-[`07\_Datos/README\_datos.md`](07_Datos/README_datos.md), sección 4.
+[`07\_Datos/scripts/README.md`](07_Datos/scripts/README.md) y, con foco en los números,
+en `07\_Datos/resultados/`.
 
 \---
 
@@ -297,8 +325,9 @@ estudio, no un fallo del instrumento. Discusión completa en
 > registro público es `osf.io/yp7t3`. Son objetos distintos en OSF.
 
 
-**Autoevaluación FAIR:** `fair\_assessment.pdf`, versión 2.1 — **14 de 16 indicadores
-(87,5 %)**, por encima del mínimo del 60 % que exige el §7.5. No cumplen I2
+
+**Autoevaluación FAIR:** `fair\_assessment.pdf` (en la raíz), versión 2.1 — **14 de 16
+indicadores (87,5 %)**, por encima del mínimo del 60 % que exige el §7.5. No cumplen I2
 (vocabulario controlado del corpus) y R4 (estándares de metadatos del dominio), ambos
 con responsable y plazo asignados en el propio documento.
 
@@ -314,17 +343,18 @@ respuestas de cuestionario sin columnas identificativas, consentimientos con **n
 firma, cédula y correo redactados**.
 
 **Zona restringida \[R].** `02\_Evidencias/00\_Restringido/` — contenedores cifrados
-AES-256, entregados al docente por SGA. **No se versionan en el repositorio**
-(`.gitignore`); lo que sí se versiona es su inventario por pieza y su hash SHA-256, de
-modo que su integridad sea verificable sin publicarlos.
+AES-256, entregados al docente por SGA. **No se versionan en el repositorio** (los
+`.7z` están en `.gitignore`); lo que sí se versiona es su inventario por pieza y su
+hash SHA-256, de modo que su integridad sea verificable sin publicarlos.
 
 **Base legal.** Ley Orgánica de Protección de Datos Personales del Ecuador. Base de
 licitud, finalidad, plazo de conservación (24 meses desde el cierre) y responsable del
-tratamiento declarados en `08\_Etica/README\_Etica.md` y en el formulario de
-consentimiento.
+tratamiento declarados en `09\_Etica/README\_Etica.md` y en el formulario de
+consentimiento (`09\_Etica/A03\_Consentimiento\_Informado.pdf`).
 
 **Nomenclatura multimedia:** `AAAA-MM-DD\_TipoParticipante\_ENTR-XX\_Tecnica.ext`. Se usa
 el **rol**, nunca el nombre.
+
 
 
 \---
@@ -338,12 +368,12 @@ es peor que no tenerlo.
 
 * \[ ] **P1** — PDF con carátula y URL del repositorio subido al SGA; la URL abre sin autenticar
 * \[ ] **P2** — El PDF se regenera desde el `.tex` siguiendo únicamente la sección 1 de este README
-* \[ ] **P2 bis** — `fair\_assessment.tex` y `osf\_deviations.tex` versionados junto a sus PDF
+* \[ ] **P2 bis** — `fair\_assessment.tex` y `osf\_deviations.pdf` versionados junto a sus PDF
 * \[ ] **P3** — Ningún archivo de 0 o 1 byte cuyo nombre anuncie evidencia
 * \[ ] **P4** — Todos los autores del historial son integrantes declarados con correo institucional (`git shortlog -sne`)
 * \[ ] **P5** — Etiqueta anotada publicada y alcanzable: `git tag -a v2.0.0 -m "..." \&\& git push origin v2.0.0`
 * \[ ] **P6** — `07\_Datos/` existe y `python 07\_Datos/scripts/run\_all.py` termina sin error
-* \[ ] **P7** — `10\_Autoria/` contiene A1 a A12 con contenido real
+* \[ ] **P7** — `10\_Autoria/` contiene la documentación de autoría con contenido real
 * \[ ] **P8** — Cada integrante acredita contribución verificable en el repositorio
 
 ### Correcciones sobre material existente
@@ -351,11 +381,11 @@ es peor que no tenerlo.
 * \[ ] PDF del ERS republicado sin pasar por servicio web (`pdfinfo` no dice iLovePDF)
 * \[ ] Consentimientos y figuras del ERS con el nombre redactado; historial purgado
 * \[ ] Columna de cédulas retirada de este README
-* \[ ] `fichas\_tecnicas.csv` con una fila **por pieza de evidencia**, no por contenedor
+* \[ ] `02\_Evidencias/00\_Restringido/fichas\_tecnicas.csv` con una fila **por pieza de evidencia**, no por contenedor
 * \[ ] Los 16 contenedores `.7z`: resueltos (entregados por SGA y declarados aquí)
 * \[ ] `.mailmap` completado con la salida real de `git log --format='%aN <%aE>' | sort -u`
 * \[ ] ≥5 fotografías de aplicación del cuestionario con fecha en los metadatos
-* \[ ] ≥5 documentos en `02\_Evidencias/Documentos\_Organizacion/` (hay 2)
+* \[ ] ≥5 documentos en `02\_Evidencias/Documentos\_Organizacion/` (hay 3)
 * \[ ] `checksums.sha256` regenerado y verificando al 100 %
 
 ### Datos y componente inteligente
@@ -365,7 +395,8 @@ es peor que no tenerlo.
 incorporados al ERS y a la matriz de trazabilidad
 * \[ ] Todo RNF del componente inteligente tiene métrica, unidad, umbral, método de
 verificación, **responsable y frecuencia de medición**
-* \[ ] Fuentes editables de los 8 diagramas que hoy sólo existen como imagen
+* \[ ] Fuentes editables de los diagramas: `10\_Autoria/fuentes\_editables/` y
+`03\_Modelado/Diagramas\_UML/` cubren los diagramas en formato `.drawio`
 
 \---
 
@@ -397,3 +428,4 @@ Metadatos completos en `CITATION.cff`.
 \---
 
 *Universidad Técnica Estatal de Quevedo · ISR-401 · 2026–2027 PPA*
+
