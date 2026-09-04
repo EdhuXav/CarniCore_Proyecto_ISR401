@@ -24,7 +24,7 @@ El estudio opera sobre datos textuales (requisitos funcionales) y no recolecta d
 
 ## Proceso de consentimiento informado
 
-1. **Antes de cada sesión:** el integrante del equipo presentó el formulario de consentimiento informado (A03, versión aprobada en 08_Etica/) al participante.
+1. **Antes de cada sesión:** el integrante del equipo presentó el formulario de consentimiento informado (A03, versión aprobada en 09_Etica/) al participante.
 2. **Lectura y aclaración:** el participante leyó el documento y se le explicaron los objetivos del estudio, el uso que se daría a los datos y sus derechos (acceso, rectificación, supresión).
 3. **Firma:** el participante firmó el formulario antes de iniciar cualquier grabación o recolección de datos.
 4. **Copia:** se entregó copia firmada al participante.
@@ -67,7 +67,7 @@ Ningún participante ejerció ninguno de estos derechos durante el periodo del e
 
 ## Documentación ética completa
 
-La documentación completa reside en `08_Etica/` del repositorio:
+La documentación completa reside en `09_Etica/` del repositorio:
 
 | Archivo | Contenido |
 |---------|-----------|
