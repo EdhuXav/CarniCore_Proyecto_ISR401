@@ -1,4 +1,4 @@
-# 08_Etica/ — Documentación ética del proyecto CarniCore
+# 09_Etica/ — Documentación ética del proyecto CarniCore
 
 ## Categoría de riesgo
 
@@ -12,7 +12,7 @@ contacto) se resguarda en la zona `[R]` restringida del repositorio
 ## Estructura de esta carpeta
 
 ```
-08_Etica/
+09_Etica/
 ├── A01_Protocolo_Investigacion.pdf
 ├── A02_Instrumentos_Recoleccion.pdf
 ├── A03_Consentimiento_Informado.pdf
