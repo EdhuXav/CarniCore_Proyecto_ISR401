@@ -1,214 +1,59 @@
-<mxfile host="Electron">
-  <diagram name="Página-1" id="SViLRQrxglp4s_EcNQeu">
-    <mxGraphModel dx="1471" dy="963" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+<mxfile host="app.diagrams.net" agent="claude" version="24.7.5" type="device">
+  <diagram name="CU-04 Register Cutting" id="cu04-seq-diagram">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1320" pageHeight="1180" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;fontSize=14;" value="Sequence Diagram - CU-04: Register Cutting/Cuts (RF-06)" vertex="1">
-          <mxGeometry height="30" width="900" y="10" as="geometry" />
-        </mxCell>
-        <mxCell id="p1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;html=1;outlineConnect=0;" value="Butcher" vertex="1">
-          <mxGeometry height="60" width="30" x="40" y="60" as="geometry" />
-        </mxCell>
-        <mxCell id="p2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="UI_Cutting" vertex="1">
-          <mxGeometry height="40" width="140" x="205" y="60" as="geometry" />
-        </mxCell>
-        <mxCell id="p3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="CtrlCutting" vertex="1">
-          <mxGeometry height="40" width="140" x="445" y="60" as="geometry" />
-        </mxCell>
-        <mxCell id="p4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="WeighingRecord" vertex="1">
-          <mxGeometry height="40" width="140" x="685" y="60" as="geometry" />
-        </mxCell>
-        <mxCell id="p5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Cut" vertex="1">
-          <mxGeometry height="40" width="140" x="925" y="60" as="geometry" />
-        </mxCell>
-        <mxCell id="l1" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="55" y="120" as="sourcePoint" />
-            <mxPoint x="55" y="1000" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="l2" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="275" y="100" as="sourcePoint" />
-            <mxPoint x="275" y="1000" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="l3" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="515" y="100" as="sourcePoint" />
-            <mxPoint x="515" y="1000" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="l4" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="755" y="100" as="sourcePoint" />
-            <mxPoint x="755" y="1000" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="l5" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="995" y="100" as="sourcePoint" />
-            <mxPoint x="995" y="1000" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="m1" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;elbow=vertical;startArrow=none;endSize=8;" value="1: selectWeighedAnimal()">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="55" y="130" as="sourcePoint" />
-            <mxPoint x="275" y="130" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="act_ui" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="" vertex="1">
-          <mxGeometry height="830" width="10" x="270" y="130" as="geometry" />
-        </mxCell>
-        <mxCell id="m2" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;elbow=vertical;startArrow=none;endSize=8;" value="2: startCutting(animal)">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="275" y="190" as="sourcePoint" />
-            <mxPoint x="515" y="190" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="act_ctrl" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="" vertex="1">
-          <mxGeometry height="730" width="10" x="510" y="190" as="geometry" />
-        </mxCell>
-        <mxCell id="m3" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;elbow=vertical;startArrow=none;endSize=8;" value="3: getAnimalWeight(animal)">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="515" y="240" as="sourcePoint" />
-            <mxPoint x="755" y="240" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="act_wr1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="" vertex="1">
-          <mxGeometry height="50" width="10" x="750" y="240" as="geometry" />
-        </mxCell>
-        <mxCell id="m4" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;elbow=vertical;startArrow=none;endSize=8;dashed=1;" value="4: animalWeight">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="755" y="290" as="sourcePoint" />
-            <mxPoint x="515" y="290" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="loopbox" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=none;" value="" vertex="1">
-          <mxGeometry height="140" width="820" x="190" y="320" as="geometry" />
-        </mxCell>
-        <mxCell id="looplabel" parent="1" style="shape=note;whiteSpace=wrap;html=1;align=center;fillColor=#FFF2CC;strokeColor=#D6B656;fontStyle=1;size=8;" value="loop" vertex="1">
-          <mxGeometry height="24" width="60" x="190" y="320" as="geometry" />
-        </mxCell>
-        <mxCell id="loopcond" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontStyle=2;" value="[for each cut obtained from the animal]" vertex="1">
-          <mxGeometry height="24" width="400" x="255" y="320" as="geometry" />
-        </mxCell>
-        <mxCell id="m5" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;elbow=vertical;startArrow=none;endSize=8;" value="5: registerCut(type, weight)">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="55" y="350" as="sourcePoint" />
-            <mxPoint x="275" y="350" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="m6" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;elbow=vertical;startArrow=none;endSize=8;" value="6: addCut(type, weight)">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="275" y="400" as="sourcePoint" />
-            <mxPoint x="515" y="400" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="m7" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;elbow=vertical;startArrow=none;endSize=8;" value="7: storeTemporaryCut(type, weight)">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="515" y="450" as="sourcePoint" />
-            <mxPoint x="995" y="450" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="act_cut1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="" vertex="1">
-          <mxGeometry height="50" width="10" x="990" y="450" as="geometry" />
-        </mxCell>
-        <mxCell id="m8" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;elbow=vertical;startArrow=none;endSize=8;dashed=1;" value="8: cutStored">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="995" y="500" as="sourcePoint" />
-            <mxPoint x="515" y="500" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="m9" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;elbow=vertical;startArrow=none;endSize=8;" value="9: confirmCutting()">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="55" y="555" as="sourcePoint" />
-            <mxPoint x="275" y="555" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="m10" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;elbow=vertical;startArrow=none;endSize=8;" value="10: validateAndSaveCuts()">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="275" y="605" as="sourcePoint" />
-            <mxPoint x="515" y="605" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="m11" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;startArrow=none;endSize=8;rounded=1;" value="11: &amp;lt;&amp;gt; validateWeightSum(cuts, animalWeight, wasteMargin)">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="555" y="650" />
-              <mxPoint x="555" y="685" />
-            </Array>
-            <mxPoint x="515" y="650" as="sourcePoint" />
-            <mxPoint x="515" y="685" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="m12" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;elbow=vertical;startArrow=none;endSize=8;dashed=1;" value="12: validationResult">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="515" y="715" as="sourcePoint" />
-            <mxPoint x="515" y="715" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="altbox" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=none;" value="" vertex="1">
-          <mxGeometry height="240" width="820" x="190" y="730" as="geometry" />
-        </mxCell>
-        <mxCell id="altlabel" parent="1" style="shape=note;whiteSpace=wrap;html=1;align=center;fillColor=#FFF2CC;strokeColor=#D6B656;fontStyle=1;size=8;" value="alt" vertex="1">
-          <mxGeometry height="24" width="50" x="190" y="730" as="geometry" />
-        </mxCell>
-        <mxCell id="altcond1" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontStyle=2;" value="[sum of weights &gt; animalWeight + wasteMargin]" vertex="1">
-          <mxGeometry height="24" width="420" x="245" y="730" as="geometry" />
-        </mxCell>
-        <mxCell id="m13" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;elbow=vertical;startArrow=none;endSize=8;dashed=1;" value="13: warning(&quot;exceeds weight, confirm or correct&quot;)">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="515" y="765" as="sourcePoint" />
-            <mxPoint x="275" y="765" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="m14" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;elbow=vertical;startArrow=none;endSize=8;dashed=1;" value="14: showWarning()">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="275" y="815" as="sourcePoint" />
-            <mxPoint x="55" y="815" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="altdivider" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="190" y="850" as="sourcePoint" />
-            <mxPoint x="1010" y="850" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="altcond2" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontStyle=2;" value="[sum of weights &lt;= animalWeight + wasteMargin]" vertex="1">
-          <mxGeometry height="24" width="420" x="200" y="855" as="geometry" />
-        </mxCell>
-        <mxCell id="m15" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;elbow=vertical;startArrow=none;endSize=8;" value="15: saveCuts(cuts)">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="515" y="900" as="sourcePoint" />
-            <mxPoint x="995" y="900" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="act_cut2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="" vertex="1">
-          <mxGeometry height="50" width="10" x="990" y="900" as="geometry" />
-        </mxCell>
-        <mxCell id="m16" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;elbow=vertical;startArrow=none;endSize=8;dashed=1;" value="16: cutsSaved">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="995" y="950" as="sourcePoint" />
-            <mxPoint x="515" y="950" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="m17" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;elbow=vertical;startArrow=none;endSize=8;dashed=1;" value="17: cuttingConfirmation()">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="515" y="995" as="sourcePoint" />
-            <mxPoint x="275" y="995" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="m18" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;elbow=vertical;startArrow=none;endSize=8;dashed=1;" value="18: showConfirmation()">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="275" y="1030" as="sourcePoint" />
-            <mxPoint x="55" y="1030" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="note1" parent="1" style="shape=note;whiteSpace=wrap;html=1;align=left;spacingLeft=6;verticalAlign=middle;size=14;fillColor=#F5F5F5;strokeColor=#666666;" value="Precondition: the animal was weighed (CU-03). Postcondition: the cuts become available for classification (CU-05)." vertex="1">
-          <mxGeometry height="60" width="1170" y="1070" as="geometry" />
-        </mxCell>
+<mxCell id="c2" value="Sequence Diagram - CU-04: Register Cutting/Cuts (RF-06)" style="text;html=1;align=left;verticalAlign=middle;fontStyle=1;fontSize=16;" vertex="1" parent="1"><mxGeometry x="20" y="5" width="900" height="30" as="geometry"/></mxCell>
+<mxCell id="c3" value="Butcher" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;labelBackgroundColor=#ffffff;" vertex="1" parent="1"><mxGeometry x="135" y="40" width="30" height="50" as="geometry"/></mxCell>
+<mxCell id="c4" style="html=1;endArrow=none;dashed=1;strokeColor=#000000;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="150" y="130" as="sourcePoint"/><mxPoint x="150" y="1160" as="targetPoint"/></mxGeometry></mxCell>
+<mxCell id="c5" value="&lt;&lt;boundary&gt;&gt;&lt;br&gt;&lt;b&gt;UI_Cutting&lt;/b&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1"><mxGeometry x="340" y="40" width="120" height="1140" as="geometry"/></mxCell>
+<mxCell id="c6" value="&lt;&lt;control&gt;&gt;&lt;br&gt;&lt;b&gt;CtrlCutting&lt;/b&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1"><mxGeometry x="590" y="40" width="120" height="1140" as="geometry"/></mxCell>
+<mxCell id="c7" value="&lt;&lt;entity&gt;&gt;&lt;br&gt;&lt;b&gt;WeighingRecord&lt;/b&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1"><mxGeometry x="840" y="40" width="120" height="1140" as="geometry"/></mxCell>
+<mxCell id="c8" value="&lt;&lt;entity&gt;&gt;&lt;br&gt;&lt;b&gt;Cut&lt;/b&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1"><mxGeometry x="1090" y="40" width="120" height="1140" as="geometry"/></mxCell>
+
+
+
+
+
+<mxCell id="c14" value="1: selectWeighedAnimal()" style="html=1;endArrow=block;endFill=1;dashed=0;strokeColor=#000000;fontSize=11;align=center;verticalAlign=bottom;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="150" y="130" as="sourcePoint"/><mxPoint x="400" y="130" as="targetPoint"/></mxGeometry></mxCell>
+<mxCell id="c15" value="2: startCutting(animal)" style="html=1;endArrow=block;endFill=1;dashed=0;strokeColor=#000000;fontSize=11;align=center;verticalAlign=bottom;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="400" y="180" as="sourcePoint"/><mxPoint x="650" y="180" as="targetPoint"/></mxGeometry></mxCell>
+<mxCell id="c16" value="3: getAnimalWeight(animal)" style="html=1;endArrow=block;endFill=1;dashed=0;strokeColor=#000000;fontSize=11;align=center;verticalAlign=bottom;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="650" y="230" as="sourcePoint"/><mxPoint x="900" y="230" as="targetPoint"/></mxGeometry></mxCell>
+<mxCell id="c17" value="4: animalWeight" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontSize=11;align=center;verticalAlign=bottom;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="900" y="280" as="sourcePoint"/><mxPoint x="650" y="280" as="targetPoint"/></mxGeometry></mxCell>
+<mxCell id="c18" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;verticalAlign=top;align=left;dashed=0;" vertex="1" parent="1"><mxGeometry x="380" y="305" width="800" height="220" as="geometry"/></mxCell>
+<mxCell id="c19" value="&lt;b&gt;loop&lt;/b&gt;" style="shape=note;whiteSpace=wrap;html=1;size=8;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;align=center;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="380" y="305" width="46" height="22" as="geometry"/></mxCell>
+<mxCell id="c20" value="[for each cut obtained from the animal]" style="text;html=1;align=left;verticalAlign=top;fontStyle=2;fontSize=11;fontColor=#333333;" vertex="1" parent="1"><mxGeometry x="440" y="312" width="300" height="18" as="geometry"/></mxCell>
+<mxCell id="c21" value="5: registerCut(type, weight)" style="html=1;endArrow=block;endFill=1;dashed=0;strokeColor=#000000;fontSize=11;align=center;verticalAlign=bottom;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="150" y="350" as="sourcePoint"/><mxPoint x="400" y="350" as="targetPoint"/></mxGeometry></mxCell>
+<mxCell id="c22" value="6: addCut(type, weight)" style="html=1;endArrow=block;endFill=1;dashed=0;strokeColor=#000000;fontSize=11;align=center;verticalAlign=bottom;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="400" y="400" as="sourcePoint"/><mxPoint x="650" y="400" as="targetPoint"/></mxGeometry></mxCell>
+<mxCell id="c23" value="7: storeTemporaryCut(type, weight)" style="html=1;endArrow=block;endFill=1;dashed=0;strokeColor=#000000;fontSize=11;align=center;verticalAlign=bottom;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="650" y="450" as="sourcePoint"/><mxPoint x="1150" y="450" as="targetPoint"/></mxGeometry></mxCell>
+<mxCell id="c24" value="8: cutStored" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontSize=11;align=center;verticalAlign=bottom;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="1150" y="500" as="sourcePoint"/><mxPoint x="650" y="500" as="targetPoint"/></mxGeometry></mxCell>
+<mxCell id="c25" value="9: confirmCutting()" style="html=1;endArrow=block;endFill=1;dashed=0;strokeColor=#000000;fontSize=11;align=center;verticalAlign=bottom;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="150" y="550" as="sourcePoint"/><mxPoint x="400" y="550" as="targetPoint"/></mxGeometry></mxCell>
+<mxCell id="c26" value="10: validateAndSaveCuts()" style="html=1;endArrow=block;endFill=1;dashed=0;strokeColor=#000000;fontSize=11;align=center;verticalAlign=bottom;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="400" y="600" as="sourcePoint"/><mxPoint x="650" y="600" as="targetPoint"/></mxGeometry></mxCell>
+<mxCell id="c27" value="11: &lt;&lt;include&gt;&gt; validateWeightSum(cuts, animalWeight, wasteMargin)" style="html=1;endArrow=block;endFill=1;dashed=0;strokeColor=#000000;fontSize=11;align=left;verticalAlign=top;rounded=1;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="655" y="650" as="sourcePoint"/><mxPoint x="655" y="680" as="targetPoint"/><Array as="points"><mxPoint x="720" y="650"/><mxPoint x="720" y="680"/></Array></mxGeometry></mxCell>
+<mxCell id="c28" value="12: validationResult" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontSize=11;align=left;verticalAlign=top;rounded=1;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="655" y="700" as="sourcePoint"/><mxPoint x="655" y="730" as="targetPoint"/><Array as="points"><mxPoint x="720" y="700"/><mxPoint x="720" y="730"/></Array></mxGeometry></mxCell>
+<mxCell id="c29" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;verticalAlign=top;align=left;dashed=0;" vertex="1" parent="1"><mxGeometry x="380" y="725" width="800" height="240" as="geometry"/></mxCell>
+<mxCell id="c30" value="&lt;b&gt;alt&lt;/b&gt;" style="shape=note;whiteSpace=wrap;html=1;size=8;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;align=center;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="380" y="725" width="46" height="22" as="geometry"/></mxCell>
+<mxCell id="c31" style="html=1;endArrow=none;dashed=1;strokeColor=#000000;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="380" y="845" as="sourcePoint"/><mxPoint x="1180" y="845" as="targetPoint"/></mxGeometry></mxCell>
+<mxCell id="c32" value="[sum of weights &lt;= animalWeight + wasteMargin]" style="text;html=1;align=left;verticalAlign=top;fontStyle=2;fontSize=11;fontColor=#333333;" vertex="1" parent="1"><mxGeometry x="388" y="847" width="784" height="18" as="geometry"/></mxCell>
+<mxCell id="c33" value="[sum of weights &gt; animalWeight + wasteMargin]" style="text;html=1;align=left;verticalAlign=top;fontStyle=2;fontSize=11;fontColor=#333333;" vertex="1" parent="1"><mxGeometry x="440" y="732" width="300" height="18" as="geometry"/></mxCell>
+<mxCell id="c34" value="13: warning(&quot;exceeds weight, confirm or correct&quot;)" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontSize=11;align=center;verticalAlign=bottom;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="650" y="770" as="sourcePoint"/><mxPoint x="400" y="770" as="targetPoint"/></mxGeometry></mxCell>
+<mxCell id="c35" value="14: showWarning()" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontSize=11;align=center;verticalAlign=bottom;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="400" y="820" as="sourcePoint"/><mxPoint x="150" y="820" as="targetPoint"/></mxGeometry></mxCell>
+<mxCell id="c36" value="15: saveCuts(cuts)" style="html=1;endArrow=block;endFill=1;dashed=0;strokeColor=#000000;fontSize=11;align=center;verticalAlign=bottom;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="650" y="890" as="sourcePoint"/><mxPoint x="1150" y="890" as="targetPoint"/></mxGeometry></mxCell>
+<mxCell id="c37" value="16: cutsSaved" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontSize=11;align=center;verticalAlign=bottom;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="1150" y="940" as="sourcePoint"/><mxPoint x="650" y="940" as="targetPoint"/></mxGeometry></mxCell>
+<mxCell id="c38" value="17: cuttingConfirmation()" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontSize=11;align=center;verticalAlign=bottom;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="650" y="990" as="sourcePoint"/><mxPoint x="400" y="990" as="targetPoint"/></mxGeometry></mxCell>
+<mxCell id="c39" value="18: showConfirmation()" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontSize=11;align=center;verticalAlign=bottom;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="400" y="1040" as="sourcePoint"/><mxPoint x="150" y="1040" as="targetPoint"/></mxGeometry></mxCell>
+<mxCell id="c40" value="Precondition: the animal was weighed (CU-03). Postcondition: the cuts become available for classification (CU-05)." style="shape=note;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;align=left;verticalAlign=top;spacing=6;size=14;" vertex="1" parent="1"><mxGeometry x="20" y="1090" width="1260" height="70" as="geometry"/></mxCell>
+
+<mxCell id="actc5_1" value="" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;points=[];" vertex="1" parent="1"><mxGeometry x="395" y="130" width="10" height="220" as="geometry"/></mxCell>
+<mxCell id="actc5_2" value="" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;points=[];" vertex="1" parent="1"><mxGeometry x="395" y="350" width="10" height="200" as="geometry"/></mxCell>
+<mxCell id="actc5_3" value="" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;points=[];" vertex="1" parent="1"><mxGeometry x="395" y="550" width="10" height="490" as="geometry"/></mxCell>
+<mxCell id="actc6_4" value="" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;points=[];" vertex="1" parent="1"><mxGeometry x="645" y="180" width="10" height="220" as="geometry"/></mxCell>
+<mxCell id="actc6_5" value="" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;points=[];" vertex="1" parent="1"><mxGeometry x="645" y="400" width="10" height="200" as="geometry"/></mxCell>
+<mxCell id="actc6_6" value="" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;points=[];" vertex="1" parent="1"><mxGeometry x="645" y="600" width="10" height="390" as="geometry"/></mxCell>
+<mxCell id="actc6_7" value="" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;points=[];" vertex="1" parent="1"><mxGeometry x="655" y="650" width="10" height="50" as="geometry"/></mxCell>
+<mxCell id="actc7_8" value="" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;points=[];" vertex="1" parent="1"><mxGeometry x="895" y="230" width="10" height="50" as="geometry"/></mxCell>
+<mxCell id="actc8_9" value="" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;points=[];" vertex="1" parent="1"><mxGeometry x="1145" y="450" width="10" height="50" as="geometry"/></mxCell>
+<mxCell id="actc8_10" value="" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;points=[];" vertex="1" parent="1"><mxGeometry x="1145" y="890" width="10" height="50" as="geometry"/></mxCell>
       </root>
     </mxGraphModel>
   </diagram>
