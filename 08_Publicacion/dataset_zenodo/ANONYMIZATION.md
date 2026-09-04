@@ -58,7 +58,7 @@ La organización cliente ha dado su consentimiento explícito para:
 - La publicación de datos anonimizados en Zenodo bajo CC BY 4.0
 - El uso de sus datos en publicaciones científicas revisadas por pares
 
-Este consentimiento está documentado en los formularios A03 de la carpeta `08_Etica/`.
+Este consentimiento está documentado en los formularios A03 de la carpeta `09_Etica/`.
 
 ---
 
