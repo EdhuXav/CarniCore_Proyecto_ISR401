@@ -1201,9 +1201,9 @@ Declaramos que la información de aportes individuales descrita en este document
 - ORCID: [0009-0001-8312-9656](https://orcid.org/0009-0001-8312-9656)
 - Correo: egamarraa@uteq.edu.ec
 
-Firma: ____________________________________________
+Firma: _Edhu Xavier Gamarra Araujo_
 
-Fecha: ___ / ___ / 2026
+Fecha: _03_ / _09_ / 2026
 
 ---
 
