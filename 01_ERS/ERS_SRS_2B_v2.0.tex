@@ -1246,6 +1246,206 @@ Trazas & RF-09, RF-20, RNF-02 (disponibilidad), RNF-07 (auditoría de bajas). \\
 \item[RNF-IA-12.] \textbf{Explicabilidad:} para cada clasificación de riesgo alto, el sistema debe mostrar los dos factores más influyentes en lenguaje natural en $\leq$ 2 segundos.
 \end{description}
 
+
+\subsection{Requisitos no funcionales transversales del componente inteligente}
+
+Los requisitos de esta subsección se aplican a los tres componentes
+inteligentes del sistema: IA-01 (predictor de demanda), IA-02 (detector de
+anomalías de cadena de frío) y DET-01 (detector de patrones de ambigüedad en
+requisitos, empleado en el componente empírico). Cada uno declara métrica,
+unidad, umbral, método de verificación, responsable y frecuencia de medición,
+conforme al §8 de la guía de la asignatura.
+
+% ---------------------------------------------------------------------------
+% Macro de ficha. Si el documento ya define una equivalente, reutilicela y
+% borre esta definicion para no duplicar.
+% ---------------------------------------------------------------------------
+\newcommand{\rnfia}[9]{%
+\begin{longtable}{|p{3.2cm}|p{10.6cm}|}
+\caption[#1: #2]{Requisito no funcional #1 -- #2}\\
+\hline
+\multicolumn{2}{|l|}{\textbf{#1 -- #2}} \\
+\hline
+Enunciado verificable & #3 \\
+\hline
+Métrica y unidad & #4 \\
+\hline
+Umbral & #5 \\
+\hline
+Método de verificación & #6 \\
+\hline
+Responsable & #7 \\
+\hline
+Frecuencia de medición & #8 \\
+\hline
+Trazas & #9 \\
+\hline
+\end{longtable}
+\vspace{-0.4cm}
+}
+
+\subsubsection{Componente de detección de ambigüedad (DET-01)}
+
+\rnfia{RNF-IA-13}{Exactitud del detector de ambigüedad}
+{El detector de patrones de ambigüedad debe alcanzar una exhaustividad no
+inferior a 0,70 frente al consenso de un panel de al menos tres personas
+expertas que clasifiquen el mismo corpus de forma ciega e independiente.}
+{Exhaustividad (\textit{recall}) y medida $F_1$, con intervalo de confianza al
+95\,\% por \textit{bootstrap} de percentiles; adimensional.}
+{Exhaustividad $\geq$ 0,70 y $F_1 \geq$ 0,60. Si el límite inferior del
+intervalo de confianza queda por debajo de 0,50, el resultado se declara no
+concluyente y no se emplea como base de decisión.}
+{Ejecución de \texttt{07\_Datos/scripts/run\_all.py} sobre el corpus completo
+extraído del ERS, contrastada con \texttt{etiquetas\_expertos.csv}. Salida
+verificable en \texttt{07\_Datos/resultados/matriz\_confusion\_prf1.json} y
+\texttt{bootstrap\_ic95.json}.}
+{Verificador de calidad del equipo.}
+{En cada versión del ERS y en cada modificación del corpus de requisitos.}
+{DET-01; RF-01 a RF-27; caso de prueba CP-IA-13.}
+
+\begin{quote}
+\small
+\textbf{Estado de cumplimiento en la versión actual.} No se cumple. La
+ejecución sobre los 27 RF de la v2.0 arroja exhaustividad $=0{,}0000$ y
+$F_1 = 0{,}0000$, con VP $=0$, FP $=0$, FN $=4$ y VN $=23$. El diagnóstico,
+verificado patrón por patrón, es que el detector es inerte sobre este corpus:
+el umbral de conjunciones múltiples exige más de tres conectores y el máximo
+observado es dos; ninguno de los veintiséis patrones de cuantificador vago
+aparece; y los veintisiete requisitos emplean la forma activa. Se declara el
+incumplimiento en lugar de ajustar el umbral, porque modificar la lógica del
+detector después de conocer los resultados invalidaría la comparación
+pre-registrada. Con VP $=0$ y FP $=0$ la precisión es una cantidad indefinida,
+reportada como cero por convención, y el intervalo de confianza de anchura
+nula es un artefacto de remuestrear una constante.
+\end{quote}
+
+\subsubsection{Supervisión humana}
+
+\rnfia{RNF-IA-14}{Supervisión humana efectiva de toda marca automática}
+{Ninguna salida de un componente inteligente produce efectos sobre el
+inventario, la contabilidad o la especificación sin aceptación o descarte
+explícito de una persona con rol autorizado. El sistema registra, para cada
+salida, la decisión humana adoptada, su autoría, el instante y el motivo
+cuando se descarta.}
+{Proporción de salidas del componente con decisión humana registrada;
+porcentaje. Latencia entre la emisión de la salida y la decisión; horas.}
+{100\,\% de las salidas con decisión registrada. Ninguna salida permanece sin
+resolver más de 48 horas: transcurrido ese plazo se escala automáticamente al
+administrador general.}
+{Auditoría del registro de decisiones: consulta que cruce el total de salidas
+emitidas con el total de decisiones registradas. La diferencia debe ser cero.
+Prueba de aceptación: emitir una salida y comprobar que el efecto sobre el
+inventario no se produce hasta que se registra la decisión.}
+{Administrador general (aceptación y descarte); verificador de calidad
+(auditoría del registro).}
+{Auditoría mensual del registro; verificación en cada despliegue.}
+{IA-01; IA-02; DET-01; RF-09; RF-IA-06; RNF-07; caso de prueba CP-IA-14.}
+
+\subsubsection{Monitoreo posterior al despliegue}
+
+\rnfia{RNF-IA-15}{Monitoreo continuo en producción}
+{Cada componente inteligente en producción se monitoriza de forma continua
+mediante indicadores declarados, con periodicidad fija y umbrales de alerta
+que disparan revisión o reentrenamiento. El resultado de cada medición queda
+registrado y es consultable.}
+{IA-01: error absoluto medio semanal, en libras. IA-02: tasa de falsos
+negativos mensual, en porcentaje. DET-01: exhaustividad frente a
+re-anotación humana periódica, adimensional. Transversal: deriva de la
+distribución de entradas respecto de la de entrenamiento, medida con el índice
+de estabilidad poblacional (PSI), adimensional.}
+{IA-01: alerta si MAE $>$ 15 lb por corte; reentrenamiento si se supera
+durante 3 semanas consecutivas. IA-02: alerta si la tasa de falsos negativos
+$>$ 10\,\% en el mes; reentrenamiento si se supera 2 meses seguidos o al
+acumular 20 incidentes nuevos etiquetados. DET-01: revisión si la
+exhaustividad cae más de 0,10 respecto de la medición anterior. Transversal:
+alerta si PSI $>$ 0,20.}
+{Panel de monitoreo con serie histórica de cada indicador y registro de
+alertas disparadas. Revisión documentada de cada alerta, con la acción
+adoptada.}
+{Administrador general (revisión de alertas); equipo técnico
+(instrumentación y panel).}
+{IA-01: semanal. IA-02: mensual. DET-01: en cada versión del ERS.
+Deriva: mensual. Revisión integral: trimestral.}
+{IA-01; IA-02; DET-01; RNF-02; caso de prueba CP-IA-15.}
+
+\subsubsection{Clasificación del nivel de riesgo}
+
+\rnfia{RNF-IA-16}{Clasificación y revisión del nivel de riesgo}
+{Todo componente inteligente tiene asignado y documentado un nivel de riesgo,
+con la norma de referencia, el criterio aplicado y las obligaciones que se
+derivan. La clasificación se revisa cuando cambia el alcance del componente,
+su población de usuarios o el uso que se hace de su salida.}
+{Nivel de riesgo asignado, en escala ordinal \{mínimo, limitado, alto,
+inaceptable\}; antigüedad de la última revisión, en meses.}
+{Todo componente en producción con nivel asignado y antigüedad de revisión
+no superior a 12 meses. Ningún componente clasificado como inaceptable puede
+desplegarse.}
+{Revisión documentada frente a los criterios de la norma de referencia, con
+firma del responsable y fecha. Registro de la revisión en el repositorio.}
+{Líder del equipo, con visto bueno del docente supervisor.}
+{Anual, y de forma extraordinaria ante cualquier cambio de alcance o de uso.}
+{IA-01; IA-02; DET-01; caso de prueba CP-IA-16.}
+
+\begin{quote}
+\small
+\textbf{Clasificación vigente.} Los tres componentes se clasifican como de
+\textbf{riesgo mínimo} conforme al Reglamento (UE) 2024/1689. Ninguno figura
+entre los sistemas prohibidos del Artículo 5 ni entre los de alto riesgo del
+Artículo 6 y su Anexo III: no realizan identificación biométrica, no evalúan a
+personas ni condicionan su acceso a servicios, y su salida está sujeta en todo
+caso a decisión humana (RNF-IA-14). Se aplican, por tanto, las obligaciones de
+transparencia del Artículo 50: la persona usuaria es informada de que
+interactúa con un sistema de inteligencia artificial y de cuál es el alcance de
+su salida.
+
+Se corrige aquí una imprecisión de la versión anterior del documento, que
+atribuía la categoría de riesgo mínimo al Artículo 6. El Artículo 6 regula la
+clasificación de los sistemas de \emph{alto} riesgo; el riesgo mínimo es la
+categoría residual que resulta de no encajar en los Artículos 5 ni 6. El
+tratamiento de datos personales asociado se rige por la Ley Orgánica de
+Protección de Datos Personales del Ecuador.
+\end{quote}
+
+\subsubsection{Explicabilidad y equidad: consolidación}
+
+Los requisitos de explicabilidad (RNF-IA-06, RNF-IA-12) y de equidad
+(RNF-IA-04, RNF-IA-05, RNF-IA-10, RNF-IA-11), ya especificados en las fichas de
+IA-01 e IA-02, se extienden al detector DET-01 mediante los dos requisitos
+siguientes, y se completan con el responsable y la frecuencia de medición que
+la guía exige y que aquellos no declaraban.
+
+\rnfia{RNF-IA-17}{Explicabilidad del detector de ambigüedad}
+{Para cada marca de ambigüedad, el sistema muestra al analista la categoría de
+patrón activada, el fragmento literal del requisito que la activó y la regla
+concreta que se aplicó, sin que el analista deba consultar el código fuente.}
+{Proporción de marcas acompañadas de evidencia literal, en porcentaje; tiempo
+de presentación de la explicación, en segundos.}
+{100\,\% de las marcas con evidencia literal; presentación en $\leq$ 2
+segundos.}
+{Inspección de \texttt{clasificaciones\_detector.csv}: las columnas
+\texttt{evidencia\_*} deben estar cumplimentadas en toda fila con
+\texttt{ambiguo\_detector} $=1$. Prueba de aceptación sobre un requisito
+sintético que active cada categoría.}
+{Documentador del equipo.}
+{En cada ejecución del pipeline de análisis.}
+{DET-01; RNF-IA-13; caso de prueba CP-IA-17.}
+
+\rnfia{RNF-IA-18}{Equidad del detector entre categorías de requisito}
+{El detector no debe presentar diferencias sistemáticas de exhaustividad entre
+los distintos tipos de requisito funcional del corpus, de modo que ninguna
+familia de requisitos quede sistemáticamente sin revisar.}
+{Diferencia de exhaustividad entre el grupo de requisitos con mayor y con menor
+detección, agrupados por módulo funcional; puntos porcentuales.}
+{Diferencia $\leq$ 20 puntos porcentuales. Cuando el detector no marque ningún
+requisito, la métrica se declara no evaluable y así se reporta, en lugar de
+computarse como diferencia nula.}
+{Cálculo por script sobre \texttt{dataset\_consolidado.csv}, desagregando por
+módulo funcional según la matriz de trazabilidad.}
+{Verificador de calidad del equipo.}
+{En cada versión del ERS.}
+{DET-01; RNF-IA-13; caso de prueba CP-IA-18.}
+
+
 %==========================================================
 \section{Auditoría de Calidad del ERS con Seis Métricas}
 %==========================================================
