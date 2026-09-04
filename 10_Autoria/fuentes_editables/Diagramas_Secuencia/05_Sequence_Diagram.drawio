@@ -1,0 +1,151 @@
+<mxfile host="Electron" agent="claude">
+  <diagram name="CU-05 Classify Product by Cut" id="cu05-seq-diagram">
+    <mxGraphModel dx="1212" dy="793" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1150" pageHeight="950" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c2" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontStyle=1;fontSize=16;" value="Sequence Diagram - CU-05: Classify Product by Cut" vertex="1">
+          <mxGeometry height="30" width="900" x="20" y="5" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;labelBackgroundColor=#ffffff;" value="Butcher" vertex="1">
+          <mxGeometry height="50" width="30" x="135" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" edge="1" parent="1" style="html=1;endArrow=none;dashed=1;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="130" as="sourcePoint" />
+            <mxPoint x="150" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c5" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fontSize=12;" value="&lt;&lt;boundary&gt;&gt;&lt;br&gt;&lt;b&gt;UI_Classification&lt;/b&gt;" vertex="1">
+          <mxGeometry height="910" width="120" x="360" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fontSize=12;" value="&lt;&lt;control&gt;&gt;&lt;br&gt;&lt;b&gt;CtrlClassification&lt;/b&gt;" vertex="1">
+          <mxGeometry height="910" width="120" x="630" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c7" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fontSize=12;" value="&lt;&lt;entity&gt;&gt;&lt;br&gt;&lt;b&gt;Cut&lt;/b&gt;" vertex="1">
+          <mxGeometry height="910" width="120" x="900" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c12" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;dashed=0;strokeColor=#000000;fontSize=11;align=center;verticalAlign=bottom;" value="1: selectRegisteredCuts()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="130" as="sourcePoint" />
+            <mxPoint x="420" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c13" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;dashed=0;strokeColor=#000000;fontSize=11;align=center;verticalAlign=bottom;" value="2: getPendingCuts()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="180" as="sourcePoint" />
+            <mxPoint x="690" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c14" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;dashed=0;strokeColor=#000000;fontSize=11;align=center;verticalAlign=bottom;" value="3: listCuts()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="690" y="230" as="sourcePoint" />
+            <mxPoint x="960" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c15" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontSize=11;align=center;verticalAlign=bottom;" value="4: cutList">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="960" y="280" as="sourcePoint" />
+            <mxPoint x="690" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c16" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontSize=11;align=center;verticalAlign=bottom;" value="5: showCutList(cutList)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="690" y="330" as="sourcePoint" />
+            <mxPoint x="420" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c17" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontSize=11;align=center;verticalAlign=bottom;" value="6: cutList">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="380" as="sourcePoint" />
+            <mxPoint x="150" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;verticalAlign=top;align=left;dashed=0;" value="" vertex="1">
+          <mxGeometry height="220" width="590" x="400" y="405" as="geometry" />
+        </mxCell>
+        <mxCell id="c19" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=8;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;align=center;verticalAlign=middle;" value="&lt;b&gt;loop&lt;/b&gt;" vertex="1">
+          <mxGeometry height="22" width="46" x="400" y="405" as="geometry" />
+        </mxCell>
+        <mxCell id="c20" parent="1" style="text;html=1;align=left;verticalAlign=top;fontStyle=2;fontSize=11;fontColor=#333333;" value="[for each cut in the list]" vertex="1">
+          <mxGeometry height="18" width="300" x="460" y="412" as="geometry" />
+        </mxCell>
+        <mxCell id="c21" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;dashed=0;strokeColor=#000000;fontSize=11;align=center;verticalAlign=bottom;" value="7: assignCategory(cut, category)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="450" as="sourcePoint" />
+            <mxPoint x="420" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c22" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;dashed=0;strokeColor=#000000;fontSize=11;align=center;verticalAlign=bottom;" value="8: classifyCut(cut, category)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="500" as="sourcePoint" />
+            <mxPoint x="690" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c23" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;dashed=0;strokeColor=#000000;fontSize=11;align=center;verticalAlign=bottom;" value="9: associateCategory(cut, category)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="690" y="550" as="sourcePoint" />
+            <mxPoint x="960" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c24" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontSize=11;align=center;verticalAlign=bottom;" value="10: categoryAssociated">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="960" y="600" as="sourcePoint" />
+            <mxPoint x="690" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c25" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;dashed=0;strokeColor=#000000;fontSize=11;align=center;verticalAlign=bottom;" value="11: confirmClassification()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="650" as="sourcePoint" />
+            <mxPoint x="420" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c26" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;dashed=0;strokeColor=#000000;fontSize=11;align=center;verticalAlign=bottom;" value="12: finalizeClassification()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="700" as="sourcePoint" />
+            <mxPoint x="690" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c27" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontSize=11;align=center;verticalAlign=bottom;" value="13: classificationConfirmation()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="690" y="750" as="sourcePoint" />
+            <mxPoint x="420" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c28" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontSize=11;align=center;verticalAlign=bottom;" value="14: showConfirmation()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="800" as="sourcePoint" />
+            <mxPoint x="150" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c29" parent="1" style="shape=note;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;align=left;verticalAlign=top;spacing=6;size=14;" value="Precondition: cuts are registered (CU-04). Postcondition: the classified product becomes available for entry into the cold chamber (CU-06)." vertex="1">
+          <mxGeometry height="70" width="1110" x="20" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="actc5_1" parent="1" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;points=[];" value="" vertex="1">
+          <mxGeometry height="250" width="10" x="415" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="actc5_2" parent="1" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;points=[];" value="" vertex="1">
+          <mxGeometry height="200" width="10" x="415" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="actc5_3" parent="1" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;points=[];" value="" vertex="1">
+          <mxGeometry height="150" width="10" x="415" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="actc6_4" parent="1" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;points=[];" value="" vertex="1">
+          <mxGeometry height="150" width="10" x="685" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="actc6_5" parent="1" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;points=[];" value="" vertex="1">
+          <mxGeometry height="200" width="10" x="685" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="actc6_6" parent="1" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;points=[];" value="" vertex="1">
+          <mxGeometry height="50" width="10" x="685" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="actc7_7" parent="1" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;points=[];" value="" vertex="1">
+          <mxGeometry height="50" width="10" x="955" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="actc7_8" parent="1" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;points=[];" value="" vertex="1">
+          <mxGeometry height="50" width="10" x="955" y="550" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
