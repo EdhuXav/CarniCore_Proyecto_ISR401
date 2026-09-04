@@ -1,7 +1,7 @@
 {
   "n_unidades_codificadas": 27,
-  "hoja_a": "hoja_codificador_A_SIMULACION.csv",
-  "hoja_b": "hoja_codificador_B_SIMULACION.csv",
+  "hoja_a": "hoja_codificador_A.csv",
+  "hoja_b": "hoja_codificador_B.csv",
   "categorias_observadas": [
     "CC",
     "GC",
