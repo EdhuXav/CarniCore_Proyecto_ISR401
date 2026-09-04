@@ -1237,9 +1237,9 @@ Fecha: _03_ / _09_ / 2026
 - ORCID: [0009-0005-1575-8935](https://orcid.org/0009-0005-1575-8935)
 - Correo: acastrob@uteq.edu.ec
 
-Firma: ____________________________________________
+Firma: _Ariel Omar Castro Bajaña_
 
-Fecha: ___ / ___ / 2026
+Fecha: _03_ / _09_ / 2026
 
 ---
 
