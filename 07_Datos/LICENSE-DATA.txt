@@ -1,0 +1,73 @@
+LICENCIA DE LOS DATOS -- Paquete de datos 07_Datos/
+Proyecto CarniCore -- Ingenieria de Requisitos (ISR-401)
+Universidad Tecnica Estatal de Quevedo -- 2026-2027 PPA
+
+===========================================================================
+ESTA LICENCIA CUBRE LOS DATOS. NO CUBRE EL CODIGO.
+===========================================================================
+
+  Datos  (contenido de 07_Datos/, salvo 07_Datos/scripts/)
+         -> Creative Commons Atribucion 4.0 Internacional (CC BY 4.0)
+
+  Codigo (07_Datos/scripts/ y el resto de codigo fuente del repositorio)
+         -> Licencia MIT, en el archivo LICENSE de la raiz
+
+La separacion es deliberada y la exige el paragrafo 7 de la guia de la
+asignatura: los datos y el codigo se licencian por separado.
+
+---------------------------------------------------------------------------
+1. OBRA CUBIERTA
+---------------------------------------------------------------------------
+
+  07_Datos/datos_crudos/         plantillas de clasificacion experta,
+                                 anonimizadas
+  07_Datos/datos_procesados/     etiquetas transcritas
+  07_Datos/resultados/           tablas y figuras generadas
+  07_Datos/diccionario_datos.csv
+  07_Datos/scripts/rf27.json     corpus de requisitos funcionales
+
+---------------------------------------------------------------------------
+2. TERMINOS: CC BY 4.0
+---------------------------------------------------------------------------
+
+Usted es libre de compartir y adaptar el material para cualquier finalidad,
+incluso comercial, siempre que reconozca la autoria de forma adecuada,
+proporcione un enlace a la licencia e indique si se han realizado cambios.
+
+Texto completo:  https://creativecommons.org/licenses/by/4.0/legalcode.es
+Resumen:         https://creativecommons.org/licenses/by/4.0/deed.es
+
+Atribucion sugerida:
+
+  Castro Bajana, A. O.; Crespo Espinoza, K. O.; Gamarra Araujo, E. X.;
+  Perez Ruiz, C. A.; Quintero Gende, E. J. (2026). CarniCore: paquete de
+  datos del componente empirico. Universidad Tecnica Estatal de Quevedo.
+  Licencia CC BY 4.0.
+
+---------------------------------------------------------------------------
+3. LO QUE ESTA LICENCIA NO CUBRE
+---------------------------------------------------------------------------
+
+NO se licencia bajo CC BY 4.0, y NO se redistribuye en ningun caso:
+
+  - El contenido de 02_Evidencias/00_Restringido/. Son grabaciones y
+    material con datos personales de las personas participantes. Se
+    conservan cifrados y su acceso esta restringido.
+
+  - Los formularios de consentimiento informado sin redactar.
+
+  - Cualquier material que permita reidentificar a una persona participante,
+    ya sea de forma directa o por combinacion con otras fuentes.
+
+Los datos personales se tratan conforme a la Ley Organica de Proteccion de
+Datos Personales del Ecuador. La base de licitud, la finalidad, el plazo de
+conservacion y el responsable del tratamiento se declaran en
+08_Etica/README_Etica.md y en el formulario de consentimiento.
+
+---------------------------------------------------------------------------
+4. AUSENCIA DE GARANTIA
+---------------------------------------------------------------------------
+
+Los datos se ofrecen "tal cual". El equipo no ofrece garantia alguna sobre
+su idoneidad para ningun proposito distinto de la replicacion del estudio
+descrito en 06_Experimento/protocolo.pdf.
