@@ -1,0 +1,94 @@
+<mxfile host="Electron">
+  <diagram name="Página-1" id="kUcmW1s8koGqkQT0Maw-">
+    <mxGraphModel dx="2575" dy="1685" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1150" pageHeight="1450" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;fontSize=16;" value="Deployment Diagram - CarniCore System" vertex="1">
+          <mxGeometry height="30" width="1100" as="geometry" />
+        </mxCell>
+        <mxCell id="pc1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontStyle=1;" value="&lt;&lt;device&gt;&gt; PC - Reception Slaughter Plant" vertex="1">
+          <mxGeometry height="50" width="200" x="60" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tab1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontStyle=1;" value="&lt;&lt;device&gt;&gt; Tablet - Butcher Butchering Area" vertex="1">
+          <mxGeometry height="50" width="200" x="380" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pc2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontStyle=1;" value="&lt;&lt;device&gt;&gt; PC - Administrator Office" vertex="1">
+          <mxGeometry height="50" width="220" x="780" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="br1" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=20;align=left;spacingLeft=6;verticalAlign=top;spacingTop=4;" value="&lt;&lt;artifact&gt;&gt;&lt;br&gt;&lt;b&gt;Web Browser&lt;/b&gt;&lt;br&gt;Chrome / Edge&lt;br&gt;CarniCore Client" vertex="1">
+          <mxGeometry height="80" width="200" x="60" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="br2" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=20;align=left;spacingLeft=6;verticalAlign=top;spacingTop=4;" value="&lt;&lt;artifact&gt;&gt;&lt;br&gt;&lt;b&gt;Web Browser&lt;/b&gt;&lt;br&gt;Chrome / Edge&lt;br&gt;CarniCore Client" vertex="1">
+          <mxGeometry height="80" width="200" x="380" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="br3" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=20;align=left;spacingLeft=6;verticalAlign=top;spacingTop=4;" value="&lt;&lt;artifact&gt;&gt;&lt;br&gt;&lt;b&gt;Web Browser&lt;/b&gt;&lt;br&gt;Chrome / Edge&lt;br&gt;CarniCore Client" vertex="1">
+          <mxGeometry height="80" width="220" x="780" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="appsrv" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;fontStyle=1;align=center;" value="Application Server / API" vertex="1">
+          <mxGeometry height="90" width="220" x="480" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="a1" edge="1" parent="1" source="br1" style="html=1;endArrow=block;endFill=1;exitX=0.79;exitY=1.029;exitDx=0;exitDy=0;exitPerimeter=0;" value="HTTPS / REST API">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="200" as="sourcePoint" />
+            <mxPoint x="560" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a2" edge="1" parent="1" source="br2" style="html=1;endArrow=block;endFill=1;exitX=0.687;exitY=1.021;exitDx=0;exitDy=0;exitPerimeter=0;" value="HTTPS / REST API">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="200" as="sourcePoint" />
+            <mxPoint x="590" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a3" edge="1" parent="1" source="br3" style="html=1;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" value="HTTPS / REST API">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="880" y="210" as="sourcePoint" />
+            <mxPoint x="660" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="backend" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=20;align=left;spacingLeft=6;verticalAlign=top;spacingTop=4;" value="&lt;&lt;artifact&gt;&gt;&lt;br&gt;&lt;b&gt;Backend CarniCore&lt;/b&gt;&lt;br&gt;API REST&lt;br&gt;____________________&lt;br&gt;Modules:&lt;br&gt;• Authentication&lt;br&gt;• User Management&lt;br&gt;• Animal Reception&lt;br&gt;• Weighing&lt;br&gt;• Butchering &amp; Cut Classification&lt;br&gt;• Cold Room Entry&lt;br&gt;• Shelf Life Control&lt;br&gt;• Inventory&lt;br&gt;• Sales&lt;br&gt;• Reports&lt;br&gt;____________________&lt;br&gt;Security: JWT · HTTPS · Role Control" vertex="1">
+          <mxGeometry height="300" width="320" x="430" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="a4" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="390" as="sourcePoint" />
+            <mxPoint x="590" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dbsrv" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;fontStyle=1;align=center;" value="Database Server" vertex="1">
+          <mxGeometry height="90" width="200" x="500" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="a5" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;" value="TCP / SQL">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="720" as="sourcePoint" />
+            <mxPoint x="600" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dbart" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=20;align=left;spacingLeft=6;verticalAlign=top;spacingTop=4;" value="&lt;&lt;artifact&gt;&gt;&lt;br&gt;&lt;b&gt;Database CarniCore&lt;/b&gt;&lt;br&gt;PostgreSQL / MySQL&lt;br&gt;____________________&lt;br&gt;Main tables:&lt;br&gt;• Usuario · Rol&lt;br&gt;• Proveedor · Animal&lt;br&gt;• RegistroPesaje · Corte&lt;br&gt;• ClasificacionProducto&lt;br&gt;• CamaraFrigorifica&lt;br&gt;• Inventario · Venta&lt;br&gt;• DetalleVenta · VidaUtil&lt;br&gt;• BajaProducto · IncidenteEnergia&lt;br&gt;____________________&lt;br&gt;Auto backup · Data encryption" vertex="1">
+          <mxGeometry height="300" width="340" x="430" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="a6" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="870" as="sourcePoint" />
+            <mxPoint x="600" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="future" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontStyle=1;dashed=1;fillColor=#f5f5f5;fontColor=#999999;strokeColor=#999999;" value="Electronic Invoicing - SRI &lt;&lt;device&gt;&gt; Future Integration" vertex="1">
+          <mxGeometry height="70" width="260" x="480" y="1250" as="geometry" />
+        </mxCell>
+        <mxCell id="a7" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;dashed=1;entryX=0.471;entryY=-0.043;entryDx=0;entryDy=0;entryPerimeter=0;" target="future" value="future integration">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="1200" as="sourcePoint" />
+            <mxPoint x="630" y="1250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend_title" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontStyle=1;" value="Legend" vertex="1">
+          <mxGeometry height="30" width="260" x="10" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_body" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=top;spacingTop=8;fillColor=#f5f5f5;" value="◇ Physical device (Client)&lt;br&gt;□ Server node&lt;br&gt;📄 Artifact / Deployed software&lt;br&gt;— HTTPS / SQL communication&lt;br&gt;- - Future integration" vertex="1">
+          <mxGeometry height="150" width="260" x="10" y="830" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
