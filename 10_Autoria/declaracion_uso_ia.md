@@ -159,7 +159,7 @@ Firman los cinco integrantes. Una declaración sin firmar no es una declaración
 |---|---|---|
 | Castro Bajaña Ariel Omar | *Ariel Omar Castro Bajaña* | _2026-09-04_|
 | Crespo Espinoza Kleber Obed | *Crespo Espinoza Kleber Obed* | _2026-09-04_|
-| Gamarra Araujo Edhu Xavier | *(pendiente de firma)* | |
+| Gamarra Araujo Edhu Xavier | *Gamarra Araujo Edhu Xavier* | _2026-09-04_ |
 | Pérez Ruiz Carlos Andrés | *_Carlos Andrés Pérez Ruíz_* | _2026-09-04_ |
 | Quintero Gende Erick Jahir | _Erick Jhair Quintero Gende_ | _2026-09-04_ |
 
