@@ -1,0 +1,221 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+% babel-spanish opcional: descomente si tiene instalado el paquete
+% \usepackage[spanish,es-noquoting]{babel}
+\usepackage[margin=2.4cm]{geometry}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{parskip}
+
+\definecolor{uteqverde}{RGB}{27,94,60}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize UTEQ · Ingeniería de Requerimientos (ISR-401 / 20303)}
+\fancyhead[R]{\footnotesize Desviaciones del pre-registro · CarniCore}
+\fancyfoot[C]{\footnotesize Página \thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\begin{document}
+
+\begin{center}
+{\Large\bfseries\color{uteqverde}
+Desviaciones respecto del protocolo pre-registrado}\\[4pt]
+{\large Componente empírico · Sistema CarniCore · Enfoque 2}\\[8pt]
+{\small Registro OSF: \url{https://osf.io/yp7t3} · Registrado el 2 de agosto de 2026}\\
+{\small Protocolo de referencia: \texttt{06\_Experimento/protocolo.pdf}, versión 1.0}\\
+{\small Ubicación en el repositorio: \texttt{06\_Experimento/osf\_deviations.pdf}}\\[4pt]
+{\small Versión 1.0 · Elaborado para la entrega del examen final (semana 19)}
+\end{center}
+
+\vspace{6pt}
+\hrule
+\vspace{10pt}
+
+\section*{1. Propósito y alcance}
+
+La Sección 7.3 de la guía de la Entrega 4 (2B) exige documentar cada desviación
+del análisis efectivamente ejecutado respecto del plan pre-registrado en OSF,
+con la razón, el momento en que se detectó y la mitigación aplicada. Este
+documento cumple esa exigencia y se replica en la sección \textit{Deviations
+from pre-registration} del propio registro OSF.
+
+Actualizar el registro con las desviaciones no invalida el pre-registro. Al
+contrario: es la práctica que el uso maduro del pre-registro
+exige\footnote{Nosek, B.~A., Ebersole, C.~R., DeHaven, A.~C. y Mellor, D.~T.
+(2018). The preregistration revolution. \textit{PNAS}, 115(11), 2600--2606.}.
+Lo que sí invalidaría el trabajo sería ejecutar un análisis distinto del
+registrado y no declararlo.
+
+\section*{2. Resumen ejecutivo}
+
+El plan de análisis pre-registrado se ejecutó \textbf{íntegramente}. Se
+registran dos desviaciones menores (DEV-01 y DEV-02) y una corrección
+documental de gravedad mayor (COR-01) relativa a cómo se reportaron los
+resultados en una versión preliminar del manuscrito.
+
+\begin{longtable}{p{1.6cm}p{5.2cm}p{2.2cm}p{5.6cm}}
+\toprule
+\textbf{ID} & \textbf{Naturaleza} & \textbf{Detectada} & \textbf{Efecto sobre las
+conclusiones} \\
+\midrule
+\endhead
+DEV-01 & Ampliación del corpus de 25 a 27 RF & 21/08/2026 & Ninguno; extensión
+aditiva verificable \\
+DEV-02 & Ubicación de las notas de desacuerdo & 01/09/2026 & Ninguno; material
+suplementario \\
+COR-01 & Reporte erróneo en el manuscrito preliminar & 03/09/2026 & Corregido;
+ver Sección 5 \\
+\bottomrule
+\end{longtable}
+
+\section*{3. DEV-01 --- Ampliación del corpus de 25 a 27 requisitos}
+
+\textbf{Qué se registró.} El protocolo versión 1.0 (Sección 7, Población)
+declara como población los 25 requisitos funcionales del ERS/SRS vigente al
+2 de agosto de 2026.
+
+\textbf{Qué se ejecutó.} El análisis se aplicó sobre 27 requisitos.
+
+\textbf{Razón.} El comité de control de cambios del proyecto aprobó dos
+requisitos adicionales con posterioridad al registro: RF-26 (vista pública de
+trazabilidad por código QR con campos delimitados) y RF-27 (filtrado de
+reportes gerenciales por proveedor). Excluirlos habría analizado un corpus que
+ya no correspondía a la especificación vigente.
+
+\textbf{Momento de detección.} 21 de agosto de 2026, al cerrar la versión 2.0
+del ERS/SRS.
+
+\textbf{Mitigación.} La extensión es puramente aditiva: los 25 requisitos
+originales se conservan sin alteración alguna. Esto es verificable de forma
+mecánica comparando los archivos \texttt{rf25.json} y \texttt{rf27.json} del
+paquete de replicación; los 25 primeros elementos son idénticos campo a campo.
+Las reglas del detector no se modificaron en ningún momento después del
+registro.
+
+\textbf{Efecto sobre las conclusiones.} Ninguno. El detector no marcó ningún
+requisito ni entre los 25 originales ni entre los 2 añadidos.
+
+\section*{4. DEV-02 --- Ubicación de las notas interpretativas de desacuerdo}
+
+\textbf{Qué se registró.} La Sección 9, paso 6 del protocolo prevé redactar una
+nota interpretativa breve por cada requisito en que el detector y el consenso
+experto difieran.
+
+\textbf{Qué se ejecutó.} Las cuatro notas (RF-08, RF-17, RF-21 y RF-22) se
+redactaron, pero se publican como material suplementario en el paquete Zenodo y
+no en el cuerpo del artículo.
+
+\textbf{Razón.} Restricción de extensión del formato de la conferencia
+objetivo.
+
+\textbf{Momento de detección.} 1 de septiembre de 2026, al maquetar el
+manuscrito.
+
+\textbf{Mitigación.} Las notas se incluyen íntegras en el paquete de
+replicación y se referencian explícitamente desde la sección de resultados del
+manuscrito.
+
+\textbf{Efecto sobre las conclusiones.} Ninguno.
+
+\section*{5. COR-01 --- Corrección de un reporte erróneo en el manuscrito
+preliminar}
+
+Este apartado no documenta una desviación del plan de análisis, sino un error
+de reporte que se detectó y se corrigió. Se declara con el mismo detalle por
+transparencia.
+
+\textbf{Qué ocurrió.} La versión del manuscrito circulada el 1 de septiembre de
+2026 contenía tres afirmaciones incorrectas:
+
+\begin{enumerate}
+\item Declaraba que la fase comparativa contra el panel experto no se había
+      ejecutado por indisponibilidad de evaluadores, y que en consecuencia no
+      podían calcularse precisión ni exhaustividad.
+\item Reportaba que el detector había marcado 1 de 27 requisitos (3,7\,\%),
+      atribuyendo la activación a RF-27 por el término
+      \textit{correspondientes}.
+\item Incluía entrecomillado un fragmento de RF-27 que no corresponde al texto
+      real de ese requisito en el ERS/SRS v2.0.
+\end{enumerate}
+
+\textbf{Qué era cierto en realidad, y desde cuándo.} Las tres afirmaciones eran
+falsas ya en el momento de escribirse. El panel de tres personas expertas se
+ejecutó, sus etiquetas individuales estaban versionadas en
+\texttt{06\_Experimento/datos\_procesados/etiquetas\_expertos.csv}, y los
+guiones de análisis habían producido \texttt{kappa\_resultados.json},
+\texttt{matriz\_confusion\_prf1.json} y \texttt{bootstrap\_ic95.json} con las
+cifras correctas. El detector marcó \textbf{0 de 27} requisitos, no 1. El texto
+real de RF-27 no contiene el término \textit{correspondientes}.
+
+\textbf{Cómo se detectó.} Mediante auditoría del repositorio contra los
+artefactos del pipeline: al ejecutar \texttt{run\_all.py} sobre un clon limpio,
+la salida (0/27) no coincidía con la cifra del manuscrito (1/27). La matriz de
+confusión publicada en el propio folleto de defensa lo confirmaba de forma
+aritmética: con VP\,=\,0 y FP\,=\,0 el detector no puede haber marcado ningún
+requisito.
+
+\textbf{Causa raíz.} Las figuras y tablas del manuscrito se habían producido
+manualmente, sin ningún guion que las generase a partir de los datos. No
+existía, por tanto, ningún mecanismo que hiciera fallar la construcción cuando
+el documento y los datos divergían.
+
+\textbf{Mitigación aplicada.}
+\begin{enumerate}
+\item El manuscrito se reescribió reportando las cifras reales: detector 0/27;
+      consenso experto 4/27 (RF-08, RF-17, RF-21, RF-22); matriz de confusión
+      VP\,=\,0, FP\,=\,0, FN\,=\,4, VN\,=\,23; precisión, exhaustividad y
+      $F_1$ iguales a 0,0000; $\kappa$ de Fleiss 0,2636; $\kappa$ de Cohen por
+      pares 0,3478, 0,3571 y 0,0870.
+\item Se añadió el guion \texttt{05\_generar\_figuras.py}, que genera todas las
+      figuras y todas las tablas de resultados del manuscrito directamente
+      desde los artefactos del pipeline. El manuscrito las incorpora con
+      \verb|\input|, de modo que ninguna cifra puede ya escribirse a mano sin
+      que la discrepancia sea evidente.
+\item Se eliminó la cita entrecomillada inexistente.
+\end{enumerate}
+
+\textbf{Efecto sobre las conclusiones.} Sustancial y en la dirección correcta.
+El resultado real es más informativo que el reportado erróneamente: el detector
+no coincide con el consenso experto en ningún caso, y el propio panel muestra
+un acuerdo bajo, lo que obliga a discutir simultáneamente el límite del
+detector y la estabilidad del criterio de referencia.
+
+\section*{6. Elementos del protocolo que NO se desviaron}
+
+Se deja constancia expresa de que los siguientes elementos se ejecutaron tal
+como fueron registrados, sin cambio alguno:
+
+\begin{itemize}
+\item Las tres categorías de patrón del detector y su lista completa de
+      expresiones regulares, fijadas antes de conocer las etiquetas expertas.
+\item La regla de decisión del detector: un requisito se marca si activa al
+      menos una categoría.
+\item La regla de consenso del panel: mayoría simple, al menos 2 de 3.
+\item El conjunto de métricas: $\kappa$ de Cohen por pares, $\kappa$ de Fleiss,
+      matriz de confusión, precisión, exhaustividad y $F_1$.
+\item El procedimiento de intervalos de confianza: \textit{bootstrap} no
+      paramétrico de 10.000 réplicas con semilla fija igual a 42.
+\item El carácter ciego e independiente de la clasificación experta.
+\end{itemize}
+
+\section*{7. Firma y trazabilidad}
+
+Este documento se genera desde \texttt{06\_Experimento/osf\_deviations.tex} y
+se versiona junto al resto del repositorio. Su contenido se replica en el
+apartado \textit{Deviations from pre-registration} del registro
+\url{https://osf.io/yp7t3}.
+
+\vspace{10pt}
+\noindent
+\begin{tabular}{@{}p{7cm}p{7cm}@{}}
+\rule{6cm}{0.4pt} & \rule{6cm}{0.4pt} \\
+Por el equipo CarniCore & PhD. Gleiston Cicerón Guerrero Ulloa \\
+& Docente responsable, ISR-401 \\
+\end{tabular}
+
+\end{document}
