@@ -1213,7 +1213,7 @@ Fecha: ___ / ___ / 2026
 - ORCID: [0009-0003-6741-9391](https://orcid.org/0009-0003-6741-9391)
 - Correo: cperezr3@uteq.edu.ec
 
-Firma: ____________________________________________
+Firma: _Carlos Andrés Pérez Ruíz_
 
 Fecha: ___ / ___ / 2026
 
