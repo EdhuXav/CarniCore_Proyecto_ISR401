@@ -161,7 +161,7 @@ Firman los cinco integrantes. Una declaración sin firmar no es una declaración
 | Crespo Espinoza Kleber Obed | *Crespo Espinoza Kleber Obed* | _2026-09-04_|
 | Gamarra Araujo Edhu Xavier | *(pendiente de firma)* | |
 | Pérez Ruiz Carlos Andrés | *(pendiente de firma)* | |
-| Quintero Gende Erick Jahir | *(pendiente de firma)* | |
+| Quintero Gende Erick Jahir | _Erick Jhair Quintero Gende_ | _2026-09-04_ |
 
 ---
 
