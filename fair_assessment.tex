@@ -17,7 +17,7 @@
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[L]{\footnotesize UTEQ · ISR-401 · CarniCore}
-\fancyhead[R]{\footnotesize Autoevaluación FAIR · versión 2.1}
+\fancyhead[R]{\footnotesize Autoevaluación FAIR · versión 2.2}
 \fancyfoot[C]{\footnotesize Página \thepage}
 \renewcommand{\headrulewidth}{0.4pt}
 
@@ -29,7 +29,7 @@
 
 \begin{center}
 {\Large\bfseries\color{uteqverde} Autoevaluación FAIR del paquete de datos}\\[4pt]
-{\large Sistema CarniCore · Entrega 4 (2B) · versión corregida 2.1}\\[8pt]
+{\large Sistema CarniCore · Entrega 4 (2B) · versión corregida 2.2}\\[8pt]
 {\small Modelo aplicado: FAIR Data Maturity Model, Research Data Alliance (2020)}\\
 {\small Objeto evaluado: \url{https://doi.org/10.5281/zenodo.22225854}}\\
 {\small Fecha de evaluación: 4 de septiembre de 2026}
@@ -60,7 +60,7 @@ tres razones concretas, señaladas en el informe docente:
 \end{enumerate}
 
 Esta versión evalúa los mismos 16 indicadores con criterio conservador. El
-resultado es \textbf{13 de 16 (81,25\,\%)}, por encima del mínimo del 60\,\% que
+resultado es \textbf{14 de 16 (87,50\,\%)}, por encima del mínimo del 60\,\% que
 exige la Sección 7.5 de la guía, y con los dos indicadores no cumplidos
 identificados y con plan de subsanación.
 
@@ -145,13 +145,27 @@ comprobado la integridad del árbol:
 \toprule
 \textbf{Comprobación} & \textbf{Resultado} \\
 \midrule
-Entradas en \texttt{checksums.sha256} & 468 \\
-Entradas que verifican & 468 \\
-Archivos multimedia y contenedores cubiertos & 22 \\
-Hashes de contenedores frente a \texttt{fichas\_tecnicas.csv} & 16 de 16 coinciden \\
+Entradas en \texttt{checksums.sha256} & 599 \\
+Entradas que verifican & 599 (100\,\%) \\
+Hashes de contenedores frente a \texttt{fichas\_tecnicas.csv} & \textbf{16 de 16 coinciden} \\
 \bottomrule
 \end{tabular}
 \end{center}
+
+\vspace{6pt}
+\noindent\textbf{Nota de corrección (4 de septiembre de 2026).} Una
+verificación previa había señalado 3 discrepancias (\texttt{06}, \texttt{07}
+y \texttt{15-evidencias\_restringidas.7z}). Dos de ellas (\texttt{06},
+\texttt{07}) eran un falso positivo: el hash coincidía, solo estaba escrito
+en mayúsculas en \texttt{fichas\_tecnicas.csv} frente a minúsculas en el
+cálculo de comparación. La tercera (\texttt{15}) era una discrepancia real:
+el equipo verificó con \texttt{Get-FileHash} sobre el archivo del
+repositorio que el contenido corresponde a la entrevista de ENTR-15 y que el
+hash y el tamaño declarados habían quedado desactualizados frente al
+contenedor actual (probablemente por una recompresión o resubida posterior
+al cálculo original). Se actualizó la fila correspondiente en
+\texttt{fichas\_tecnicas.csv} con el hash y tamaño reales
+(\texttt{039b8def...177b1}, 24\,158\,760 bytes) y quedó verificado.
 
 Reproducible con \texttt{bash herramientas/regenerar\_checksums.sh --check}.
 
