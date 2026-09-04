@@ -1,0 +1,215 @@
+<mxfile host="Electron">
+  <diagram name="Página-1" id="SViLRQrxglp4s_EcNQeu">
+    <mxGraphModel dx="1471" dy="963" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;fontSize=14;" value="Sequence Diagram - CU-04: Register Cutting/Cuts (RF-06)" vertex="1">
+          <mxGeometry height="30" width="900" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="p1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;html=1;outlineConnect=0;" value="Butcher" vertex="1">
+          <mxGeometry height="60" width="30" x="40" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="p2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="UI_Cutting" vertex="1">
+          <mxGeometry height="40" width="140" x="205" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="p3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="CtrlCutting" vertex="1">
+          <mxGeometry height="40" width="140" x="445" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="p4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="WeighingRecord" vertex="1">
+          <mxGeometry height="40" width="140" x="685" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="p5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Cut" vertex="1">
+          <mxGeometry height="40" width="140" x="925" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="l1" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="120" as="sourcePoint" />
+            <mxPoint x="55" y="1000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l2" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="275" y="100" as="sourcePoint" />
+            <mxPoint x="275" y="1000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l3" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="515" y="100" as="sourcePoint" />
+            <mxPoint x="515" y="1000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l4" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="755" y="100" as="sourcePoint" />
+            <mxPoint x="755" y="1000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l5" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="995" y="100" as="sourcePoint" />
+            <mxPoint x="995" y="1000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m1" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;elbow=vertical;startArrow=none;endSize=8;" value="1: selectWeighedAnimal()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="130" as="sourcePoint" />
+            <mxPoint x="275" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="act_ui" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="830" width="10" x="270" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="m2" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;elbow=vertical;startArrow=none;endSize=8;" value="2: startCutting(animal)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="275" y="190" as="sourcePoint" />
+            <mxPoint x="515" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="act_ctrl" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="730" width="10" x="510" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="m3" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;elbow=vertical;startArrow=none;endSize=8;" value="3: getAnimalWeight(animal)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="515" y="240" as="sourcePoint" />
+            <mxPoint x="755" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="act_wr1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="50" width="10" x="750" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="m4" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;elbow=vertical;startArrow=none;endSize=8;dashed=1;" value="4: animalWeight">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="755" y="290" as="sourcePoint" />
+            <mxPoint x="515" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="loopbox" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="140" width="820" x="190" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="looplabel" parent="1" style="shape=note;whiteSpace=wrap;html=1;align=center;fillColor=#FFF2CC;strokeColor=#D6B656;fontStyle=1;size=8;" value="loop" vertex="1">
+          <mxGeometry height="24" width="60" x="190" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="loopcond" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontStyle=2;" value="[for each cut obtained from the animal]" vertex="1">
+          <mxGeometry height="24" width="400" x="255" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="m5" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;elbow=vertical;startArrow=none;endSize=8;" value="5: registerCut(type, weight)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="350" as="sourcePoint" />
+            <mxPoint x="275" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m6" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;elbow=vertical;startArrow=none;endSize=8;" value="6: addCut(type, weight)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="275" y="400" as="sourcePoint" />
+            <mxPoint x="515" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m7" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;elbow=vertical;startArrow=none;endSize=8;" value="7: storeTemporaryCut(type, weight)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="515" y="450" as="sourcePoint" />
+            <mxPoint x="995" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="act_cut1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="50" width="10" x="990" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="m8" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;elbow=vertical;startArrow=none;endSize=8;dashed=1;" value="8: cutStored">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="995" y="500" as="sourcePoint" />
+            <mxPoint x="515" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m9" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;elbow=vertical;startArrow=none;endSize=8;" value="9: confirmCutting()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="555" as="sourcePoint" />
+            <mxPoint x="275" y="555" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m10" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;elbow=vertical;startArrow=none;endSize=8;" value="10: validateAndSaveCuts()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="275" y="605" as="sourcePoint" />
+            <mxPoint x="515" y="605" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m11" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;startArrow=none;endSize=8;rounded=1;" value="11: &amp;lt;&amp;gt; validateWeightSum(cuts, animalWeight, wasteMargin)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="555" y="650" />
+              <mxPoint x="555" y="685" />
+            </Array>
+            <mxPoint x="515" y="650" as="sourcePoint" />
+            <mxPoint x="515" y="685" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m12" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;elbow=vertical;startArrow=none;endSize=8;dashed=1;" value="12: validationResult">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="515" y="715" as="sourcePoint" />
+            <mxPoint x="515" y="715" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="altbox" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="240" width="820" x="190" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="altlabel" parent="1" style="shape=note;whiteSpace=wrap;html=1;align=center;fillColor=#FFF2CC;strokeColor=#D6B656;fontStyle=1;size=8;" value="alt" vertex="1">
+          <mxGeometry height="24" width="50" x="190" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="altcond1" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontStyle=2;" value="[sum of weights &gt; animalWeight + wasteMargin]" vertex="1">
+          <mxGeometry height="24" width="420" x="245" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="m13" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;elbow=vertical;startArrow=none;endSize=8;dashed=1;" value="13: warning(&quot;exceeds weight, confirm or correct&quot;)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="515" y="765" as="sourcePoint" />
+            <mxPoint x="275" y="765" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m14" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;elbow=vertical;startArrow=none;endSize=8;dashed=1;" value="14: showWarning()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="275" y="815" as="sourcePoint" />
+            <mxPoint x="55" y="815" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="altdivider" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="850" as="sourcePoint" />
+            <mxPoint x="1010" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="altcond2" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontStyle=2;" value="[sum of weights &lt;= animalWeight + wasteMargin]" vertex="1">
+          <mxGeometry height="24" width="420" x="200" y="855" as="geometry" />
+        </mxCell>
+        <mxCell id="m15" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;elbow=vertical;startArrow=none;endSize=8;" value="15: saveCuts(cuts)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="515" y="900" as="sourcePoint" />
+            <mxPoint x="995" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="act_cut2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="50" width="10" x="990" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="m16" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;elbow=vertical;startArrow=none;endSize=8;dashed=1;" value="16: cutsSaved">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="995" y="950" as="sourcePoint" />
+            <mxPoint x="515" y="950" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m17" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;elbow=vertical;startArrow=none;endSize=8;dashed=1;" value="17: cuttingConfirmation()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="515" y="995" as="sourcePoint" />
+            <mxPoint x="275" y="995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m18" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;elbow=vertical;startArrow=none;endSize=8;dashed=1;" value="18: showConfirmation()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="275" y="1030" as="sourcePoint" />
+            <mxPoint x="55" y="1030" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="note1" parent="1" style="shape=note;whiteSpace=wrap;html=1;align=left;spacingLeft=6;verticalAlign=middle;size=14;fillColor=#F5F5F5;strokeColor=#666666;" value="Precondition: the animal was weighed (CU-03). Postcondition: the cuts become available for classification (CU-05)." vertex="1">
+          <mxGeometry height="60" width="1170" y="1070" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
