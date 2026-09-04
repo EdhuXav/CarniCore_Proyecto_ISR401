@@ -158,7 +158,7 @@ Firman los cinco integrantes. Una declaración sin firmar no es una declaración
 | Integrante | Firma | Fecha |
 |---|---|---|
 | Castro Bajaña Ariel Omar | *(pendiente de firma)* | |
-| Crespo Espinoza Kleber Obed | *(pendiente de firma)* | |
+| Crespo Espinoza Kleber Obed | *Crespo Espinoza Kleber Obed* | |
 | Gamarra Araujo Edhu Xavier | *(pendiente de firma)* | |
 | Pérez Ruiz Carlos Andrés | *(pendiente de firma)* | |
 | Quintero Gende Erick Jahir | *(pendiente de firma)* | |
