@@ -1,6 +1,23 @@
+> **Actualización — decisión final de destino (ver `CHANGELOG.md`, v2.1.0).**
+> Este análisis, hecho el 02/08/2026, comparaba *Requirements Engineering*
+> (Springer), *Journal of Systems and Software* (Elsevier) e *IEEE
+> Transactions on Software Engineering*, y recomendaba priorizar la revista
+> *Requirements Engineering*. Esa recomendación **quedó reemplazada**: el
+> destino final elegido por el equipo es **REFSQ 2027, track Research**
+> (15 páginas incl. referencias), reflejado en la cabecera de
+> `manuscrito_final.tex` y en la plantilla `llncs.cls` que usa el
+> manuscrito. El motivo del cambio (documentado en el CHANGELOG) es que el
+> manuscrito corregido, con el trabajo relacionado ampliado, el análisis de
+> sensibilidad y las ocho amenazas a la validez, no cabía en las 8 páginas
+> de *Posters & Tools* de REFSQ, y el equipo decidió que un track de
+> conferencia con revisión por pares era una meta más realista en el plazo
+> del curso que un envío directo a un journal JCR. El resto de este
+> documento se conserva como registro del análisis inicial, no como la
+> decisión vigente.
+
 # Análisis de revistas candidatas para publicación -- CarniCore (Enfoque 2)
 
-**Carpeta:** `07_Publicacion/analisis_revistas.md`
+**Carpeta:** `08_Publicacion/analisis_revistas.md`
 **Fecha de la búsqueda:** 02/08/2026
 **Fuentes:** sitios oficiales de cada editorial (Springer Link, ScienceDirect/Elsevier, IEEE Xplore) y SCImago Journal Rank (SJR), consultados en vivo el mismo día. Enlaces completos en la sección de Referencias.
 
