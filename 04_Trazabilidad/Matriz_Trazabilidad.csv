@@ -1,19 +1,19 @@
 ID,Ley-Art.,Objetivo,Interesado,EV,RF/RNF,CU,HU,CA,Componente,Mockup
-1,,Trazabilidad de origen,Propietaria,EV-01,RF-01,CU-01,HU-01,CA-01,Backend-Proveedores,MU-04
-2,Art.30,Certificación sanitaria,Propietaria,EV-02,RF-02,CU-02,HU-02,CA-02,Backend-Guias,MU-05
+1,"Art.7,45-49",Trazabilidad de origen,Propietaria,EV-01,RF-01,CU-01,HU-01,CA-01,Backend-Proveedores,MU-04
+2,,Certificación sanitaria,Propietaria,EV-02,RF-02,CU-02,HU-02,CA-02,Backend-Guias,MU-05
 3,,Registro de ingreso,Bodega,EV-03,RF-03,CU-01,HU-03,CA-03,Backend-Ingresos,MU-06
 4,,Cálculo de costo,Bodega,EV-04,RF-04,CU-03,HU-04,CA-04,Backend-Pesaje,MU-07
 5,,Comprobante físico,Bodega,EV-04,RF-05,CU-03,,,Backend-Pesaje,MU-19
 6,,Registro de cortes,Carniceros,EV-05,RF-06,CU-04,HU-06,CA-06,Backend-Despiece,MU-08
 7,,Control por cámara,Admin. gral.,EV-06,RF-07,CU-06,HU-07,CA-07,Backend-Inventario,MU-09
 8,,Evitar pérdidas,Admin. gral.,EV-06,RF-08,CU-07,HU-08,CA-08,Backend-VidaUtil,MU-11
-9,Art.38,Sustentar bajas,Admin. gral.,EV-07,RF-09,CU-10,HU-09,CA-09,Backend-Bajas,MU-13
+9,,Sustentar bajas,Admin. gral.,EV-07,RF-09,CU-10,HU-09,CA-09,Backend-Bajas,MU-13
 10,,Registrar ventas,Bodega / Cliente,EV-08,RF-10,CU-09,HU-10,CA-10,Backend-Ventas,MU-14
 11,,Historial completo,Agrocalidad,EV-03,RF-11,CU-08,HU-11,CA-11,Backend-Trazabilidad,MU-16
 12,,Diferencias inventario,Admin. gral.,EV-09,RF-12,CU-11,,,Backend-Inventario,MU-17
-13,,Decisiones gerenciales,Propietaria,EV-08,RF-13,CU-12,HU-13,CA-13,Backend-Reportes,MU-18
+13,Art.38,Decisiones gerenciales,Propietaria,EV-08,RF-13,CU-12,HU-13,CA-13,Backend-Reportes,MU-18
 14,,Desempeño del negocio,Propietaria,EV-08,RF-14,CU-12,,,Backend-Reportes,MU-02
-15,"Art.7,9",Delegar por rol,Propietaria,EV-01,RF-15,,HU-15,CA-15,Backend-Usuarios,MU-20
+15,"Art.7,9,45-49",Delegar por rol,Propietaria,EV-01,RF-15,,HU-15,CA-15,Backend-Usuarios,MU-20
 16,,Stock por fecha,Propietaria,EV-09,RF-16,CU-06,HU-16,CA-16,Backend-Inventario,MU-15
 17,,Georreferencia,Admin. gral.,EV-10,RF-17,CU-01 alt.,,,Backend-Proveedores,MU-04
 18,,Historial de precios,Propietaria,EV-11,RF-18,,,,Backend-Precios,MU-14
@@ -52,10 +52,10 @@ ID,Ley-Art.,Objetivo,Interesado,EV,RF/RNF,CU,HU,CA,Componente,Mockup
 51,,Explicabilidad pred.,Propietaria,EV-08,RNF-IA-06,,,,IA-PredictorDemanda,
 52,,Clasificar riesgo incidente,Admin. gral.,EV-12,RF-IA-04,CU-10,,,IA-DetectorAnomalias,
 53,,Prob. y recomendación,Admin. gral.,EV-12,RF-IA-05,CU-10,,,IA-DetectorAnomalias,
-54,Art.38,Registrar decisión admin.,Admin. gral.,EV-12,RF-IA-06,CU-10,,,IA-DetectorAnomalias,
+54,,Registrar decisión admin.,Admin. gral.,EV-12,RF-IA-06,CU-10,,,IA-DetectorAnomalias,
 55,,Recall >=0.90 detector,Admin. gral.,EV-12,RNF-IA-07,,,,IA-DetectorAnomalias,
 56,,Inferencia <2s detector,Admin. gral.,EV-12,RNF-IA-08,,,,IA-DetectorAnomalias,
 57,,Fallback <500ms,Admin. gral.,EV-12,RNF-IA-09,,,,IA-DetectorAnomalias,
 58,,Equidad por producto,Admin. gral.,EV-12,RNF-IA-10,,,,IA-DetectorAnomalias,
 59,,Equidad por horario,Admin. gral.,EV-12,RNF-IA-11,,,,IA-DetectorAnomalias,
-60,Art.38,Explicabilidad detector,Admin. gral.,EV-12,RNF-IA-12,,,,IA-DetectorAnomalias,
+60,,Explicabilidad detector,Admin. gral.,EV-12,RNF-IA-12,,,,IA-DetectorAnomalias,
