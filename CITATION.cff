@@ -13,9 +13,7 @@ abstract: >
   de ambigüedad) aplicado sobre los 27 requisitos funcionales del sistema CarniCore,
   más la Especificación de Requisitos de Software (ERS/SRS) v2.0 definitiva.
   Incluye detector automático en Python, datos crudos y procesados, scripts
-  reproducibles y el manuscrito para revista JCR. El DOI y SWHID deben actualizarse
-  tras el depósito en Zenodo y el archivado en Software Heritage.
-
+  reproducibles y el manuscrito para revista JCR.
 authors:
   - family-names: Castro Bajaña
     given-names: Ariel Omar
