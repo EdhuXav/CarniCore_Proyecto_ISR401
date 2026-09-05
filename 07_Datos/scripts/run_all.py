@@ -63,7 +63,7 @@ def main():
     print("\n" + "=" * 70)
     print("Pipeline completo. Los resultados numéricos están en")
     print("06_Experimento/resultados/ y las figuras y tablas del manuscrito en")
-    print("07_Publicacion/figuras/ y 07_Publicacion/tablas/, todas regeneradas")
+    print("08_Publicacion/figuras/ y 08_Publicacion/tablas/, todas regeneradas")
     print("a partir de los datos crudos. Ninguna cifra del manuscrito se")
     print("escribe a mano: si una cifra cambia, recompile el manuscrito.")
     print("=" * 70)
