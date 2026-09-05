@@ -30,8 +30,8 @@ Entradas:  ../resultados/dataset_consolidado.csv
            ../resultados/matriz_confusion_prf1.json
            ../resultados/kappa_resultados.json
 Salidas:   ../resultados/analisis_potencia.json
-           ../../07_Publicacion/figuras/figura_04_curva_potencia.png|.pdf
-           ../../07_Publicacion/tablas/tabla_05_potencia.tex
+           ../../08_Publicacion/figuras/figura_04_curva_potencia.png|.pdf
+           ../../08_Publicacion/tablas/tabla_05_potencia.tex
 """
 
 import csv
@@ -47,8 +47,8 @@ from scipy import stats
 
 DIR = Path(__file__).resolve().parent
 RESULTADOS = DIR.parent / "resultados"
-FIGURAS = DIR.parent.parent / "07_Publicacion" / "figuras"
-TABLAS = DIR.parent.parent / "07_Publicacion" / "tablas"
+FIGURAS = DIR.parent.parent / "08_Publicacion" / "figuras"
+TABLAS = DIR.parent.parent / "08_Publicacion" / "tablas"
 
 ALFA = 0.05
 POTENCIA_OBJETIVO = 0.80
