@@ -243,6 +243,7 @@ CarniCore\_Proyecto\_ISR401/
 │   ├── 00\_Restringido/      Inventario y hashes de la zona cifrada (no su contenido)
 │   ├── Consentimientos/ · Transcripciones/ · Documentos\_Organizacion/
 │   ├── Fotos\_Entorno/ · Validacion\_Walkthrough/ · Codificacion\_Tematica/
+│   ├── Member\_checking/     Acta firmada + material de sesión (member checking)
 │   └── Cuestionario/{Fotos\_Aplicacion,Respuestas}/
 ├── 03\_Modelado/             UML en Diagramas\_UML/ (.drawio + .png) · Mockups/ (20)
 ├── 04\_Trazabilidad/         Matriz\_Trazabilidad.csv · priorizacion\_moscow\_kano.csv
@@ -382,7 +383,7 @@ es peor que no tenerlo.
 * \[ ] Consentimientos y figuras del ERS con el nombre redactado; historial purgado
 * \[ ] Columna de cédulas retirada de este README
 * \[ ] `02\_Evidencias/00\_Restringido/fichas\_tecnicas.csv` con una fila **por pieza de evidencia**, no por contenedor
-* \[ ] Los 16 contenedores `.7z`: resueltos (entregados por SGA y declarados aquí)
+* \[x] Los 18 contenedores `.7z`: resueltos (entregados por SGA y declarados aquí)
 * \[ ] `.mailmap` completado con la salida real de `git log --format='%aN <%aE>' | sort -u`
 * \[ ] ≥5 fotografías de aplicación del cuestionario con fecha en los metadatos
 * \[ ] ≥5 documentos en `02\_Evidencias/Documentos\_Organizacion/` (hay 3)
