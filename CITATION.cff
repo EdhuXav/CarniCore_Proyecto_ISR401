@@ -4,9 +4,9 @@ message: "If you use this repository, please cite it as follows."
 
 title: "CarniCore: Detección automática de patrones de ambigüedad en requisitos funcionales — Paquete de replicación Entrega 4 (2B)"
 
-version: "2.0.0"
+version: "2.2.0"
 
-date-released: 2026-08-28
+date-released: 2026-09-05
 
 abstract: >
   Paquete de replicación completo del estudio empírico (Enfoque 2: detección automática
