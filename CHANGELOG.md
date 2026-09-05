@@ -13,6 +13,60 @@ Correspondencia entre versiones y entregas del PFC:
 |1.0.0|Entrega 3 (2A)|13|
 |2.0.0|Entrega 4 (2B / Defensa)|17|
 |2.1.0|Correcciones para el examen final|19|
+|2.2.0|Cierre de pendientes (member checking, zona de evidencia)|19|
+
+\---
+
+## [2.2.0] — 2026-09-05 — Sesion de member checking, correccion de zona de evidencia y cierre de pendientes
+
+### Añadido
+
+* **Sesion de member checking realizada.** Sesion grupal de verificacion de
+interpretacion de resultados con participantes ENTR-05, ENTR-11 y ENTR-14
+(2026-09-04). Depositados: acta firmada y material de presentacion en
+`02_Evidencias/Member_checking/`, y el video de la sesion cifrado como
+`17-evidencias_restringidas.7z` con su fila correspondiente en
+`fichas_tecnicas.csv`.
+* **Correspondencia con la organizacion (A8).** Depositadas las solicitudes
+fechadas de sesion de member checking y de documentos adicionales en
+`10_Autoria/correspondencia/`; las respuestas de la organizacion quedaron
+adjuntas dentro de esos mismos documentos.
+
+### Corregido — hallazgo critico de zona de evidencia
+
+* **Videos de walkthrough retirados de la zona publica.** Los tres videos de
+evidencia de walkthrough (`01_evidencia_walkthrough_no_tecnico.mp4`,
+`01_evidencia_walkthrough_tecnico.mp4`, `02_evidencia_walkthrough_tecnico.mp4`)
+estaban en `02_Evidencias/Validacion_Walkthrough/` sin cifrar, con rostros de
+personas participantes claramente identificables. Esto incumplia la Seccion 3
+de la guia, que exige que la grabacion de cada sesion de validacion vaya en la
+zona restringida cifrada [R] y que solo el acta enmascarada sea publica [P].
+Se comprimieron los tres videos con AES-256 en
+`18-evidencias_restringidas.7z`, se retiraron de la carpeta publica, y se
+agregaron las tres filas correspondientes
+(`WALKTHROUGH-NO-TEC-01`, `WALKTHROUGH-TEC-01`, `WALKTHROUGH-TEC-02`) a
+`fichas_tecnicas.csv`.
+* **Pendiente de este mismo hallazgo:** los tres archivos ya retirados siguen
+existiendo en commits anteriores del historial de git (`ee59f8e` y
+posteriores). Retirarlos de la carpeta no los elimina del historial; se
+requiere `git filter-repo` seguido de `push --force` y re-clonado por parte
+de todo el equipo antes de considerar este punto cerrado. Ver seccion de
+pendientes.
+
+### Pendiente real (requiere accion adicional del equipo)
+
+* Purgar del historial de git los tres videos de walkthrough retirados en
+esta version (`git filter-repo` + `push --force` + re-clonado del equipo).
+* Etiqueta anotada de linea base (`git tag -a`), publicada en el remoto.
+Ningun commit de esta version ni de la anterior fue etiquetado todavia.
+* 2 documentos adicionales de la organizacion en
+`02_Evidencias/Documentos_Organizacion/` (hay 3, se piden 5).
+* Nombre completo de la persona participante sin enmascarar en las actas de
+`02_Evidencias/Validacion_Walkthrough/*.pdf` (dato identificable en zona
+publica; el rostro y la voz ya se resolvieron al mover los videos, el nombre
+en las actas queda como mejora pendiente de menor prioridad).
+* `checksums.sha256` y `07_Datos/checksums_datos.sha256`: regenerar como
+ultimo paso, una vez cerrados los puntos anteriores.
 
 \---
 
