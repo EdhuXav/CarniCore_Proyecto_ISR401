@@ -1,7 +1,7 @@
 # Registro de depósito de datos
 
 Proyecto CarniCore — Sistema de Distribución y Trazabilidad de Carne
-Equipo AHMRV — Universidad Técnica Estatal de Quevedo
+Equipo CCGaPQ — Universidad Técnica Estatal de Quevedo
 
 Fecha de actualización: 2026-09-03
 
@@ -41,7 +41,7 @@ El archivo comprimido y su estructura interna reflejan los elementos reales depo
 ### 2.2. Scripts y Automatización (Guiones/)
 
 - **detector_ambiguedad.py** (6.1 kB): Script principal para la detección y análisis automatizado.
-- **run_all.sh** (7.7 kB): Script de ejecución global para reproducir la cadena analítica.
+- **run_all.py** (7.7 kB): Script de ejecución global para reproducir la cadena analítica.
 - **required.txt** (470 Bytes): Dependencias de software necesarias.
 - **rf27.json** (7.2 kB): Archivo de configuración/datos estructurados del modelo o requisitos.
 
