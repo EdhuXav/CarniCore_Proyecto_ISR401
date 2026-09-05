@@ -21,12 +21,12 @@ Entradas (todas generadas por pasos anteriores):
     ../resultados/bootstrap_ic95.json
 
 Salidas:
-    ../../07_Publicacion/figuras/figura_01_distribucion_categorias.png|.pdf
-    ../../07_Publicacion/figuras/figura_02_estado_por_rf.png|.pdf
-    ../../07_Publicacion/figuras/figura_03_acuerdo_expertos.png|.pdf
-    ../../07_Publicacion/tablas/tabla_01_resultados_detector.tex
-    ../../07_Publicacion/tablas/tabla_03_confusion_prf1.tex
-    ../../07_Publicacion/tablas/tabla_04_acuerdo_interevaluador.tex
+    ../../08_Publicacion/figuras/figura_01_distribucion_categorias.png|.pdf
+    ../../08_Publicacion/figuras/figura_02_estado_por_rf.png|.pdf
+    ../../08_Publicacion/figuras/figura_03_acuerdo_expertos.png|.pdf
+    ../../08_Publicacion/tablas/tabla_01_resultados_detector.tex
+    ../../08_Publicacion/tablas/tabla_03_confusion_prf1.tex
+    ../../08_Publicacion/tablas/tabla_04_acuerdo_interevaluador.tex
 """
 
 import csv
@@ -40,8 +40,8 @@ import matplotlib.pyplot as plt
 
 DIR = Path(__file__).resolve().parent
 RESULTADOS = DIR.parent / "resultados"
-FIGURAS = DIR.parent.parent / "07_Publicacion" / "figuras"
-TABLAS = DIR.parent.parent / "07_Publicacion" / "tablas"
+FIGURAS = DIR.parent.parent / "08_Publicacion" / "figuras"
+TABLAS = DIR.parent.parent / "08_Publicacion" / "tablas"
 
 CATEGORIAS = {
     "cuantificador_vago": "C1 -- Cuantificadores\nvagos",
@@ -302,7 +302,7 @@ def main():
     print(f"  kappa de Fleiss .................... {kappa['fleiss_consenso']}")
     print(f"  Precisión / Exhaustividad / F1 ..... {conf['precision']} / "
           f"{conf['recall']} / {conf['f1']}")
-    print("\nSalidas en 07_Publicacion/figuras/ y 07_Publicacion/tablas/.")
+    print("\nSalidas en 08_Publicacion/figuras/ y 08_Publicacion/tablas/.")
 
 
 conteo_total_activados = 0
