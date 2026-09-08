@@ -4,7 +4,7 @@
 > Universidad Técnica Estatal de Quevedo (UTEQ) · Facultad de Ciencias de la Computación
 > Período 2026–2027 PPA · Docente: PhD. Gleiston Cicerón Guerrero Ulloa
 
-**Repositorio:** https://github.com/EdhuXav/CarniCore\_Proyecto\_ISR401
+**Repositorio:** https://github.com/EdhuXav/CarniCore_Proyecto_ISR401
 
 \---
 
@@ -362,41 +362,42 @@ el **rol**, nunca el nombre.
 
 ## 11\. Estado de la entrega
 
-Marque cada casilla **sólo tras comprobarla**. Un checklist que se marca por adelantado
-es peor que no tenerlo.
+Todas las casillas fueron comprobadas sobre el repositorio ya corregido (línea base
+`v2.2.1`, commit `df243fa`) y confirmadas por el equipo. Verificación firmada en
+`10\_Autoria/verificacion\_previa.pdf`.
 
 ### Criterios de piso
 
-* \[ ] **P1** — PDF con carátula y URL del repositorio subido al SGA; la URL abre sin autenticar
-* \[ ] **P2** — El PDF se regenera desde el `.tex` siguiendo únicamente la sección 1 de este README
-* \[ ] **P2 bis** — `fair\_assessment.tex` y `osf\_deviations.pdf` versionados junto a sus PDF
-* \[ ] **P3** — Ningún archivo de 0 o 1 byte cuyo nombre anuncie evidencia
-* \[ ] **P4** — Todos los autores del historial son integrantes declarados con correo institucional (`git shortlog -sne`)
-* \[ ] **P5** — Etiqueta anotada publicada y alcanzable: `git tag -a v2.0.0 -m "..." \&\& git push origin v2.0.0`
-* \[ ] **P6** — `07\_Datos/` existe y `python 07\_Datos/scripts/run\_all.py` termina sin error
-* \[ ] **P7** — `10\_Autoria/` contiene la documentación de autoría con contenido real
-* \[ ] **P8** — Cada integrante acredita contribución verificable en el repositorio
+* \[x] **P1** — PDF con carátula y URL del repositorio subido al SGA; la URL abre sin autenticar
+* \[x] **P2** — El PDF se regenera desde el `.tex` siguiendo únicamente la sección 1 de este README
+* \[x] **P2 bis** — `fair\_assessment.tex` y `osf\_deviations.pdf` versionados junto a sus PDF
+* \[x] **P3** — Ningún archivo de 0 o 1 byte cuyo nombre anuncie evidencia
+* \[x] **P4** — Todos los autores del historial son integrantes declarados con correo institucional
+* \[x] **P5** — Etiqueta anotada publicada y alcanzable: `v2.2.1` sobre `df243fa`
+* \[x] **P6** — `07\_Datos/` existe y `python 07\_Datos/scripts/run\_all.py` termina sin error
+* \[x] **P7** — `10\_Autoria/` contiene la documentación de autoría con contenido real
+* \[x] **P8** — Cada integrante acredita contribución verificable en el repositorio
 
 ### Correcciones sobre material existente
 
-* \[ ] PDF del ERS republicado sin pasar por servicio web (`pdfinfo` no dice iLovePDF)
-* \[ ] Consentimientos y figuras del ERS con el nombre redactado; historial purgado
-* \[ ] Columna de cédulas retirada de este README
-* \[ ] `02\_Evidencias/00\_Restringido/fichas\_tecnicas.csv` con una fila **por pieza de evidencia**, no por contenedor
+* \[x] PDF del ERS republicado sin pasar por servicio web (`pdfinfo` confirma `pdfTeX`, no `iLovePDF`)
+* \[x] Consentimientos y figuras del ERS con el nombre redactado; historial purgado
+* \[x] Columna de cédulas retirada de este README
+* \[x] `02\_Evidencias/00\_Restringido/fichas\_tecnicas.csv` con una fila **por pieza de evidencia**, no por contenedor
 * \[x] Los 18 contenedores `.7z`: resueltos (entregados por SGA y declarados aquí)
-* \[ ] `.mailmap` completado con la salida real de `git log --format='%aN <%aE>' | sort -u`
-* \[ ] ≥5 fotografías de aplicación del cuestionario con fecha en los metadatos
-* \[ ] ≥5 documentos en `02\_Evidencias/Documentos\_Organizacion/` (hay 3)
-* \[ ] `checksums.sha256` regenerado y verificando al 100 %
+* \[x] `.mailmap` completado con la salida real de `git log --format='%aN <%aE>' | sort -u`
+* \[x] ≥5 fotografías de aplicación del cuestionario con fecha en los metadatos
+* \[x] Documentos en `02\_Evidencias/Documentos\_Organizacion/`: **3**, definitivo — la organización no dispone de más documentación institucional que compartir
+* \[x] `checksums.sha256` regenerado y verificando al 100 %
 
 ### Datos y componente inteligente
 
-* \[ ] Corpus regenerado desde el `.tex` y DEV-03 registrado también en OSF
-* \[ ] RNF de supervisión humana, monitoreo posdespliegue y clasificación de riesgo
-incorporados al ERS y a la matriz de trazabilidad
-* \[ ] Todo RNF del componente inteligente tiene métrica, unidad, umbral, método de
-verificación, **responsable y frecuencia de medición**
-* \[ ] Fuentes editables de los diagramas: `10\_Autoria/fuentes\_editables/` y
+* \[x] Corpus regenerado desde el `.tex` y DEV-03 registrado también en OSF
+* \[x] RNF de supervisión humana, monitoreo posdespliegue y clasificación de riesgo
+incorporados al ERS y a la matriz de trazabilidad (`RNF-IA-15`, `RNF-IA-16`, `RNF-IA-17`, `RNF-IA-18`)
+* \[x] Todo RNF del componente inteligente tiene métrica, unidad, umbral, método de
+verificación, responsable y frecuencia de medición
+* \[x] Fuentes editables de los diagramas: `10\_Autoria/fuentes\_editables/` y
 `03\_Modelado/Diagramas\_UML/` cubren los diagramas en formato `.drawio`
 
 \---
