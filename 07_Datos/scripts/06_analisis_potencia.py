@@ -265,7 +265,7 @@ Referencia de la guía: $n$ por grupo ($d = 0{{,}}50$) & {a['n_por_grupo_dos_mue
 \\end{{tabular}}
 \\end{{table}}
 """
-    (TABLAS / "tabla_05_potencia.tex").write_text(contenido, encoding="utf-8")
+    (TABLAS / "tabla_05_potencia.tex").write_text(contenido, encoding="utf-8", newline="")
 
 
 def main():
@@ -293,7 +293,7 @@ def main():
         "D_prevalencia_exhaustividad": d,
     }
     (RESULTADOS / "analisis_potencia.json").write_text(
-        json.dumps(salida, indent=2, ensure_ascii=False), encoding="utf-8"
+        json.dumps(salida, indent=2, ensure_ascii=False), encoding="utf-8", newline=""
     )
 
     figura(c)

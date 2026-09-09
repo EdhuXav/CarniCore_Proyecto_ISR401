@@ -80,11 +80,11 @@ def main():
     }
 
     RUTA_SALIDA_JSON.parent.mkdir(parents=True, exist_ok=True)
-    with open(RUTA_SALIDA_JSON, "w", encoding="utf-8") as f:
+    with open(RUTA_SALIDA_JSON, "w", newline="", encoding="utf-8") as f:
         json.dump(resultado, f, indent=2, ensure_ascii=False)
 
     # Tabla lista para \input en el manuscrito LaTeX (formato longtable simple)
-    with open(RUTA_SALIDA_CSV, "w", encoding="utf-8") as f:
+    with open(RUTA_SALIDA_CSV, "w", newline="", encoding="utf-8") as f:
         f.write("Métrica,Valor\n")
         f.write(f"Verdaderos negativos,{tn}\n")
         f.write(f"Falsos positivos,{fp}\n")

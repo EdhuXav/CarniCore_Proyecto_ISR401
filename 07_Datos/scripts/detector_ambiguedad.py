@@ -174,7 +174,7 @@ def main():
 
     salida = Path(__file__).with_name("clasificaciones_detector.csv")
     with open(salida, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=list(resultados[0].keys()))
+        writer = csv.DictWriter(f, fieldnames=list(resultados[0].keys()), lineterminator="\n")
         writer.writeheader()
         writer.writerows(resultados)
 

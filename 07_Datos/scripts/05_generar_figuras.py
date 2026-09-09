@@ -201,7 +201,7 @@ def tabla_01(conteo, n):
 \\end{{tabular}}
 \\end{{table}}
 """
-    (TABLAS / "tabla_01_resultados_detector.tex").write_text(contenido, encoding="utf-8")
+    (TABLAS / "tabla_01_resultados_detector.tex").write_text(contenido, encoding="utf-8", newline="")
 
 
 def tabla_03(conf, boot):
@@ -233,7 +233,7 @@ intervalo de confianza al 95\\,\\% por \\textit{{bootstrap}}
 \\end{{tabular}}
 \\end{{table}}
 """
-    (TABLAS / "tabla_03_confusion_prf1.tex").write_text(contenido, encoding="utf-8")
+    (TABLAS / "tabla_03_confusion_prf1.tex").write_text(contenido, encoding="utf-8", newline="")
 
 
 def tabla_04(kappa):
@@ -274,7 +274,7 @@ $\\kappa$ de Fleiss (conjunto) & {fl:.4f} & {banda(fl)} \\\\
 \\end{{tabular}}
 \\end{{table}}
 """
-    (TABLAS / "tabla_04_acuerdo_interevaluador.tex").write_text(contenido, encoding="utf-8")
+    (TABLAS / "tabla_04_acuerdo_interevaluador.tex").write_text(contenido, encoding="utf-8", newline="")
 
 
 def main():

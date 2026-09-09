@@ -142,7 +142,7 @@ def main():
 
     RUTA_SALIDA.parent.mkdir(parents=True, exist_ok=True)
     with open(RUTA_SALIDA, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=list(consolidado[0].keys()))
+        writer = csv.DictWriter(f, fieldnames=list(consolidado[0].keys()), lineterminator="\n")
         writer.writeheader()
         writer.writerows(consolidado)
 
