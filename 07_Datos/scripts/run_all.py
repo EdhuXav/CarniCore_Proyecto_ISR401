@@ -24,9 +24,19 @@ Uso:
     (o "make all" si se usa el Makefile adjunto)
 """
 
+import os
 import subprocess
 import sys
 from pathlib import Path
+
+# Reproducibilidad byte a byte: el backend PDF de matplotlib incrusta
+# /CreationDate con la hora real de cada ejecución, lo que invalida
+# checksums_datos.sha256 y checksums.sha256 aunque el contenido no cambie.
+# SOURCE_DATE_EPOCH (convención estándar, ver https://reproducible-builds.org/specs/source-date-epoch/)
+# fuerza una fecha fija y hace el PDF idéntico entre corridas. Se fija aquí,
+# antes de importar matplotlib en los pasos siguientes, y solo si el entorno
+# no la definió ya (para no pisar una fecha que alguien haya fijado a propósito).
+os.environ.setdefault("SOURCE_DATE_EPOCH", "1735689600")  # 2025-01-01T00:00:00Z, fecha ancla arbitraria
 
 DIR_SCRIPT = Path(__file__).resolve().parent
 
