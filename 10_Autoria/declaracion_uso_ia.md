@@ -124,7 +124,10 @@ Lo siguiente se afirma a la luz de la revisión técnica del 12 de septiembre de
 - [x] **El manifiesto de integridad del repositorio entregado está actualizado y
       verifica al 100 % sobre un clon limpio.** `checksums.sha256`: 604/604 `OK`.
       `07_Datos/checksums_datos.sha256`: 35/35 `OK`. Verificado el 12 de septiembre de 2026.
-
+> **Nota de cierre (12-sep, revisión final):** los manifiestos se regeneraron una vez
+> más para eliminar un BOM (Byte Order Mark) introducido por `Set-Content -Encoding UTF8`
+> de PowerShell, que corrompía la primera línea de cada archivo. Verificado sin BOM y
+> 100 % `OK` en ambos manifiestos sobre el commit `19c5d2f` / tag `v2.3.1`.
 ---
 
 ## 5. Firmas
